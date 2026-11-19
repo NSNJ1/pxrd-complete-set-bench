@@ -1,6 +1,6 @@
 {
   "version": "0.4.2",
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "file_count": 52,
   "entries": [
     {
@@ -21,12 +21,12 @@
     {
       "path": "CHANGELOG.md",
       "size": 655,
-      "sha256": "895787c0bbb581edfa4fb87adc6ae833f0852e0e7d0357af86b8612a446ff740"
+      "sha256": "ee220e716ae0a57866c9907ec47a244d160d1cc5374dc996e3d8bd94dcbe48b2"
     },
     {
       "path": "CITATION.cff",
       "size": 820,
-      "sha256": "6cf149f4436633d0a6e9a063359347d09970ef14e6349fc42291f0cb2c86768e"
+      "sha256": "98eef162ab22e06aaafead98a90439fbb5bf9d6903f238f8c3f8f29b014057b1"
     },
     {
       "path": "CONTRIBUTING.md",

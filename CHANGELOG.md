@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.4.2 - 2026-11-19
+## 0.4.2 - 2026-11-20
 
 - Reject bootstrap runs with fewer than one repeat.
 - Reject dominant-phase labels attached to absent candidates.
