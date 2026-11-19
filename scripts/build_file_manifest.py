@@ -38,7 +38,7 @@ def main() -> int:
             }
         )
     payload = {
-        "version": "0.4.1",
+        "version": "0.4.2",
         "date": date.today().isoformat(),
         "file_count": len(entries),
         "entries": entries,

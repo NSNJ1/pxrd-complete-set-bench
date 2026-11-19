@@ -3,4 +3,4 @@
 from .evaluate import evaluate, validate
 
 __all__ = ["evaluate", "validate"]
-__version__ = "0.4.1"
+__version__ = "0.4.2"

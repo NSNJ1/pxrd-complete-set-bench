@@ -54,6 +54,8 @@ def validate(
         valid_primary = frame["primary"].dropna()
         if not valid_primary.isin([0, 1]).all():
             raise ValueError("primary must be binary or blank")
+        if (frame["primary"].eq(1) & frame["present"].eq(0)).any():
+            raise ValueError("primary phase must also be present")
 
     grouped = frame.groupby(["source", "query_id"], sort=False)
     if (grouped["cluster_id"].nunique() != 1).any():
@@ -450,6 +452,10 @@ def evaluate(
     repeats: int,
     seed: int,
 ) -> dict:
+    if not budgets or any(budget < 1 for budget in budgets):
+        raise ValueError("budgets must be positive")
+    if repeats < 1:
+        raise ValueError("bootstrap repeats must be positive")
     validate(frame, baseline, method)
     source_reports = {}
     for source, source_frame in frame.groupby("source", sort=True):

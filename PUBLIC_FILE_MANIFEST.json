@@ -1,5 +1,5 @@
 {
-  "version": "0.4.1",
+  "version": "0.4.2",
   "date": "2026-11-19",
   "file_count": 52,
   "entries": [
@@ -20,13 +20,13 @@
     },
     {
       "path": "CHANGELOG.md",
-      "size": 438,
-      "sha256": "896231603e984c2097fb11e41547fa260c2965bc2935467a9e937e51c6b029b6"
+      "size": 655,
+      "sha256": "895787c0bbb581edfa4fb87adc6ae833f0852e0e7d0357af86b8612a446ff740"
     },
     {
       "path": "CITATION.cff",
       "size": 820,
-      "sha256": "52ce2aef7114dc50df1c37482c210b5ce168d751c7bc8775496590a6d5bb6cce"
+      "sha256": "6cf149f4436633d0a6e9a063359347d09970ef14e6349fc42291f0cb2c86768e"
     },
     {
       "path": "CONTRIBUTING.md",
@@ -176,7 +176,7 @@
     {
       "path": "pyproject.toml",
       "size": 1122,
-      "sha256": "4ba089f33c0f5a25505d2f0d0b8c32aa878350f97947fb1028b3e469442aff9a"
+      "sha256": "5dedd8680b45594b046266acc088c2477f20aefa32161fa0685722b6677af1e8"
     },
     {
       "path": "requirements.txt",
@@ -211,7 +211,7 @@
     {
       "path": "scripts/build_file_manifest.py",
       "size": 1374,
-      "sha256": "40116156e09e7ee226dedfb69823aea3bf45e8827e91c83df44b372bc39af8c5"
+      "sha256": "14df4d5a7e0b807437eb59b912b426b78821c9124eca02249089fc0dd2c3d488"
     },
     {
       "path": "scripts/reproduce_core.py",
@@ -221,7 +221,7 @@
     {
       "path": "src/pxrd_complete_set_bench/__init__.py",
       "size": 162,
-      "sha256": "dc2172c6625670c7604ea8054fc6125c52455f336738c589d8013aa880349936"
+      "sha256": "0c5181a2a2fd30b21d53445f96e2bab26a5183a8e5529a98b6dc40ada22765fc"
     },
     {
       "path": "src/pxrd_complete_set_bench/__main__.py",
@@ -230,13 +230,13 @@
     },
     {
       "path": "src/pxrd_complete_set_bench/cli.py",
-      "size": 2528,
-      "sha256": "65ae56461778179d39185351cc9c57cc891e77929796c97dcc4a620b6be78d74"
+      "size": 2716,
+      "sha256": "fcb8fcae5c0e61273b72e6c79b8d5348a3dc3bf0ef9cb57535bdc294d6d10f83"
     },
     {
       "path": "src/pxrd_complete_set_bench/evaluate.py",
-      "size": 21613,
-      "sha256": "bc1e9c1cbd62a304cea372deaf211380a8c06395514483e5115ae32550a3788d"
+      "size": 21945,
+      "sha256": "08f44ca592510f24f923f409f838d58e6d252e34562681f52caec602d1b9a2ba"
     },
     {
       "path": "tests/smoke_fixture.csv",
@@ -250,8 +250,8 @@
     },
     {
       "path": "tests/test_evaluate.py",
-      "size": 3581,
-      "sha256": "352e7faf85015868b667d3bab63f7363d2b2d69e514a99b399f3cda052fd3db2"
+      "size": 4310,
+      "sha256": "693211755ca16ef7c012734284abcc8996e3b3c4565ac32f743f06001a98cf8e"
     },
     {
       "path": "tests/test_public_surface.py",

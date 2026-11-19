@@ -18,6 +18,13 @@ def _budgets(value: str) -> tuple[int, ...]:
     return budgets
 
 
+def _positive_int(value: str) -> int:
+    number = int(value)
+    if number < 1:
+        raise argparse.ArgumentTypeError("value must be a positive integer")
+    return number
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         prog="pxrd-complete-set-bench",
@@ -47,7 +54,7 @@ def build_parser() -> argparse.ArgumentParser:
     )
     evaluate_parser.add_argument(
         "--bootstrap-repeats",
-        type=int,
+        type=_positive_int,
         default=10_000,
     )
     evaluate_parser.add_argument(

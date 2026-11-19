@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.4.2 - 2026-11-19
+
+- Reject bootstrap runs with fewer than one repeat.
+- Reject dominant-phase labels attached to absent candidates.
+- Allow the public-tree audit to run after users create a virtual environment.
+
 ## 0.4.1 - 2026-11-19
 
 - Corrected package-relative reproduction commands.

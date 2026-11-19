@@ -1,4 +1,4 @@
-"""Deterministic smoke tests for evaluate_complete_set.py."""
+"""Deterministic tests for the evaluator."""
 
 from __future__ import annotations
 
@@ -104,6 +104,25 @@ class CompleteSetEvaluatorTest(unittest.TestCase):
         frame.loc[1, "cluster_id"] = "wrong-cluster"
         with self.assertRaisesRegex(ValueError, "exactly one cluster"):
             validate(frame, "baseline_score", "method_score")
+
+    def test_primary_phase_must_be_present(self) -> None:
+        frame = pd.read_csv(ROOT / "smoke_fixture.csv")
+        absent_index = frame.index[frame["present"].eq(0)][0]
+        frame.loc[absent_index, "primary"] = 1
+        with self.assertRaisesRegex(ValueError, "must also be present"):
+            validate(frame, "baseline_score", "method_score")
+
+    def test_bootstrap_repeats_must_be_positive(self) -> None:
+        frame = pd.read_csv(ROOT / "smoke_fixture.csv")
+        with self.assertRaisesRegex(ValueError, "bootstrap repeats"):
+            evaluate(
+                frame,
+                "baseline_score",
+                "method_score",
+                (1, 2, 3),
+                0,
+                20261118,
+            )
 
 
 if __name__ == "__main__":
