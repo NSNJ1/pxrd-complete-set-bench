@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import re
+import subprocess
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[1]
@@ -53,16 +54,22 @@ def main() -> int:
 
     problems = []
     self_path = Path(__file__).resolve()
-    for path in root.rglob("*"):
+    tracked = subprocess.check_output(
+        ["git", "ls-files", "-z"],
+        cwd=root,
+    )
+    for raw_path in tracked.split(b"\0"):
+        if not raw_path:
+            continue
+        relative = Path(raw_path.decode("utf-8"))
+        path = root / relative
         if (
             not path.is_file()
-            or ".git" in path.parts
             or path.name in SKIPPED_NAMES
-            or any(part in SKIPPED_PARTS for part in path.parts)
-            or any(part.endswith(".egg-info") for part in path.parts)
+            or any(part in SKIPPED_PARTS for part in relative.parts)
+            or any(part.endswith(".egg-info") for part in relative.parts)
         ):
             continue
-        relative = path.relative_to(root)
         if any(part in DISALLOWED_DIRECTORIES for part in relative.parts):
             problems.append(f"disallowed directory: {relative}")
         if SECRET_NAMES.search(path.name) or path.suffix.lower() in SECRET_SUFFIXES:

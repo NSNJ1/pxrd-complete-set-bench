@@ -10,8 +10,8 @@
     },
     {
       "path": ".github/workflows/tests.yml",
-      "size": 515,
-      "sha256": "672025fedff084c37eb8e2c74f6759ecb83f309b363765c48e3bbc4b0b18cd75"
+      "size": 589,
+      "sha256": "75e146c23abd33e656592bc772b4dd0455cf624eb2eef5e8f32abbd28ee03484"
     },
     {
       "path": ".gitignore",
@@ -205,8 +205,8 @@
     },
     {
       "path": "scripts/audit_public_tree.py",
-      "size": 3295,
-      "sha256": "01ccdde824cbb40f4671ace2d2b54e2791941d87f02f53f2caa447f7c3b95eda"
+      "size": 3477,
+      "sha256": "21723d1f8fd2ac76d1ce91c4077eac3640520ab9c467101e3c4c8feaa4efee71"
     },
     {
       "path": "scripts/build_file_manifest.py",
