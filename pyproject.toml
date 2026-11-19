@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pxrd-complete-set-bench"
+version = "0.4.1"
+description = "Benchmark for complete phase-set retrieval and review in measured multiphase PXRD"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+license = "MIT"
+authors = [
+  { name = "Tianxiang Fang" },
+]
+keywords = [
+  "powder X-ray diffraction",
+  "phase identification",
+  "materials informatics",
+  "benchmark",
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Science/Research",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering :: Chemistry",
+]
+dependencies = [
+  "numpy==2.5.4",
+  "pandas==3.1.1",
+  "scipy==1.18.1",
+  "scikit-learn==1.9.1",
+]
+
+[project.scripts]
+pxrd-complete-set-bench = "pxrd_complete_set_bench.cli:main"
+
+[project.urls]
+Repository = "https://github.com/NSNJ1/pxrd-complete-set-bench"
+Benchmark-card = "https://github.com/NSNJ1/pxrd-complete-set-bench/blob/main/docs/benchmark-card.md"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]

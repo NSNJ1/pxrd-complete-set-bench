@@ -1,0 +1,13 @@
+{
+  "status": "core_reproduction_exact_match",
+  "input_sha256": "70a7e11872f50a9cddbe83ca84614462edebf99a1089a8b512a525a049ba2c2b",
+  "actual_canonical_sha256": "347e626c53642bd7acca100b10936a565e251b1d28fa2ce3407a0e466cf69069",
+  "expected_canonical_sha256": "347e626c53642bd7acca100b10936a565e251b1d28fa2ce3407a0e466cf69069",
+  "checks": {
+    "input_sha256": true,
+    "result_digest": true,
+    "result_digest_expected": true,
+    "sources": true,
+    "bootstrap": true
+  }
+}

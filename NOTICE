@@ -1,0 +1,71 @@
+# Third-Party Notices
+
+This repository contains project-created derived score tables, labels, aggregate
+metrics, documentation, and figures. It does not redistribute the original raw
+spectra or complete third-party CIF collections.
+
+Source-level terms are recorded below. Nested crystallographic database terms
+remain with the original database records.
+
+## AriadneX controlled mixtures
+
+- Paper DOI: https://doi.org/10.26434/chemrxiv.15010300/v1
+- Repository: https://github.com/lrcfmd/AriadneX
+- Commit: 840820aa84ff6ce3654d255d091abe4eac624e3c
+- Release: example-data-v5
+- Repository license: MIT
+- PCD/ICSD reference structures are not redistributed.
+
+## Rare-earth MOF dataset
+
+- Dataset DOI: https://doi.org/10.5281/zenodo.17902549
+- License: CC BY 4.0
+- Nested CSD peak lists are not redistributed.
+
+## Precursor Genome
+
+- Dataset DOI: https://doi.org/10.5281/zenodo.21285546
+- License: CC BY 4.0
+- Third-party structures embedded in the source archive retain their own terms.
+
+## XCA Ni-Co-Al
+
+- Paper DOI: https://doi.org/10.1038/s43588-021-00059-2
+- Repository: https://github.com/bnl/pub-Maffettone_2020_08
+- Repository license: BSD-3-Clause
+
+## Ta-Sn-O / CrystalShift data
+
+- Dataset DOI: https://doi.org/10.7298/kwe5-xc35
+- Companion paper DOI: https://doi.org/10.1038/s41524-025-01627-0
+- Dataset license: CC0 1.0
+
+## GALAXI validation and pristine cohorts
+
+- Preprint: https://arxiv.org/abs/2609.06908
+- Repository: https://github.com/Szymanski-Group/galaxi
+- Commit: ad46d82afdf5c42fde72759734f6d25582372109
+- Repository license: MIT
+- Candidate CIF provenance remains separate.
+
+## Mangolini ternary mixtures
+
+- Article DOI: https://doi.org/10.1016/j.dib.2021.107043
+- Dataset DOI: https://doi.org/10.17632/js2nzwf5md.5
+- Dataset license: CC BY 4.0
+
+## USGS Florida/Alabama XRD release
+
+- Dataset DOI: https://doi.org/10.5066/P133DRW5
+- Publisher: U.S. Geological Survey
+- License: CC0 1.0
+
+## Crystallography Open Database
+
+- URL: https://www.crystallography.net/cod/
+- License: CC0 1.0
+- The repository stores identifiers and derived scores, not the complete COD
+  collection.
+
+This notice records source metadata and does not replace institutional legal
+review for a particular reuse.

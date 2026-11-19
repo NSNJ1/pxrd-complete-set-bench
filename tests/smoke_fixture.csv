@@ -1,0 +1,12 @@
+source,query_id,cluster_id,phase_id,present,primary,baseline_score,method_score
+A,q1,A1,P1,1,1,1.0,1.0
+A,q1,A1,P2,1,0,0.8,0.9
+A,q1,A1,P3,0,0,0.7,0.8
+A,q2,A2,P1,1,1,1.0,1.0
+A,q2,A2,P3,0,0,0.8,0.8
+B,r1,B1,X1,1,1,0.9,0.9
+B,r1,B1,X2,1,0,0.7,0.8
+B,r1,B1,X3,0,0,0.8,0.7
+B,r2,B2,X1,1,0,0.8,0.8
+B,r2,B2,X2,1,0,0.6,0.7
+B,r2,B2,X3,1,1,0.7,0.6

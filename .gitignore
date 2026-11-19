@@ -1,0 +1,55 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+build/
+dist/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local secrets and machine-specific configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
+credentials/
+config.local.*
+
+# Raw or restricted source material
+raw_data/
+external_datasets/
+literature_search/
+papers/
+checkpoints/
+repositories/
+
+# Generated evaluations and archives
+reproduction/
+quick-evaluation.json
+reproduction.json
+*.zip
+*.tar
+*.tar.gz
+*.7z
+
+# Editor and OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary files
+*.tmp
+*.bak
+*.log

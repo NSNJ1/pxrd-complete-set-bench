@@ -1,0 +1,10 @@
+source,label,role,queries,clusters
+rare_earth_mof,rare-earth MOF,exploratory_positive,56,19
+precursor_genome,A-Lab precursor,exploratory_positive,416,400
+xca_nicoal,XCA films,negative_transfer,342,21
+tasno,Ta-Sn-O,saturated_negative_control,964,343
+galaxi_validation,GALAXI val.,source_calibration,57,52
+galaxi_pristine,GALAXI pristine,project_locked_test,61,60
+ariadnex_controlled,AriadneX,project_locked_external_test,25,25
+mangolini_ternary,mangolini_ternary,external_control,28,28
+usgs_fl_al_high_cardinality,usgs_fl_al_high_cardinality,external_control,65,22

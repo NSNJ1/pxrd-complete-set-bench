@@ -1,0 +1,137 @@
+{
+  "status": "source_registry_v0.4",
+  "access_date": "2026-11-18",
+  "core_benchmark": {
+    "artifact": "benchmark_complete_set_v02_source_stratified",
+    "combined_input": "benchmark_inputs_20261118/combined_sources.csv",
+    "combined_input_sha256": "70a7e11872f50a9cddbe83ca84614462edebf99a1089a8b512a525a049ba2c2b",
+    "source_count": 7,
+    "query_count": 1921,
+    "pair_count": 57991,
+    "sources": {
+      "ariadnex_controlled": {
+        "public_identifier": "10.26434/chemrxiv.15010300/v1",
+        "repository": "https://github.com/lrcfmd/AriadneX",
+        "repository_commit": "840820aa84ff6ce3654d255d091abe4eac624e3c",
+        "release": "example-data-v5",
+        "license": "MIT for repository code/data release; nested PCD/ICSD CIF terms retained",
+        "role": "project_locked_external_test",
+        "origin": "measured controlled mixtures",
+        "queries": 25,
+        "clusters": 25,
+        "candidates": 4,
+        "truth_phase_range": [1, 3],
+        "claim_boundary": "Frozen after discovery but before method scoring; retrospective, not prospective"
+      },
+      "rare_earth_mof": {
+        "public_identifier": "10.5281/zenodo.17902549",
+        "license": "CC BY 4.0",
+        "role": "exploratory_positive",
+        "origin": "measured natural two-phase samples",
+        "queries": 56,
+        "clusters": 19,
+        "candidate_count_median": 48,
+        "candidate_count_max": 170,
+        "truth_phase_range": [2, 2],
+        "claim_boundary": "Previously consumed; nested CSD peak-list terms require review before redistribution"
+      },
+      "precursor_genome": {
+        "public_identifier": "10.5281/zenodo.21285546",
+        "license": "CC BY 4.0",
+        "role": "exploratory_positive",
+        "origin": "measured autonomous-laboratory multiphase reactions",
+        "queries": 416,
+        "clusters": 400,
+        "candidate_count_median": 10,
+        "candidate_count_max": 41,
+        "truth_phase_range": [2, 4],
+        "claim_boundary": "Previously consumed; group cross-validation and fold-local priors"
+      },
+      "xca_nicoal": {
+        "public_identifier": "10.1038/s43588-021-00059-2",
+        "repository": "https://github.com/bnl/pub-Maffettone_2020_08",
+        "license": "BSD-3-Clause",
+        "role": "negative_transfer",
+        "origin": "measured textured films against ideal CIF profiles",
+        "queries": 342,
+        "clusters": 21,
+        "candidates": 20,
+        "truth_phase_range": [1, 3],
+        "claim_boundary": "Source-specific adapter; released XCA predictions are not a full rerun of the published XCA workflow"
+      },
+      "tasno": {
+        "public_identifier": "10.7298/kwe5-xc35",
+        "companion_identifier": "10.1038/s41524-025-01627-0",
+        "license": "CC0 1.0",
+        "role": "saturated_negative_control",
+        "origin": "measured high-throughput patterns",
+        "queries": 964,
+        "clusters": 343,
+        "candidate_families": 9,
+        "truth_phase_range": [1, 3],
+        "claim_boundary": "Near-saturated source; nested reference-structure provenance remains separately governed"
+      },
+      "galaxi_validation": {
+        "public_identifier": "10.48550/arXiv.2609.06908",
+        "repository": "https://github.com/Szymanski-Group/galaxi",
+        "repository_commit": "ad46d82afdf5c42fde72759734f6d25582372109",
+        "license": "MIT; candidate CIF provenance separately documented",
+        "role": "source_calibration",
+        "origin": "measured validation split",
+        "queries": 57,
+        "clusters": 52,
+        "candidates": 200,
+        "truth_phase_range": [1, 3],
+        "claim_boundary": "Source-author validation split used for calibration, not an independent external confirmation"
+      },
+      "galaxi_pristine": {
+        "public_identifier": "10.48550/arXiv.2609.06908",
+        "repository": "https://github.com/Szymanski-Group/galaxi",
+        "repository_commit": "ad46d82afdf5c42fde72759734f6d25582372109",
+        "license": "MIT; candidate CIF provenance separately documented",
+        "role": "project_locked_test",
+        "origin": "measured pristine test split",
+        "queries": 61,
+        "clusters": 60,
+        "candidates": 366,
+        "truth_phase_range": [1, 4],
+        "claim_boundary": "Published source test split; not prospective and not independent from GALAXI validation"
+      }
+    }
+  },
+  "external_controls": {
+    "mangolini_ternary": {
+      "data_doi": "10.17632/js2nzwf5md.5",
+      "article_doi": "10.1016/j.dib.2021.107043",
+      "license": "CC BY 4.0",
+      "source_version": 5,
+      "queries": 28,
+      "clusters": 28,
+      "candidates": 20,
+      "status": "saturated_control",
+      "claim_boundary": "Controlled measured mixtures; saturated external comparison; consumed"
+    },
+    "usgs_fl_al_high_cardinality": {
+      "doi": "10.5066/P133DRW5",
+      "sciencebase_item": "6723af10d34e4f57573e8c62",
+      "license": "CC0 1.0",
+      "queries": 65,
+      "clusters": 22,
+      "candidates": 28,
+      "truth_phase_range": [4, 12],
+      "status": "high_cardinality_control",
+      "claim_boundary": "Project-locked retrospective high-cardinality mineral cohort; consumed"
+    }
+  },
+  "shared_reference_source": {
+    "name": "Crystallography Open Database",
+    "url": "https://www.crystallography.net/cod/",
+    "license": "CC0 1.0",
+    "use": "open ordered-structure candidates for distractor and mineral-family libraries"
+  },
+  "project_licenses": {
+    "code": "MIT",
+    "project_created_derived_tables": "CC BY 4.0"
+  },
+  "release_boundary": "Source-level and project licenses are recorded. Raw third-party spectra and complete CIF collections are not redistributed. Nested database terms remain with the original records. This release is not a prospective validation or an independent third-party reproduction."
+}

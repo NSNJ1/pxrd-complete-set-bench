@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this benchmark, cite the software release and the associated manuscript when available."
+title: "PXRD-CompleteSetBench"
+type: software
+authors:
+  - family-names: "Fang"
+    given-names: "Tianxiang"
+    alias: "NSNJ1"
+    website: "https://github.com/NSNJ1"
+version: "0.4.1"
+date-released: "2026-11-19"
+repository-code: "https://github.com/NSNJ1/pxrd-complete-set-bench"
+url: "https://github.com/NSNJ1/pxrd-complete-set-bench"
+license: "MIT"
+keywords:
+  - powder X-ray diffraction
+  - phase identification
+  - complete phase set
+  - materials informatics
+  - benchmark
+  - reproducibility
+abstract: >-
+  A source-stratified benchmark for complete phase-set retrieval from measured
+  multiphase powder X-ray diffraction patterns under a fixed candidate library
+  and review budget.
