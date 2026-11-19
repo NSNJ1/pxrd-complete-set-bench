@@ -13,8 +13,10 @@ However, authors must check:
 - whether the manuscript contains a patentable claim;
 - the license terms of every third-party source.
 
-For double-anonymous review, use an anonymized artifact link or keep the
-repository private until review ends.
+The current target, npj Computational Materials, uses single-anonymized review.
+A public repository can therefore be cited in the submitted manuscript. If the
+target changes to a double-anonymous venue, create an anonymized mirror before
+submission.
 
 ## What is public in this repository
 
@@ -35,3 +37,7 @@ repository private until review ends.
 
 Use a versioned GitHub release and archive that release to a DOI provider such
 as Zenodo. Cite the exact version rather than the moving `main` branch.
+
+The repository's `CITATION.cff` is sufficient for the Zenodo GitHub integration.
+A separate `.zenodo.json` is not needed unless the release metadata later needs
+fields that the CFF cannot express.
