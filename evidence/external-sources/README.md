@@ -8,7 +8,7 @@ checks for the two external-source tests.
 
 - File: `OPXRD_EMPA_V2_RETROSPECTIVE_20261123_PUBLIC.zip`
 - SHA-256:
-  `31285bd4771b7543e04db80517cbb3d990ad81587e557327c401aa0f830aa0de`
+  `ae60d01089e96320b318b51bbf9c902a3eb0e8a77a2b4cc968cd589cfdcef5ab`
 - 200 measured two-phase queries
 - 4 COD candidate structures
 - External retrospective, not prospective

@@ -20,7 +20,7 @@
       "score_file": "results/opxrd_empa_external_scores_20261123.csv",
       "score_sha256": "dac148b64ae804ee2fbba25b56c5745c4ca1d7782af897a9e04aa5e5bec99b53",
       "evidence_archive": "evidence/external-sources/OPXRD_EMPA_V2_RETROSPECTIVE_20261123_PUBLIC.zip",
-      "evidence_sha256": "31285bd4771b7543e04db80517cbb3d990ad81587e557327c401aa0f830aa0de",
+      "evidence_sha256": "ae60d01089e96320b318b51bbf9c902a3eb0e8a77a2b4cc968cd589cfdcef5ab",
       "reproduction": "opxrd_empa_reproduction_exact_match"
     },
     "realbind_mini_single_phase": {

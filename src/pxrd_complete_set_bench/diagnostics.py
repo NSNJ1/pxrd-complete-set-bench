@@ -688,8 +688,3 @@ def run_diagnostics(
         validate="one_to_one",
     )
     return report, query_output, query_risk
-
-
-def diagnose(*args, **kwargs) -> dict:
-    """Compatibility wrapper returning the aggregate report."""
-    return run_diagnostics(*args, **kwargs)[0]

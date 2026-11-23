@@ -68,16 +68,8 @@ def minimum_detectable_difference(
     }
 
 
-def audit_source(
-    group: pd.DataFrame,
-    permutations: int,
-    seed: int,
-) -> dict:
-    sources = sorted(group["source"].unique())
-    if len(sources) != 1:
-        raise ValueError("audit_source expected one source")
+def load_queries(group: pd.DataFrame) -> list[dict]:
     queries = []
-    phase_to_index = {}
     for query_id, local in group.groupby("query_id", sort=True):
         phases = sorted(local["phase_id"].astype(str))
         local = local.set_index("phase_id").loc[phases]
@@ -93,9 +85,10 @@ def audit_source(
                 "method_score": local["method_score"].to_numpy(float),
             }
         )
-        for phase in phases:
-            phase_to_index[phase] = phase_to_index.get(phase, 0)
+    return queries
 
+
+def frequency_prior_scores(queries: list[dict]) -> list[np.ndarray]:
     phase_counts = Counter()
     for query in queries:
         phase_counts.update(query["positives"])
@@ -107,49 +100,52 @@ def audit_source(
             count = phase_counts[phase] - int(phase in query["positives"])
             scores.append((count + 1.0) / (query_count - 1.0 + 2.0))
         prior_scores.append(np.asarray(scores))
+    return prior_scores
 
+
+def score_arrays(
+    queries: list[dict],
+    prior_scores: list[np.ndarray],
+) -> dict[str, list[np.ndarray]]:
+    return {
+        "baseline_score": [query["baseline_score"] for query in queries],
+        "method_score": [query["method_score"] for query in queries],
+        "frequency_prior": prior_scores,
+    }
+
+
+def all_present_outcomes(
+    queries: list[dict],
+    scores: dict[str, list[np.ndarray]],
+) -> dict[str, np.ndarray]:
+    return {
+        method: np.asarray(
+            [
+                all_present(
+                    query["phases"],
+                    local_scores,
+                    query["positives"],
+                    BUDGET,
+                )
+                for query, local_scores in zip(
+                    queries,
+                    method_scores,
+                    strict=True,
+                )
+            ]
+        )
+        for method, method_scores in scores.items()
+    }
+
+
+def permutation_null(
+    queries: list[dict],
+    scores: dict[str, list[np.ndarray]],
+    permutations: int,
+    seed: int,
+) -> dict[str, np.ndarray]:
     rng = np.random.default_rng(seed)
-    null_rates = {
-        "baseline_score": np.empty(permutations),
-        "method_score": np.empty(permutations),
-        "frequency_prior": np.empty(permutations),
-    }
-    actual_success = {
-        "baseline_score": np.asarray(
-            [
-                all_present(
-                    query["phases"],
-                    query["baseline_score"],
-                    query["positives"],
-                    BUDGET,
-                )
-                for query in queries
-            ]
-        ),
-        "method_score": np.asarray(
-            [
-                all_present(
-                    query["phases"],
-                    query["method_score"],
-                    query["positives"],
-                    BUDGET,
-                )
-                for query in queries
-            ]
-        ),
-        "frequency_prior": np.asarray(
-            [
-                all_present(
-                    query["phases"],
-                    scores,
-                    query["positives"],
-                    BUDGET,
-                )
-                for query, scores in zip(queries, prior_scores, strict=True)
-            ]
-        ),
-    }
-
+    null_rates = {method: np.empty(permutations) for method in scores}
     for repeat in range(permutations):
         permuted = []
         for query in queries:
@@ -163,30 +159,39 @@ def audit_source(
             permuted.append(positives)
         for method, method_null in null_rates.items():
             values = []
-            for query, scores, positives in zip(
+            for query, phase_scores, positives in zip(
                 queries,
-                actual_scores_for(queries, prior_scores, method),
+                scores[method],
                 permuted,
                 strict=True,
             ):
                 values.append(
                     all_present(
                         query["phases"],
-                        scores,
+                        phase_scores,
                         positives,
                         BUDGET,
                     )
                 )
             method_null[repeat] = float(np.mean(values))
+    return null_rates
 
+
+def phase_ap(
+    queries: list[dict],
+    scores: dict[str, list[np.ndarray]],
+) -> tuple[dict, dict[str, np.ndarray]]:
     method_ap = {}
     query_ap = {}
-    for method in ("baseline_score", "method_score", "frequency_prior"):
-        scores = actual_scores_for(queries, prior_scores, method)
+    for method, method_scores in scores.items():
         paired_qap = np.asarray(
             [
                 query_average_precision(query["labels"], local_scores)
-                for query, local_scores in zip(queries, scores, strict=True)
+                for query, local_scores in zip(
+                    queries,
+                    method_scores,
+                    strict=True,
+                )
             ]
         )
         query_ap[method] = paired_qap
@@ -194,12 +199,19 @@ def audit_source(
             "micro": float(
                 average_precision_score(
                     np.concatenate([query["labels"] for query in queries]),
-                    np.concatenate(scores),
+                    np.concatenate(method_scores),
                 )
             ),
             "macro": float(paired_qap.mean()),
         }
+    return method_ap, query_ap
 
+
+def power_comparisons(
+    queries: list[dict],
+    actual_success: dict[str, np.ndarray],
+    query_ap: dict[str, np.ndarray],
+) -> dict:
     clusters = np.asarray([query["cluster_id"] for query in queries])
     comparisons = {}
     for left, right in (
@@ -219,11 +231,18 @@ def audit_source(
                 clusters,
             ),
         }
+    return comparisons
 
-    null_summary = {}
+
+def summarize_nulls(
+    null_rates: dict[str, np.ndarray],
+    actual_success: dict[str, np.ndarray],
+    permutations: int,
+) -> dict:
+    summary = {}
     for method, values in null_rates.items():
         actual = float(actual_success[method].mean())
-        null_summary[method] = {
+        summary[method] = {
             "actual_all_present_at_3": actual,
             "null_mean": float(values.mean()),
             "null_ci95": [
@@ -234,27 +253,40 @@ def audit_source(
                 (1 + int(np.sum(values >= actual))) / (permutations + 1)
             ),
         }
+    return summary
+
+
+def audit_source(
+    group: pd.DataFrame,
+    permutations: int,
+    seed: int,
+) -> dict:
+    sources = sorted(group["source"].unique())
+    if len(sources) != 1:
+        raise ValueError("audit_source expected one source")
+    queries = load_queries(group)
+    prior_scores = frequency_prior_scores(queries)
+    scores = score_arrays(queries, prior_scores)
+    actual_success = all_present_outcomes(queries, scores)
+    null_rates = permutation_null(queries, scores, permutations, seed)
+    method_ap, query_ap = phase_ap(queries, scores)
+    comparisons = power_comparisons(queries, actual_success, query_ap)
+
     return {
-        "queries": query_count,
+        "queries": len(queries),
         "clusters": int(group["cluster_id"].nunique()),
         "phases": len(group["phase_id"].unique()),
         "all_present_at_3": {
             method: float(values.mean()) for method, values in actual_success.items()
         },
         "phase_ap": method_ap,
-        "label_permutation": null_summary,
+        "label_permutation": summarize_nulls(
+            null_rates,
+            actual_success,
+            permutations,
+        ),
         "power": comparisons,
     }
-
-
-def actual_scores_for(
-    queries: list[dict],
-    prior_scores: list[np.ndarray],
-    method: str,
-) -> list[np.ndarray]:
-    if method == "frequency_prior":
-        return prior_scores
-    return [query[method] for query in queries]
 
 
 def main() -> int:

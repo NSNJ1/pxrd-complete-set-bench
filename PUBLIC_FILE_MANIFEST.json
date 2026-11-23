@@ -81,7 +81,7 @@
     {
       "path": "data/external_source_registry.json",
       "size": 2565,
-      "sha256": "dc24ee46164062ae456e16931401d3c8418868cbe97a743067cf7967d14a55cb"
+      "sha256": "204c9920fa82e4c8cb94bdfaa4f9718486a73efb25c1d3090e4b9d3e13e4da49"
     },
     {
       "path": "data/query_phase_scores.csv",
@@ -190,13 +190,13 @@
     },
     {
       "path": "evidence/external-sources/OPXRD_EMPA_V2_RETROSPECTIVE_20261123_PUBLIC.zip",
-      "size": 3876817,
-      "sha256": "31285bd4771b7543e04db80517cbb3d990ad81587e557327c401aa0f830aa0de"
+      "size": 3876698,
+      "sha256": "ae60d01089e96320b318b51bbf9c902a3eb0e8a77a2b4cc968cd589cfdcef5ab"
     },
     {
       "path": "evidence/external-sources/README.md",
       "size": 926,
-      "sha256": "27b96e50cc3ebca68e9f76440a8f61137c0d4e17ee2e6e2d7c36876ec5f52e0f"
+      "sha256": "bac7517efb928cf16dc5d63e77b7cc6f22e083dd54f9b89cb45a4f41748ccf8e"
     },
     {
       "path": "evidence/external-sources/REALBIND_MINI_EXTERNAL_20261123_PUBLIC.zip",
@@ -380,8 +380,8 @@
     },
     {
       "path": "scripts/audit_null_and_power.py",
-      "size": 10155,
-      "sha256": "5ec366356d912975922c4d4fa8f3792a5c916d6abfd9d9ff7a9b182be0c97596"
+      "size": 10910,
+      "sha256": "6a1d862db0abc4beb7431ae3c8ae0d84abd8b70674c3fa44d5bab4cf7f79ace5"
     },
     {
       "path": "scripts/audit_public_tree.py",
@@ -390,8 +390,8 @@
     },
     {
       "path": "scripts/audit_source_overlap.py",
-      "size": 6091,
-      "sha256": "e72e78b6cb453bbb873e4e3cbb9ae607ba85c010bcb24a87b0e7d488dbc321bf"
+      "size": 5952,
+      "sha256": "fde3de478754187737b76bfbb7b61e572812d2b1c299a66b93edccbdadfcc1f9"
     },
     {
       "path": "scripts/build_external_panel_result.py",
@@ -455,8 +455,8 @@
     },
     {
       "path": "src/pxrd_complete_set_bench/diagnostics.py",
-      "size": 25619,
-      "sha256": "ce9fee87d1ad55be580ecedc7988697011a8fa69add87d9f983d71be62adeec3"
+      "size": 25467,
+      "sha256": "c451742c17bf7da03e68304fcaa96257946955d84ccd62038a0f5f1568ce159f"
     },
     {
       "path": "src/pxrd_complete_set_bench/evaluate.py",

@@ -164,7 +164,6 @@ def main() -> int:
         }
         missing_elements[source] = sum(value is None for value in parsed.values())
 
-    positive_sets = {}
     repeated = {}
     for source in sources:
         local = table.loc[table["source"].eq(source)]
@@ -175,9 +174,6 @@ def main() -> int:
             .reset_index()
         )
         signatures = Counter(sets["phase_id"])
-        positive_sets[source] = {
-            signature: count for signature, count in signatures.items()
-        }
         repeated[source] = {
             "queries": len(sets),
             "unique_positive_sets": len(signatures),
