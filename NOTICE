@@ -1,8 +1,9 @@
 # Third-Party Notices
 
 This repository contains project-created derived score tables, labels, aggregate
-metrics, documentation, and figures. It does not redistribute the original raw
-spectra or complete third-party CIF collections.
+metrics, documentation and figures. The seven-source core does not redistribute
+raw spectra or complete CIF collections. The bounded external-source evidence
+packages include only the selected records permitted by their source licences.
 
 Source-level terms are recorded below. Nested crystallographic database terms
 remain with the original database records.
@@ -65,6 +66,19 @@ remain with the original database records.
 - The benchmark stores candidate scores and a sanitized execution archive.
   BGMN binaries and the upstream repository are not redistributed here.
 
+## XMatcher Desktop
+
+- Release DOI: https://doi.org/10.6084/m9.figshare.32812985.v7
+- License: CC BY 4.0
+- The official application and 102,322-entry database are not redistributed.
+
+## XDecomposer
+
+- Repository: https://github.com/Licht0812/XDecomposer
+- Commit: 3aec2505fa7de0f0f1e8b8f01f8b1f4bc8b96bf1
+- License: MIT
+- Trained checkpoints and the upstream source are not redistributed.
+
 ## Mangolini ternary mixtures
 
 - Article DOI: https://doi.org/10.1016/j.dib.2021.107043
@@ -76,6 +90,22 @@ remain with the original database records.
 - Dataset DOI: https://doi.org/10.5066/P133DRW5
 - Publisher: U.S. Geological Survey
 - License: CC0 1.0
+
+## opXRD
+
+- Dataset DOI: https://doi.org/10.5281/zenodo.15298026
+- License: CC BY 4.0
+- The bounded EMPA evidence package redistributes 200 selected measured
+  spectra with derived labels, masks and hashes.
+
+## RealBind
+
+- Deposit DOI: https://doi.org/10.5281/zenodo.23140154
+- Release: 1.1.3
+- Mini-data license: CC BY 4.0
+- Code license: MIT
+- The bounded boundary package redistributes the mini query/candidate arrays
+  and official expected values with attribution.
 
 ## Crystallography Open Database
 

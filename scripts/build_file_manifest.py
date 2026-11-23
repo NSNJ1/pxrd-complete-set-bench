@@ -50,6 +50,7 @@ def main() -> int:
     OUTPUT.write_text(
         json.dumps(payload, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
+        newline="\n",
     )
     print(f"wrote {OUTPUT} with {len(entries)} entries")
     return 0

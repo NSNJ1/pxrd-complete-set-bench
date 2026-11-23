@@ -108,7 +108,7 @@ def main() -> int:
     text = json.dumps(report, ensure_ascii=False, indent=2) + "\n"
     if args.output is not None:
         args.output.parent.mkdir(parents=True, exist_ok=True)
-        args.output.write_text(text, encoding="utf-8")
+        args.output.write_text(text, encoding="utf-8", newline="\n")
     print(text, end="")
     return 0 if all(checks.values()) else 1
 

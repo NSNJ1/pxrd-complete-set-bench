@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pxrd-complete-set-bench"
-version = "0.5.0"
+version = "0.6.0"
 description = "Benchmark for complete phase-set retrieval and review in measured multiphase PXRD"
 readme = "README.md"
 requires-python = ">=3.12,<3.13"
@@ -29,6 +29,11 @@ dependencies = [
   "pandas==3.1.1",
   "scipy==1.18.1",
   "scikit-learn==1.9.1",
+]
+
+[project.optional-dependencies]
+xmatcher = [
+  "pymatgen==2026.5.4",
 ]
 
 [project.scripts]

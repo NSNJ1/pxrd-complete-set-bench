@@ -26,10 +26,10 @@ EXPECTED_TRUTH_SHA256 = (
     "70a7e11872f50a9cddbe83ca84614462edebf99a1089a8b512a525a049ba2c2b"
 )
 EXPECTED_PREDICTIONS_SHA256 = (
-    "94826151d17b2ce3776329025e363e1734a142c0442269aaf75d50e4ff0162e1"
+    "5df4475a8709fd6242a4cdbada50ec596ee35b796c323228243c957bc593e3d4"
 )
 EXPECTED_RESULT_SHA256 = (
-    "b39ba2b54526dbfee90863f5e25023e49f29c8c483adcc470a5d76015b14e4b5"
+    "85da8424d4b69a11f6d2fa922362c84b26350180df68b522db85ec991b46eb44"
 )
 
 
@@ -91,7 +91,7 @@ def main() -> int:
         "result_sha256": actual_digest == EXPECTED_RESULT_SHA256,
         "expected_result_sha256": expected_digest == EXPECTED_RESULT_SHA256,
         "result_matches_expected": actual_digest == expected_digest,
-        "methods": len(actual["methods"]) == 6,
+        "methods": len(actual["methods"]) == 8,
         "bootstrap": actual["contract"]["bootstrap_repeats"] == 10_000,
     }
     report = {
@@ -110,7 +110,7 @@ def main() -> int:
     text = json.dumps(report, ensure_ascii=False, indent=2) + "\n"
     if args.output:
         args.output.parent.mkdir(parents=True, exist_ok=True)
-        args.output.write_text(text, encoding="utf-8")
+        args.output.write_text(text, encoding="utf-8", newline="\n")
     print(text, end="")
     return 0 if all(checks.values()) else 1
 

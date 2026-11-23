@@ -1,0 +1,13 @@
+{
+  "status": "realbind_mini_reproduction_exact_match",
+  "evaluation_sha256": "60efe10c96f080952cd767bf45eaaa19e4aed7ddc1a9162e19389809852489a1",
+  "reproduced_evaluation_sha256": "60efe10c96f080952cd767bf45eaaa19e4aed7ddc1a9162e19389809852489a1",
+  "ranks_sha256": "9c3ad2116017801793e0d5b8648ec7f789da5f2a6e3991331ef792eaf543ee1f",
+  "reproduced_ranks_sha256": "9c3ad2116017801793e0d5b8648ec7f789da5f2a6e3991331ef792eaf543ee1f",
+  "checks": {
+    "source": true,
+    "protocol": true,
+    "evaluation_exact_match": true,
+    "ranks_exact_match": true
+  }
+}

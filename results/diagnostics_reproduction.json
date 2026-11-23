@@ -1,0 +1,17 @@
+{
+  "status": "diagnostics_reproduction_exact_match",
+  "input_sha256": "70a7e11872f50a9cddbe83ca84614462edebf99a1089a8b512a525a049ba2c2b",
+  "query_records_sha256": "7c5a2460e23c1e98328cf2d9b139abd96bb91b74d9442a21c723b3dc07c1d29b",
+  "actual_canonical_sha256": "db1066bed3931ff668b7b24f4ecca6b238f3a897458eab3ce1d3fd09c0fe7598",
+  "expected_canonical_sha256": "db1066bed3931ff668b7b24f4ecca6b238f3a897458eab3ce1d3fd09c0fe7598",
+  "elapsed_seconds": 234.83835979999276,
+  "checks": {
+    "input_sha256": true,
+    "query_sha256": true,
+    "result_sha256": true,
+    "expected_result_sha256": true,
+    "result_matches_expected": true,
+    "sources": true,
+    "bootstrap": true
+  }
+}

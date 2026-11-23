@@ -1,5 +1,5 @@
 {
-  "status": "source_registry_v0.5",
+  "status": "source_registry_v0.6",
   "access_date": "2026-11-18",
   "core_benchmark": {
     "artifact": "benchmark_complete_set_v02_source_stratified",
@@ -128,14 +128,16 @@
     "queries": 25,
     "candidates": 4,
     "prediction_file": "data/ariadnex_external_method_predictions.csv",
-    "prediction_rows": 600,
+    "prediction_rows": 800,
     "methods": [
       "deterministic_random",
       "global_sqrt_pearson",
       "window_sqrt_pearson",
       "anchored_set_strict",
       "crystalshift",
-      "xrd_autoanalyzer"
+      "xrd_autoanalyzer",
+      "xmatcher_automix",
+      "xdecomposer"
     ],
     "independent_external_methods": [
       {
@@ -153,7 +155,31 @@
         "evidence_sha256": "6aa6ea4322af8f42ea43d4a29743eb684441adfa00a5b577005093bb8524a9ee"
       }
     ],
-    "claim_boundary": "Retrospective method coverage on one measured control source; not prospective validation or universal state of the art"
+    "local_external_methods": [
+      {
+        "id": "xmatcher_automix",
+        "release": "XMatcher Desktop 1.3.0",
+        "doi": "10.6084/m9.figshare.32812985.v7",
+        "license": "CC BY 4.0",
+        "evidence_sha256": "e6e3f3792d630d3152d2a9167e5c36e0bea060cd7ee4f7bd45d8f5ba7fadfd5b"
+      },
+      {
+        "id": "xdecomposer",
+        "repository": "https://github.com/Licht0812/XDecomposer",
+        "commit": "3aec2505fa7de0f0f1e8b8f01f8b1f4bc8b96bf1",
+        "license": "MIT",
+        "evidence_sha256": "c84b3ee8d8eb1d0ea4c6c638548d7001315215db5a3d0256131d54e101a471fa"
+      }
+    ],
+    "claim_boundary": "Retrospective eight-method coverage on one measured control source; not prospective validation or universal state of the art"
+  },
+  "external_source_validation": {
+    "registry": "data/external_source_registry.json",
+    "cohorts": [
+      "opxrd_empa_multiphase",
+      "realbind_mini_single_phase"
+    ],
+    "claim_boundary": "Both cohorts are external retrospective evidence; neither is prospective validation and their scores are not pooled."
   },
   "shared_reference_source": {
     "name": "Crystallography Open Database",

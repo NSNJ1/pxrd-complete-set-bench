@@ -1,0 +1,299 @@
+{
+  "status": "opxrd_empa_external_evaluated",
+  "claim_boundary": "External retrospective evaluation on an EMPA opXRD subset. Not prospective validation and not a claim of universal SOTA.",
+  "source": {
+    "doi": "10.5281/zenodo.15298026",
+    "md5": "e8e9800a8ecd2b7f01a764fdf77d5c53",
+    "protocol_sha256": "11b8f15c2a1e1e31d1bd81579d43f438770a4b5e6e09096df1b130202deb627a"
+  },
+  "contract": {
+    "queries": 200,
+    "clusters": 200,
+    "candidates": 4,
+    "candidate_ids": [
+      "MAPbI3_140",
+      "PbBr2_62",
+      "PbCl2_62",
+      "PbI2_164"
+    ],
+    "budgets": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "review_budget": 3,
+    "bootstrap_repeats": 10000,
+    "seed": 20261123
+  },
+  "eligibility": {
+    "empa_records": 770,
+    "eligible_before_cap": 270,
+    "selected_queries": 200,
+    "exclusion_reason_counts": {
+      "identity_outside_frozen_library": 498,
+      "incomplete_formula_or_spacegroup": 456,
+      "phase_count_0": 2,
+      "phase_parse": 2
+    }
+  },
+  "methods": {
+    "deterministic_random": {
+      "phase_ap_micro": 0.5203692998010236,
+      "phase_ap_macro": 0.68875,
+      "mean_minimum_k": 3.265,
+      "all_present_at_1": 0.0,
+      "all_present_at_2": 0.17,
+      "all_present_at_3": 0.565,
+      "all_present_at_4": 1.0,
+      "tie_order_bounds": {
+        "2": {
+          "min": 0.17,
+          "max": 0.17
+        },
+        "3": {
+          "min": 0.565,
+          "max": 0.565
+        }
+      },
+      "bootstrap_ci95": {
+        "phase_ap_micro": [
+          0.48946124641838445,
+          0.5604732272117394
+        ],
+        "all_present_at_2": [
+          0.12,
+          0.225
+        ],
+        "all_present_at_3": [
+          0.495,
+          0.63
+        ]
+      }
+    },
+    "global_sqrt_pearson": {
+      "phase_ap_micro": 0.5542629052146201,
+      "phase_ap_macro": 0.65625,
+      "mean_minimum_k": 3.14,
+      "all_present_at_1": 0.0,
+      "all_present_at_2": 0.25,
+      "all_present_at_3": 0.61,
+      "all_present_at_4": 1.0,
+      "tie_order_bounds": {
+        "2": {
+          "min": 0.25,
+          "max": 0.25
+        },
+        "3": {
+          "min": 0.61,
+          "max": 0.61
+        }
+      },
+      "bootstrap_ci95": {
+        "phase_ap_micro": [
+          0.5162567848874087,
+          0.5942028688653873
+        ],
+        "all_present_at_2": [
+          0.19,
+          0.31
+        ],
+        "all_present_at_3": [
+          0.54,
+          0.675
+        ]
+      }
+    },
+    "window_sqrt_pearson": {
+      "phase_ap_micro": 0.7435934626802968,
+      "phase_ap_macro": 0.8025,
+      "mean_minimum_k": 3.015,
+      "all_present_at_1": 0.0,
+      "all_present_at_2": 0.355,
+      "all_present_at_3": 0.63,
+      "all_present_at_4": 1.0,
+      "tie_order_bounds": {
+        "2": {
+          "min": 0.355,
+          "max": 0.355
+        },
+        "3": {
+          "min": 0.63,
+          "max": 0.63
+        }
+      },
+      "bootstrap_ci95": {
+        "phase_ap_micro": [
+          0.7087209354366091,
+          0.777779565421726
+        ],
+        "all_present_at_2": [
+          0.285,
+          0.42
+        ],
+        "all_present_at_3": [
+          0.56,
+          0.695
+        ]
+      }
+    },
+    "anchored_set_strict": {
+      "phase_ap_micro": 0.45278674417580617,
+      "phase_ap_macro": 0.6183333333333333,
+      "mean_minimum_k": 3.14,
+      "all_present_at_1": 0.0,
+      "all_present_at_2": 0.125,
+      "all_present_at_3": 0.735,
+      "all_present_at_4": 1.0,
+      "tie_order_bounds": {
+        "2": {
+          "min": 0.125,
+          "max": 0.26
+        },
+        "3": {
+          "min": 0.245,
+          "max": 0.96
+        }
+      },
+      "bootstrap_ci95": {
+        "phase_ap_micro": [
+          0.43391046045639503,
+          0.4780483907202049
+        ],
+        "all_present_at_2": [
+          0.08,
+          0.175
+        ],
+        "all_present_at_3": [
+          0.675,
+          0.795
+        ]
+      }
+    }
+  },
+  "pairwise_paired_deltas": {
+    "anchored_set_strict_minus_global_sqrt_pearson": {
+      "phase_ap_micro": {
+        "estimate": -0.1014761610388139,
+        "ci95": [
+          -0.12460065169972585,
+          -0.0753503309282619
+        ],
+        "p_value": 0.00019998000199980003,
+        "p_value_holm": 0.0007999200079992001
+      },
+      "all_present_at_2": {
+        "estimate": -0.125,
+        "ci95": [
+          -0.17500000000000002,
+          -0.07500000000000001
+        ],
+        "p_value": 0.00019998000199980003,
+        "p_value_holm": 0.0007999200079992001
+      },
+      "all_present_at_3": {
+        "estimate": 0.125,
+        "ci95": [
+          0.020000000000000018,
+          0.22512499999999827
+        ],
+        "p_value": 0.0187981201879812,
+        "p_value_holm": 0.0375962403759624
+      }
+    },
+    "anchored_set_strict_minus_window_sqrt_pearson": {
+      "phase_ap_micro": {
+        "estimate": -0.29080671850449064,
+        "ci95": [
+          -0.32937112274080516,
+          -0.24968932101072033
+        ],
+        "p_value": 0.00019998000199980003,
+        "p_value_holm": 0.0007999200079992001
+      },
+      "all_present_at_2": {
+        "estimate": -0.22999999999999998,
+        "ci95": [
+          -0.30000000000000004,
+          -0.15999999999999998
+        ],
+        "p_value": 0.00019998000199980003,
+        "p_value_holm": 0.0007999200079992001
+      },
+      "all_present_at_3": {
+        "estimate": 0.10499999999999998,
+        "ci95": [
+          0.025000000000000022,
+          0.18499999999999994
+        ],
+        "p_value": 0.012198780121987801,
+        "p_value_holm": 0.0365963403659634
+      }
+    },
+    "anchored_set_strict_minus_deterministic_random": {
+      "phase_ap_micro": {
+        "estimate": -0.06758255562521748,
+        "ci95": [
+          -0.11089883396644751,
+          -0.028385823680592878
+        ],
+        "p_value": 0.0005999400059994001,
+        "p_value_holm": 0.0007999200079992001
+      },
+      "all_present_at_2": {
+        "estimate": -0.04500000000000001,
+        "ci95": [
+          -0.11499999999999999,
+          0.020000000000000018
+        ],
+        "p_value": 0.22597740225977403,
+        "p_value_holm": 0.22597740225977403
+      },
+      "all_present_at_3": {
+        "estimate": 0.17000000000000004,
+        "ci95": [
+          0.08000000000000007,
+          0.26
+        ],
+        "p_value": 0.00039996000399960006,
+        "p_value_holm": 0.0015998400159984002
+      }
+    },
+    "global_sqrt_pearson_minus_window_sqrt_pearson": {
+      "phase_ap_micro": {
+        "estimate": -0.18933055746567673,
+        "ci95": [
+          -0.2391476987097337,
+          -0.1400891850142858
+        ],
+        "p_value": 0.00019998000199980003,
+        "p_value_holm": 0.0007999200079992001
+      },
+      "all_present_at_2": {
+        "estimate": -0.10499999999999998,
+        "ci95": [
+          -0.19,
+          -0.01999999999999999
+        ],
+        "p_value": 0.0173982601739826,
+        "p_value_holm": 0.0347965203479652
+      },
+      "all_present_at_3": {
+        "estimate": -0.020000000000000018,
+        "ci95": [
+          -0.11499999999999999,
+          0.07000000000000006
+        ],
+        "p_value": 0.7145285471452855,
+        "p_value_holm": 0.7145285471452855
+      }
+    }
+  },
+  "query_scope": {
+    "source_archive_sha256": "38b62bcddf976debb3e41d2597d3f14ac6c1f1c8a33565a84a98ef38ba3b6044",
+    "dataset_manifest_sha256": "547edc777b29606fa544f6ac866f34d6462e8f4d968528632483940a37bb8a29",
+    "queries_sha256": "e26f9c144edfddb05ecdd8632537445cece60449fca8e4127cf0669a321e163d",
+    "pairs_sha256": "0b585e9868c868211e1e0d344c2c1527a4a458062fa945e2b3cf7546556f075d",
+    "selected_query_ids_sha256": "0abe89fa570f7ca9d09d323a456b6fb55bdb5def3785e3c96402b2bb2a39f3b9"
+  }
+}

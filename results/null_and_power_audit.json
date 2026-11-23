@@ -1,0 +1,733 @@
+{
+  "status": "null_and_power_audit",
+  "claim_boundary": "Within-query label permutations preserve the number of true phases but destroy phase identity. Power values are design diagnostics, not post-hoc proof that an observed effect is real.",
+  "contract": {
+    "review_budget": 3,
+    "permutations": 2000,
+    "seed": 20261118,
+    "cluster_unit": "cluster_id"
+  },
+  "sources": {
+    "ariadnex_controlled": {
+      "queries": 25,
+      "clusters": 25,
+      "phases": 4,
+      "all_present_at_3": {
+        "baseline_score": 0.88,
+        "method_score": 0.92,
+        "frequency_prior": 0.6
+      },
+      "phase_ap": {
+        "baseline_score": {
+          "micro": 0.9462129471133014,
+          "macro": 0.9833333333333333
+        },
+        "method_score": {
+          "micro": 0.9618912538928059,
+          "macro": 0.9733333333333333
+        },
+        "frequency_prior": {
+          "micro": 0.6655172413793103,
+          "macro": 0.7988888888888889
+        }
+      },
+      "label_permutation": {
+        "baseline_score": {
+          "actual_all_present_at_3": 0.88,
+          "null_mean": 0.4207600000000001,
+          "null_ci95": [
+            0.24,
+            0.6
+          ],
+          "empirical_one_sided_p": 0.0004997501249375312
+        },
+        "method_score": {
+          "actual_all_present_at_3": 0.92,
+          "null_mean": 0.41820000000000007,
+          "null_ci95": [
+            0.24,
+            0.6
+          ],
+          "empirical_one_sided_p": 0.0004997501249375312
+        },
+        "frequency_prior": {
+          "actual_all_present_at_3": 0.6,
+          "null_mean": 0.41956000000000004,
+          "null_ci95": [
+            0.24,
+            0.6
+          ],
+          "empirical_one_sided_p": 0.046476761619190406
+        }
+      },
+      "power": {
+        "method_score_minus_baseline_score": {
+          "all_present_at_3": {
+            "observed_difference": 0.04,
+            "cluster_variance": 0.04000000000000001,
+            "clusters": 25,
+            "minimum_detectable_difference_80pct": 0.11206340872451874,
+            "clusters_for_observed_difference_80pct": 197
+          },
+          "query_ap": {
+            "observed_difference": -0.01,
+            "cluster_variance": 0.0025000000000000005,
+            "clusters": 25,
+            "minimum_detectable_difference_80pct": 0.028015852181129685,
+            "clusters_for_observed_difference_80pct": 197
+          }
+        },
+        "method_score_minus_frequency_prior": {
+          "all_present_at_3": {
+            "observed_difference": 0.32,
+            "cluster_variance": 0.22666666666666666,
+            "clusters": 25,
+            "minimum_detectable_difference_80pct": 0.2667642709548983,
+            "clusters_for_observed_difference_80pct": 18
+          },
+          "query_ap": {
+            "observed_difference": 0.1744444444444445,
+            "cluster_variance": 0.03102623456790124,
+            "clusters": 25,
+            "minimum_detectable_difference_80pct": 0.09869573116060515,
+            "clusters_for_observed_difference_80pct": 9
+          }
+        },
+        "baseline_score_minus_frequency_prior": {
+          "all_present_at_3": {
+            "observed_difference": 0.28,
+            "cluster_variance": 0.21,
+            "clusters": 25,
+            "minimum_detectable_difference_80pct": 0.2567695265574409,
+            "clusters_for_observed_difference_80pct": 22
+          },
+          "query_ap": {
+            "observed_difference": 0.1844444444444445,
+            "cluster_variance": 0.03683641975308642,
+            "clusters": 25,
+            "minimum_detectable_difference_80pct": 0.10754062088085162,
+            "clusters_for_observed_difference_80pct": 9
+          }
+        }
+      }
+    },
+    "galaxi_pristine": {
+      "queries": 61,
+      "clusters": 60,
+      "phases": 363,
+      "all_present_at_3": {
+        "baseline_score": 0.26229508196721313,
+        "method_score": 0.2459016393442623,
+        "frequency_prior": 0.0
+      },
+      "phase_ap": {
+        "baseline_score": {
+          "micro": 0.22398903752910765,
+          "macro": 0.5187799983945349
+        },
+        "method_score": {
+          "micro": 0.2703756531912771,
+          "macro": 0.5220009588505906
+        },
+        "frequency_prior": {
+          "micro": 0.13444538809629836,
+          "macro": 0.16703037020659978
+        }
+      },
+      "label_permutation": {
+        "baseline_score": {
+          "actual_all_present_at_3": 0.26229508196721313,
+          "null_mean": 0.0019262295081967213,
+          "null_ci95": [
+            0.0,
+            0.01639344262295082
+          ],
+          "empirical_one_sided_p": 0.0004997501249375312
+        },
+        "method_score": {
+          "actual_all_present_at_3": 0.2459016393442623,
+          "null_mean": 0.0018852459016393444,
+          "null_ci95": [
+            0.0,
+            0.01639344262295082
+          ],
+          "empirical_one_sided_p": 0.0004997501249375312
+        },
+        "frequency_prior": {
+          "actual_all_present_at_3": 0.0,
+          "null_mean": 0.001737704918032787,
+          "null_ci95": [
+            0.0,
+            0.01639344262295082
+          ],
+          "empirical_one_sided_p": 1.0
+        }
+      },
+      "power": {
+        "method_score_minus_baseline_score": {
+          "all_present_at_3": {
+            "observed_difference": -0.016666666666666666,
+            "cluster_variance": 0.11836158192090394,
+            "clusters": 60,
+            "minimum_detectable_difference_80pct": 0.12443243291471363,
+            "clusters_for_observed_difference_80pct": 3345
+          },
+          "query_ap": {
+            "observed_difference": 0.004621565516504057,
+            "cluster_variance": 0.01431575250151444,
+            "clusters": 60,
+            "minimum_detectable_difference_80pct": 0.04327482326000765,
+            "clusters_for_observed_difference_80pct": 5261
+          }
+        },
+        "method_score_minus_frequency_prior": {
+          "all_present_at_3": {
+            "observed_difference": 0.25,
+            "cluster_variance": 0.1906779661016949,
+            "clusters": 60,
+            "minimum_detectable_difference_80pct": 0.15793503009795387,
+            "clusters_for_observed_difference_80pct": 24
+          },
+          "query_ap": {
+            "observed_difference": 0.3642471274022076,
+            "cluster_variance": 0.12545910413479724,
+            "clusters": 60,
+            "minimum_detectable_difference_80pct": 0.128108900284953,
+            "clusters_for_observed_difference_80pct": 8
+          }
+        },
+        "baseline_score_minus_frequency_prior": {
+          "all_present_at_3": {
+            "observed_difference": 0.26666666666666666,
+            "cluster_variance": 0.1988700564971752,
+            "clusters": 60,
+            "minimum_detectable_difference_80pct": 0.16129203101876716,
+            "clusters_for_observed_difference_80pct": 22
+          },
+          "query_ap": {
+            "observed_difference": 0.3596255618857036,
+            "cluster_variance": 0.10667047893070163,
+            "clusters": 60,
+            "minimum_detectable_difference_80pct": 0.1181273155210439,
+            "clusters_for_observed_difference_80pct": 7
+          }
+        }
+      }
+    },
+    "galaxi_validation": {
+      "queries": 57,
+      "clusters": 52,
+      "phases": 200,
+      "all_present_at_3": {
+        "baseline_score": 0.42105263157894735,
+        "method_score": 0.2631578947368421,
+        "frequency_prior": 0.08771929824561403
+      },
+      "phase_ap": {
+        "baseline_score": {
+          "micro": 0.48068359970963653,
+          "macro": 0.591078206411242
+        },
+        "method_score": {
+          "micro": 0.33030971383683533,
+          "macro": 0.5411478364161543
+        },
+        "frequency_prior": {
+          "micro": 0.16984336681451873,
+          "macro": 0.32169001375834244
+        }
+      },
+      "label_permutation": {
+        "baseline_score": {
+          "actual_all_present_at_3": 0.42105263157894735,
+          "null_mean": 0.003605263157894737,
+          "null_ci95": [
+            0.0,
+            0.017543859649122806
+          ],
+          "empirical_one_sided_p": 0.0004997501249375312
+        },
+        "method_score": {
+          "actual_all_present_at_3": 0.2631578947368421,
+          "null_mean": 0.003508771929824561,
+          "null_ci95": [
+            0.0,
+            0.017543859649122806
+          ],
+          "empirical_one_sided_p": 0.0004997501249375312
+        },
+        "frequency_prior": {
+          "actual_all_present_at_3": 0.08771929824561403,
+          "null_mean": 0.0038157894736842108,
+          "null_ci95": [
+            0.0,
+            0.017543859649122806
+          ],
+          "empirical_one_sided_p": 0.0004997501249375312
+        }
+      },
+      "power": {
+        "method_score_minus_baseline_score": {
+          "all_present_at_3": {
+            "observed_difference": -0.17307692307692307,
+            "cluster_variance": 0.22435897435897434,
+            "clusters": 52,
+            "minimum_detectable_difference_80pct": 0.1840237551066908,
+            "clusters_for_observed_difference_80pct": 59
+          },
+          "query_ap": {
+            "observed_difference": -0.05425186974529837,
+            "cluster_variance": 0.022010774978212303,
+            "clusters": 52,
+            "minimum_detectable_difference_80pct": 0.05763945057654131,
+            "clusters_for_observed_difference_80pct": 59
+          }
+        },
+        "method_score_minus_frequency_prior": {
+          "all_present_at_3": {
+            "observed_difference": 0.21153846153846154,
+            "cluster_variance": 0.24849170437405724,
+            "clusters": 52,
+            "minimum_detectable_difference_80pct": 0.1936681093746664,
+            "clusters_for_observed_difference_80pct": 44
+          },
+          "query_ap": {
+            "observed_difference": 0.26029778423815697,
+            "cluster_variance": 0.18903410617609576,
+            "clusters": 52,
+            "minimum_detectable_difference_80pct": 0.16891656822380322,
+            "clusters_for_observed_difference_80pct": 22
+          }
+        },
+        "baseline_score_minus_frequency_prior": {
+          "all_present_at_3": {
+            "observed_difference": 0.38461538461538464,
+            "cluster_variance": 0.28054298642533937,
+            "clusters": 52,
+            "minimum_detectable_difference_80pct": 0.2057793890015198,
+            "clusters_for_observed_difference_80pct": 15
+          },
+          "query_ap": {
+            "observed_difference": 0.3145496539834553,
+            "cluster_variance": 0.19883243914347082,
+            "clusters": 52,
+            "minimum_detectable_difference_80pct": 0.17323904683571165,
+            "clusters_for_observed_difference_80pct": 16
+          }
+        }
+      }
+    },
+    "precursor_genome": {
+      "queries": 416,
+      "clusters": 400,
+      "phases": 241,
+      "all_present_at_3": {
+        "baseline_score": 0.6899038461538461,
+        "method_score": 0.7163461538461539,
+        "frequency_prior": 0.6081730769230769
+      },
+      "phase_ap": {
+        "baseline_score": {
+          "micro": 0.6979290438419031,
+          "macro": 0.8296733915123338
+        },
+        "method_score": {
+          "micro": 0.7303941506133157,
+          "macro": 0.8507076523903445
+        },
+        "frequency_prior": {
+          "micro": 0.6349013085819608,
+          "macro": 0.7768077613269921
+        }
+      },
+      "label_permutation": {
+        "baseline_score": {
+          "actual_all_present_at_3": 0.6899038461538461,
+          "null_mean": 0.12481490384615385,
+          "null_ci95": [
+            0.10090144230769231,
+            0.15144230769230768
+          ],
+          "empirical_one_sided_p": 0.0004997501249375312
+        },
+        "method_score": {
+          "actual_all_present_at_3": 0.7163461538461539,
+          "null_mean": 0.124734375,
+          "null_ci95": [
+            0.10096153846153846,
+            0.15144230769230768
+          ],
+          "empirical_one_sided_p": 0.0004997501249375312
+        },
+        "frequency_prior": {
+          "actual_all_present_at_3": 0.6081730769230769,
+          "null_mean": 0.12490024038461539,
+          "null_ci95": [
+            0.10096153846153846,
+            0.15144230769230768
+          ],
+          "empirical_one_sided_p": 0.0004997501249375312
+        }
+      },
+      "power": {
+        "method_score_minus_baseline_score": {
+          "all_present_at_3": {
+            "observed_difference": 0.0275,
+            "cluster_variance": 0.0832017543859649,
+            "clusters": 400,
+            "minimum_detectable_difference_80pct": 0.040405462621478865,
+            "clusters_for_observed_difference_80pct": 864
+          },
+          "query_ap": {
+            "observed_difference": 0.021557674963924973,
+            "cluster_variance": 0.011869588158983499,
+            "clusters": 400,
+            "minimum_detectable_difference_80pct": 0.015261304822664698,
+            "clusters_for_observed_difference_80pct": 201
+          }
+        },
+        "method_score_minus_frequency_prior": {
+          "all_present_at_3": {
+            "observed_difference": 0.11125,
+            "cluster_variance": 0.15739191729323312,
+            "clusters": 400,
+            "minimum_detectable_difference_80pct": 0.055573155164908655,
+            "clusters_for_observed_difference_80pct": 100
+          },
+          "query_ap": {
+            "observed_difference": 0.0738185316997817,
+            "cluster_variance": 0.032423614137833956,
+            "clusters": 400,
+            "minimum_detectable_difference_80pct": 0.02522345376434399,
+            "clusters_for_observed_difference_80pct": 47
+          }
+        },
+        "baseline_score_minus_frequency_prior": {
+          "all_present_at_3": {
+            "observed_difference": 0.08375,
+            "cluster_variance": 0.12392073934837095,
+            "clusters": 400,
+            "minimum_detectable_difference_80pct": 0.04931123045861319,
+            "clusters_for_observed_difference_80pct": 139
+          },
+          "query_ap": {
+            "observed_difference": 0.05226085673585673,
+            "cluster_variance": 0.02217380931340844,
+            "clusters": 400,
+            "minimum_detectable_difference_80pct": 0.020859024578904244,
+            "clusters_for_observed_difference_80pct": 64
+          }
+        }
+      }
+    },
+    "rare_earth_mof": {
+      "queries": 56,
+      "clusters": 19,
+      "phases": 339,
+      "all_present_at_3": {
+        "baseline_score": 0.30357142857142855,
+        "method_score": 0.44642857142857145,
+        "frequency_prior": 0.5357142857142857
+      },
+      "phase_ap": {
+        "baseline_score": {
+          "micro": 0.271491324404975,
+          "macro": 0.6536389540135981
+        },
+        "method_score": {
+          "micro": 0.608926233125473,
+          "macro": 0.7199362653067195
+        },
+        "frequency_prior": {
+          "micro": 0.5176825877856133,
+          "macro": 0.6604687483101348
+        }
+      },
+      "label_permutation": {
+        "baseline_score": {
+          "actual_all_present_at_3": 0.30357142857142855,
+          "null_mean": 0.029044642857142852,
+          "null_ci95": [
+            0.0,
+            0.07142857142857142
+          ],
+          "empirical_one_sided_p": 0.0004997501249375312
+        },
+        "method_score": {
+          "actual_all_present_at_3": 0.44642857142857145,
+          "null_mean": 0.02901785714285714,
+          "null_ci95": [
+            0.0,
+            0.07142857142857142
+          ],
+          "empirical_one_sided_p": 0.0004997501249375312
+        },
+        "frequency_prior": {
+          "actual_all_present_at_3": 0.5357142857142857,
+          "null_mean": 0.028928571428571425,
+          "null_ci95": [
+            0.0,
+            0.07142857142857142
+          ],
+          "empirical_one_sided_p": 0.0004997501249375312
+        }
+      },
+      "power": {
+        "method_score_minus_baseline_score": {
+          "all_present_at_3": {
+            "observed_difference": 0.14181286549707603,
+            "cluster_variance": 0.1226624431448993,
+            "clusters": 19,
+            "minimum_detectable_difference_80pct": 0.22510380811922345,
+            "clusters_for_observed_difference_80pct": 48
+          },
+          "query_ap": {
+            "observed_difference": 0.06402348919215527,
+            "cluster_variance": 0.021593388465741818,
+            "clusters": 19,
+            "minimum_detectable_difference_80pct": 0.09444684083337382,
+            "clusters_for_observed_difference_80pct": 42
+          }
+        },
+        "method_score_minus_frequency_prior": {
+          "all_present_at_3": {
+            "observed_difference": 0.038304093567251465,
+            "cluster_variance": 0.3263336582196231,
+            "clusters": 19,
+            "minimum_detectable_difference_80pct": 0.36716220684969325,
+            "clusters_for_observed_difference_80pct": 1746
+          },
+          "query_ap": {
+            "observed_difference": 0.13728319948961562,
+            "cluster_variance": 0.1302458319404553,
+            "clusters": 19,
+            "minimum_detectable_difference_80pct": 0.2319577854970118,
+            "clusters_for_observed_difference_80pct": 55
+          }
+        },
+        "baseline_score_minus_frequency_prior": {
+          "all_present_at_3": {
+            "observed_difference": -0.10350877192982456,
+            "cluster_variance": 0.2850487329434699,
+            "clusters": 19,
+            "minimum_detectable_difference_80pct": 0.3431520472650637,
+            "clusters_for_observed_difference_80pct": 209
+          },
+          "query_ap": {
+            "observed_difference": 0.07325971029746038,
+            "cluster_variance": 0.10314362869974845,
+            "clusters": 19,
+            "minimum_detectable_difference_80pct": 0.20641832041151192,
+            "clusters_for_observed_difference_80pct": 151
+          }
+        }
+      }
+    },
+    "tasno": {
+      "queries": 964,
+      "clusters": 343,
+      "phases": 9,
+      "all_present_at_3": {
+        "baseline_score": 0.9989626556016598,
+        "method_score": 1.0,
+        "frequency_prior": 1.0
+      },
+      "phase_ap": {
+        "baseline_score": {
+          "micro": 0.995557029113853,
+          "macro": 0.9993948824343015
+        },
+        "method_score": {
+          "micro": 0.9958026628745386,
+          "macro": 0.9989626556016598
+        },
+        "frequency_prior": {
+          "micro": 0.7301122151148637,
+          "macro": 0.8988589211618258
+        }
+      },
+      "label_permutation": {
+        "baseline_score": {
+          "actual_all_present_at_3": 0.9989626556016598,
+          "null_mean": 0.3154533195020746,
+          "null_ci95": [
+            0.28734439834024894,
+            0.34439834024896265
+          ],
+          "empirical_one_sided_p": 0.0004997501249375312
+        },
+        "method_score": {
+          "actual_all_present_at_3": 1.0,
+          "null_mean": 0.31543412863070536,
+          "null_ci95": [
+            0.28734439834024894,
+            0.34439834024896265
+          ],
+          "empirical_one_sided_p": 0.0004997501249375312
+        },
+        "frequency_prior": {
+          "actual_all_present_at_3": 1.0,
+          "null_mean": 0.31505912863070534,
+          "null_ci95": [
+            0.28734439834024894,
+            0.3433609958506224
+          ],
+          "empirical_one_sided_p": 0.0004997501249375312
+        }
+      },
+      "power": {
+        "method_score_minus_baseline_score": {
+          "all_present_at_3": {
+            "observed_difference": 0.0009718172983479106,
+            "cluster_variance": 0.00032393909944930364,
+            "clusters": 343,
+            "minimum_detectable_difference_80pct": 0.0027226289777579874,
+            "clusters_for_observed_difference_80pct": 2693
+          },
+          "query_ap": {
+            "observed_difference": -0.0004049238743116293,
+            "cluster_variance": 8.33132844709405e-05,
+            "clusters": 343,
+            "minimum_detectable_difference_80pct": 0.0013807463546494066,
+            "clusters_for_observed_difference_80pct": 3989
+          }
+        },
+        "method_score_minus_frequency_prior": {
+          "all_present_at_3": {
+            "observed_difference": 0.0,
+            "cluster_variance": 0.0,
+            "clusters": 343,
+            "minimum_detectable_difference_80pct": 0.0,
+            "clusters_for_observed_difference_80pct": null
+          },
+          "query_ap": {
+            "observed_difference": 0.11358114674441204,
+            "cluster_variance": 0.04101810767470454,
+            "clusters": 343,
+            "minimum_detectable_difference_80pct": 0.03063688367966896,
+            "clusters_for_observed_difference_80pct": 25
+          }
+        },
+        "baseline_score_minus_frequency_prior": {
+          "all_present_at_3": {
+            "observed_difference": -0.0009718172983479106,
+            "cluster_variance": 0.00032393909944930364,
+            "clusters": 343,
+            "minimum_detectable_difference_80pct": 0.0027226289777579874,
+            "clusters_for_observed_difference_80pct": 2693
+          },
+          "query_ap": {
+            "observed_difference": 0.11398607061872368,
+            "cluster_variance": 0.04133405485558189,
+            "clusters": 343,
+            "minimum_detectable_difference_80pct": 0.030754649580661802,
+            "clusters_for_observed_difference_80pct": 25
+          }
+        }
+      }
+    },
+    "xca_nicoal": {
+      "queries": 342,
+      "clusters": 21,
+      "phases": 20,
+      "all_present_at_3": {
+        "baseline_score": 0.6374269005847953,
+        "method_score": 0.5497076023391813,
+        "frequency_prior": 0.7076023391812866
+      },
+      "phase_ap": {
+        "baseline_score": {
+          "micro": 0.49474503337514847,
+          "macro": 0.7047025699794425
+        },
+        "method_score": {
+          "micro": 0.40853009689093883,
+          "macro": 0.66655991847759
+        },
+        "frequency_prior": {
+          "micro": 0.31389381715205217,
+          "macro": 0.4995149911816578
+        }
+      },
+      "label_permutation": {
+        "baseline_score": {
+          "actual_all_present_at_3": 0.6374269005847953,
+          "null_mean": 0.09055701754385964,
+          "null_ci95": [
+            0.06140350877192982,
+            0.11988304093567251
+          ],
+          "empirical_one_sided_p": 0.0004997501249375312
+        },
+        "method_score": {
+          "actual_all_present_at_3": 0.5497076023391813,
+          "null_mean": 0.09047807017543859,
+          "null_ci95": [
+            0.06140350877192982,
+            0.12280701754385964
+          ],
+          "empirical_one_sided_p": 0.0004997501249375312
+        },
+        "frequency_prior": {
+          "actual_all_present_at_3": 0.7076023391812866,
+          "null_mean": 0.09049561403508771,
+          "null_ci95": [
+            0.06140350877192982,
+            0.11995614035087679
+          ],
+          "empirical_one_sided_p": 0.0004997501249375312
+        }
+      },
+      "power": {
+        "method_score_minus_baseline_score": {
+          "all_present_at_3": {
+            "observed_difference": -0.10386334173992975,
+            "cluster_variance": 0.05951745082574299,
+            "clusters": 21,
+            "minimum_detectable_difference_80pct": 0.14914762798846437,
+            "clusters_for_observed_difference_80pct": 44
+          },
+          "query_ap": {
+            "observed_difference": -0.051144670872762366,
+            "cluster_variance": 0.009399884038566987,
+            "clusters": 21,
+            "minimum_detectable_difference_80pct": 0.0592727992443735,
+            "clusters_for_observed_difference_80pct": 29
+          }
+        },
+        "method_score_minus_frequency_prior": {
+          "all_present_at_3": {
+            "observed_difference": 0.051002336038633675,
+            "cluster_variance": 0.1850039917638256,
+            "clusters": 21,
+            "minimum_detectable_difference_80pct": 0.2629570018923768,
+            "clusters_for_observed_difference_80pct": 559
+          },
+          "query_ap": {
+            "observed_difference": 0.22215151714256254,
+            "cluster_variance": 0.09874547972023563,
+            "clusters": 21,
+            "minimum_detectable_difference_80pct": 0.19211125182519787,
+            "clusters_for_observed_difference_80pct": 16
+          }
+        },
+        "baseline_score_minus_frequency_prior": {
+          "all_present_at_3": {
+            "observed_difference": 0.15486567777856344,
+            "cluster_variance": 0.24178310240145645,
+            "clusters": 21,
+            "minimum_detectable_difference_80pct": 0.3006125882535798,
+            "clusters_for_observed_difference_80pct": 80
+          },
+          "query_ap": {
+            "observed_difference": 0.2732961880153249,
+            "cluster_variance": 0.09483886836606616,
+            "clusters": 21,
+            "minimum_detectable_difference_80pct": 0.1882727089884723,
+            "clusters_for_observed_difference_80pct": 10
+          }
+        }
+      }
+    }
+  }
+}

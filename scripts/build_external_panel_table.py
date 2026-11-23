@@ -1,4 +1,4 @@
-"""Assemble the frozen six-method AriadneX prediction table."""
+"""Assemble the frozen eight-method AriadneX prediction table."""
 
 from __future__ import annotations
 
@@ -14,6 +14,8 @@ METHOD_FILES = (
     ("anchored_set_strict", "aer_strict_predictions.csv"),
     ("crystalshift", "crystalshift_predictions.csv"),
     ("xrd_autoanalyzer", "xrd_autoanalyzer_predictions.csv"),
+    ("xmatcher_automix", "xmatcher_predictions.csv"),
+    ("xdecomposer", "xdecomposer_predictions.csv"),
 )
 
 QUERIES = tuple(f"sample_{index:02d}" for index in range(1, 26))

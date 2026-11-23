@@ -12,3 +12,7 @@ repository root. Source identifiers and roles are recorded in
 
 Aggregate results for the two additional controls are under
 `results/external_controls/`.
+
+`external_source_registry.json` records the two source-locked external tests,
+their data and protocol hashes, evidence archives and exact reproduction
+statuses.

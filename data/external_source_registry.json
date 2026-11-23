@@ -1,0 +1,45 @@
+{
+  "status": "external_source_validation_v1",
+  "claim_boundary": "Both cohorts are retrospective external evidence. Neither is prospective validation, and their scores are not pooled.",
+  "sources": {
+    "opxrd_empa_multiphase": {
+      "role": "external retrospective measured two-phase cohort",
+      "doi": "10.5281/zenodo.15298026",
+      "license": "CC BY 4.0",
+      "source_md5": "e8e9800a8ecd2b7f01a764fdf77d5c53",
+      "source_sha256": "38b62bcddf976debb3e41d2597d3f14ac6c1f1c8a33565a84a98ef38ba3b6044",
+      "protocol_sha256": "11b8f15c2a1e1e31d1bd81579d43f438770a4b5e6e09096df1b130202deb627a",
+      "dataset_manifest_sha256": "547edc777b29606fa544f6ac866f34d6462e8f4d968528632483940a37bb8a29",
+      "queries": 200,
+      "clusters": 200,
+      "candidates": 4,
+      "truth_phase_range": [2, 2],
+      "candidate_source": "Crystallography Open Database, CC0 1.0",
+      "result_file": "results/opxrd_empa_external_20261123.json",
+      "result_sha256": "90b2dda29ff5cc61ac91acc16fbf937a9f7e7f071cf037661d436296db32a5dc",
+      "score_file": "results/opxrd_empa_external_scores_20261123.csv",
+      "score_sha256": "dac148b64ae804ee2fbba25b56c5745c4ca1d7782af897a9e04aa5e5bec99b53",
+      "evidence_archive": "evidence/external-sources/OPXRD_EMPA_V2_RETROSPECTIVE_20261123_PUBLIC.zip",
+      "evidence_sha256": "31285bd4771b7543e04db80517cbb3d990ad81587e557327c401aa0f830aa0de",
+      "reproduction": "opxrd_empa_reproduction_exact_match"
+    },
+    "realbind_mini_single_phase": {
+      "role": "external retrospective single-phase boundary cohort",
+      "doi": "10.5281/zenodo.23140154",
+      "release": "RealBind 1.1.3",
+      "license": "CC BY 4.0 for mini data; MIT for RealBind code",
+      "source_file_sha256": "00bd4742f0af524f9f88bcd98c16dfc59d4b77470597c296c34af4f6ad3d9678",
+      "protocol_sha256": "dab5dbcb2d4f9e5416cc1bf1d5075e32fa58002eed9528d83f1ba51a0bf555f4",
+      "queries": 104,
+      "candidates": 104,
+      "truth_phase_range": [1, 1],
+      "result_file": "results/realbind_mini_external_20261123.json",
+      "result_sha256": "60efe10c96f080952cd767bf45eaaa19e4aed7ddc1a9162e19389809852489a1",
+      "rank_file": "results/realbind_mini_query_ranks_20261123.csv",
+      "rank_sha256": "9c3ad2116017801793e0d5b8648ec7f789da5f2a6e3991331ef792eaf543ee1f",
+      "evidence_archive": "evidence/external-sources/REALBIND_MINI_EXTERNAL_20261123_PUBLIC.zip",
+      "evidence_sha256": "42f42442e01533234b3eaf34d6f6b80e9411f0219995526853d4b98c9bf6df2c",
+      "reproduction": "realbind_mini_reproduction_exact_match"
+    }
+  }
+}

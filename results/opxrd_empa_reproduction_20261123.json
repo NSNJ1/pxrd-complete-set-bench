@@ -1,0 +1,21 @@
+{
+  "status": "opxrd_empa_reproduction_exact_match",
+  "evaluation_sha256": "90b2dda29ff5cc61ac91acc16fbf937a9f7e7f071cf037661d436296db32a5dc",
+  "reproduced_evaluation_sha256": "90b2dda29ff5cc61ac91acc16fbf937a9f7e7f071cf037661d436296db32a5dc",
+  "scores_sha256": "dac148b64ae804ee2fbba25b56c5745c4ca1d7782af897a9e04aa5e5bec99b53",
+  "reproduced_scores_sha256": "dac148b64ae804ee2fbba25b56c5745c4ca1d7782af897a9e04aa5e5bec99b53",
+  "checks": {
+    "protocol": true,
+    "source_md5": true,
+    "dataset_manifest": true,
+    "dataset_manifest_exact_match": true,
+    "queries_exact_match": true,
+    "pairs_exact_match": true,
+    "candidate_library_exact_match": true,
+    "eligibility_exact_match": true,
+    "spectra_exact_match": true,
+    "candidates_exact_match": true,
+    "evaluation_exact_match": true,
+    "scores_exact_match": true
+  }
+}

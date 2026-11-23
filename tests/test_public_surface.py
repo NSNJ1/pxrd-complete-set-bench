@@ -25,6 +25,8 @@ class PublicSurfaceTest(unittest.TestCase):
         for name in (
             "CRYSTALSHIFT_INDEPENDENT_RUN_20261123_PUBLIC_SANITIZED.zip",
             "XRD_AUTOANALYZER_INDEPENDENT_RUN_20261123_PUBLIC_SANITIZED.zip",
+            "XMATCHER_AUTOMIX_LOCAL_RUN_20261123_PUBLIC_SANITIZED.zip",
+            "XDECOMPOSER_LOCAL_RUN_20261123_PUBLIC_SANITIZED.zip",
             "MINGHAO_CRYSTALSHIFT_CONFIRMATION.json",
             "MINGHAO_XRD_CONFIRMATION.json",
         ):
@@ -35,6 +37,12 @@ class PublicSurfaceTest(unittest.TestCase):
             ),
             "XRD_AUTOANALYZER_INDEPENDENT_RUN_20261123_PUBLIC_SANITIZED.zip": (
                 "6aa6ea4322af8f42ea43d4a29743eb684441adfa00a5b577005093bb8524a9ee"
+            ),
+            "XMATCHER_AUTOMIX_LOCAL_RUN_20261123_PUBLIC_SANITIZED.zip": (
+                "e6e3f3792d630d3152d2a9167e5c36e0bea060cd7ee4f7bd45d8f5ba7fadfd5b"
+            ),
+            "XDECOMPOSER_LOCAL_RUN_20261123_PUBLIC_SANITIZED.zip": (
+                "c84b3ee8d8eb1d0ea4c6c638548d7001315215db5a3d0256131d54e101a471fa"
             ),
         }
         for name, expected in expected_hashes.items():

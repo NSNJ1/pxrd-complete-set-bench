@@ -76,7 +76,7 @@ python scripts/reproduce_external_panel.py \
 The prediction table SHA-256 must be:
 
 ```text
-94826151d17b2ce3776329025e363e1734a142c0442269aaf75d50e4ff0162e1
+5df4475a8709fd6242a4cdbada50ec596ee35b796c323228243c957bc593e3d4
 ```
 
 Expected status:
@@ -88,9 +88,29 @@ external_panel_reproduction_exact_match
 The canonical result payload SHA-256 must be:
 
 ```text
-b39ba2b54526dbfee90863f5e25023e49f29c8c483adcc470a5d76015b14e4b5
+85da8424d4b69a11f6d2fa922362c84b26350180df68b522db85ec991b46eb44
 ```
 
 The panel uses 10,000 query-level bootstrap repeats and seed `20261123`.
 Sanitized external return archives and their hashes are listed in
 `evidence/external-methods/README.md`.
+
+## External-source cohorts
+
+The opXRD EMPA and RealBind mini packages each include their frozen protocol,
+data/source hashes, scripts, results and a reproduction status file. Check the
+archive hashes against `evidence/external-sources/README.md`, then inspect the
+embedded `RESULT_REPORT.md`, `results/evaluation.json` and
+`results/reproduction_check.json`.
+
+Expected statuses:
+
+```text
+opxrd_empa_reproduction_exact_match
+realbind_mini_reproduction_exact_match
+```
+
+The opXRD source archive is identified by MD5
+`e8e9800a8ecd2b7f01a764fdf77d5c53`. The RealBind mini source file is identified
+by SHA-256
+`00bd4742f0af524f9f88bcd98c16dfc59d4b77470597c296c34af4f6ad3d9678`.

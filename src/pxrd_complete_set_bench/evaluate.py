@@ -640,7 +640,7 @@ def main() -> int:
     }
     text = json.dumps(report, ensure_ascii=False, indent=2) + "\n"
     if args.output_json:
-        args.output_json.write_text(text, encoding="utf-8")
+        args.output_json.write_text(text, encoding="utf-8", newline="\n")
     print(text, end="")
     return 0
 

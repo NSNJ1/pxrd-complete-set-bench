@@ -1,9 +1,9 @@
 {
-  "status": "controlled_external_panel_v1",
+  "status": "controlled_external_panel_v2",
   "source": "ariadnex_controlled",
   "queries": 25,
   "candidates": 4,
-  "prediction_rows": 600,
+  "prediction_rows": 800,
   "bootstrap_seed": 20261123,
   "bootstrap_repeats": 10000,
   "truth_file": "data/query_phase_scores.csv",
@@ -69,7 +69,33 @@
       "execution": "independent external execution",
       "evidence_archive": "evidence/external-methods/XRD_AUTOANALYZER_INDEPENDENT_RUN_20261123_PUBLIC_SANITIZED.zip",
       "evidence_sha256": "6aa6ea4322af8f42ea43d4a29743eb684441adfa00a5b577005093bb8524a9ee"
+    },
+    {
+      "id": "xmatcher_automix",
+      "display_name": "XMatcher AutoMix",
+      "family": "peak matching with shift search and phase-combination fitting",
+      "provenance": "official external implementation",
+      "distribution": "XMatcher Desktop 1.3.0",
+      "dataset_doi": "10.6084/m9.figshare.32812985.v7",
+      "license": "CC BY 4.0",
+      "execution": "local external implementation",
+      "adaptation": "maximum returned single-phase score among AutoMix combinations containing the phase; zero when the phase is not returned",
+      "evidence_archive": "evidence/external-methods/XMATCHER_AUTOMIX_LOCAL_RUN_20261123_PUBLIC_SANITIZED.zip",
+      "evidence_sha256": "e6e3f3792d630d3152d2a9167e5c36e0bea060cd7ee4f7bd45d8f5ba7fadfd5b"
+    },
+    {
+      "id": "xdecomposer",
+      "display_name": "XDecomposer",
+      "family": "prior-free phase decomposition and candidate-bank retrieval",
+      "provenance": "official external implementation",
+      "repository": "https://github.com/Licht0812/XDecomposer",
+      "commit": "3aec2505fa7de0f0f1e8b8f01f8b1f4bc8b96bf1",
+      "license": "MIT",
+      "execution": "local external implementation",
+      "adaptation": "maximum activity-weighted slot score after cosine, derivative and top-peak matching to four frozen candidate references",
+      "evidence_archive": "evidence/external-methods/XDECOMPOSER_LOCAL_RUN_20261123_PUBLIC_SANITIZED.zip",
+      "evidence_sha256": "c84b3ee8d8eb1d0ea4c6c638548d7001315215db5a3d0256131d54e101a471fa"
     }
   ],
-  "claim_boundary": "Retrospective method coverage on one 25-query controlled measured-mixture panel; not prospective validation or universal state of the art."
+  "claim_boundary": "Retrospective eight-method coverage on one 25-query controlled measured-mixture panel; not prospective validation or universal state of the art."
 }

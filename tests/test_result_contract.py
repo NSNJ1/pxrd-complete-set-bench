@@ -8,6 +8,7 @@ ROOT = Path(__file__).resolve().parents[1]
 RESULT = ROOT / "results" / "evaluation_10000.json"
 PANEL = ROOT / "results" / "ariadnex_external_panel.json"
 PANEL_CHECK = ROOT / "results" / "ariadnex_external_panel_reproduction.json"
+DIAGNOSTICS_CHECK = ROOT / "results" / "diagnostics_reproduction.json"
 
 
 class FrozenResultTest(unittest.TestCase):
@@ -35,7 +36,7 @@ class FrozenResultTest(unittest.TestCase):
     def test_external_panel_result(self) -> None:
         report = json.loads(PANEL.read_text(encoding="utf-8"))
         self.assertEqual(report["status"], "controlled_external_panel_evaluated")
-        self.assertEqual(len(report["methods"]), 6)
+        self.assertEqual(len(report["methods"]), 8)
         self.assertEqual(report["contract"]["bootstrap_repeats"], 10_000)
         self.assertEqual(report["contract"]["seed"], 20261123)
         bounds = report["methods"]["xrd_autoanalyzer"]["tie_order_bounds"]
@@ -49,5 +50,13 @@ class FrozenResultTest(unittest.TestCase):
         self.assertEqual(
             check["status"],
             "external_panel_reproduction_exact_match",
+        )
+        self.assertTrue(all(check["checks"].values()))
+
+    def test_diagnostics_reproduction_check(self) -> None:
+        check = json.loads(DIAGNOSTICS_CHECK.read_text(encoding="utf-8"))
+        self.assertEqual(
+            check["status"],
+            "diagnostics_reproduction_exact_match",
         )
         self.assertTrue(all(check["checks"].values()))

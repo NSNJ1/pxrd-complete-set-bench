@@ -229,6 +229,24 @@ def _percentile_interval(values: np.ndarray) -> list[float]:
     ]
 
 
+def _bootstrap_p_value(left: np.ndarray, right: np.ndarray) -> float:
+    differences = left - right
+    lower = (1 + int(np.sum(differences <= 0))) / (len(differences) + 1)
+    upper = (1 + int(np.sum(differences >= 0))) / (len(differences) + 1)
+    return float(min(1.0, 2 * min(lower, upper)))
+
+
+def _holm_adjust(p_values: dict[str, float]) -> dict[str, float]:
+    ordered = sorted(p_values.items(), key=lambda item: item[1])
+    adjusted = {}
+    running = 0.0
+    total = len(ordered)
+    for rank, (name, value) in enumerate(ordered, start=1):
+        running = max(running, min(1.0, (total - rank + 1) * value))
+        adjusted[name] = running
+    return adjusted
+
+
 def _bootstrap_samples(
     labels: dict[str, np.ndarray],
     scores: dict[str, np.ndarray],
@@ -337,9 +355,19 @@ def evaluate_external_panel(
                     "ci95": _percentile_interval(
                         bootstrap[left][endpoint] - bootstrap[right][endpoint]
                     ),
+                    "p_value": _bootstrap_p_value(
+                        bootstrap[left][endpoint],
+                        bootstrap[right][endpoint],
+                    ),
                 }
                 for endpoint in endpoints
             }
+    for endpoint in endpoints:
+        adjusted = _holm_adjust(
+            {name: values[endpoint]["p_value"] for name, values in comparisons.items()}
+        )
+        for name, value in adjusted.items():
+            comparisons[name][endpoint]["p_value_holm"] = value
 
     return {
         "status": "controlled_external_panel_evaluated",

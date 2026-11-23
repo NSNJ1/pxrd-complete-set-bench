@@ -1,0 +1,455 @@
+{
+  "status": "source_overlap_audit",
+  "claim_boundary": "Derived identifiers support phase-ID and element-set overlap checks. They are not a structure-level or prototype-level leakage audit.",
+  "input": {
+    "path": "data/query_phase_scores.csv",
+    "sha256": "70a7e11872f50a9cddbe83ca84614462edebf99a1089a8b512a525a049ba2c2b"
+  },
+  "sources": {
+    "ariadnex_controlled": {
+      "phase_ids": 4,
+      "parsed_element_libraries": [
+        "C",
+        "Ca",
+        "O",
+        "Sn",
+        "Ti",
+        "Zn"
+      ],
+      "phase_ids_without_parsed_elements": 0,
+      "positive_set_repetition": {
+        "queries": 25,
+        "unique_positive_sets": 7,
+        "queries_with_repeated_set": 23,
+        "largest_repeated_set_count": 6
+      }
+    },
+    "galaxi_pristine": {
+      "phase_ids": 363,
+      "parsed_element_libraries": [
+        "C",
+        "Fe",
+        "Li",
+        "Mn",
+        "O",
+        "P",
+        "Ti"
+      ],
+      "phase_ids_without_parsed_elements": 0,
+      "positive_set_repetition": {
+        "queries": 61,
+        "unique_positive_sets": 60,
+        "queries_with_repeated_set": 2,
+        "largest_repeated_set_count": 2
+      }
+    },
+    "galaxi_validation": {
+      "phase_ids": 200,
+      "parsed_element_libraries": [
+        "Ag",
+        "Al",
+        "As",
+        "Au",
+        "B",
+        "Ba",
+        "Be",
+        "Bi",
+        "Br",
+        "C",
+        "Ca",
+        "Cd",
+        "Ce",
+        "Cl",
+        "Co",
+        "Cr",
+        "Cs",
+        "Cu",
+        "Dy",
+        "Er",
+        "Eu",
+        "F",
+        "Fe",
+        "Ga",
+        "Gd",
+        "Ge",
+        "H",
+        "Hf",
+        "Hg",
+        "Ho",
+        "I",
+        "In",
+        "Ir",
+        "K",
+        "La",
+        "Li",
+        "Lu",
+        "Mg",
+        "Mn",
+        "Mo",
+        "N",
+        "Na",
+        "Nb",
+        "Nd",
+        "Ni",
+        "O",
+        "Os",
+        "P",
+        "Pb",
+        "Pd",
+        "Pr",
+        "Pt",
+        "Rb",
+        "Re",
+        "Rh",
+        "Ru",
+        "S",
+        "Sb",
+        "Sc",
+        "Se",
+        "Si",
+        "Sm",
+        "Sn",
+        "Sr",
+        "Ta",
+        "Tb",
+        "Te",
+        "Ti",
+        "Tl",
+        "Tm",
+        "U",
+        "V",
+        "W",
+        "Y",
+        "Yb",
+        "Zn",
+        "Zr"
+      ],
+      "phase_ids_without_parsed_elements": 1,
+      "positive_set_repetition": {
+        "queries": 57,
+        "unique_positive_sets": 52,
+        "queries_with_repeated_set": 10,
+        "largest_repeated_set_count": 2
+      }
+    },
+    "precursor_genome": {
+      "phase_ids": 241,
+      "parsed_element_libraries": [
+        "Ag",
+        "Al",
+        "B",
+        "Ba",
+        "Bi",
+        "C",
+        "Ca",
+        "Co",
+        "Cr",
+        "Cu",
+        "Fe",
+        "Ga",
+        "Ge",
+        "H",
+        "Hf",
+        "In",
+        "K",
+        "La",
+        "Li",
+        "Mg",
+        "Mn",
+        "Mo",
+        "N",
+        "Na",
+        "Nb",
+        "Ni",
+        "O",
+        "P",
+        "Pb",
+        "Sb",
+        "Si",
+        "Sn",
+        "Sr",
+        "Ti",
+        "V",
+        "W",
+        "Y",
+        "Zn",
+        "Zr"
+      ],
+      "phase_ids_without_parsed_elements": 0,
+      "positive_set_repetition": {
+        "queries": 416,
+        "unique_positive_sets": 400,
+        "queries_with_repeated_set": 32,
+        "largest_repeated_set_count": 2
+      }
+    },
+    "rare_earth_mof": {
+      "phase_ids": 339,
+      "parsed_element_libraries": [],
+      "phase_ids_without_parsed_elements": 339,
+      "positive_set_repetition": {
+        "queries": 56,
+        "unique_positive_sets": 19,
+        "queries_with_repeated_set": 48,
+        "largest_repeated_set_count": 10
+      }
+    },
+    "tasno": {
+      "phase_ids": 9,
+      "parsed_element_libraries": [
+        "O",
+        "Sn",
+        "Ta"
+      ],
+      "phase_ids_without_parsed_elements": 1,
+      "positive_set_repetition": {
+        "queries": 964,
+        "unique_positive_sets": 4,
+        "queries_with_repeated_set": 964,
+        "largest_repeated_set_count": 701
+      }
+    },
+    "xca_nicoal": {
+      "phase_ids": 20,
+      "parsed_element_libraries": [
+        "Al",
+        "Co",
+        "Ni"
+      ],
+      "phase_ids_without_parsed_elements": 0,
+      "positive_set_repetition": {
+        "queries": 342,
+        "unique_positive_sets": 21,
+        "queries_with_repeated_set": 339,
+        "largest_repeated_set_count": 100
+      }
+    }
+  },
+  "pairwise_overlap": {
+    "ariadnex_controlled__galaxi_pristine": {
+      "phase_id_jaccard": 0.0,
+      "shared_phase_ids": 0,
+      "element_jaccard": 0.3,
+      "shared_elements": [
+        "C",
+        "O",
+        "Ti"
+      ]
+    },
+    "ariadnex_controlled__galaxi_validation": {
+      "phase_id_jaccard": 0.0,
+      "shared_phase_ids": 0,
+      "element_jaccard": 0.07792207792207792,
+      "shared_elements": [
+        "C",
+        "Ca",
+        "O",
+        "Sn",
+        "Ti",
+        "Zn"
+      ]
+    },
+    "ariadnex_controlled__precursor_genome": {
+      "phase_id_jaccard": 0.0,
+      "shared_phase_ids": 0,
+      "element_jaccard": 0.15384615384615385,
+      "shared_elements": [
+        "C",
+        "Ca",
+        "O",
+        "Sn",
+        "Ti",
+        "Zn"
+      ]
+    },
+    "ariadnex_controlled__rare_earth_mof": {
+      "phase_id_jaccard": 0.0,
+      "shared_phase_ids": 0,
+      "element_jaccard": 0.0,
+      "shared_elements": []
+    },
+    "ariadnex_controlled__tasno": {
+      "phase_id_jaccard": 0.0,
+      "shared_phase_ids": 0,
+      "element_jaccard": 0.2857142857142857,
+      "shared_elements": [
+        "O",
+        "Sn"
+      ]
+    },
+    "ariadnex_controlled__xca_nicoal": {
+      "phase_id_jaccard": 0.0,
+      "shared_phase_ids": 0,
+      "element_jaccard": 0.0,
+      "shared_elements": []
+    },
+    "galaxi_pristine__galaxi_validation": {
+      "phase_id_jaccard": 0.0,
+      "shared_phase_ids": 0,
+      "element_jaccard": 0.09090909090909091,
+      "shared_elements": [
+        "C",
+        "Fe",
+        "Li",
+        "Mn",
+        "O",
+        "P",
+        "Ti"
+      ]
+    },
+    "galaxi_pristine__precursor_genome": {
+      "phase_id_jaccard": 0.0,
+      "shared_phase_ids": 0,
+      "element_jaccard": 0.1794871794871795,
+      "shared_elements": [
+        "C",
+        "Fe",
+        "Li",
+        "Mn",
+        "O",
+        "P",
+        "Ti"
+      ]
+    },
+    "galaxi_pristine__rare_earth_mof": {
+      "phase_id_jaccard": 0.0,
+      "shared_phase_ids": 0,
+      "element_jaccard": 0.0,
+      "shared_elements": []
+    },
+    "galaxi_pristine__tasno": {
+      "phase_id_jaccard": 0.0,
+      "shared_phase_ids": 0,
+      "element_jaccard": 0.1111111111111111,
+      "shared_elements": [
+        "O"
+      ]
+    },
+    "galaxi_pristine__xca_nicoal": {
+      "phase_id_jaccard": 0.0,
+      "shared_phase_ids": 0,
+      "element_jaccard": 0.0,
+      "shared_elements": []
+    },
+    "galaxi_validation__precursor_genome": {
+      "phase_id_jaccard": 0.0,
+      "shared_phase_ids": 0,
+      "element_jaccard": 0.5064935064935064,
+      "shared_elements": [
+        "Ag",
+        "Al",
+        "B",
+        "Ba",
+        "Bi",
+        "C",
+        "Ca",
+        "Co",
+        "Cr",
+        "Cu",
+        "Fe",
+        "Ga",
+        "Ge",
+        "H",
+        "Hf",
+        "In",
+        "K",
+        "La",
+        "Li",
+        "Mg",
+        "Mn",
+        "Mo",
+        "N",
+        "Na",
+        "Nb",
+        "Ni",
+        "O",
+        "P",
+        "Pb",
+        "Sb",
+        "Si",
+        "Sn",
+        "Sr",
+        "Ti",
+        "V",
+        "W",
+        "Y",
+        "Zn",
+        "Zr"
+      ]
+    },
+    "galaxi_validation__rare_earth_mof": {
+      "phase_id_jaccard": 0.0,
+      "shared_phase_ids": 0,
+      "element_jaccard": 0.0,
+      "shared_elements": []
+    },
+    "galaxi_validation__tasno": {
+      "phase_id_jaccard": 0.0,
+      "shared_phase_ids": 0,
+      "element_jaccard": 0.03896103896103896,
+      "shared_elements": [
+        "O",
+        "Sn",
+        "Ta"
+      ]
+    },
+    "galaxi_validation__xca_nicoal": {
+      "phase_id_jaccard": 0.0045662100456621,
+      "shared_phase_ids": 1,
+      "element_jaccard": 0.03896103896103896,
+      "shared_elements": [
+        "Al",
+        "Co",
+        "Ni"
+      ]
+    },
+    "precursor_genome__rare_earth_mof": {
+      "phase_id_jaccard": 0.0,
+      "shared_phase_ids": 0,
+      "element_jaccard": 0.0,
+      "shared_elements": []
+    },
+    "precursor_genome__tasno": {
+      "phase_id_jaccard": 0.0,
+      "shared_phase_ids": 0,
+      "element_jaccard": 0.05,
+      "shared_elements": [
+        "O",
+        "Sn"
+      ]
+    },
+    "precursor_genome__xca_nicoal": {
+      "phase_id_jaccard": 0.0,
+      "shared_phase_ids": 0,
+      "element_jaccard": 0.07692307692307693,
+      "shared_elements": [
+        "Al",
+        "Co",
+        "Ni"
+      ]
+    },
+    "rare_earth_mof__tasno": {
+      "phase_id_jaccard": 0.0,
+      "shared_phase_ids": 0,
+      "element_jaccard": 0.0,
+      "shared_elements": []
+    },
+    "rare_earth_mof__xca_nicoal": {
+      "phase_id_jaccard": 0.0,
+      "shared_phase_ids": 0,
+      "element_jaccard": 0.0,
+      "shared_elements": []
+    },
+    "tasno__xca_nicoal": {
+      "phase_id_jaccard": 0.0,
+      "shared_phase_ids": 0,
+      "element_jaccard": 0.0,
+      "shared_elements": []
+    }
+  },
+  "not_available": [
+    "atomic structures for rare-earth MOF CSD identifiers",
+    "full structures for several candidate collections",
+    "training records for the consumed source cohorts"
+  ]
+}
