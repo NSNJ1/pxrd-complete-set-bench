@@ -6,6 +6,9 @@
   payload.
 - `external_controls/`: aggregate results for the saturated ternary-mixture and
   high-cardinality mineral controls.
+- `ariadnex_external_panel.json`: frozen six-method evaluation on the controlled
+  AriadneX cohort.
+- `ariadnex_external_panel_reproduction.json`: exact-match check for that panel.
 
 These files are outputs, not independent validation. Source roles and claim
 boundaries are defined in `docs/benchmark-card.md` and

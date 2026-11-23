@@ -24,6 +24,8 @@ complete CIF collections are not included.
 ## Reuse boundary
 
 - AriadneX is retrospective rather than prospective.
+- The six-method panel reuses AriadneX; adding methods does not create a new
+  measured source.
 - GALAXI validation and pristine are from the same publication.
 - Mangolini and USGS have already been consumed and cannot become fresh
   confirmation after a method change.

@@ -26,6 +26,17 @@ The benchmark also reports:
 
 `all-present@k` is not exact-set accuracy and is not a calibrated probability.
 
+## Controlled method comparison
+
+The repository includes a separate 25-query control panel with six methods:
+random ranking, two Pearson baselines, an anchored-set ranking, CrystalShift.jl
+and XRD-AutoAnalyzer. The fixed candidate library contains four phases.
+
+This panel asks whether methods from different implementation families can be
+run under one candidate contract. It does not replace the seven-source
+benchmark, and its source-specific scores are not pooled with other sources.
+See `docs/external-method-validation.md` for execution and adaptation details.
+
 ## Strata
 
 Results are reported by:
@@ -46,6 +57,9 @@ Results are reported by:
 - retain negative and saturated results.
 
 The final result uses 10,000 resamples and seed `20261118`.
+
+The controlled method panel uses query-level resampling, 10,000 repeats and
+seed `20261123`.
 
 ## Claim boundary
 

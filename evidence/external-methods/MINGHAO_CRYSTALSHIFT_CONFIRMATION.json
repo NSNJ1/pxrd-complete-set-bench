@@ -1,0 +1,22 @@
+{
+  "status": "human_review_confirmed",
+  "method": "CrystalShift.jl",
+  "executor": "Minghao Li",
+  "confirmation_date": "2026-11-23",
+  "confirmation_source": "project owner relayed the executor's confirmation in the current thread",
+  "confirmed_items": [
+    "role: external method executor",
+    "official commit: c4884ca1dbbd78135cd50f5e17141cdc0b6f43c8",
+    "dry run: 3/3",
+    "full run: 25/25",
+    "prediction rows: 100",
+    "set probability rows: 250",
+    "no ground truth access",
+    "no method parameter or adapter modification"
+  ],
+  "public_name_consent": true,
+  "public_acknowledgement_name": "Minghao Li",
+  "authorship_change": false,
+  "affiliation_publication_consent": false,
+  "claim_boundary": "Confirmation covers the independent execution and evidence package, not authorship or endorsement of the paper's scientific conclusions."
+}

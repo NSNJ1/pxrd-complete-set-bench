@@ -65,3 +65,32 @@ payload.
 
 The full run uses 10,000 finite-sample cluster resamples and takes several
 minutes.
+
+## External method panel
+
+```bash
+python scripts/reproduce_external_panel.py \
+  --output external-panel-reproduction.json
+```
+
+The prediction table SHA-256 must be:
+
+```text
+94826151d17b2ce3776329025e363e1734a142c0442269aaf75d50e4ff0162e1
+```
+
+Expected status:
+
+```text
+external_panel_reproduction_exact_match
+```
+
+The canonical result payload SHA-256 must be:
+
+```text
+b39ba2b54526dbfee90863f5e25023e49f29c8c483adcc470a5d76015b14e4b5
+```
+
+The panel uses 10,000 query-level bootstrap repeats and seed `20261123`.
+Sanitized external return archives and their hashes are listed in
+`evidence/external-methods/README.md`.

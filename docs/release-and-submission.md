@@ -22,6 +22,7 @@ submission.
 
 - project-authored code and tests;
 - derived score tables and aggregate results;
+- sanitized return archives for the two externally executed methods;
 - source identifiers, licenses, and provenance notes;
 - figures and figure source data;
 - documentation and citation metadata.

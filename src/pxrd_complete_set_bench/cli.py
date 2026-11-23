@@ -9,6 +9,12 @@ from pathlib import Path
 import pandas as pd
 
 from .evaluate import evaluate, sha256
+from .external_panel import (
+    evaluate_external_panel,
+    load_predictions,
+    load_registry,
+    load_truth,
+)
 
 
 def _budgets(value: str) -> tuple[int, ...]:
@@ -63,6 +69,21 @@ def build_parser() -> argparse.ArgumentParser:
         default=20261118,
     )
     evaluate_parser.add_argument("--output-json", type=Path)
+
+    panel_parser = subparsers.add_parser(
+        "external-panel",
+        help="evaluate the controlled six-method comparison panel",
+    )
+    panel_parser.add_argument("truth", type=Path)
+    panel_parser.add_argument("predictions", type=Path)
+    panel_parser.add_argument("--registry", type=Path, required=True)
+    panel_parser.add_argument(
+        "--bootstrap-repeats",
+        type=_positive_int,
+        default=10_000,
+    )
+    panel_parser.add_argument("--seed", type=int, default=20261123)
+    panel_parser.add_argument("--output-json", type=Path)
     return parser
 
 
@@ -88,10 +109,46 @@ def run_evaluate(args: argparse.Namespace) -> int:
     return 0
 
 
+def run_external_panel(args: argparse.Namespace) -> int:
+    registry = load_registry(args.registry)
+    method_ids = tuple(method["id"] for method in registry["methods"])
+    truth = load_truth(args.truth)
+    predictions = load_predictions(args.predictions, method_ids)
+    report = evaluate_external_panel(
+        truth,
+        predictions,
+        registry,
+        args.bootstrap_repeats,
+        args.seed,
+    )
+    report["inputs"] = {
+        "truth": {
+            "file": str(args.truth),
+            "sha256": sha256(args.truth),
+        },
+        "predictions": {
+            "file": str(args.predictions),
+            "sha256": sha256(args.predictions),
+        },
+        "registry": {
+            "file": str(args.registry),
+            "sha256": sha256(args.registry),
+        },
+    }
+    text = json.dumps(report, ensure_ascii=False, indent=2) + "\n"
+    if args.output_json is not None:
+        args.output_json.parent.mkdir(parents=True, exist_ok=True)
+        args.output_json.write_text(text, encoding="utf-8")
+    print(text, end="")
+    return 0
+
+
 def main(argv: list[str] | None = None) -> int:
     args = build_parser().parse_args(argv)
     if args.command == "evaluate":
         return run_evaluate(args)
+    if args.command == "external-panel":
+        return run_external_panel(args)
     raise RuntimeError(f"unsupported command: {args.command}")
 
 

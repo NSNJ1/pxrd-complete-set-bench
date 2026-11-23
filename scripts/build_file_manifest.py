@@ -5,11 +5,15 @@ from __future__ import annotations
 import hashlib
 import json
 import subprocess
+import tomllib
 from datetime import date
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[1]
 OUTPUT = REPO / "PUBLIC_FILE_MANIFEST.json"
+VERSION = tomllib.loads((REPO / "pyproject.toml").read_text(encoding="utf-8"))[
+    "project"
+]["version"]
 
 
 def main() -> int:
@@ -38,7 +42,7 @@ def main() -> int:
             }
         )
     payload = {
-        "version": "0.4.2",
+        "version": VERSION,
         "date": date.today().isoformat(),
         "file_count": len(entries),
         "entries": entries,

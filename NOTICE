@@ -48,6 +48,23 @@ remain with the original database records.
 - Repository license: MIT
 - Candidate CIF provenance remains separate.
 
+## CrystalShift.jl
+
+- Repository: https://github.com/MingChiangChang/CrystalShift.jl
+- Commit: c4884ca1dbbd78135cd50f5e17141cdc0b6f43c8
+- License: MIT
+- The benchmark stores candidate marginal-inclusion scores produced through
+  the documented adapter and the sanitized execution archive. Third-party
+  source data and the full upstream repository are not redistributed here.
+
+## XRD-AutoAnalyzer
+
+- Repository: https://github.com/njszym/XRD-AutoAnalyzer
+- Commit: bf32082521e45c0fcf5cf9ae9bd1321e76bf9012
+- License: MIT
+- The benchmark stores candidate scores and a sanitized execution archive.
+  BGMN binaries and the upstream repository are not redistributed here.
+
 ## Mangolini ternary mixtures
 
 - Article DOI: https://doi.org/10.1016/j.dib.2021.107043

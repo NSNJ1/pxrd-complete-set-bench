@@ -1,0 +1,4608 @@
+{
+  "status": "controlled_external_panel_evaluated",
+  "source": "ariadnex_controlled",
+  "claim_boundary": "One retrospective 25-query measured-mixture panel. This supports method-coverage and ranking diagnostics, not prospective validation or universal state of the art.",
+  "contract": {
+    "queries": 25,
+    "candidates": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "budgets": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "bootstrap": "query-level with replacement",
+    "bootstrap_repeats": 10000,
+    "seed": 20261123,
+    "average_precision": "equal-score rows form one threshold block",
+    "all_present_tie_break": "phase_id ascending"
+  },
+  "methods": {
+    "deterministic_random": {
+      "display_name": "Deterministic random ranking",
+      "family": "no-information baseline",
+      "metrics": {
+        "phase_ap_micro": 0.5453911450091435,
+        "phase_ap_macro": 0.6977777777777777,
+        "mean_minimum_k": 3.52,
+        "all_present_at_1": 0.0,
+        "all_present_at_2": 0.16,
+        "all_present_at_3": 0.32,
+        "all_present_at_4": 1.0
+      },
+      "tie_order_bounds": {
+        "all_present": {
+          "1": {
+            "min": 0.0,
+            "max": 0.0
+          },
+          "2": {
+            "min": 0.16,
+            "max": 0.16
+          },
+          "3": {
+            "min": 0.32,
+            "max": 0.32
+          },
+          "4": {
+            "min": 1.0,
+            "max": 1.0
+          }
+        },
+        "queries_with_ties": 0,
+        "tie_groups": 0,
+        "per_query": {
+          "sample_01": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": true,
+                "max": true
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_02": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": false,
+                "max": false
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_03": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": false,
+                "max": false
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_04": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": false,
+                "max": false
+              },
+              "3": {
+                "min": false,
+                "max": false
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_05": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": false,
+                "max": false
+              },
+              "3": {
+                "min": false,
+                "max": false
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_06": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": false,
+                "max": false
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_07": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": false,
+                "max": false
+              },
+              "3": {
+                "min": false,
+                "max": false
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_08": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": false,
+                "max": false
+              },
+              "3": {
+                "min": false,
+                "max": false
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_09": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": false,
+                "max": false
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_10": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": false,
+                "max": false
+              },
+              "3": {
+                "min": false,
+                "max": false
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_11": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": false,
+                "max": false
+              },
+              "3": {
+                "min": false,
+                "max": false
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_12": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": false,
+                "max": false
+              },
+              "3": {
+                "min": false,
+                "max": false
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_13": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": false,
+                "max": false
+              },
+              "3": {
+                "min": false,
+                "max": false
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_14": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": false,
+                "max": false
+              },
+              "3": {
+                "min": false,
+                "max": false
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_15": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": false,
+                "max": false
+              },
+              "3": {
+                "min": false,
+                "max": false
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_16": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": false,
+                "max": false
+              },
+              "3": {
+                "min": false,
+                "max": false
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_17": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": true,
+                "max": true
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_18": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": false,
+                "max": false
+              },
+              "3": {
+                "min": false,
+                "max": false
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_19": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": false,
+                "max": false
+              },
+              "3": {
+                "min": false,
+                "max": false
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_20": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": true,
+                "max": true
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_21": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": true,
+                "max": true
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_22": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": false,
+                "max": false
+              },
+              "3": {
+                "min": false,
+                "max": false
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_23": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": false,
+                "max": false
+              },
+              "3": {
+                "min": false,
+                "max": false
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_24": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": false,
+                "max": false
+              },
+              "3": {
+                "min": false,
+                "max": false
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_25": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": false,
+                "max": false
+              },
+              "3": {
+                "min": false,
+                "max": false
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          }
+        }
+      },
+      "bootstrap_ci95": {
+        "phase_ap_micro": [
+          0.4663250353611008,
+          0.6650386839223584
+        ],
+        "phase_ap_macro": [
+          0.6099999999999999,
+          0.7811111111111111
+        ],
+        "all_present_at_1": [
+          0.0,
+          0.0
+        ],
+        "all_present_at_2": [
+          0.04,
+          0.32
+        ],
+        "all_present_at_3": [
+          0.16,
+          0.52
+        ],
+        "all_present_at_4": [
+          1.0,
+          1.0
+        ]
+      }
+    },
+    "global_sqrt_pearson": {
+      "display_name": "Global sqrt-Pearson",
+      "family": "whole-pattern similarity",
+      "metrics": {
+        "phase_ap_micro": 0.9462129471133014,
+        "phase_ap_macro": 0.9833333333333333,
+        "mean_minimum_k": 2.48,
+        "all_present_at_1": 0.04,
+        "all_present_at_2": 0.6,
+        "all_present_at_3": 0.88,
+        "all_present_at_4": 1.0
+      },
+      "tie_order_bounds": {
+        "all_present": {
+          "1": {
+            "min": 0.04,
+            "max": 0.04
+          },
+          "2": {
+            "min": 0.6,
+            "max": 0.6
+          },
+          "3": {
+            "min": 0.88,
+            "max": 0.88
+          },
+          "4": {
+            "min": 1.0,
+            "max": 1.0
+          }
+        },
+        "queries_with_ties": 0,
+        "tie_groups": 0,
+        "per_query": {
+          "sample_01": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": true,
+                "max": true
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_02": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": true,
+                "max": true
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_03": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": true,
+                "max": true
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_04": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": true,
+                "max": true
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_05": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": true,
+                "max": true
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_06": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": true,
+                "max": true
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_07": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": false,
+                "max": false
+              },
+              "3": {
+                "min": false,
+                "max": false
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_08": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": false,
+                "max": false
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_09": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": false,
+                "max": false
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_10": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": false,
+                "max": false
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_11": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": false,
+                "max": false
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_12": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": true,
+                "max": true
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_13": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": false,
+                "max": false
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_14": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": false,
+                "max": false
+              },
+              "3": {
+                "min": false,
+                "max": false
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_15": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": false,
+                "max": false
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_16": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": true,
+                "max": true
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_17": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": true,
+                "max": true
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_18": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": false,
+                "max": false
+              },
+              "3": {
+                "min": false,
+                "max": false
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_19": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": true,
+                "max": true
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_20": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": true,
+                "max": true
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_21": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": true,
+                "max": true
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_22": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": false,
+                "max": false
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_23": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": true,
+                "max": true
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_24": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": true,
+                "max": true
+              },
+              "2": {
+                "min": true,
+                "max": true
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_25": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": true,
+                "max": true
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          }
+        }
+      },
+      "bootstrap_ci95": {
+        "phase_ap_micro": [
+          0.9255522830512999,
+          0.9711991102123902
+        ],
+        "phase_ap_macro": [
+          0.9666666666666666,
+          0.9966666666666666
+        ],
+        "all_present_at_1": [
+          0.0,
+          0.12
+        ],
+        "all_present_at_2": [
+          0.4,
+          0.8
+        ],
+        "all_present_at_3": [
+          0.72,
+          1.0
+        ],
+        "all_present_at_4": [
+          1.0,
+          1.0
+        ]
+      }
+    },
+    "window_sqrt_pearson": {
+      "display_name": "Eight-window sqrt-Pearson",
+      "family": "local peak support",
+      "metrics": {
+        "phase_ap_micro": 0.9357896180671543,
+        "phase_ap_macro": 0.9866666666666666,
+        "mean_minimum_k": 2.44,
+        "all_present_at_1": 0.04,
+        "all_present_at_2": 0.6,
+        "all_present_at_3": 0.92,
+        "all_present_at_4": 1.0
+      },
+      "tie_order_bounds": {
+        "all_present": {
+          "1": {
+            "min": 0.04,
+            "max": 0.04
+          },
+          "2": {
+            "min": 0.6,
+            "max": 0.6
+          },
+          "3": {
+            "min": 0.92,
+            "max": 0.92
+          },
+          "4": {
+            "min": 1.0,
+            "max": 1.0
+          }
+        },
+        "queries_with_ties": 0,
+        "tie_groups": 0,
+        "per_query": {
+          "sample_01": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": true,
+                "max": true
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_02": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": true,
+                "max": true
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_03": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": true,
+                "max": true
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_04": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": true,
+                "max": true
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_05": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": true,
+                "max": true
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_06": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": true,
+                "max": true
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_07": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": false,
+                "max": false
+              },
+              "3": {
+                "min": false,
+                "max": false
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_08": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": false,
+                "max": false
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_09": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": false,
+                "max": false
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_10": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": false,
+                "max": false
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_11": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": false,
+                "max": false
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_12": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": true,
+                "max": true
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_13": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": false,
+                "max": false
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_14": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": false,
+                "max": false
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_15": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": false,
+                "max": false
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_16": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": true,
+                "max": true
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_17": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": true,
+                "max": true
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_18": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": false,
+                "max": false
+              },
+              "3": {
+                "min": false,
+                "max": false
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_19": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": true,
+                "max": true
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_20": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": true,
+                "max": true
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_21": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": true,
+                "max": true
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_22": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": false,
+                "max": false
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_23": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": true,
+                "max": true
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_24": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": true,
+                "max": true
+              },
+              "2": {
+                "min": true,
+                "max": true
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_25": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": true,
+                "max": true
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          }
+        }
+      },
+      "bootstrap_ci95": {
+        "phase_ap_micro": [
+          0.9175715385105756,
+          0.9609077055726548
+        ],
+        "phase_ap_macro": [
+          0.97,
+          1.0
+        ],
+        "all_present_at_1": [
+          0.0,
+          0.12
+        ],
+        "all_present_at_2": [
+          0.4,
+          0.8
+        ],
+        "all_present_at_3": [
+          0.8,
+          1.0
+        ],
+        "all_present_at_4": [
+          1.0,
+          1.0
+        ]
+      }
+    },
+    "anchored_set_strict": {
+      "display_name": "Anchored-set strict",
+      "family": "anchored candidate-set ranking",
+      "metrics": {
+        "phase_ap_micro": 0.9618912538928059,
+        "phase_ap_macro": 0.9733333333333333,
+        "mean_minimum_k": 2.44,
+        "all_present_at_1": 0.04,
+        "all_present_at_2": 0.6,
+        "all_present_at_3": 0.92,
+        "all_present_at_4": 1.0
+      },
+      "tie_order_bounds": {
+        "all_present": {
+          "1": {
+            "min": 0.04,
+            "max": 0.04
+          },
+          "2": {
+            "min": 0.56,
+            "max": 0.6
+          },
+          "3": {
+            "min": 0.84,
+            "max": 0.92
+          },
+          "4": {
+            "min": 1.0,
+            "max": 1.0
+          }
+        },
+        "queries_with_ties": 3,
+        "tie_groups": 3,
+        "per_query": {
+          "sample_01": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": true,
+                "max": true
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_02": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": true,
+                "max": true
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_03": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": true,
+                "max": true
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_04": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": true,
+                "max": true
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_05": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": true,
+                "max": true
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_06": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": true,
+                "max": true
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_07": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": false,
+                "max": false
+              },
+              "3": {
+                "min": false,
+                "max": false
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_08": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": false,
+                "max": false
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_09": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": false,
+                "max": false
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_10": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": false,
+                "max": false
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_11": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": false,
+                "max": false
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_12": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": true,
+                "max": true
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_13": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": false,
+                "max": false
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_14": {
+            "tie_groups": [
+              [
+                "A",
+                "B"
+              ]
+            ],
+            "legal_orders": 2,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": false,
+                "max": false
+              },
+              "3": {
+                "min": false,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_15": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": false,
+                "max": false
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_16": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": true,
+                "max": true
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_17": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": true,
+                "max": true
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_18": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": false,
+                "max": false
+              },
+              "3": {
+                "min": false,
+                "max": false
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_19": {
+            "tie_groups": [
+              [
+                "A",
+                "B",
+                "C"
+              ]
+            ],
+            "legal_orders": 6,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": false,
+                "max": true
+              },
+              "3": {
+                "min": false,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_20": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": true,
+                "max": true
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_21": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": true,
+                "max": true
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_22": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": false,
+                "max": false
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_23": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": true,
+                "max": true
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_24": {
+            "tie_groups": [
+              [
+                "B",
+                "D"
+              ]
+            ],
+            "legal_orders": 2,
+            "all_present_bounds": {
+              "1": {
+                "min": true,
+                "max": true
+              },
+              "2": {
+                "min": true,
+                "max": true
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_25": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": true,
+                "max": true
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          }
+        }
+      },
+      "bootstrap_ci95": {
+        "phase_ap_micro": [
+          0.9387035329969373,
+          0.9844429754757751
+        ],
+        "phase_ap_macro": [
+          0.9466666666666665,
+          0.9933333333333333
+        ],
+        "all_present_at_1": [
+          0.0,
+          0.12
+        ],
+        "all_present_at_2": [
+          0.4,
+          0.8
+        ],
+        "all_present_at_3": [
+          0.8,
+          1.0
+        ],
+        "all_present_at_4": [
+          1.0,
+          1.0
+        ]
+      }
+    },
+    "crystalshift": {
+      "display_name": "CrystalShift.jl",
+      "family": "probabilistic phase combinations and tree search",
+      "metrics": {
+        "phase_ap_micro": 0.9420182357910447,
+        "phase_ap_macro": 0.9455555555555555,
+        "mean_minimum_k": 2.68,
+        "all_present_at_1": 0.04,
+        "all_present_at_2": 0.52,
+        "all_present_at_3": 0.76,
+        "all_present_at_4": 1.0
+      },
+      "tie_order_bounds": {
+        "all_present": {
+          "1": {
+            "min": 0.04,
+            "max": 0.04
+          },
+          "2": {
+            "min": 0.48,
+            "max": 0.52
+          },
+          "3": {
+            "min": 0.72,
+            "max": 0.8
+          },
+          "4": {
+            "min": 1.0,
+            "max": 1.0
+          }
+        },
+        "queries_with_ties": 14,
+        "tie_groups": 15,
+        "per_query": {
+          "sample_01": {
+            "tie_groups": [
+              [
+                "B",
+                "C"
+              ]
+            ],
+            "legal_orders": 2,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": true,
+                "max": true
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_02": {
+            "tie_groups": [
+              [
+                "B",
+                "C"
+              ]
+            ],
+            "legal_orders": 2,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": true,
+                "max": true
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_03": {
+            "tie_groups": [
+              [
+                "B",
+                "C"
+              ]
+            ],
+            "legal_orders": 2,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": true,
+                "max": true
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_04": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": false,
+                "max": false
+              },
+              "3": {
+                "min": false,
+                "max": false
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_05": {
+            "tie_groups": [
+              [
+                "C",
+                "D"
+              ]
+            ],
+            "legal_orders": 2,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": false,
+                "max": false
+              },
+              "3": {
+                "min": false,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_06": {
+            "tie_groups": [
+              [
+                "B",
+                "C"
+              ]
+            ],
+            "legal_orders": 2,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": true,
+                "max": true
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_07": {
+            "tie_groups": [
+              [
+                "C",
+                "D"
+              ]
+            ],
+            "legal_orders": 2,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": false,
+                "max": false
+              },
+              "3": {
+                "min": false,
+                "max": false
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_08": {
+            "tie_groups": [
+              [
+                "C",
+                "D"
+              ]
+            ],
+            "legal_orders": 2,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": false,
+                "max": false
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_09": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": false,
+                "max": false
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_10": {
+            "tie_groups": [
+              [
+                "B",
+                "D"
+              ]
+            ],
+            "legal_orders": 2,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": false,
+                "max": false
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_11": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": true,
+                "max": true
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_12": {
+            "tie_groups": [
+              [
+                "A",
+                "C"
+              ]
+            ],
+            "legal_orders": 2,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": true,
+                "max": true
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_13": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": false,
+                "max": false
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_14": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": false,
+                "max": false
+              },
+              "3": {
+                "min": false,
+                "max": false
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_15": {
+            "tie_groups": [
+              [
+                "A",
+                "C"
+              ]
+            ],
+            "legal_orders": 2,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": false,
+                "max": false
+              },
+              "3": {
+                "min": false,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_16": {
+            "tie_groups": [
+              [
+                "A",
+                "D"
+              ]
+            ],
+            "legal_orders": 2,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": false,
+                "max": true
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_17": {
+            "tie_groups": [
+              [
+                "A",
+                "C"
+              ]
+            ],
+            "legal_orders": 2,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": true,
+                "max": true
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_18": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": false,
+                "max": false
+              },
+              "3": {
+                "min": false,
+                "max": false
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_19": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": false,
+                "max": false
+              },
+              "3": {
+                "min": false,
+                "max": false
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_20": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": true,
+                "max": true
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_21": {
+            "tie_groups": [
+              [
+                "A",
+                "C"
+              ]
+            ],
+            "legal_orders": 2,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": true,
+                "max": true
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_22": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": false,
+                "max": false
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_23": {
+            "tie_groups": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "C",
+                "D"
+              ]
+            ],
+            "legal_orders": 4,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": true,
+                "max": true
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_24": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": true,
+                "max": true
+              },
+              "2": {
+                "min": true,
+                "max": true
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_25": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": true,
+                "max": true
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          }
+        }
+      },
+      "bootstrap_ci95": {
+        "phase_ap_micro": [
+          0.9076348278196749,
+          0.9712814928302729
+        ],
+        "phase_ap_macro": [
+          0.9088888888888889,
+          0.9766666666666667
+        ],
+        "all_present_at_1": [
+          0.0,
+          0.12
+        ],
+        "all_present_at_2": [
+          0.32,
+          0.72
+        ],
+        "all_present_at_3": [
+          0.6,
+          0.92
+        ],
+        "all_present_at_4": [
+          1.0,
+          1.0
+        ]
+      }
+    },
+    "xrd_autoanalyzer": {
+      "display_name": "XRD-AutoAnalyzer",
+      "family": "CNN phase identification and iterative phase stripping",
+      "metrics": {
+        "phase_ap_micro": 0.9319053185271771,
+        "phase_ap_macro": 0.9566666666666666,
+        "mean_minimum_k": 2.56,
+        "all_present_at_1": 0.04,
+        "all_present_at_2": 0.6,
+        "all_present_at_3": 0.8,
+        "all_present_at_4": 1.0
+      },
+      "tie_order_bounds": {
+        "all_present": {
+          "1": {
+            "min": 0.04,
+            "max": 0.04
+          },
+          "2": {
+            "min": 0.56,
+            "max": 0.6
+          },
+          "3": {
+            "min": 0.72,
+            "max": 0.88
+          },
+          "4": {
+            "min": 1.0,
+            "max": 1.0
+          }
+        },
+        "queries_with_ties": 20,
+        "tie_groups": 28,
+        "per_query": {
+          "sample_01": {
+            "tie_groups": [
+              [
+                "A",
+                "D"
+              ],
+              [
+                "B",
+                "C"
+              ]
+            ],
+            "legal_orders": 4,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": true,
+                "max": true
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_02": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": true,
+                "max": true
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_03": {
+            "tie_groups": [
+              [
+                "B",
+                "C"
+              ]
+            ],
+            "legal_orders": 2,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": true,
+                "max": true
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_04": {
+            "tie_groups": [
+              [
+                "A",
+                "D"
+              ],
+              [
+                "B",
+                "C"
+              ]
+            ],
+            "legal_orders": 4,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": true,
+                "max": true
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_05": {
+            "tie_groups": [
+              [
+                "A",
+                "D"
+              ],
+              [
+                "B",
+                "C"
+              ]
+            ],
+            "legal_orders": 4,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": true,
+                "max": true
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_06": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": true,
+                "max": true
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_07": {
+            "tie_groups": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "C",
+                "D"
+              ]
+            ],
+            "legal_orders": 4,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": false,
+                "max": false
+              },
+              "3": {
+                "min": false,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_08": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": false,
+                "max": false
+              },
+              "3": {
+                "min": false,
+                "max": false
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_09": {
+            "tie_groups": [
+              [
+                "B",
+                "C",
+                "D"
+              ]
+            ],
+            "legal_orders": 6,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": false,
+                "max": false
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_10": {
+            "tie_groups": [
+              [
+                "B",
+                "C",
+                "D"
+              ]
+            ],
+            "legal_orders": 6,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": false,
+                "max": false
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_11": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": true,
+                "max": true
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_12": {
+            "tie_groups": [
+              [
+                "A",
+                "C"
+              ]
+            ],
+            "legal_orders": 2,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": true,
+                "max": true
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_13": {
+            "tie_groups": [
+              [
+                "B",
+                "C",
+                "D"
+              ]
+            ],
+            "legal_orders": 6,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": false,
+                "max": false
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_14": {
+            "tie_groups": [
+              [
+                "A",
+                "B",
+                "C"
+              ]
+            ],
+            "legal_orders": 6,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": false,
+                "max": false
+              },
+              "3": {
+                "min": false,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_15": {
+            "tie_groups": [
+              [
+                "A",
+                "C"
+              ],
+              [
+                "B",
+                "D"
+              ]
+            ],
+            "legal_orders": 4,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": false,
+                "max": false
+              },
+              "3": {
+                "min": false,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_16": {
+            "tie_groups": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "C",
+                "D"
+              ]
+            ],
+            "legal_orders": 4,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": true,
+                "max": true
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_17": {
+            "tie_groups": [
+              [
+                "A",
+                "C"
+              ]
+            ],
+            "legal_orders": 2,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": true,
+                "max": true
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_18": {
+            "tie_groups": [
+              [
+                "A",
+                "C"
+              ]
+            ],
+            "legal_orders": 2,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": false,
+                "max": false
+              },
+              "3": {
+                "min": false,
+                "max": false
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_19": {
+            "tie_groups": [
+              [
+                "A",
+                "B",
+                "C"
+              ]
+            ],
+            "legal_orders": 6,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": false,
+                "max": true
+              },
+              "3": {
+                "min": false,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_20": {
+            "tie_groups": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "C",
+                "D"
+              ]
+            ],
+            "legal_orders": 4,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": true,
+                "max": true
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_21": {
+            "tie_groups": [
+              [
+                "A",
+                "C"
+              ]
+            ],
+            "legal_orders": 2,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": true,
+                "max": true
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_22": {
+            "tie_groups": [
+              [
+                "A",
+                "D"
+              ]
+            ],
+            "legal_orders": 2,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": false,
+                "max": false
+              },
+              "3": {
+                "min": false,
+                "max": false
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_23": {
+            "tie_groups": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "C",
+                "D"
+              ]
+            ],
+            "legal_orders": 4,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": true,
+                "max": true
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_24": {
+            "tie_groups": [
+              [
+                "B",
+                "D"
+              ]
+            ],
+            "legal_orders": 2,
+            "all_present_bounds": {
+              "1": {
+                "min": true,
+                "max": true
+              },
+              "2": {
+                "min": true,
+                "max": true
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          },
+          "sample_25": {
+            "tie_groups": [],
+            "legal_orders": 1,
+            "all_present_bounds": {
+              "1": {
+                "min": false,
+                "max": false
+              },
+              "2": {
+                "min": false,
+                "max": false
+              },
+              "3": {
+                "min": true,
+                "max": true
+              },
+              "4": {
+                "min": true,
+                "max": true
+              }
+            }
+          }
+        }
+      },
+      "bootstrap_ci95": {
+        "phase_ap_micro": [
+          0.8954278416347382,
+          0.9710344827586207
+        ],
+        "phase_ap_macro": [
+          0.9266666666666665,
+          0.9833333333333333
+        ],
+        "all_present_at_1": [
+          0.0,
+          0.12
+        ],
+        "all_present_at_2": [
+          0.4,
+          0.8
+        ],
+        "all_present_at_3": [
+          0.64,
+          0.96
+        ],
+        "all_present_at_4": [
+          1.0,
+          1.0
+        ]
+      }
+    }
+  },
+  "pairwise_paired_deltas": {
+    "deterministic_random_minus_global_sqrt_pearson": {
+      "phase_ap_micro": {
+        "estimate": -0.40082180210415785,
+        "ci95": [
+          -0.48042457740684913,
+          -0.2863009539565459
+        ]
+      },
+      "phase_ap_macro": {
+        "estimate": -0.28555555555555556,
+        "ci95": [
+          -0.37444444444444447,
+          -0.20333333333333337
+        ]
+      },
+      "all_present_at_1": {
+        "estimate": -0.04,
+        "ci95": [
+          -0.12,
+          0.0
+        ]
+      },
+      "all_present_at_2": {
+        "estimate": -0.43999999999999995,
+        "ci95": [
+          -0.64,
+          -0.24
+        ]
+      },
+      "all_present_at_3": {
+        "estimate": -0.56,
+        "ci95": [
+          -0.76,
+          -0.36
+        ]
+      },
+      "all_present_at_4": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "deterministic_random_minus_window_sqrt_pearson": {
+      "phase_ap_micro": {
+        "estimate": -0.3903984730580108,
+        "ci95": [
+          -0.47374629317765676,
+          -0.27605729058190986
+        ]
+      },
+      "phase_ap_macro": {
+        "estimate": -0.28888888888888886,
+        "ci95": [
+          -0.37777777777777777,
+          -0.20666666666666655
+        ]
+      },
+      "all_present_at_1": {
+        "estimate": -0.04,
+        "ci95": [
+          -0.12,
+          0.0
+        ]
+      },
+      "all_present_at_2": {
+        "estimate": -0.43999999999999995,
+        "ci95": [
+          -0.64,
+          -0.24
+        ]
+      },
+      "all_present_at_3": {
+        "estimate": -0.6000000000000001,
+        "ci95": [
+          -0.7999999999999999,
+          -0.4
+        ]
+      },
+      "all_present_at_4": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "deterministic_random_minus_anchored_set_strict": {
+      "phase_ap_micro": {
+        "estimate": -0.4165001088836624,
+        "ci95": [
+          -0.49528461115886363,
+          -0.2990986825770046
+        ]
+      },
+      "phase_ap_macro": {
+        "estimate": -0.27555555555555555,
+        "ci95": [
+          -0.3633333333333333,
+          -0.19444444444444442
+        ]
+      },
+      "all_present_at_1": {
+        "estimate": -0.04,
+        "ci95": [
+          -0.12,
+          0.0
+        ]
+      },
+      "all_present_at_2": {
+        "estimate": -0.43999999999999995,
+        "ci95": [
+          -0.64,
+          -0.24
+        ]
+      },
+      "all_present_at_3": {
+        "estimate": -0.6000000000000001,
+        "ci95": [
+          -0.7999999999999999,
+          -0.4
+        ]
+      },
+      "all_present_at_4": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "deterministic_random_minus_crystalshift": {
+      "phase_ap_micro": {
+        "estimate": -0.39662709078190117,
+        "ci95": [
+          -0.4704875913636511,
+          -0.28652338873668
+        ]
+      },
+      "phase_ap_macro": {
+        "estimate": -0.24777777777777776,
+        "ci95": [
+          -0.33111111111111113,
+          -0.17222222222222217
+        ]
+      },
+      "all_present_at_1": {
+        "estimate": -0.04,
+        "ci95": [
+          -0.12,
+          0.0
+        ]
+      },
+      "all_present_at_2": {
+        "estimate": -0.36,
+        "ci95": [
+          -0.56,
+          -0.16000000000000003
+        ]
+      },
+      "all_present_at_3": {
+        "estimate": -0.44,
+        "ci95": [
+          -0.64,
+          -0.24000000000000005
+        ]
+      },
+      "all_present_at_4": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "deterministic_random_minus_xrd_autoanalyzer": {
+      "phase_ap_micro": {
+        "estimate": -0.3865141735180335,
+        "ci95": [
+          -0.47392765700322037,
+          -0.2670254514133204
+        ]
+      },
+      "phase_ap_macro": {
+        "estimate": -0.25888888888888884,
+        "ci95": [
+          -0.35,
+          -0.17666666666666653
+        ]
+      },
+      "all_present_at_1": {
+        "estimate": -0.04,
+        "ci95": [
+          -0.12,
+          0.0
+        ]
+      },
+      "all_present_at_2": {
+        "estimate": -0.43999999999999995,
+        "ci95": [
+          -0.64,
+          -0.24
+        ]
+      },
+      "all_present_at_3": {
+        "estimate": -0.48000000000000004,
+        "ci95": [
+          -0.6799999999999999,
+          -0.28
+        ]
+      },
+      "all_present_at_4": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "global_sqrt_pearson_minus_window_sqrt_pearson": {
+      "phase_ap_micro": {
+        "estimate": 0.010423329046147067,
+        "ci95": [
+          -0.003548737434148921,
+          0.024024342200824098
+        ]
+      },
+      "phase_ap_macro": {
+        "estimate": -0.0033333333333332993,
+        "ci95": [
+          -0.010000000000000009,
+          0.0
+        ]
+      },
+      "all_present_at_1": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "all_present_at_2": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "all_present_at_3": {
+        "estimate": -0.040000000000000036,
+        "ci95": [
+          -0.12,
+          0.0
+        ]
+      },
+      "all_present_at_4": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "global_sqrt_pearson_minus_anchored_set_strict": {
+      "phase_ap_micro": {
+        "estimate": -0.015678306779504547,
+        "ci95": [
+          -0.028351662750879685,
+          0.0009333030101269322
+        ]
+      },
+      "phase_ap_macro": {
+        "estimate": 0.010000000000000009,
+        "ci95": [
+          0.0,
+          0.030000000000000027
+        ]
+      },
+      "all_present_at_1": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "all_present_at_2": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "all_present_at_3": {
+        "estimate": -0.040000000000000036,
+        "ci95": [
+          -0.12,
+          0.0
+        ]
+      },
+      "all_present_at_4": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "global_sqrt_pearson_minus_crystalshift": {
+      "phase_ap_micro": {
+        "estimate": 0.004194711322256683,
+        "ci95": [
+          -0.020316121434430928,
+          0.03580836841818721
+        ]
+      },
+      "phase_ap_macro": {
+        "estimate": 0.0377777777777778,
+        "ci95": [
+          0.0033333333333332993,
+          0.07669444444444413
+        ]
+      },
+      "all_present_at_1": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "all_present_at_2": {
+        "estimate": 0.07999999999999996,
+        "ci95": [
+          -0.07999999999999996,
+          0.24
+        ]
+      },
+      "all_present_at_3": {
+        "estimate": 0.12,
+        "ci95": [
+          0.0,
+          0.24
+        ]
+      },
+      "all_present_at_4": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "global_sqrt_pearson_minus_xrd_autoanalyzer": {
+      "phase_ap_micro": {
+        "estimate": 0.014307628586124332,
+        "ci95": [
+          -0.011621193187191936,
+          0.041846210884872434
+        ]
+      },
+      "phase_ap_macro": {
+        "estimate": 0.026666666666666727,
+        "ci95": [
+          0.0,
+          0.05666666666666664
+        ]
+      },
+      "all_present_at_1": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "all_present_at_2": {
+        "estimate": 0.0,
+        "ci95": [
+          -0.12,
+          0.12
+        ]
+      },
+      "all_present_at_3": {
+        "estimate": 0.07999999999999996,
+        "ci95": [
+          -0.07999999999999996,
+          0.24
+        ]
+      },
+      "all_present_at_4": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "window_sqrt_pearson_minus_anchored_set_strict": {
+      "phase_ap_micro": {
+        "estimate": -0.026101635825651615,
+        "ci95": [
+          -0.044854279694877944,
+          -0.0033565292896949525
+        ]
+      },
+      "phase_ap_macro": {
+        "estimate": 0.013333333333333308,
+        "ci95": [
+          0.0,
+          0.036666666666666736
+        ]
+      },
+      "all_present_at_1": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "all_present_at_2": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "all_present_at_3": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "all_present_at_4": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "window_sqrt_pearson_minus_crystalshift": {
+      "phase_ap_micro": {
+        "estimate": -0.006228617723890384,
+        "ci95": [
+          -0.033704696544709034,
+          0.031071936619915988
+        ]
+      },
+      "phase_ap_macro": {
+        "estimate": 0.0411111111111111,
+        "ci95": [
+          0.006666666666666599,
+          0.07999999999999996
+        ]
+      },
+      "all_present_at_1": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "all_present_at_2": {
+        "estimate": 0.07999999999999996,
+        "ci95": [
+          -0.07999999999999996,
+          0.24
+        ]
+      },
+      "all_present_at_3": {
+        "estimate": 0.16000000000000003,
+        "ci95": [
+          0.039999999999999925,
+          0.31999999999999995
+        ]
+      },
+      "all_present_at_4": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "window_sqrt_pearson_minus_xrd_autoanalyzer": {
+      "phase_ap_micro": {
+        "estimate": 0.003884299539977265,
+        "ci95": [
+          -0.02208436045850897,
+          0.03242833610645064
+        ]
+      },
+      "phase_ap_macro": {
+        "estimate": 0.030000000000000027,
+        "ci95": [
+          0.0,
+          0.06008333333333228
+        ]
+      },
+      "all_present_at_1": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "all_present_at_2": {
+        "estimate": 0.0,
+        "ci95": [
+          -0.12,
+          0.12
+        ]
+      },
+      "all_present_at_3": {
+        "estimate": 0.12,
+        "ci95": [
+          -0.040000000000000036,
+          0.28
+        ]
+      },
+      "all_present_at_4": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "anchored_set_strict_minus_crystalshift": {
+      "phase_ap_micro": {
+        "estimate": 0.01987301810176123,
+        "ci95": [
+          -0.0031917120611802195,
+          0.04767899051060701
+        ]
+      },
+      "phase_ap_macro": {
+        "estimate": 0.02777777777777779,
+        "ci95": [
+          -0.0033333333333332993,
+          0.06333333333333324
+        ]
+      },
+      "all_present_at_1": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "all_present_at_2": {
+        "estimate": 0.07999999999999996,
+        "ci95": [
+          -0.07999999999999996,
+          0.24
+        ]
+      },
+      "all_present_at_3": {
+        "estimate": 0.16000000000000003,
+        "ci95": [
+          0.039999999999999925,
+          0.31999999999999995
+        ]
+      },
+      "all_present_at_4": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "anchored_set_strict_minus_xrd_autoanalyzer": {
+      "phase_ap_micro": {
+        "estimate": 0.02998593536562888,
+        "ci95": [
+          0.0046116248540874595,
+          0.05715119575493341
+        ]
+      },
+      "phase_ap_macro": {
+        "estimate": 0.01666666666666672,
+        "ci95": [
+          -0.00666666666666671,
+          0.040000000000000036
+        ]
+      },
+      "all_present_at_1": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "all_present_at_2": {
+        "estimate": 0.0,
+        "ci95": [
+          -0.12,
+          0.12
+        ]
+      },
+      "all_present_at_3": {
+        "estimate": 0.12,
+        "ci95": [
+          -0.040000000000000036,
+          0.28
+        ]
+      },
+      "all_present_at_4": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "crystalshift_minus_xrd_autoanalyzer": {
+      "phase_ap_micro": {
+        "estimate": 0.010112917263867649,
+        "ci95": [
+          -0.025556812575674052,
+          0.03936406617527317
+        ]
+      },
+      "phase_ap_macro": {
+        "estimate": -0.011111111111111072,
+        "ci95": [
+          -0.04888888888888887,
+          0.02111111111111119
+        ]
+      },
+      "all_present_at_1": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "all_present_at_2": {
+        "estimate": -0.07999999999999996,
+        "ci95": [
+          -0.24,
+          0.07999999999999996
+        ]
+      },
+      "all_present_at_3": {
+        "estimate": -0.040000000000000036,
+        "ci95": [
+          -0.20000000000000007,
+          0.12
+        ]
+      },
+      "all_present_at_4": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  "inputs": {
+    "truth": {
+      "file": "data\\query_phase_scores.csv",
+      "sha256": "70a7e11872f50a9cddbe83ca84614462edebf99a1089a8b512a525a049ba2c2b"
+    },
+    "predictions": {
+      "file": "data\\ariadnex_external_method_predictions.csv",
+      "sha256": "94826151d17b2ce3776329025e363e1734a142c0442269aaf75d50e4ff0162e1"
+    },
+    "registry": {
+      "file": "data\\external_method_registry.json",
+      "sha256": "40b88563524c034e466ac6f2c921feb5c6f8af598f3cf59b26290b36748d8d1c"
+    }
+  }
+}

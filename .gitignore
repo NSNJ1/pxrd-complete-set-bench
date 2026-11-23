@@ -41,6 +41,7 @@ reproduction.json
 *.tar
 *.tar.gz
 *.7z
+!evidence/external-methods/*.zip
 
 # Editor and OS files
 .idea/

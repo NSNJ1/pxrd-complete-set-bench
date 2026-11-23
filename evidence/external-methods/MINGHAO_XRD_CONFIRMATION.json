@@ -1,0 +1,24 @@
+{
+  "status": "human_review_confirmed",
+  "method": "XRD-AutoAnalyzer",
+  "executor": "Minghao Li",
+  "confirmation_date": "2026-11-23",
+  "confirmation_source": "project owner relayed the executor's final confirmation in the current thread",
+  "confirmed_items": [
+    "role: external method executor",
+    "official commit: bf32082521e45c0fcf5cf9ae9bd1321e76bf9012",
+    "25/25 queries processed",
+    "prediction rows: 100",
+    "official training script completed with the frozen 50-spectrum, 50-epoch budget",
+    "formal inference exited with code 0",
+    "BGMN 4.2.22 launched during inference",
+    "no ground truth access",
+    "no method parameter or adapter modification"
+  ],
+  "returned_evidence_sha256": "0801d3928376e369f2c8263db440b77f6232bf81f79c86f3175fca357bb67a89",
+  "public_name_consent": true,
+  "public_acknowledgement_name": "Minghao Li",
+  "authorship_change": false,
+  "affiliation_publication_consent": false,
+  "claim_boundary": "Confirmation covers the independent execution and evidence package, not authorship or endorsement of the paper's scientific conclusions."
+}

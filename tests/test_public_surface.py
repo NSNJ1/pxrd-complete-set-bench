@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import hashlib
 import json
 import unittest
 from pathlib import Path
@@ -18,6 +19,27 @@ class PublicSurfaceTest(unittest.TestCase):
             "pyproject.toml",
         ):
             self.assertTrue((ROOT / name).is_file(), name)
+
+    def test_external_method_evidence(self) -> None:
+        evidence = ROOT / "evidence" / "external-methods"
+        for name in (
+            "CRYSTALSHIFT_INDEPENDENT_RUN_20261123_PUBLIC_SANITIZED.zip",
+            "XRD_AUTOANALYZER_INDEPENDENT_RUN_20261123_PUBLIC_SANITIZED.zip",
+            "MINGHAO_CRYSTALSHIFT_CONFIRMATION.json",
+            "MINGHAO_XRD_CONFIRMATION.json",
+        ):
+            self.assertTrue((evidence / name).is_file(), name)
+        expected_hashes = {
+            "CRYSTALSHIFT_INDEPENDENT_RUN_20261123_PUBLIC_SANITIZED.zip": (
+                "31dfa3143e22f96fa797ad209d34cd0994a81f725a18422d714c9a4d27fd4c47"
+            ),
+            "XRD_AUTOANALYZER_INDEPENDENT_RUN_20261123_PUBLIC_SANITIZED.zip": (
+                "6aa6ea4322af8f42ea43d4a29743eb684441adfa00a5b577005093bb8524a9ee"
+            ),
+        }
+        for name, expected in expected_hashes.items():
+            actual = hashlib.sha256((evidence / name).read_bytes()).hexdigest()
+            self.assertEqual(actual, expected)
 
     def test_external_control_summary(self) -> None:
         summary = json.loads(

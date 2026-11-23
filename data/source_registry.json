@@ -1,5 +1,5 @@
 {
-  "status": "source_registry_v0.4",
+  "status": "source_registry_v0.5",
   "access_date": "2026-11-18",
   "core_benchmark": {
     "artifact": "benchmark_complete_set_v02_source_stratified",
@@ -123,6 +123,38 @@
       "claim_boundary": "Project-locked retrospective high-cardinality mineral cohort; consumed"
     }
   },
+  "external_method_validation": {
+    "source": "ariadnex_controlled",
+    "queries": 25,
+    "candidates": 4,
+    "prediction_file": "data/ariadnex_external_method_predictions.csv",
+    "prediction_rows": 600,
+    "methods": [
+      "deterministic_random",
+      "global_sqrt_pearson",
+      "window_sqrt_pearson",
+      "anchored_set_strict",
+      "crystalshift",
+      "xrd_autoanalyzer"
+    ],
+    "independent_external_methods": [
+      {
+        "id": "crystalshift",
+        "repository": "https://github.com/MingChiangChang/CrystalShift.jl",
+        "commit": "c4884ca1dbbd78135cd50f5e17141cdc0b6f43c8",
+        "license": "MIT",
+        "evidence_sha256": "31dfa3143e22f96fa797ad209d34cd0994a81f725a18422d714c9a4d27fd4c47"
+      },
+      {
+        "id": "xrd_autoanalyzer",
+        "repository": "https://github.com/njszym/XRD-AutoAnalyzer",
+        "commit": "bf32082521e45c0fcf5cf9ae9bd1321e76bf9012",
+        "license": "MIT",
+        "evidence_sha256": "6aa6ea4322af8f42ea43d4a29743eb684441adfa00a5b577005093bb8524a9ee"
+      }
+    ],
+    "claim_boundary": "Retrospective method coverage on one measured control source; not prospective validation or universal state of the art"
+  },
   "shared_reference_source": {
     "name": "Crystallography Open Database",
     "url": "https://www.crystallography.net/cod/",
@@ -133,5 +165,5 @@
     "code": "MIT",
     "project_created_derived_tables": "CC BY 4.0"
   },
-  "release_boundary": "Source-level and project licenses are recorded. Raw third-party spectra and complete CIF collections are not redistributed. Nested database terms remain with the original records. This release is not a prospective validation or an independent third-party reproduction."
+  "release_boundary": "Source-level and project licenses are recorded. Raw third-party spectra and complete CIF collections are not redistributed. Nested database terms remain with the original records. This release is not a prospective validation."
 }

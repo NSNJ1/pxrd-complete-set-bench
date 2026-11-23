@@ -4,6 +4,9 @@
 
 Average precision over the candidate phases of one source view.
 
+Equal scores form one threshold block. AP therefore does not depend on an
+arbitrary ordering of tied candidates.
+
 ## all-present@k
 
 For a query with true set \(S^*\), the value is one when
@@ -12,6 +15,10 @@ candidates. Otherwise it is zero.
 
 This endpoint penalizes a missing true phase but does not penalize an extra false
 phase. It is therefore not exact-set accuracy.
+
+The main value uses descending score with ascending phase identifier as a fixed
+tie break. The controlled method panel also reports the minimum and maximum
+value over all legal orderings within equal-score blocks.
 
 ## Dominant-phase Top-1
 

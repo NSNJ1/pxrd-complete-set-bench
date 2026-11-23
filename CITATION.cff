@@ -7,10 +7,11 @@ authors:
     given-names: "Tianxiang"
     alias: "NSNJ1"
     website: "https://github.com/NSNJ1"
-version: "0.4.2"
-date-released: "2026-11-20"
+version: "0.5.0"
+date-released: "2026-11-23"
 repository-code: "https://github.com/NSNJ1/pxrd-complete-set-bench"
 url: "https://github.com/NSNJ1/pxrd-complete-set-bench"
+doi: "10.5281/zenodo.24374677"
 license: "MIT"
 keywords:
   - powder X-ray diffraction

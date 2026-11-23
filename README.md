@@ -3,6 +3,7 @@
 [![Python 3.12](https://img.shields.io/badge/python-3.12-3776AB.svg)](https://www.python.org/)
 [![Code license: MIT](https://img.shields.io/badge/code-MIT-yellow.svg)](LICENSE)
 [![Data license: CC BY 4.0](https://img.shields.io/badge/data-CC--BY--4.0-lightgrey.svg)](LICENSE-DATA)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24374677.svg)](https://doi.org/10.5281/zenodo.24374677)
 
 A source-stratified benchmark for complete phase-set retrieval from measured
 multiphase powder X-ray diffraction (PXRD) patterns.
@@ -17,6 +18,8 @@ screening and within-shortlist ranking separately.
 - 1,921 queries and 57,991 query-phase rows.
 - Frozen candidate identities, relevance labels, primary-phase labels, source
   and acquisition clusters, and baseline/method scores.
+- A six-method controlled comparison with sanitized evidence from two
+  independent external executions.
 - Two external controls: a saturated ternary-mixture cohort and a
   high-cardinality mineral cohort.
 - An evaluator for Phase AP, dominant-phase Top-1, all-present@k,
@@ -65,6 +68,19 @@ The full command uses 10,000 cluster-bootstrap repeats and takes about 12 minute
 on the development machine. A successful run reports
 `core_reproduction_exact_match`.
 
+Reproduce the controlled six-method panel:
+
+```bash
+python scripts/reproduce_external_panel.py \
+  --output external-panel-reproduction.json
+```
+
+A successful run reports
+`external_panel_reproduction_exact_match`.
+
+The panel prediction table and canonical result hashes are listed in
+[docs/reproduction.md](docs/reproduction.md).
+
 ## Input format
 
 `data/query_phase_scores.csv` is the executable benchmark input.
@@ -96,6 +112,11 @@ with different libraries.
 `all-present@k` is not exact-set accuracy. A list of size `k` may contain every
 true phase and additional false positives.
 
+Average precision treats equal scores as one threshold block. Candidate
+ranking for `all-present@k` uses descending score and then ascending phase
+identifier as the fixed tie break. The controlled panel also stores the
+minimum and maximum over legal tie orders.
+
 ## Source cohorts
 
 | Source | Queries | Role |
@@ -110,6 +131,10 @@ true phase and additional false positives.
 
 See [docs/data-sources.md](docs/data-sources.md) for identifiers and licenses.
 No cohort is described as prospective.
+
+Independent execution and adaptation details for the controlled method panel
+are in
+[docs/external-method-validation.md](docs/external-method-validation.md).
 
 ## Repository layout
 
@@ -149,6 +174,9 @@ clusters, labels, and bootstrap settings. See
   task.
 - Several source cohorts were used before the final evaluation protocol and are
   not fresh confirmations.
+- The six-method comparison is retrospective and covers one 25-query measured
+  source. It is not prospective validation and is smaller than the largest
+  nearby benchmark.
 - Published learned methods were not all executable under this exact contract.
   No unexecuted method is assigned a numeric result.
 

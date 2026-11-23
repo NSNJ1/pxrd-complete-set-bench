@@ -1,0 +1,17 @@
+{
+  "status": "external_panel_reproduction_exact_match",
+  "truth_sha256": "70a7e11872f50a9cddbe83ca84614462edebf99a1089a8b512a525a049ba2c2b",
+  "predictions_sha256": "94826151d17b2ce3776329025e363e1734a142c0442269aaf75d50e4ff0162e1",
+  "actual_canonical_sha256": "b39ba2b54526dbfee90863f5e25023e49f29c8c483adcc470a5d76015b14e4b5",
+  "expected_canonical_sha256": "b39ba2b54526dbfee90863f5e25023e49f29c8c483adcc470a5d76015b14e4b5",
+  "elapsed_seconds": 29.845679600024596,
+  "checks": {
+    "truth_sha256": true,
+    "predictions_sha256": true,
+    "result_sha256": true,
+    "expected_result_sha256": true,
+    "result_matches_expected": true,
+    "methods": true,
+    "bootstrap": true
+  }
+}

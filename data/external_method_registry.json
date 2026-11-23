@@ -1,0 +1,75 @@
+{
+  "status": "controlled_external_panel_v1",
+  "source": "ariadnex_controlled",
+  "queries": 25,
+  "candidates": 4,
+  "prediction_rows": 600,
+  "bootstrap_seed": 20261123,
+  "bootstrap_repeats": 10000,
+  "truth_file": "data/query_phase_scores.csv",
+  "prediction_file": "data/ariadnex_external_method_predictions.csv",
+  "methods": [
+    {
+      "id": "deterministic_random",
+      "display_name": "Deterministic random ranking",
+      "family": "no-information baseline",
+      "provenance": "project deterministic permutation",
+      "seed": 20261123,
+      "score_definition": "first 64 SHA-256 bits of seed|query|phase divided by 2^64 - 1"
+    },
+    {
+      "id": "global_sqrt_pearson",
+      "display_name": "Global sqrt-Pearson",
+      "family": "whole-pattern similarity",
+      "provenance": "project baseline",
+      "score_definition": "baseline_score in data/query_phase_scores.csv"
+    },
+    {
+      "id": "window_sqrt_pearson",
+      "display_name": "Eight-window sqrt-Pearson",
+      "family": "local peak support",
+      "provenance": "project baseline",
+      "score_definition": "frozen eight-window score from the pre-external project table"
+    },
+    {
+      "id": "anchored_set_strict",
+      "display_name": "Anchored-set strict",
+      "family": "anchored candidate-set ranking",
+      "provenance": "project method",
+      "score_definition": "method_score in data/query_phase_scores.csv"
+    },
+    {
+      "id": "crystalshift",
+      "display_name": "CrystalShift.jl",
+      "family": "probabilistic phase combinations and tree search",
+      "provenance": "official external implementation",
+      "repository": "https://github.com/MingChiangChang/CrystalShift.jl",
+      "commit": "c4884ca1dbbd78135cd50f5e17141cdc0b6f43c8",
+      "license": "MIT",
+      "adaptation": "set-level posterior summed to candidate marginal inclusion",
+      "execution": "independent external execution",
+      "evidence_archive": "evidence/external-methods/CRYSTALSHIFT_INDEPENDENT_RUN_20261123_PUBLIC_SANITIZED.zip",
+      "evidence_sha256": "31dfa3143e22f96fa797ad209d34cd0994a81f725a18422d714c9a4d27fd4c47"
+    },
+    {
+      "id": "xrd_autoanalyzer",
+      "display_name": "XRD-AutoAnalyzer",
+      "family": "CNN phase identification and iterative phase stripping",
+      "provenance": "official external implementation",
+      "repository": "https://github.com/njszym/XRD-AutoAnalyzer",
+      "commit": "bf32082521e45c0fcf5cf9ae9bd1321e76bf9012",
+      "license": "MIT",
+      "adaptation": "repository pipeline with the benchmark output adapter",
+      "training_budget": {
+        "generated_spectra": 50,
+        "epochs": 50,
+        "min_angle": 21.8,
+        "max_angle": 87.0
+      },
+      "execution": "independent external execution",
+      "evidence_archive": "evidence/external-methods/XRD_AUTOANALYZER_INDEPENDENT_RUN_20261123_PUBLIC_SANITIZED.zip",
+      "evidence_sha256": "6aa6ea4322af8f42ea43d4a29743eb684441adfa00a5b577005093bb8524a9ee"
+    }
+  ],
+  "claim_boundary": "Retrospective method coverage on one 25-query controlled measured-mixture panel; not prospective validation or universal state of the art."
+}
