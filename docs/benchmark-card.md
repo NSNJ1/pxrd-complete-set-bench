@@ -10,6 +10,10 @@ The benchmark is closed-candidate: each labelled phase must be present in the
 source's frozen candidate library. Open-set rejection and phase quantification
 are outside this task.
 
+External or partial submissions use the schema in `docs/submission-format.md`.
+Missing candidates are not ranked. Uncovered queries remain in the primary
+denominator and also lower candidate, query and positive coverage.
+
 ## Primary endpoint
 
 `all-present@k`: every labelled phase occurs anywhere among the first `k`

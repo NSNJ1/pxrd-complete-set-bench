@@ -30,6 +30,8 @@ screening and within-shortlist ranking separately.
   and paired cluster-bootstrap intervals.
 - An endpoint-sensitivity audit showing whether the same methods change rank
   under AP, all-present@k and legal tie bounds.
+- A partial-submission scorer that counts missing outputs as failures and
+  reports candidate, query and positive coverage.
 - Frozen 10,000-resample results and a one-command reproduction check.
 
 The core score table does not redistribute raw spectra or complete CIF
@@ -104,8 +106,20 @@ python scripts/audit_rank_reversal.py \
   --repeats 10000
 ```
 
+Score an external or partial submission:
+
+```bash
+pxrd-complete-set-bench score-submission truth.csv predictions.csv \
+  --budgets 1,2,3,4,5,10 \
+  --bootstrap-repeats 10000 \
+  --output-json submission-score.json
+```
+
 The panel prediction table and canonical result hashes are listed in
 [docs/reproduction.md](docs/reproduction.md).
+
+The submission schema and missing-output policy are documented in
+[docs/submission-format.md](docs/submission-format.md).
 
 ## Input format
 

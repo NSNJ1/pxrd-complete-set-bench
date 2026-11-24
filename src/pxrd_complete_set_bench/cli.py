@@ -18,6 +18,7 @@ from .external_panel import (
     load_registry,
     load_truth,
 )
+from .submission import score_submission
 
 
 def _budgets(value: str) -> tuple[int, ...]:
@@ -120,6 +121,21 @@ def build_parser() -> argparse.ArgumentParser:
     panel_parser.add_argument("--seed", type=int, default=20261123)
     panel_parser.add_argument("--output-json", type=Path)
 
+    submission_parser = subparsers.add_parser(
+        "score-submission",
+        help="score one or more partial candidate-ranking submissions",
+    )
+    submission_parser.add_argument("truth", type=Path)
+    submission_parser.add_argument("predictions", type=Path)
+    submission_parser.add_argument("--budgets", type=_budgets)
+    submission_parser.add_argument(
+        "--bootstrap-repeats",
+        type=_positive_int,
+        default=10_000,
+    )
+    submission_parser.add_argument("--seed", type=int, default=20261124)
+    submission_parser.add_argument("--output-json", type=Path, required=True)
+
     diagnostics_parser = subparsers.add_parser(
         "diagnostics",
         help="analyze candidate-library scale, failure modes and abstention",
@@ -218,6 +234,42 @@ def run_external_panel(args: argparse.Namespace) -> int:
     return 0
 
 
+def run_score_submission(args: argparse.Namespace) -> int:
+    truth = pd.read_csv(args.truth)
+    predictions = pd.read_csv(args.predictions)
+    report = score_submission(
+        truth,
+        predictions,
+        args.budgets,
+        args.bootstrap_repeats,
+        args.seed,
+    )
+    report["inputs"] = {
+        "truth": {
+            "path": args.truth.as_posix(),
+            "sha256": sha256(args.truth),
+        },
+        "predictions": {
+            "path": args.predictions.as_posix(),
+            "sha256": sha256(args.predictions),
+        },
+    }
+    text = json.dumps(report, ensure_ascii=False, indent=2) + "\n"
+    args.output_json.parent.mkdir(parents=True, exist_ok=True)
+    args.output_json.write_text(text, encoding="utf-8", newline="\n")
+    print(
+        json.dumps(
+            {
+                "status": report["status"],
+                "methods": sorted(report["methods"]),
+                "output": str(args.output_json),
+            },
+            ensure_ascii=False,
+        )
+    )
+    return 0
+
+
 def run_diagnostics(args: argparse.Namespace) -> int:
     frame = pd.read_csv(args.input)
     report, query_output, _ = compute_diagnostics(
@@ -267,6 +319,8 @@ def main(argv: list[str] | None = None) -> int:
         return run_evaluate(args)
     if args.command == "external-panel":
         return run_external_panel(args)
+    if args.command == "score-submission":
+        return run_score_submission(args)
     if args.command == "diagnostics":
         return run_diagnostics(args)
     raise RuntimeError(f"unsupported command: {args.command}")

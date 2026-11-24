@@ -1,7 +1,7 @@
 {
   "version": "0.6.1",
   "date": "2026-11-24",
-  "file_count": 109,
+  "file_count": 113,
   "entries": [
     {
       "path": ".gitattributes",
@@ -50,8 +50,8 @@
     },
     {
       "path": "README.md",
-      "size": 8182,
-      "sha256": "6a315ef245fc9630a3e5901b166c6aadc1ea9f360b9d999c5dbafbba6f5ddd37"
+      "size": 8648,
+      "sha256": "c6a8fbb3d819ad98983aad9048c0c09757494c2d4893dbaafed416e2462d6b8b"
     },
     {
       "path": "SECURITY.md",
@@ -95,8 +95,8 @@
     },
     {
       "path": "docs/benchmark-card.md",
-      "size": 3403,
-      "sha256": "d2fbbad03b4c5cf55ca38ed45d2003e5e3bf7150fd1df1cabeb55cfca906b4cf"
+      "size": 3625,
+      "sha256": "640a13079e76df707295a0a7d7a036ab8ce4cd889b43a7380b6080c4f78618e5"
     },
     {
       "path": "docs/data-sources.md",
@@ -105,8 +105,8 @@
     },
     {
       "path": "docs/design-basis.md",
-      "size": 1395,
-      "sha256": "c04fe19e1c0f64714e7a1c25432e0a78e383a4868832d30273e2b2c5715273c0"
+      "size": 1419,
+      "sha256": "946dc14ba81ba41670456a65b367d7ce6db479261085d6a788b8b514ecbe6487"
     },
     {
       "path": "docs/external-method-validation.md",
@@ -145,8 +145,8 @@
     },
     {
       "path": "docs/release-notes-v0.6.1.md",
-      "size": 1728,
-      "sha256": "381e9fd9b5d14d7c7688150261a4b9c915987697f1a8df341dfe4c76fa5dcbd9"
+      "size": 1915,
+      "sha256": "0fa0d8ab5b8d7698110f6652ce0e99ace43644be4f4aeb89e8109f5adbcad7eb"
     },
     {
       "path": "docs/reproduction.md",
@@ -157,6 +157,11 @@
       "path": "docs/statistical-audit.md",
       "size": 4226,
       "sha256": "f4bcae9ae21f0d0735876903305dd97fdaa90da539580cc7526ef8510663af9b"
+    },
+    {
+      "path": "docs/submission-format.md",
+      "size": 2340,
+      "sha256": "7d394dc6555bee933804e6ba6697e07f97b86b96215052d044ffd7102fa6594e"
     },
     {
       "path": "evidence/external-methods/CRYSTALSHIFT_INDEPENDENT_RUN_20261123_PUBLIC_SANITIZED.zip",
@@ -459,6 +464,11 @@
       "sha256": "f7cbf5f7273fcae1ea7171351c0eb46893443638994d31258e7a555475b4e2d5"
     },
     {
+      "path": "scripts/score_submission.py",
+      "size": 1957,
+      "sha256": "b589335471212d3d0bf5b09a216e6bd1547b8056f6d5f8364cee3b2ccdf0bd84"
+    },
+    {
       "path": "src/pxrd_complete_set_bench/__init__.py",
       "size": 301,
       "sha256": "d37fa5a1dc3f03787e1f0736eafcf6c13cd4b202d2425f8ea926ce5acfa0b42b"
@@ -470,8 +480,8 @@
     },
     {
       "path": "src/pxrd_complete_set_bench/cli.py",
-      "size": 8605,
-      "sha256": "ff17eca1a3fba1b2d3838f418e8e9b0db5fcedf1a202debaaf80a925a7767fd9"
+      "size": 10378,
+      "sha256": "df35ca84d7c9fc6e1003a3e34f860538a3c4f2ce8783966503379081f9966272"
     },
     {
       "path": "src/pxrd_complete_set_bench/diagnostics.py",
@@ -497,6 +507,11 @@
       "path": "src/pxrd_complete_set_bench/rank_reversal.py",
       "size": 13404,
       "sha256": "f70abb62b02d0d007100eabeec0803653a0b631ac62821fd990a7924b728e9d3"
+    },
+    {
+      "path": "src/pxrd_complete_set_bench/submission.py",
+      "size": 10666,
+      "sha256": "8c4568c7b9cf7c988fb98fe98114e24135cfa02c1c0f472a758defadaacdcf7e"
     },
     {
       "path": "tests/smoke_fixture.csv",
@@ -547,6 +562,11 @@
       "path": "tests/test_result_contract.py",
       "size": 2610,
       "sha256": "1842f6ae4a3e6054f4ac1362e4c1db0d03ff509c0d8f45d7d2487d574d780d24"
+    },
+    {
+      "path": "tests/test_submission.py",
+      "size": 5249,
+      "sha256": "14663579189f7096d7f69b600abe92b1d75fb87b2e503b4c03f3c5e20e40ad1b"
     }
   ]
 }

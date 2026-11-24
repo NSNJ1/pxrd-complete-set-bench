@@ -13,6 +13,9 @@ source score table is unchanged.
 - An exact replay check for the rank-reversal result.
 - Explicit wording that the two external tests share opXRD lineage and are not
   independent underlying source families.
+- A model-agnostic partial-submission scorer with candidate, query and positive
+  coverage. Missing candidates are never ranked and uncovered queries remain in
+  the primary denominator.
 
 ## Main finding
 
