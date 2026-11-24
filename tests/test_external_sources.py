@@ -63,8 +63,31 @@ class ExternalSourceTest(unittest.TestCase):
         self.assertEqual(null_audit["status"], "null_and_power_audit")
         self.assertEqual(len(null_audit["sources"]), 7)
         self.assertEqual(
+            sha256(ROOT / "results" / "source_overlap_audit.json"),
+            "c75361582ed5f28609313a59d9c4c708eb69fe9da2be65583d72a8322e26395e",
+        )
+        self.assertEqual(
             sha256(ROOT / "results" / "null_and_power_audit.json"),
             sha256(ROOT / "results" / "null_and_power_audit_reproduction.json"),
+        )
+
+    def test_rank_reversal_audit(self) -> None:
+        result_path = ROOT / "results" / "rank_reversal_audit.json"
+        self.assertEqual(
+            sha256(result_path),
+            "6c94c76f009435ed0c991909b5774300a6a82a37d6578bcce9a0d3d57e437595",
+        )
+        result = json.loads(result_path.read_text(encoding="utf-8"))
+        self.assertEqual(result["status"], "endpoint_rank_reversal_audit")
+        self.assertEqual(result["contract"]["queries"], 25)
+        self.assertEqual(result["contract"]["methods"], 8)
+        self.assertEqual(
+            result["headline"]["observed_pairwise_reversal_fraction"],
+            0.12,
+        )
+        self.assertEqual(
+            sha256(result_path),
+            sha256(ROOT / "results" / "rank_reversal_audit_reproduction.json"),
         )
 
 

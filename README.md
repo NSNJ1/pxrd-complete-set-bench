@@ -28,6 +28,8 @@ screening and within-shortlist ranking separately.
 - An evaluator for Phase AP, dominant-phase Top-1, all-present@k,
   exact-set-stratified coverage, cardinality-balanced coverage, screening recall,
   and paired cluster-bootstrap intervals.
+- An endpoint-sensitivity audit showing whether the same methods change rank
+  under AP, all-present@k and legal tie bounds.
 - Frozen 10,000-resample results and a one-command reproduction check.
 
 The core score table does not redistribute raw spectra or complete CIF
@@ -91,6 +93,16 @@ python scripts/reproduce_diagnostics.py \
 ```
 
 A successful run reports `diagnostics_reproduction_exact_match`.
+
+Reproduce the endpoint rank-reversal audit:
+
+```bash
+python scripts/audit_rank_reversal.py \
+  --scores data/ariadnex_external_method_scores.csv \
+  --registry data/external_method_registry.json \
+  --out rank-reversal.json \
+  --repeats 10000
+```
 
 The panel prediction table and canonical result hashes are listed in
 [docs/reproduction.md](docs/reproduction.md).

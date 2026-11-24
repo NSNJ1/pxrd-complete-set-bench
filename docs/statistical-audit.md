@@ -60,3 +60,32 @@ own external test: RealBind publishes prototype-held-out splits and a
 structure-matching audit. The seven-source core cannot be upgraded to a
 structure-level leakage claim without recovering every candidate structure.
 Missing structure identifiers are reported rather than imputed.
+
+## Endpoint-dependent method ranks
+
+The eight-method AriadneX panel is rescored under AP, all-present@2,
+all-present@3, the legal minimum and maximum over tied candidates, and the mean
+minimum review rank. A 10,000-repeat query-level bootstrap records both rank
+intervals and pairwise rank reversals.
+
+The fixed all-present@3 and micro-AP rankings disagree for 12% of comparable
+method pairs in the observed panel. The bootstrap mean is 15.7% with a 95%
+interval of 3.8% to 33.3%. The disagreement is larger when the endpoint itself
+changes:
+
+- AP-micro versus the legal tie maximum at three: 38%;
+- legal tie minimum versus legal tie maximum at three: 38%;
+- AP-micro versus AP-macro: 29%.
+
+XMatcher AutoMix, for example, is 7th under the fixed and tie-minimum
+all-present@3 values but 1st under the tie maximum. This does not mean that its
+upper bound is a deployable ranking. It means that tied or absent candidates
+make the claimed ordering unresolved, and a benchmark must display that
+uncertainty rather than select one convenient tie break.
+
+The panel has only 25 queries. Bootstrap rank intervals remain wide for several
+methods, so these percentages are exploratory endpoint-sensitivity evidence,
+not a statistically stable community leaderboard.
+
+The frozen result is `results/rank_reversal_audit.json` with SHA-256
+`6c94c76f009435ed0c991909b5774300a6a82a37d6578bcce9a0d3d57e437595`.

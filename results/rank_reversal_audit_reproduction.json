@@ -1,0 +1,936 @@
+{
+  "status": "endpoint_rank_reversal_audit",
+  "claim_boundary": "Exploratory endpoint sensitivity on one 25-query retrospective panel. Reversal fractions describe benchmark-metric dependence, not a new significance test for state-of-the-art performance.",
+  "contract": {
+    "queries": 25,
+    "methods": 8,
+    "bootstrap": "query-level with replacement",
+    "bootstrap_repeats": 10000,
+    "seed": 20261123,
+    "endpoints": {
+      "phase_ap_micro": "larger_is_better",
+      "phase_ap_macro": "larger_is_better",
+      "all_present_at_2": "larger_is_better",
+      "all_present_at_3": "larger_is_better",
+      "tie_min_all_present_at_3": "larger_is_better",
+      "tie_max_all_present_at_3": "larger_is_better",
+      "mean_minimum_k": "smaller_is_better"
+    }
+  },
+  "observed": {
+    "phase_ap_micro": {
+      "deterministic_random": {
+        "value": 0.5453911450091435,
+        "rank": 8.0
+      },
+      "global_sqrt_pearson": {
+        "value": 0.9462129471133014,
+        "rank": 3.0
+      },
+      "window_sqrt_pearson": {
+        "value": 0.9357896180671543,
+        "rank": 5.0
+      },
+      "anchored_set_strict": {
+        "value": 0.9618912538928059,
+        "rank": 1.0
+      },
+      "crystalshift": {
+        "value": 0.9420182357910447,
+        "rank": 4.0
+      },
+      "xrd_autoanalyzer": {
+        "value": 0.9319053185271771,
+        "rank": 6.0
+      },
+      "xmatcher_automix": {
+        "value": 0.8824369243141779,
+        "rank": 7.0
+      },
+      "xdecomposer": {
+        "value": 0.9560679452948994,
+        "rank": 2.0
+      }
+    },
+    "phase_ap_macro": {
+      "deterministic_random": {
+        "value": 0.6977777777777777,
+        "rank": 8.0
+      },
+      "global_sqrt_pearson": {
+        "value": 0.9833333333333333,
+        "rank": 2.0
+      },
+      "window_sqrt_pearson": {
+        "value": 0.9866666666666666,
+        "rank": 1.0
+      },
+      "anchored_set_strict": {
+        "value": 0.9733333333333333,
+        "rank": 4.0
+      },
+      "crystalshift": {
+        "value": 0.9455555555555555,
+        "rank": 6.0
+      },
+      "xrd_autoanalyzer": {
+        "value": 0.9566666666666666,
+        "rank": 5.0
+      },
+      "xmatcher_automix": {
+        "value": 0.93,
+        "rank": 7.0
+      },
+      "xdecomposer": {
+        "value": 0.98,
+        "rank": 3.0
+      }
+    },
+    "all_present_at_2": {
+      "deterministic_random": {
+        "value": 0.16,
+        "rank": 8.0
+      },
+      "global_sqrt_pearson": {
+        "value": 0.6,
+        "rank": 3.5
+      },
+      "window_sqrt_pearson": {
+        "value": 0.6,
+        "rank": 3.5
+      },
+      "anchored_set_strict": {
+        "value": 0.6,
+        "rank": 3.5
+      },
+      "crystalshift": {
+        "value": 0.52,
+        "rank": 6.5
+      },
+      "xrd_autoanalyzer": {
+        "value": 0.6,
+        "rank": 3.5
+      },
+      "xmatcher_automix": {
+        "value": 0.52,
+        "rank": 6.5
+      },
+      "xdecomposer": {
+        "value": 0.64,
+        "rank": 1.0
+      }
+    },
+    "all_present_at_3": {
+      "deterministic_random": {
+        "value": 0.32,
+        "rank": 8.0
+      },
+      "global_sqrt_pearson": {
+        "value": 0.88,
+        "rank": 4.0
+      },
+      "window_sqrt_pearson": {
+        "value": 0.92,
+        "rank": 2.0
+      },
+      "anchored_set_strict": {
+        "value": 0.92,
+        "rank": 2.0
+      },
+      "crystalshift": {
+        "value": 0.76,
+        "rank": 6.0
+      },
+      "xrd_autoanalyzer": {
+        "value": 0.8,
+        "rank": 5.0
+      },
+      "xmatcher_automix": {
+        "value": 0.72,
+        "rank": 7.0
+      },
+      "xdecomposer": {
+        "value": 0.92,
+        "rank": 2.0
+      }
+    },
+    "tie_min_all_present_at_3": {
+      "deterministic_random": {
+        "value": 0.32,
+        "rank": 8.0
+      },
+      "global_sqrt_pearson": {
+        "value": 0.88,
+        "rank": 2.0
+      },
+      "window_sqrt_pearson": {
+        "value": 0.92,
+        "rank": 1.0
+      },
+      "anchored_set_strict": {
+        "value": 0.84,
+        "rank": 3.5
+      },
+      "crystalshift": {
+        "value": 0.72,
+        "rank": 5.5
+      },
+      "xrd_autoanalyzer": {
+        "value": 0.72,
+        "rank": 5.5
+      },
+      "xmatcher_automix": {
+        "value": 0.64,
+        "rank": 7.0
+      },
+      "xdecomposer": {
+        "value": 0.84,
+        "rank": 3.5
+      }
+    },
+    "tie_max_all_present_at_3": {
+      "deterministic_random": {
+        "value": 0.32,
+        "rank": 8.0
+      },
+      "global_sqrt_pearson": {
+        "value": 0.88,
+        "rank": 5.5
+      },
+      "window_sqrt_pearson": {
+        "value": 0.92,
+        "rank": 3.5
+      },
+      "anchored_set_strict": {
+        "value": 0.92,
+        "rank": 3.5
+      },
+      "crystalshift": {
+        "value": 0.8,
+        "rank": 7.0
+      },
+      "xrd_autoanalyzer": {
+        "value": 0.88,
+        "rank": 5.5
+      },
+      "xmatcher_automix": {
+        "value": 1.0,
+        "rank": 1.0
+      },
+      "xdecomposer": {
+        "value": 0.96,
+        "rank": 2.0
+      }
+    },
+    "mean_minimum_k": {
+      "deterministic_random": {
+        "value": 3.52,
+        "rank": 8.0
+      },
+      "global_sqrt_pearson": {
+        "value": 2.48,
+        "rank": 4.0
+      },
+      "window_sqrt_pearson": {
+        "value": 2.44,
+        "rank": 2.5
+      },
+      "anchored_set_strict": {
+        "value": 2.44,
+        "rank": 2.5
+      },
+      "crystalshift": {
+        "value": 2.68,
+        "rank": 6.0
+      },
+      "xrd_autoanalyzer": {
+        "value": 2.56,
+        "rank": 5.0
+      },
+      "xmatcher_automix": {
+        "value": 2.72,
+        "rank": 7.0
+      },
+      "xdecomposer": {
+        "value": 2.4,
+        "rank": 1.0
+      }
+    }
+  },
+  "endpoint_pairwise_reversals": {
+    "phase_ap_micro__phase_ap_macro": {
+      "observed_pairwise_reversal_fraction": 0.2857142857142857,
+      "comparable_method_pairs": 28,
+      "bootstrap_mean_reversal_fraction": 0.22450420206122382,
+      "bootstrap_ci95": [
+        0.08,
+        0.37037037037037035
+      ]
+    },
+    "phase_ap_micro__all_present_at_2": {
+      "observed_pairwise_reversal_fraction": 0.14285714285714285,
+      "comparable_method_pairs": 21,
+      "bootstrap_mean_reversal_fraction": 0.16226753493740073,
+      "bootstrap_ci95": [
+        0.0,
+        0.35294117647058826
+      ]
+    },
+    "phase_ap_micro__all_present_at_3": {
+      "observed_pairwise_reversal_fraction": 0.12,
+      "comparable_method_pairs": 25,
+      "bootstrap_mean_reversal_fraction": 0.1572469499323707,
+      "bootstrap_ci95": [
+        0.038461538461538464,
+        0.3333333333333333
+      ]
+    },
+    "phase_ap_micro__tie_min_all_present_at_3": {
+      "observed_pairwise_reversal_fraction": 0.23076923076923078,
+      "comparable_method_pairs": 26,
+      "bootstrap_mean_reversal_fraction": 0.20798766155154977,
+      "bootstrap_ci95": [
+        0.07407407407407407,
+        0.3333333333333333
+      ]
+    },
+    "phase_ap_micro__tie_max_all_present_at_3": {
+      "observed_pairwise_reversal_fraction": 0.38461538461538464,
+      "comparable_method_pairs": 26,
+      "bootstrap_mean_reversal_fraction": 0.38231683743840006,
+      "bootstrap_ci95": [
+        0.2222222222222222,
+        0.56
+      ]
+    },
+    "phase_ap_micro__mean_minimum_k": {
+      "observed_pairwise_reversal_fraction": 0.14814814814814814,
+      "comparable_method_pairs": 27,
+      "bootstrap_mean_reversal_fraction": 0.16074425878025594,
+      "bootstrap_ci95": [
+        0.04,
+        0.32
+      ]
+    },
+    "phase_ap_macro__all_present_at_2": {
+      "observed_pairwise_reversal_fraction": 0.09523809523809523,
+      "comparable_method_pairs": 21,
+      "bootstrap_mean_reversal_fraction": 0.13123059091309525,
+      "bootstrap_ci95": [
+        0.0,
+        0.38095238095238093
+      ]
+    },
+    "phase_ap_macro__all_present_at_3": {
+      "observed_pairwise_reversal_fraction": 0.08,
+      "comparable_method_pairs": 25,
+      "bootstrap_mean_reversal_fraction": 0.0799682364883089,
+      "bootstrap_ci95": [
+        0.0,
+        0.2631578947368421
+      ]
+    },
+    "phase_ap_macro__tie_min_all_present_at_3": {
+      "observed_pairwise_reversal_fraction": 0.0,
+      "comparable_method_pairs": 26,
+      "bootstrap_mean_reversal_fraction": 0.024196345237752832,
+      "bootstrap_ci95": [
+        0.0,
+        0.11538461538461539
+      ]
+    },
+    "phase_ap_macro__tie_max_all_present_at_3": {
+      "observed_pairwise_reversal_fraction": 0.34615384615384615,
+      "comparable_method_pairs": 26,
+      "bootstrap_mean_reversal_fraction": 0.33237732780761386,
+      "bootstrap_ci95": [
+        0.11764705882352941,
+        0.52
+      ]
+    },
+    "phase_ap_macro__mean_minimum_k": {
+      "observed_pairwise_reversal_fraction": 0.1111111111111111,
+      "comparable_method_pairs": 27,
+      "bootstrap_mean_reversal_fraction": 0.09120090736554518,
+      "bootstrap_ci95": [
+        0.0,
+        0.25
+      ]
+    },
+    "all_present_at_2__all_present_at_3": {
+      "observed_pairwise_reversal_fraction": 0.0,
+      "comparable_method_pairs": 19,
+      "bootstrap_mean_reversal_fraction": 0.11280848929665103,
+      "bootstrap_ci95": [
+        0.0,
+        0.375
+      ]
+    },
+    "all_present_at_2__tie_min_all_present_at_3": {
+      "observed_pairwise_reversal_fraction": 0.10526315789473684,
+      "comparable_method_pairs": 19,
+      "bootstrap_mean_reversal_fraction": 0.16130581683081877,
+      "bootstrap_ci95": [
+        0.0,
+        0.4583333333333333
+      ]
+    },
+    "all_present_at_2__tie_max_all_present_at_3": {
+      "observed_pairwise_reversal_fraction": 0.23809523809523808,
+      "comparable_method_pairs": 21,
+      "bootstrap_mean_reversal_fraction": 0.27123874515129803,
+      "bootstrap_ci95": [
+        0.0,
+        0.5
+      ]
+    },
+    "all_present_at_2__mean_minimum_k": {
+      "observed_pairwise_reversal_fraction": 0.0,
+      "comparable_method_pairs": 21,
+      "bootstrap_mean_reversal_fraction": 0.054019246240127106,
+      "bootstrap_ci95": [
+        0.0,
+        0.25
+      ]
+    },
+    "all_present_at_3__tie_min_all_present_at_3": {
+      "observed_pairwise_reversal_fraction": 0.08333333333333333,
+      "comparable_method_pairs": 24,
+      "bootstrap_mean_reversal_fraction": 0.06199629425145655,
+      "bootstrap_ci95": [
+        0.0,
+        0.22727272727272727
+      ]
+    },
+    "all_present_at_3__tie_max_all_present_at_3": {
+      "observed_pairwise_reversal_fraction": 0.25,
+      "comparable_method_pairs": 24,
+      "bootstrap_mean_reversal_fraction": 0.2391234767115235,
+      "bootstrap_ci95": [
+        0.05555555555555555,
+        0.38095238095238093
+      ]
+    },
+    "all_present_at_3__mean_minimum_k": {
+      "observed_pairwise_reversal_fraction": 0.0,
+      "comparable_method_pairs": 25,
+      "bootstrap_mean_reversal_fraction": 0.02078429684055643,
+      "bootstrap_ci95": [
+        0.0,
+        0.15384615384615385
+      ]
+    },
+    "tie_min_all_present_at_3__tie_max_all_present_at_3": {
+      "observed_pairwise_reversal_fraction": 0.375,
+      "comparable_method_pairs": 24,
+      "bootstrap_mean_reversal_fraction": 0.33063464947796056,
+      "bootstrap_ci95": [
+        0.11764705882352941,
+        0.5
+      ]
+    },
+    "tie_min_all_present_at_3__mean_minimum_k": {
+      "observed_pairwise_reversal_fraction": 0.12,
+      "comparable_method_pairs": 25,
+      "bootstrap_mean_reversal_fraction": 0.09811247284191557,
+      "bootstrap_ci95": [
+        0.0,
+        0.29417211328975956
+      ]
+    },
+    "tie_max_all_present_at_3__mean_minimum_k": {
+      "observed_pairwise_reversal_fraction": 0.23076923076923078,
+      "comparable_method_pairs": 26,
+      "bootstrap_mean_reversal_fraction": 0.23928208427044678,
+      "bootstrap_ci95": [
+        0.09090909090909091,
+        0.391304347826087
+      ]
+    }
+  },
+  "aggregate_pairwise_reversal_fraction": 0.1593842002237992,
+  "bootstrap_aggregate_pairwise_reversal_fraction": 0.16873078211553671,
+  "headline": {
+    "observed_pairwise_reversal_fraction": 0.12,
+    "comparable_method_pairs": 25,
+    "bootstrap_mean_reversal_fraction": 0.1572469499323707,
+    "bootstrap_ci95": [
+      0.038461538461538464,
+      0.3333333333333333
+    ]
+  },
+  "rank_stability": {
+    "phase_ap_micro": {
+      "deterministic_random": {
+        "observed_rank": 8.0,
+        "same_rank_fraction": 1.0,
+        "rank_ci95": [
+          8.0,
+          8.0
+        ]
+      },
+      "global_sqrt_pearson": {
+        "observed_rank": 3.0,
+        "same_rank_fraction": 0.4934,
+        "rank_ci95": [
+          2.0,
+          5.0
+        ]
+      },
+      "window_sqrt_pearson": {
+        "observed_rank": 5.0,
+        "same_rank_fraction": 0.3968,
+        "rank_ci95": [
+          3.0,
+          6.0
+        ]
+      },
+      "anchored_set_strict": {
+        "observed_rank": 1.0,
+        "same_rank_fraction": 0.6463,
+        "rank_ci95": [
+          1.0,
+          3.0
+        ]
+      },
+      "crystalshift": {
+        "observed_rank": 4.0,
+        "same_rank_fraction": 0.2215,
+        "rank_ci95": [
+          1.0,
+          6.0
+        ]
+      },
+      "xrd_autoanalyzer": {
+        "observed_rank": 6.0,
+        "same_rank_fraction": 0.5127,
+        "rank_ci95": [
+          2.0,
+          6.0
+        ]
+      },
+      "xmatcher_automix": {
+        "observed_rank": 7.0,
+        "same_rank_fraction": 0.9954,
+        "rank_ci95": [
+          7.0,
+          7.0
+        ]
+      },
+      "xdecomposer": {
+        "observed_rank": 2.0,
+        "same_rank_fraction": 0.3956,
+        "rank_ci95": [
+          1.0,
+          5.0
+        ]
+      }
+    },
+    "phase_ap_macro": {
+      "deterministic_random": {
+        "observed_rank": 8.0,
+        "same_rank_fraction": 1.0,
+        "rank_ci95": [
+          8.0,
+          8.0
+        ]
+      },
+      "global_sqrt_pearson": {
+        "observed_rank": 2.0,
+        "same_rank_fraction": 0.3508,
+        "rank_ci95": [
+          1.5,
+          3.5
+        ]
+      },
+      "window_sqrt_pearson": {
+        "observed_rank": 1.0,
+        "same_rank_fraction": 0.5461,
+        "rank_ci95": [
+          1.0,
+          3.0
+        ]
+      },
+      "anchored_set_strict": {
+        "observed_rank": 4.0,
+        "same_rank_fraction": 0.5166,
+        "rank_ci95": [
+          2.0,
+          5.0
+        ]
+      },
+      "crystalshift": {
+        "observed_rank": 6.0,
+        "same_rank_fraction": 0.4991,
+        "rank_ci95": [
+          3.5,
+          7.0
+        ]
+      },
+      "xrd_autoanalyzer": {
+        "observed_rank": 5.0,
+        "same_rank_fraction": 0.5943,
+        "rank_ci95": [
+          2.5,
+          6.0
+        ]
+      },
+      "xmatcher_automix": {
+        "observed_rank": 7.0,
+        "same_rank_fraction": 0.7762,
+        "rank_ci95": [
+          6.0,
+          7.0
+        ]
+      },
+      "xdecomposer": {
+        "observed_rank": 3.0,
+        "same_rank_fraction": 0.3545,
+        "rank_ci95": [
+          1.0,
+          5.5
+        ]
+      }
+    },
+    "all_present_at_2": {
+      "deterministic_random": {
+        "observed_rank": 8.0,
+        "same_rank_fraction": 1.0,
+        "rank_ci95": [
+          8.0,
+          8.0
+        ]
+      },
+      "global_sqrt_pearson": {
+        "observed_rank": 3.5,
+        "same_rank_fraction": 0.1643,
+        "rank_ci95": [
+          2.5,
+          5.0
+        ]
+      },
+      "window_sqrt_pearson": {
+        "observed_rank": 3.5,
+        "same_rank_fraction": 0.1643,
+        "rank_ci95": [
+          2.5,
+          5.0
+        ]
+      },
+      "anchored_set_strict": {
+        "observed_rank": 3.5,
+        "same_rank_fraction": 0.1643,
+        "rank_ci95": [
+          2.5,
+          5.0
+        ]
+      },
+      "crystalshift": {
+        "observed_rank": 6.5,
+        "same_rank_fraction": 0.1743,
+        "rank_ci95": [
+          2.0,
+          7.0
+        ]
+      },
+      "xrd_autoanalyzer": {
+        "observed_rank": 3.5,
+        "same_rank_fraction": 0.1399,
+        "rank_ci95": [
+          1.5,
+          7.0
+        ]
+      },
+      "xmatcher_automix": {
+        "observed_rank": 6.5,
+        "same_rank_fraction": 0.1695,
+        "rank_ci95": [
+          3.5,
+          7.0
+        ]
+      },
+      "xdecomposer": {
+        "observed_rank": 1.0,
+        "same_rank_fraction": 0.3913,
+        "rank_ci95": [
+          1.0,
+          3.0
+        ]
+      }
+    },
+    "all_present_at_3": {
+      "deterministic_random": {
+        "observed_rank": 8.0,
+        "same_rank_fraction": 1.0,
+        "rank_ci95": [
+          8.0,
+          8.0
+        ]
+      },
+      "global_sqrt_pearson": {
+        "observed_rank": 4.0,
+        "same_rank_fraction": 0.37,
+        "rank_ci95": [
+          2.0,
+          5.5
+        ]
+      },
+      "window_sqrt_pearson": {
+        "observed_rank": 2.0,
+        "same_rank_fraction": 0.2921,
+        "rank_ci95": [
+          1.5,
+          4.0
+        ]
+      },
+      "anchored_set_strict": {
+        "observed_rank": 2.0,
+        "same_rank_fraction": 0.2921,
+        "rank_ci95": [
+          1.5,
+          4.0
+        ]
+      },
+      "crystalshift": {
+        "observed_rank": 6.0,
+        "same_rank_fraction": 0.1977,
+        "rank_ci95": [
+          4.0,
+          7.0
+        ]
+      },
+      "xrd_autoanalyzer": {
+        "observed_rank": 5.0,
+        "same_rank_fraction": 0.3295,
+        "rank_ci95": [
+          1.5,
+          6.5
+        ]
+      },
+      "xmatcher_automix": {
+        "observed_rank": 7.0,
+        "same_rank_fraction": 0.545,
+        "rank_ci95": [
+          4.5,
+          7.0
+        ]
+      },
+      "xdecomposer": {
+        "observed_rank": 2.0,
+        "same_rank_fraction": 0.1853,
+        "rank_ci95": [
+          1.0,
+          5.0
+        ]
+      }
+    },
+    "tie_min_all_present_at_3": {
+      "deterministic_random": {
+        "observed_rank": 8.0,
+        "same_rank_fraction": 0.9999,
+        "rank_ci95": [
+          8.0,
+          8.0
+        ]
+      },
+      "global_sqrt_pearson": {
+        "observed_rank": 2.0,
+        "same_rank_fraction": 0.3684,
+        "rank_ci95": [
+          1.5,
+          3.5
+        ]
+      },
+      "window_sqrt_pearson": {
+        "observed_rank": 1.0,
+        "same_rank_fraction": 0.558,
+        "rank_ci95": [
+          1.0,
+          2.5
+        ]
+      },
+      "anchored_set_strict": {
+        "observed_rank": 3.5,
+        "same_rank_fraction": 0.1793,
+        "rank_ci95": [
+          2.0,
+          4.5
+        ]
+      },
+      "crystalshift": {
+        "observed_rank": 5.5,
+        "same_rank_fraction": 0.1722,
+        "rank_ci95": [
+          4.0,
+          7.0
+        ]
+      },
+      "xrd_autoanalyzer": {
+        "observed_rank": 5.5,
+        "same_rank_fraction": 0.2283,
+        "rank_ci95": [
+          4.0,
+          6.5
+        ]
+      },
+      "xmatcher_automix": {
+        "observed_rank": 7.0,
+        "same_rank_fraction": 0.6712,
+        "rank_ci95": [
+          5.5,
+          7.0
+        ]
+      },
+      "xdecomposer": {
+        "observed_rank": 3.5,
+        "same_rank_fraction": 0.1266,
+        "rank_ci95": [
+          1.0,
+          6.0
+        ]
+      }
+    },
+    "tie_max_all_present_at_3": {
+      "deterministic_random": {
+        "observed_rank": 8.0,
+        "same_rank_fraction": 1.0,
+        "rank_ci95": [
+          8.0,
+          8.0
+        ]
+      },
+      "global_sqrt_pearson": {
+        "observed_rank": 5.5,
+        "same_rank_fraction": 0.1498,
+        "rank_ci95": [
+          3.0,
+          6.5
+        ]
+      },
+      "window_sqrt_pearson": {
+        "observed_rank": 3.5,
+        "same_rank_fraction": 0.3299,
+        "rank_ci95": [
+          2.5,
+          5.0
+        ]
+      },
+      "anchored_set_strict": {
+        "observed_rank": 3.5,
+        "same_rank_fraction": 0.3299,
+        "rank_ci95": [
+          2.5,
+          5.0
+        ]
+      },
+      "crystalshift": {
+        "observed_rank": 7.0,
+        "same_rank_fraction": 0.6867,
+        "rank_ci95": [
+          4.5,
+          7.0
+        ]
+      },
+      "xrd_autoanalyzer": {
+        "observed_rank": 5.5,
+        "same_rank_fraction": 0.1205,
+        "rank_ci95": [
+          1.5,
+          7.0
+        ]
+      },
+      "xmatcher_automix": {
+        "observed_rank": 1.0,
+        "same_rank_fraction": 0.6046,
+        "rank_ci95": [
+          1.0,
+          3.0
+        ]
+      },
+      "xdecomposer": {
+        "observed_rank": 2.0,
+        "same_rank_fraction": 0.3155,
+        "rank_ci95": [
+          1.5,
+          4.0
+        ]
+      }
+    },
+    "mean_minimum_k": {
+      "deterministic_random": {
+        "observed_rank": 8.0,
+        "same_rank_fraction": 1.0,
+        "rank_ci95": [
+          8.0,
+          8.0
+        ]
+      },
+      "global_sqrt_pearson": {
+        "observed_rank": 4.0,
+        "same_rank_fraction": 0.418,
+        "rank_ci95": [
+          2.0,
+          5.0
+        ]
+      },
+      "window_sqrt_pearson": {
+        "observed_rank": 2.5,
+        "same_rank_fraction": 0.3819,
+        "rank_ci95": [
+          1.5,
+          4.0
+        ]
+      },
+      "anchored_set_strict": {
+        "observed_rank": 2.5,
+        "same_rank_fraction": 0.3819,
+        "rank_ci95": [
+          1.5,
+          4.0
+        ]
+      },
+      "crystalshift": {
+        "observed_rank": 6.0,
+        "same_rank_fraction": 0.3262,
+        "rank_ci95": [
+          3.5,
+          7.0
+        ]
+      },
+      "xrd_autoanalyzer": {
+        "observed_rank": 5.0,
+        "same_rank_fraction": 0.474,
+        "rank_ci95": [
+          1.5,
+          6.0
+        ]
+      },
+      "xmatcher_automix": {
+        "observed_rank": 7.0,
+        "same_rank_fraction": 0.556,
+        "rank_ci95": [
+          5.5,
+          7.0
+        ]
+      },
+      "xdecomposer": {
+        "observed_rank": 1.0,
+        "same_rank_fraction": 0.5767,
+        "rank_ci95": [
+          1.0,
+          4.0
+        ]
+      }
+    }
+  },
+  "inputs": {
+    "scores": {
+      "path": "data/ariadnex_external_method_scores.csv",
+      "sha256": "4011c0ad6111201a1937db4fc323e339111988d76db472e7d8b358eba8114334"
+    },
+    "registry": {
+      "path": "data/external_method_registry.json",
+      "sha256": "f4d28bc94117155ee792587cda861b16961e0fbac7133edd42878bd3c430af81"
+    }
+  }
+}

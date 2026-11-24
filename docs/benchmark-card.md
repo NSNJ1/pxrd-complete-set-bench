@@ -48,6 +48,8 @@ Two fixed external-source cohorts are kept outside the seven-source core:
 Both are external retrospective tests. Their scores are not pooled with the
 core benchmark. Full protocols, selected spectra, candidate provenance, result
 hashes and exact reproduction checks are under `evidence/external-sources/`.
+Both derive from opXRD-linked resources; they are distinct tasks and cohorts,
+not independent underlying source families.
 
 ## Strata
 
@@ -74,6 +76,12 @@ The final result uses 10,000 resamples and seed `20261118`.
 
 The controlled method panel uses query-level resampling, 10,000 repeats and
 seed `20261123`.
+
+The panel also has an endpoint rank-reversal audit. Reversals are reported
+without selecting a preferred tie order: lower and upper legal bounds are
+separate endpoints, and both are compared with AP and fixed-budget coverage.
+This audit is retrospective and exploratory because the panel contains 25
+queries.
 
 ## Claim boundary
 

@@ -5,7 +5,9 @@
 The seven core source cohorts answer whether complete-phase-set retrieval can be
 measured under different laboratories, phase counts and candidate sizes. They
 do not answer whether a new source, frozen after benchmark development, produces
-the same conclusions. Two external cohorts were added for that purpose.
+the same conclusions. Two external retrospective tests were added for that
+purpose. They are distinct cohorts, not two independent underlying source
+families.
 
 Neither cohort is prospective validation. Both source and labels are public and
 were accessed after project development, so the correct label is **external
@@ -68,6 +70,9 @@ leakage-control manifests. The mini data are CC BY 4.0. The global mask-aware
 sqrt-Pearson implementation reproduces RealBind's official R@1 and R@10 exactly:
 78.85% and 90.38%.
 
+The EMPA cohort also comes from opXRD. The two tests therefore cover different
+tasks and source contributions, but not independent collection programmes.
+
 An eight-window variant gives R@1 87.50%, R@10 95.19% and MRR 0.916. The paired
 R@1 interval is 0.0 to +17.31 points, so the prespecified superiority gate is
 not cleared even though MRR and query AP improve.
@@ -90,7 +95,7 @@ The evidence supports four claims:
 
 The evidence does not support a universal SOTA claim. The EMPA source is limited
 to one contribution and three phase sets; the RealBind mini cohort is
-single-phase.
+single-phase. Both share opXRD lineage.
 
 ## Reproducibility
 

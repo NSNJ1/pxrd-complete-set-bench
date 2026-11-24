@@ -95,6 +95,26 @@ The panel uses 10,000 query-level bootstrap repeats and seed `20261123`.
 Sanitized external return archives and their hashes are listed in
 `evidence/external-methods/README.md`.
 
+## Endpoint rank reversal
+
+```bash
+python scripts/audit_rank_reversal.py \
+  --scores data/ariadnex_external_method_scores.csv \
+  --registry data/external_method_registry.json \
+  --out results/rank_reversal_audit.json \
+  --repeats 10000 \
+  --seed 20261123
+```
+
+The expected result SHA-256 is:
+
+```text
+6c94c76f009435ed0c991909b5774300a6a82a37d6578bcce9a0d3d57e437595
+```
+
+This is an exploratory endpoint-sensitivity audit on the 25-query panel. A
+matching hash confirms computational replay, not a prospective result.
+
 ## External-source cohorts
 
 The opXRD EMPA and RealBind mini packages each include their frozen protocol,

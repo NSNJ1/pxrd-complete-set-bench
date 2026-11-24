@@ -179,7 +179,7 @@
       "opxrd_empa_multiphase",
       "realbind_mini_single_phase"
     ],
-    "claim_boundary": "Both cohorts are external retrospective evidence; neither is prospective validation and their scores are not pooled."
+    "claim_boundary": "Both cohorts are external retrospective tests with opXRD lineage; they are distinct tasks rather than independent source families, neither is prospective validation, and their scores are not pooled."
   },
   "shared_reference_source": {
     "name": "Crystallography Open Database",

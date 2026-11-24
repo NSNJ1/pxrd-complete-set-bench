@@ -1,6 +1,6 @@
 {
   "status": "external_source_validation_v1",
-  "claim_boundary": "Both cohorts are retrospective external evidence. Neither is prospective validation, and their scores are not pooled.",
+  "claim_boundary": "Both cohorts are retrospective external tests with opXRD lineage. They are distinct tasks, not independent underlying source families; neither is prospective validation, and their scores are not pooled.",
   "sources": {
     "opxrd_empa_multiphase": {
       "role": "external retrospective measured two-phase cohort",

@@ -20,6 +20,9 @@
 - `null_and_power_audit_reproduction.json`: byte-for-byte replay of that audit.
 - `diagnostics_reproduction.json`: exact replay of the candidate-library,
   failure and risk-coverage diagnostics.
+- `rank_reversal_audit.json`: 10,000-repeat endpoint rank-reversal and bootstrap
+  rank-stability audit for the eight-method panel.
+- `rank_reversal_audit_reproduction.json`: byte-for-byte replay of that audit.
 
 These files are outputs, not independent validation. Source roles and claim
 boundaries are defined in `docs/benchmark-card.md` and
