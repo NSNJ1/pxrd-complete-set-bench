@@ -127,8 +127,28 @@ remain with the original database records.
 
 - URL: https://www.crystallography.net/cod/
 - License: CC0 1.0
-- The repository stores identifiers and derived scores, not the complete COD
-  collection.
+- The CheMin v0.2 blind package includes 58 numeric reference profiles derived
+  from COD structures, with record-level provenance in the evaluator archive.
+- The repository stores identifiers and derived profiles/scores, not the
+  complete COD collection.
+
+## NASA MSL CheMin
+
+- Mission page: https://pds-geosciences.wustl.edu/missions/msl/chemin.htm
+- Derived-data root:
+  https://pds-geosciences.wustl.edu/msl/msl-m-chemin-4-rdr-v1/mslcmn_1xxx/
+- Source: NASA PDS CheMin release 42, `CHEMIN_RDA` and `CHEMIN_MIN`.
+- The bounded v0.2 evidence packages include 44 selected measured patterns,
+  derived labels and hashes. Upstream PDS attribution remains with NASA.
+
+## Candidate-structure overlap audit
+
+- The audit redistributes only source manifests, aggregate structure metadata,
+  pair tables and audit code.
+- It does not redistribute candidate CIF collections, ICSD records or CSD
+  records.
+- Rare-earth MOF and Precursor Genome structures are reported unavailable
+  rather than reconstructed or imputed.
 
 This notice records source metadata and does not replace institutional legal
 review for a particular reuse.

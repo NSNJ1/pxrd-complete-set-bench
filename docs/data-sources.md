@@ -21,6 +21,17 @@ complete CIF collections are not included.
 | Mangolini ternary mixtures | [10.17632/js2nzwf5md.5](https://doi.org/10.17632/js2nzwf5md.5) | 28 | Saturated external control, consumed | CC BY 4.0 |
 | USGS Florida/Alabama XRD | [10.5066/P133DRW5](https://doi.org/10.5066/P133DRW5) | 65 | High-cardinality control, consumed | CC0 1.0 |
 
+## Additional external benchmark
+
+| Source | Identifier | Queries | Role | Reference-data licence |
+| --- | --- | ---: | --- | --- |
+| NASA MSL CheMin | [PDS release 42](https://pds-geosciences.wustl.edu/missions/msl/chemin.htm) | 44 | Cross-instrument Co K-alpha complete-family test | COD references: CC0 1.0 |
+
+CheMin is a retrospective external benchmark. The public blind package contains
+measured spectra, opaque candidate IDs and numeric COD-derived profiles. The
+evaluator archive contains truth and source provenance. Its simple profile
+baselines do not exceed the leave-group-out frequency prior on whole-set AP.
+
 ## Reuse boundary
 
 - AriadneX is retrospective rather than prospective.
@@ -30,5 +41,7 @@ complete CIF collections are not included.
 - Mangolini and USGS have already been consumed and cannot become fresh
   confirmation after a method change.
 - Ta-Sn-O is nearly saturated and has little discriminative power.
+- CheMin candidate structures partially overlap other benchmark lineages.
+  Source/query transfer and unseen-structure generalization are separate claims.
 
 Source metadata are machine-readable in `data/source_registry.json`.

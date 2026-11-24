@@ -2,7 +2,7 @@
 
 These archives contain the frozen protocols, data manifests, selected measured
 spectra, candidate references, predictions, results and exact reproduction
-checks for the two external-source tests.
+checks for the three external-source tests.
 
 ## opXRD EMPA multiphase cohort
 
@@ -21,6 +21,22 @@ checks for the two external-source tests.
 - 104 measured single-phase queries
 - 104 structure-derived candidates
 - External retrospective, not prospective
+
+## NASA CheMin complete-family cohort
+
+- Blind public file: `CHEMIN_COD_PUBLIC_V0_2_20261124.zip`
+- Blind public SHA-256:
+  `2e3134fad775b8992284a7f7855b12dad2307d158c0c109087b847daee4c1231`
+- Full evaluation file: `CHEMIN_COD_EVALUATION_V0_2_20261124.zip`
+- Full evaluation SHA-256:
+  `c566d4132a3964107310d11a17aa7eaf4acc611123aeb4ad453b422107d27203`
+- 44 measured Mars patterns
+- 20 candidate families and 58 CC0 COD-derived profiles
+- External retrospective, not prospective
+
+The public archive withholds truth and source metadata. The evaluator archive
+contains truth, sample groups, candidate provenance, protocols, code and both
+reproduction runs.
 
 The archives contain only material permitted by the source licences. Original
 large source archives and trained model weights are not mirrored.

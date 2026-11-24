@@ -62,12 +62,34 @@ Two fixed external-source cohorts are kept outside the seven-source core:
 
 - opXRD EMPA: 200 measured two-phase queries, four independent COD candidates;
 - RealBind mini: 104 measured single-phase queries and 104 structure candidates.
+- NASA CheMin v0.2: 44 measured complete-family queries, 20 candidate families
+  and 58 CC0 COD reference profiles.
 
 Both are external retrospective tests. Their scores are not pooled with the
 core benchmark. Full protocols, selected spectra, candidate provenance, result
 hashes and exact reproduction checks are under `evidence/external-sources/`.
 Both derive from opXRD-linked resources; they are distinct tasks and cohorts,
 not independent underlying source families.
+
+CheMin contributes a new instrument, Co K-alpha radiation and Mars mineral
+assemblages. Its current profile baselines do not exceed the leakage-controlled
+frequency prior on whole-set AP, so it is source-coverage and prevalence-shortcut
+evidence rather than method-superiority evidence.
+
+## Candidate-structure dependence
+
+A separate audit covers 12 candidate collections and 1,599 unique CIFs.
+Candidate libraries are not structure-disjoint:
+
+- RealBind and opXRD reuse structures extensively;
+- CheMin reference structures overlap RRUFF-derived benchmark structures;
+- AriadneX candidates occur in broader structure libraries;
+- anonymous prototype overlap is common but is not counted as leakage.
+
+Consequently, the benchmark supports source-stratified query transfer. It does
+not support a claim of unseen crystal-structure generalization. Full methods,
+unavailable CSD/ICSD sources and aggregate results are in
+`docs/structure-overlap-audit.md`.
 
 ## Strata
 
@@ -110,3 +132,5 @@ queries.
 This benchmark evaluates retrieval and review ordering. It does not establish
 phase purity, quantitative phase fractions, open-set rejection, Rietveld
 refinement quality, prospective performance, or universal state of the art.
+Candidate structure reuse must be reported separately from query and label
+leakage.

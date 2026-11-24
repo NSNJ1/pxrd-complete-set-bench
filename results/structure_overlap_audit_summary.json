@@ -1,0 +1,76 @@
+{
+  "status": "structure_overlap_audit_v1",
+  "claim_boundary": "Candidate-library structure overlap is not by itself training leakage. Rare-earth MOF and Precursor Genome candidate CIFs remain unavailable and are not imputed.",
+  "coverage": {
+    "source_collections": 12,
+    "source_cif_occurrences": 1692,
+    "unique_cif_sha256": 1599,
+    "parsed_unique_structures": 1599,
+    "parse_failures": 0,
+    "symmetry_failures": 1,
+    "core_queries_covered": 1449,
+    "core_queries_total": 1921,
+    "core_query_fraction": 0.7542946382092659
+  },
+  "exact_byte_identity": {
+    "cross_source_clusters": 91,
+    "realbind_internal_clusters": 83,
+    "opxrd_realbind_cross_lineage_clusters": 8
+  },
+  "same_composition_structure_matches": {
+    "all_unique_pairs": 743,
+    "cross_lineage_pairs": 644,
+    "as2o3_pairs": 625,
+    "non_as2o3_pairs": 118,
+    "non_as2o3_cross_lineage_pairs": 90
+  },
+  "unique_structures_with_cross_lineage_matches": {
+    "ariadnex": {
+      "matched": 3,
+      "unique": 4
+    },
+    "realbind": {
+      "matched": 53,
+      "unique": 124
+    },
+    "chemin": {
+      "matched": 21,
+      "unique": 58
+    },
+    "opxrd": {
+      "matched": 42,
+      "unique": 376
+    },
+    "tasno": {
+      "matched": 1,
+      "unique": 15
+    },
+    "deltaxrd_rruff": {
+      "matched": 28,
+      "unique": 433
+    },
+    "galaxi": {
+      "matched": 16,
+      "unique": 566
+    },
+    "xca": {
+      "matched": 0,
+      "unique": 31
+    }
+  },
+  "anonymous_prototype_pairs": {
+    "cross_lineage": 1307,
+    "interpretation": "Common prototypes are a materials-diversity diagnostic, not leakage."
+  },
+  "unavailable_core_sources": {
+    "precursor_genome": "Public ledger contains CIF names but no CIF payload.",
+    "rare_earth_mof": "Public release contains peak lists and CSD refcodes but no candidate CIF payload."
+  },
+  "reproducibility": {
+    "source_spec_sha256": "8d3265fd948604fbab76559f1e280360c8754ba93f7d2d9ad7cc1f647d6ff4e9",
+    "audit_script_sha256": "be22379c7953b91cb47ac90d49310c6009bb9c7b024cd0b335228a3275e7b219",
+    "result_sha256": "c2fc64e787817ffe4ace7416b89f4e2cf133b6a78a06ac88e3422de5c87a1208",
+    "evidence_archive_sha256": "889de310eb0dc44c638dfe1c8beacc50f3766d5191f6c9320929e03e877fa976",
+    "repeat_byte_identical": true
+  }
+}

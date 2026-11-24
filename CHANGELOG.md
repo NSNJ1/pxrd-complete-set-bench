@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.7.0 - 2026-11-24
+
+- Add a license-safe NASA CheMin v0.2 external benchmark with 44 measured
+  patterns, 20 candidate families and 58 CC0 COD reference profiles.
+- Separate the blind public handoff from the complete evaluator archive and
+  verify repeated byte-identical construction.
+- Add a 12-collection candidate structure/prototype overlap audit.
+- Quantify candidate-structure reuse across RealBind, opXRD, RRUFF, GALAXI,
+  CheMin, XCA, Ta-Sn-O and AriadneX.
+- Report unavailable CSD/ICSD candidate structures instead of imputing them.
+
 ## 0.6.2 - 2026-11-24
 
 - Add a verified fresh-release replay on DeltaXRDbench dataset v1.1.0.

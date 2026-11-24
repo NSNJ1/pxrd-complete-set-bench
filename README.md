@@ -25,6 +25,10 @@ screening and within-shortlist ranking separately.
   high-cardinality mineral cohort.
 - Two frozen external-source tests: a 200-query measured two-phase EMPA cohort
   and a 104-query, 104-candidate RealBind single-phase boundary cohort.
+- A license-safe NASA CheMin v0.2 external benchmark: 44 measured Mars
+  patterns, 20 candidate families and 58 CC0 COD reference profiles.
+- A 12-collection candidate structure/prototype overlap audit covering 1,599
+  unique CIFs and 75.4% of core-source queries.
 - An evaluator for Phase AP, dominant-phase Top-1, all-present@k,
   exact-set-stratified coverage, cardinality-balanced coverage, screening recall,
   and paired cluster-bootstrap intervals.
@@ -40,9 +44,8 @@ screening and within-shortlist ranking separately.
 - Frozen 10,000-resample results and a one-command reproduction check.
 
 The core score table does not redistribute raw spectra or complete CIF
-collections. The bounded external-source packages include only the selected
-opXRD and RealBind mini records, with their source licences, hashes and
-provenance.
+collections. Bounded external-source packages include selected opXRD, RealBind
+and CheMin records with their source licences, hashes and provenance.
 
 ## Quick start
 
@@ -184,6 +187,10 @@ The 20-candidate stress evidence is summarized in
 [docs/external-stress-tests.md](docs/external-stress-tests.md).
 The new-release replay is in
 [docs/external-fresh-release-replay.md](docs/external-fresh-release-replay.md).
+The CheMin benchmark is in
+[docs/chemin-cod-external-v0.2.md](docs/chemin-cod-external-v0.2.md).
+Candidate structure reuse is documented in
+[docs/structure-overlap-audit.md](docs/structure-overlap-audit.md).
 
 ## Repository layout
 
@@ -231,6 +238,10 @@ clusters, labels, and bootstrap settings. See
   contains no three-phase query.
 - Published learned methods were not all executable under this exact contract.
   No unexecuted method is assigned a numeric result.
+- Candidate libraries are not structure-disjoint across every source. Results
+  support source and query transfer, not unseen-structure generalization.
+- Rare-earth MOF and Precursor Genome candidate structures remain unavailable
+  because their public releases do not contain the nested CSD/ICSD CIF payloads.
 
 ## Citation
 

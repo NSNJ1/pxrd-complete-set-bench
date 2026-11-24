@@ -187,6 +187,15 @@
     "license": "CC0 1.0",
     "use": "open ordered-structure candidates for distractor and mineral-family libraries"
   },
+  "candidate_structure_overlap": {
+    "result_file": "results/structure_overlap_audit_summary.json",
+    "evidence_archive": "evidence/structure-audit/STRUCTURE_OVERLAP_AUDIT_V1_20261124.zip",
+    "evidence_sha256": "889de310eb0dc44c638dfe1c8beacc50f3766d5191f6c9320929e03e877fa976",
+    "covered_core_queries": 1449,
+    "core_queries": 1921,
+    "coverage_fraction": 0.7542946382092659,
+    "claim_boundary": "Source and query diversity do not imply structure-disjoint candidate libraries. Rare-earth MOF and Precursor Genome CIFs remain unavailable."
+  },
   "project_licenses": {
     "code": "MIT",
     "project_created_derived_tables": "CC BY 4.0"

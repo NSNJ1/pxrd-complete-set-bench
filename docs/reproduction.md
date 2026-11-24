@@ -199,3 +199,43 @@ Expected combined result SHA-256:
 
 The archive deliberately omits raw RRUFF/opXRD spectra and source CIFs because
 the upstream release requires the original providers' terms to be retained.
+
+## CheMin COD external benchmark
+
+The public and evaluator archives are under `evidence/external-sources/`.
+
+- Public blind SHA-256:
+  `2e3134fad775b8992284a7f7855b12dad2307d158c0c109087b847daee4c1231`
+- Evaluator archive SHA-256:
+  `c566d4132a3964107310d11a17aa7eaf4acc611123aeb4ad453b422107d27203`
+
+The evaluator archive includes the frozen protocol, source and label metadata,
+evaluation code, 10,000-repeat result, prediction table, blind-handoff audit
+and two complete byte-identical runs.
+
+Expected evaluation canonical SHA-256:
+
+```text
+4d385a83009c0c1f47864910ece64b3e055453736bd4395ed6f5e89069519cc3
+```
+
+The evidence gate is expected to fail against the leave-group-out frequency
+prior. That is a retained baseline result, not a reproduction failure.
+
+## Candidate structure overlap
+
+The aggregate audit archive is
+`evidence/structure-audit/STRUCTURE_OVERLAP_AUDIT_V1_20261124.zip`.
+
+- Archive SHA-256:
+  `889de310eb0dc44c638dfe1c8beacc50f3766d5191f6c9320929e03e877fa976`
+- Source specification SHA-256:
+  `8d3265fd948604fbab76559f1e280360c8754ba93f7d2d9ad7cc1f647d6ff4e9`
+- Result SHA-256:
+  `c2fc64e787817ffe4ace7416b89f4e2cf133b6a78a06ac88e3422de5c87a1208`
+
+The archive does not contain candidate CIF payloads. Reproduction requires
+recovering source structures under their original terms and supplying a source
+specification to `audit_structure_overlap.py`. Rare-earth MOF and Precursor
+Genome candidate structures are unavailable from their public payloads and are
+not imputed.

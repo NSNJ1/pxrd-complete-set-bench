@@ -29,6 +29,10 @@
   multiphase stress panel, with query metrics and an exact replay check.
 - `deltaxrd20_combined_20261124.json`: 60-query, 20-candidate replay on
   DeltaXRDbench v1.1.0, including the RRUFF/opXRD source interaction.
+- `chemin_cod_v0_2_summary.json`: 44-query NASA CheMin external benchmark with
+  20 candidate families and 58 CC0 COD reference profiles.
+- `structure_overlap_audit_summary.json`: 12-collection candidate CIF,
+  same-composition structure and anonymous-prototype overlap audit.
 
 These files are outputs, not independent validation. Source roles and claim
 boundaries are defined in `docs/benchmark-card.md` and

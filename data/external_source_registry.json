@@ -1,6 +1,6 @@
 {
   "status": "external_source_validation_v1",
-  "claim_boundary": "Both cohorts are retrospective external tests with opXRD lineage. They are distinct tasks, not independent underlying source families; neither is prospective validation, and their scores are not pooled.",
+  "claim_boundary": "All three entries are retrospective external tests, not prospective validation. opXRD-EMPA and RealBind share an underlying opXRD lineage; CheMin has independent measured queries but partially overlapping candidate structures. Scores are not pooled.",
   "sources": {
     "opxrd_empa_multiphase": {
       "role": "external retrospective measured two-phase cohort",
@@ -40,6 +40,32 @@
       "evidence_archive": "evidence/external-sources/REALBIND_MINI_EXTERNAL_20261123_PUBLIC.zip",
       "evidence_sha256": "42f42442e01533234b3eaf34d6f6b80e9411f0219995526853d4b98c9bf6df2c",
       "reproduction": "realbind_mini_reproduction_exact_match"
+    }
+  },
+  "additional_external_benchmark": {
+    "chemin_cod_multiphase": {
+      "role": "external retrospective measured complete-family cohort",
+      "source": "NASA MSL CheMin PDS release 42",
+      "source_url": "https://pds-geosciences.wustl.edu/missions/msl/chemin.htm",
+      "reference_library": "Crystallography Open Database",
+      "reference_license": "CC0-1.0",
+      "protocol_sha256": "ce93f9a8f169ad57d0715904c3f82eb16d55c1fb3d586e66d16b90cc1fe533a5",
+      "dataset_manifest_sha256": "f9d2c3a6c795c43d273d759c185c83b5ab04b2d621feac56f6206c262917bf43",
+      "queries": 44,
+      "sample_groups": 41,
+      "candidate_families": 20,
+      "reference_profiles": 58,
+      "truth_rows": 880,
+      "truth_phase_range": [6, 10],
+      "result_file": "results/chemin_cod_v0_2_summary.json",
+      "evaluation_canonical_sha256": "4d385a83009c0c1f47864910ece64b3e055453736bd4395ed6f5e89069519cc3",
+      "predictions_sha256": "2b9723620348a533f15217e3547a12aa4e1ce374deba835b2aa13670a1f42d5b",
+      "public_archive": "evidence/external-sources/CHEMIN_COD_PUBLIC_V0_2_20261124.zip",
+      "public_sha256": "2e3134fad775b8992284a7f7855b12dad2307d158c0c109087b847daee4c1231",
+      "evaluation_archive": "evidence/external-sources/CHEMIN_COD_EVALUATION_V0_2_20261124.zip",
+      "evaluation_archive_sha256": "c566d4132a3964107310d11a17aa7eaf4acc611123aeb4ad453b422107d27203",
+      "evidence_gate": "failed_against_leave_group_out_frequency_prior",
+      "reproduction": "chemin_evaluation_and_public_handoff_repeat_exact_match"
     }
   }
 }

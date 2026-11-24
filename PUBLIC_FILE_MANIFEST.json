@@ -1,7 +1,7 @@
 {
-  "version": "0.6.2",
+  "version": "0.7.0",
   "date": "2026-11-24",
-  "file_count": 134,
+  "file_count": 143,
   "entries": [
     {
       "path": ".gitattributes",
@@ -15,18 +15,18 @@
     },
     {
       "path": ".gitignore",
-      "size": 651,
-      "sha256": "454d05f2857ff476f71c61ff09f94400c4d3c276de7a3d5682bd7cb8bfc575c1"
+      "size": 716,
+      "sha256": "5877a637028dd231906f561248924b7eca9a33f2b22141d4685310238693789a"
     },
     {
       "path": "CHANGELOG.md",
-      "size": 1972,
-      "sha256": "0bbcc8c1fca18a3bb8e5e35de1fb512f160fcd7d368a12af6dc367a900c832db"
+      "size": 2519,
+      "sha256": "347116468e35ac067aa9fcf850a69b9cf81831484d977925da727a12610abdcd"
     },
     {
       "path": "CITATION.cff",
       "size": 952,
-      "sha256": "6187cb5b7d17fa6707d4668e928437dc49e0c3dc8e9760b962b82a16f3b90600"
+      "sha256": "32481fc4c48aa421c7e34604e871e405648e3907d375991af2444a7e3f197dfb"
     },
     {
       "path": "CONTRIBUTING.md",
@@ -41,17 +41,17 @@
     {
       "path": "LICENSE-DATA",
       "size": 700,
-      "sha256": "2c65ac92e83be83363c91236582cbaee700086418c19597377874d43ccb9827e"
+      "sha256": "62e4b6250f3277bbd3d5398301fb3d36ba53f02c6a501b5179921b3c6c0a87e6"
     },
     {
       "path": "NOTICE",
-      "size": 4718,
-      "sha256": "a7600beb7518b8d25e1ab1bbd546dd75bbc61deb5534beb834e934f079f5899e"
+      "size": 5640,
+      "sha256": "e4a16d7ff1b81ed65882823d34640cadbd4cf4748dfc6441626e3e2118b2fb72"
     },
     {
       "path": "README.md",
-      "size": 9353,
-      "sha256": "2440d42321b1821e3eb1fc8c1b5179a5de43e54bbdf869883c07d6d57b2c9751"
+      "size": 10126,
+      "sha256": "e2dbade0364f4a7c32769f5b96fa664c7b704ba0a6594f61b5c7ab6903c48a9a"
     },
     {
       "path": "SECURITY.md",
@@ -85,8 +85,8 @@
     },
     {
       "path": "data/external_source_registry.json",
-      "size": 2650,
-      "sha256": "29b6a9dcaf5d123fa44eaa865cdd4ae5fabb97959e9fa7ab68f8f475e6432e5c"
+      "size": 4239,
+      "sha256": "5c05fda54cecc7fe0c8c34d4111801fe670813434babd5b6cba5887482ac5f26"
     },
     {
       "path": "data/external_stress_registry.json",
@@ -100,18 +100,23 @@
     },
     {
       "path": "data/source_registry.json",
-      "size": 8066,
-      "sha256": "a98d8227e3be64226522a08113d5daf503a2071d57cda06bcc8860dad9a82e19"
+      "size": 8626,
+      "sha256": "deaa52a1cd005893ffc09c51ed409c27ef53137ad20349d270c1e8ef8c759601"
     },
     {
       "path": "docs/benchmark-card.md",
-      "size": 4659,
-      "sha256": "6d249fdee99a056face3144e85e7fa6150ad537b1c7c51171d48afd633638ab5"
+      "size": 5811,
+      "sha256": "4f6879a330ff04c6b6e779d1e05d048da64e5f592a30793ced5293551c291ff7"
+    },
+    {
+      "path": "docs/chemin-cod-external-v0.2.md",
+      "size": 3629,
+      "sha256": "f64ff0ae2204c4431984586b49d6e1bca35e3745f189c6c6504dc197b100c873"
     },
     {
       "path": "docs/data-sources.md",
-      "size": 2174,
-      "sha256": "65b95a86c08d531d7ed19efebf42ad2b3b3613a38c959eeb9f3eed0f8e220572"
+      "size": 2953,
+      "sha256": "df81f19683962d36807abdeac2ea8c5f7654a958be4dbaed1e72ce08a4912a35"
     },
     {
       "path": "docs/design-basis.md",
@@ -174,14 +179,24 @@
       "sha256": "1244a622a9b725555bc3bc78d603c0ce1836cd98ae97b1cfe1e7e174231f8bbc"
     },
     {
+      "path": "docs/release-notes-v0.7.0.md",
+      "size": 1436,
+      "sha256": "f34e6797320d2ebee5427fa63ed2f44d8626398c73b77c6da0a8a6820184cdd6"
+    },
+    {
       "path": "docs/reproduction.md",
-      "size": 4796,
-      "sha256": "e405afee3c5cf66c090e825571ac6cc7db3b40687aeab20688d033c7b8b6e485"
+      "size": 6290,
+      "sha256": "56c6fa9643f9257170a8f8cf9d030edfcc6e45f9f8bae243f748d4acb42d47bc"
     },
     {
       "path": "docs/statistical-audit.md",
       "size": 4226,
       "sha256": "f4bcae9ae21f0d0735876903305dd97fdaa90da539580cc7526ef8510663af9b"
+    },
+    {
+      "path": "docs/structure-overlap-audit.md",
+      "size": 3705,
+      "sha256": "20b19a55a7f115ebdbaa5c64cc8b43685ab0b59bcc2146fcb20a6745f2437868"
     },
     {
       "path": "docs/submission-format.md",
@@ -239,19 +254,39 @@
       "sha256": "6aa6ea4322af8f42ea43d4a29743eb684441adfa00a5b577005093bb8524a9ee"
     },
     {
+      "path": "evidence/external-sources/CHEMIN_COD_EVALUATION_V0_2_20261124.zip",
+      "size": 1536788,
+      "sha256": "c566d4132a3964107310d11a17aa7eaf4acc611123aeb4ad453b422107d27203"
+    },
+    {
+      "path": "evidence/external-sources/CHEMIN_COD_PUBLIC_V0_2_20261124.zip",
+      "size": 705444,
+      "sha256": "2e3134fad775b8992284a7f7855b12dad2307d158c0c109087b847daee4c1231"
+    },
+    {
       "path": "evidence/external-sources/OPXRD_EMPA_V2_RETROSPECTIVE_20261123_PUBLIC.zip",
       "size": 3876698,
       "sha256": "ae60d01089e96320b318b51bbf9c902a3eb0e8a77a2b4cc968cd589cfdcef5ab"
     },
     {
       "path": "evidence/external-sources/README.md",
-      "size": 926,
-      "sha256": "bac7517efb928cf16dc5d63e77b7cc6f22e083dd54f9b89cb45a4f41748ccf8e"
+      "size": 1584,
+      "sha256": "367407714db566370ca58e6d1490d341e6b2b82c9a86b8aff0d66e3576e6f17e"
     },
     {
       "path": "evidence/external-sources/REALBIND_MINI_EXTERNAL_20261123_PUBLIC.zip",
       "size": 702431,
       "sha256": "42f42442e01533234b3eaf34d6f6b80e9411f0219995526853d4b98c9bf6df2c"
+    },
+    {
+      "path": "evidence/structure-audit/README.md",
+      "size": 1030,
+      "sha256": "c79d98ca7f591a161ec6e16593a9175a41b6d718a17ff69365e0ffe6b47c0c94"
+    },
+    {
+      "path": "evidence/structure-audit/STRUCTURE_OVERLAP_AUDIT_V1_20261124.zip",
+      "size": 333981,
+      "sha256": "889de310eb0dc44c638dfe1c8beacc50f3766d5191f6c9320929e03e877fa976"
     },
     {
       "path": "figures/README.md",
@@ -321,7 +356,7 @@
     {
       "path": "pyproject.toml",
       "size": 1194,
-      "sha256": "c294a73a1ff03b284d228ff57049895566ff00ccecfe962e9878ef8ec2497345"
+      "sha256": "54b6ce552cc26edda161fbb60e459e1f8e7199a4ed95f8dedd5c91aef4a11c5a"
     },
     {
       "path": "requirements.txt",
@@ -330,8 +365,8 @@
     },
     {
       "path": "results/README.md",
-      "size": 2038,
-      "sha256": "6aff45a4ece9eb6cc34818f04e0e7420a8de3302f315c4370c4904722f721aa1"
+      "size": 2315,
+      "sha256": "ff93cfd9870ed77d78c4e047b5d3196ef9ea6d9206b2ffc202e5465247c4eccf"
     },
     {
       "path": "results/ariadnex_external_diagnostics.json",
@@ -352,6 +387,11 @@
       "path": "results/ariadnex_external_panel_reproduction.json",
       "size": 692,
       "sha256": "da632ab73f947aacc74c7fffd4ed558be66522cd65b2e328ef271430140d4881"
+    },
+    {
+      "path": "results/chemin_cod_v0_2_summary.json",
+      "size": 2631,
+      "sha256": "e843ae49c06923cf822fa0995211f8278b95a5730da293f63f2063434c97dc15"
     },
     {
       "path": "results/deltaxrd20_combined_20261124.json",
@@ -477,6 +517,11 @@
       "path": "results/source_overlap_audit.json",
       "size": 9555,
       "sha256": "c75361582ed5f28609313a59d9c4c708eb69fe9da2be65583d72a8322e26395e"
+    },
+    {
+      "path": "results/structure_overlap_audit_summary.json",
+      "size": 2288,
+      "sha256": "cbb40eab7d790be8bb06873c8f1af538c02e57a0dc8f44c4259b2cf5b0f775d9"
     },
     {
       "path": "results/xca20_crystalshift_20261124.json",
@@ -655,8 +700,8 @@
     },
     {
       "path": "tests/test_public_surface.py",
-      "size": 2593,
-      "sha256": "48207bcad21926504209b5799aa95a8eafc58a0717fb161ef1e693738a9e7614"
+      "size": 4996,
+      "sha256": "3829d071306e4975ae4dff432172a0c1d705d1f3f63296d12da631961f73249c"
     },
     {
       "path": "tests/test_rank_reversal.py",

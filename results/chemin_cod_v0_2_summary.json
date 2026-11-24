@@ -1,0 +1,80 @@
+{
+  "status": "chemin_cod_v0_2_external_benchmark",
+  "claim_boundary": "Retrospective closed-library known-family retrieval on measured Mars CheMin patterns. Not prospective and not open-world phase discovery.",
+  "source": {
+    "name": "NASA MSL CheMin PDS release 42",
+    "mission_page": "https://pds-geosciences.wustl.edu/missions/msl/chemin.htm",
+    "reference_library": "Crystallography Open Database",
+    "reference_license": "CC0-1.0"
+  },
+  "contract": {
+    "queries": 44,
+    "candidate_families": 20,
+    "reference_profiles": 58,
+    "truth_rows": 880,
+    "sample_groups": 41,
+    "bootstrap_repeats": 10000,
+    "seed": 20261124,
+    "primary_contrast": "eight_window_sqrt_pearson_minus_leave_group_out_frequency"
+  },
+  "positive_families_per_query": {
+    "minimum": 6,
+    "mean": 8.159090909090908,
+    "maximum": 10
+  },
+  "metrics": {
+    "deterministic_hash_random": {
+      "micro_ap": 0.402006,
+      "macro_ap": 0.47233,
+      "top1_present": 0.295455
+    },
+    "leave_group_out_frequency": {
+      "micro_ap": 0.852005,
+      "macro_ap": 0.882747,
+      "top1_present": 0.977273
+    },
+    "global_sqrt_pearson": {
+      "micro_ap": 0.640785,
+      "macro_ap": 0.729127,
+      "top1_present": 1.0
+    },
+    "eight_window_sqrt_pearson": {
+      "micro_ap": 0.678512,
+      "macro_ap": 0.708473,
+      "top1_present": 1.0
+    }
+  },
+  "primary_contrast": {
+    "micro_ap": {
+      "estimate": -0.1734929134440515,
+      "ci95": [-0.22571508800266107, -0.11868782100422981]
+    },
+    "macro_ap": {
+      "estimate": -0.17427418817332974,
+      "ci95": [-0.2179423694243013, -0.12779587026997477]
+    },
+    "top1_present": {
+      "estimate": 0.022727272727272707,
+      "ci95": [0.0, 0.0714285714285714]
+    }
+  },
+  "evidence_gate": {
+    "passed": false,
+    "reason": "The simple spectral baseline does not improve group-bootstrap AP over the leave-group-out frequency prior."
+  },
+  "candidate_ambiguity": {
+    "pairs": 190,
+    "maximum_cross_family_pearson": 0.7321648546416274,
+    "pairs_at_or_above_0_98": 0,
+    "pairs_at_or_above_0_995": 0
+  },
+  "reproducibility": {
+    "evaluation_canonical_sha256": "4d385a83009c0c1f47864910ece64b3e055453736bd4395ed6f5e89069519cc3",
+    "predictions_sha256": "2b9723620348a533f15217e3547a12aa4e1ce374deba835b2aa13670a1f42d5b",
+    "public_archive_sha256": "2e3134fad775b8992284a7f7855b12dad2307d158c0c109087b847daee4c1231",
+    "evaluation_archive_sha256": "c566d4132a3964107310d11a17aa7eaf4acc611123aeb4ad453b422107d27203",
+    "public_forbidden_hits": 0,
+    "evaluation_repeat_byte_identical": true,
+    "public_repeat_byte_identical": true
+  }
+}
