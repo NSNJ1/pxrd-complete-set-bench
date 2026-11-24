@@ -1,0 +1,422 @@
+{
+  "status": "xca20_crystalshift_evaluated",
+  "claim_boundary": "Retrospective 30-query subset of an already consumed measured thin-film source. CrystalShift was locally adapted. This is not a fresh holdout, prospective validation, or universal SOTA result.",
+  "contract": {
+    "queries": 30,
+    "candidate_families": 20,
+    "candidate_structures": 31,
+    "bootstrap_repeats": 10000,
+    "bootstrap_clusters": 11,
+    "seed": 20261124,
+    "tie_rule": "conservative"
+  },
+  "inputs": {
+    "source_tfrecord_sha256": "c7470a6a5c4febb5a77558fad011ae88da39d7ddf09ebd35ba88869662a17203",
+    "selection_sha256": "4a5fc9a101904e88ed2d619d6b8c63a005a77827ac7ae2b4c4ff95a6aa11fa59",
+    "predictions_sha256": "e44f3d44b22d2ba47ba515f15ac2dbdb9efb1de2c782ddf89d125b0883aa841d",
+    "baseline_scores_sha256": "bc95645f2e5cd66005e2c0b1885c96d256519fa5bb6470ef7b25bb48390a9abd",
+    "protocol_sha256": "64bf1183e9416e753e97df5b5c7f8131ed9d7990976a3a5dbe7bc12d0c579b13"
+  },
+  "query_distribution": {
+    "1": 18,
+    "2": 12
+  },
+  "methods": {
+    "deterministic_random": {
+      "phase_ap_macro": 0.1627420658690009,
+      "top1_present": 0.06666666666666667,
+      "best_positive_mrr": 0.18781403437750183,
+      "all_present_at_1": 0.0,
+      "all_present_at_2": 0.0,
+      "all_present_at_3": 0.0,
+      "all_present_at_5": 0.1,
+      "mean_minimum_all_present_budget": 12.066666666666666,
+      "bootstrap_ci95": {
+        "phase_ap_macro": [
+          0.11772104259601282,
+          0.24713847012039172
+        ],
+        "top1_present": [
+          0.0,
+          0.21052631578947367
+        ],
+        "best_positive_mrr": [
+          0.11768153104101597,
+          0.3258318249536027
+        ],
+        "all_present_at_1": [
+          0.0,
+          0.0
+        ],
+        "all_present_at_2": [
+          0.0,
+          0.0
+        ],
+        "all_present_at_3": [
+          0.0,
+          0.0
+        ],
+        "all_present_at_5": [
+          0.0,
+          0.20689655172413793
+        ],
+        "mean_minimum_all_present_budget": [
+          10.837822124450032,
+          13.727272727272727
+        ]
+      }
+    },
+    "crystalshift_adapted_20": {
+      "phase_ap_macro": 0.3002475268109943,
+      "top1_present": 0.0,
+      "best_positive_mrr": 0.2987792728427403,
+      "all_present_at_1": 0.0,
+      "all_present_at_2": 0.16666666666666666,
+      "all_present_at_3": 0.3,
+      "all_present_at_5": 0.5333333333333333,
+      "mean_minimum_all_present_budget": 6.9,
+      "bootstrap_ci95": {
+        "phase_ap_macro": [
+          0.21675831986095587,
+          0.362567528400249
+        ],
+        "top1_present": [
+          0.0,
+          0.0
+        ],
+        "best_positive_mrr": [
+          0.21035749125249598,
+          0.3619057258530943
+        ],
+        "all_present_at_1": [
+          0.0,
+          0.0
+        ],
+        "all_present_at_2": [
+          0.0,
+          0.35
+        ],
+        "all_present_at_3": [
+          0.09090909090909091,
+          0.48717948717948717
+        ],
+        "all_present_at_5": [
+          0.2413793103448276,
+          0.7297297297297297
+        ],
+        "mean_minimum_all_present_budget": [
+          4.944444444444445,
+          10.304497751124437
+        ]
+      }
+    },
+    "global_sqrt_pearson": {
+      "phase_ap_macro": 0.6391212783318047,
+      "top1_present": 0.6,
+      "best_positive_mrr": 0.7002861319966583,
+      "all_present_at_1": 0.4666666666666667,
+      "all_present_at_2": 0.4666666666666667,
+      "all_present_at_3": 0.5333333333333333,
+      "all_present_at_5": 0.5333333333333333,
+      "mean_minimum_all_present_budget": 6.1,
+      "bootstrap_ci95": {
+        "phase_ap_macro": [
+          0.35912139212231126,
+          0.8191251566416039
+        ],
+        "top1_present": [
+          0.28,
+          0.8
+        ],
+        "best_positive_mrr": [
+          0.44411007495103305,
+          0.853948557736935
+        ],
+        "all_present_at_1": [
+          0.058823529411764705,
+          0.7307692307692307
+        ],
+        "all_present_at_2": [
+          0.058823529411764705,
+          0.7307692307692307
+        ],
+        "all_present_at_3": [
+          0.1111111111111111,
+          0.8163265306122449
+        ],
+        "all_present_at_5": [
+          0.1111111111111111,
+          0.8163265306122449
+        ],
+        "mean_minimum_all_present_budget": [
+          3.088888888888889,
+          10.5
+        ]
+      }
+    },
+    "window_sqrt_pearson": {
+      "phase_ap_macro": 0.6332729770229771,
+      "top1_present": 0.4666666666666667,
+      "best_positive_mrr": 0.6692307692307692,
+      "all_present_at_1": 0.3333333333333333,
+      "all_present_at_2": 0.5333333333333333,
+      "all_present_at_3": 0.6,
+      "all_present_at_5": 0.7,
+      "mean_minimum_all_present_budget": 4.866666666666666,
+      "bootstrap_ci95": {
+        "phase_ap_macro": [
+          0.4690016773350107,
+          0.766685020696957
+        ],
+        "top1_present": [
+          0.26666666666666666,
+          0.6388888888888888
+        ],
+        "best_positive_mrr": [
+          0.5320512820512822,
+          0.7817460317460316
+        ],
+        "all_present_at_1": [
+          0.05555555555555555,
+          0.55
+        ],
+        "all_present_at_2": [
+          0.22727272727272727,
+          0.75
+        ],
+        "all_present_at_3": [
+          0.22727272727272727,
+          0.8571428571428571
+        ],
+        "all_present_at_5": [
+          0.38461538461538464,
+          0.9259259259259259
+        ],
+        "mean_minimum_all_present_budget": [
+          2.5415865384615386,
+          8.25925925925926
+        ]
+      }
+    },
+    "source_xca_xrd_only": {
+      "phase_ap_macro": 0.5416200758306021,
+      "top1_present": 0.4,
+      "best_positive_mrr": 0.6137629329734593,
+      "all_present_at_1": 0.2,
+      "all_present_at_2": 0.4666666666666667,
+      "all_present_at_3": 0.4666666666666667,
+      "all_present_at_5": 0.6,
+      "mean_minimum_all_present_budget": 6.066666666666666,
+      "bootstrap_ci95": {
+        "phase_ap_macro": [
+          0.3611599803705067,
+          0.6599821428571429
+        ],
+        "top1_present": [
+          0.2,
+          0.6190476190476191
+        ],
+        "best_positive_mrr": [
+          0.4183234030938551,
+          0.7614529914529914
+        ],
+        "all_present_at_1": [
+          0.0,
+          0.36666666666666664
+        ],
+        "all_present_at_2": [
+          0.0,
+          0.7777777777777778
+        ],
+        "all_present_at_3": [
+          0.0,
+          0.7777777777777778
+        ],
+        "all_present_at_5": [
+          0.2222222222222222,
+          0.8461538461538461
+        ],
+        "mean_minimum_all_present_budget": [
+          2.951189024390244,
+          10.92
+        ]
+      }
+    }
+  },
+  "paired_deltas": {
+    "crystalshift_adapted_20_minus_window_sqrt_pearson": {
+      "phase_ap_macro": {
+        "estimate": -0.3330254502119828,
+        "ci95": [
+          -0.45336776338675844,
+          -0.1769286761335735
+        ]
+      },
+      "top1_present": {
+        "estimate": -0.4666666666666667,
+        "ci95": [
+          -0.6388888888888888,
+          -0.26666666666666666
+        ]
+      },
+      "best_positive_mrr": {
+        "estimate": -0.3704514963880289,
+        "ci95": [
+          -0.47319290545498516,
+          -0.2458011228698632
+        ]
+      },
+      "all_present_at_1": {
+        "estimate": -0.3333333333333333,
+        "ci95": [
+          -0.55,
+          -0.05555555555555555
+        ]
+      },
+      "all_present_at_2": {
+        "estimate": -0.3666666666666667,
+        "ci95": [
+          -0.5555555555555556,
+          -0.16666666666666669
+        ]
+      },
+      "all_present_at_3": {
+        "estimate": -0.3,
+        "ci95": [
+          -0.5185185185185185,
+          -0.03999999999999998
+        ]
+      },
+      "all_present_at_5": {
+        "estimate": -0.16666666666666663,
+        "ci95": [
+          -0.35000000000000003,
+          -0.027759009009009187
+        ]
+      },
+      "mean_minimum_all_present_budget": {
+        "estimate": 2.033333333333334,
+        "ci95": [
+          -0.2857142857142856,
+          4.409090909090909
+        ]
+      }
+    },
+    "window_sqrt_pearson_minus_global_sqrt_pearson": {
+      "phase_ap_macro": {
+        "estimate": -0.005848301308827519,
+        "ci95": [
+          -0.15257935348524032,
+          0.19217582392711113
+        ]
+      },
+      "top1_present": {
+        "estimate": -0.1333333333333333,
+        "ci95": [
+          -0.33333333333333337,
+          0.10526315789473684
+        ]
+      },
+      "best_positive_mrr": {
+        "estimate": -0.03105536276588916,
+        "ci95": [
+          -0.17550812156593407,
+          0.16660926512891547
+        ]
+      },
+      "all_present_at_1": {
+        "estimate": -0.13333333333333336,
+        "ci95": [
+          -0.32559403437815976,
+          0.055637254901959615
+        ]
+      },
+      "all_present_at_2": {
+        "estimate": 0.06666666666666665,
+        "ci95": [
+          -0.08823529411764708,
+          0.2857142857142857
+        ]
+      },
+      "all_present_at_3": {
+        "estimate": 0.06666666666666665,
+        "ci95": [
+          -0.06666666666666665,
+          0.23809523809523803
+        ]
+      },
+      "all_present_at_5": {
+        "estimate": 0.16666666666666663,
+        "ci95": [
+          0.032258064516129004,
+          0.40909090909090906
+        ]
+      },
+      "mean_minimum_all_present_budget": {
+        "estimate": -1.2333333333333334,
+        "ci95": [
+          -3.1052631578947363,
+          -0.09677419354838701
+        ]
+      }
+    },
+    "source_xca_xrd_only_minus_global_sqrt_pearson": {
+      "phase_ap_macro": {
+        "estimate": -0.09750120250120253,
+        "ci95": [
+          -0.21039894745523613,
+          0.07714753083174133
+        ]
+      },
+      "top1_present": {
+        "estimate": -0.19999999999999996,
+        "ci95": [
+          -0.42105263157894735,
+          0.12500000000000006
+        ]
+      },
+      "best_positive_mrr": {
+        "estimate": -0.08652319902319905,
+        "ci95": [
+          -0.20621384321965722,
+          0.09835247054287309
+        ]
+      },
+      "all_present_at_1": {
+        "estimate": -0.26666666666666666,
+        "ci95": [
+          -0.441860465116279,
+          0.0
+        ]
+      },
+      "all_present_at_2": {
+        "estimate": 0.0,
+        "ci95": [
+          -0.1111111111111111,
+          0.0714285714285714
+        ]
+      },
+      "all_present_at_3": {
+        "estimate": -0.06666666666666665,
+        "ci95": [
+          -0.2,
+          0.0
+        ]
+      },
+      "all_present_at_5": {
+        "estimate": 0.06666666666666665,
+        "ci95": [
+          -0.12,
+          0.2857142857142857
+        ]
+      },
+      "mean_minimum_all_present_budget": {
+        "estimate": -0.033333333333333215,
+        "ci95": [
+          -2.3601666666666667,
+          1.9375
+        ]
+      }
+    }
+  }
+}

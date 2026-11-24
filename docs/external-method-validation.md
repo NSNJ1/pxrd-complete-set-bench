@@ -168,3 +168,23 @@ development branch adds two genuinely different open-source implementations,
 bringing the panel to eight rows. This matches the median of eight rows in the
 six reviewed npj Computational Materials benchmark papers, but it is still a
 retrospective source-specific panel. It does not count as a new measured source.
+
+## 20-candidate stress follow-up
+
+Two later panels test one external implementation in larger libraries without
+adding more similar methods to the 25-by-four panel.
+
+- RealBind: 20 measured single-phase queries and 20 candidate structures;
+- XCA Ni-Co-Al: 30 measured single- or two-phase queries, 20 candidate
+  families and 31 source structures.
+
+Both use the same CrystalShift commit and a local adapted execution. On each
+panel, CrystalShift has lower phase AP than eight-window Pearson. The XCA
+all-present@3 difference is -30 percentage points with a 95% expert-label
+cluster-bootstrap interval of -51.9 to -4.0 points. This supports the narrow
+claim that implementation complexity does not automatically improve a
+20-candidate review shortlist. It does not establish a universal ranking.
+
+Full protocols, label-blind handoffs, evaluator-side truth, source records,
+result hashes and exact replay checks are described in
+`docs/external-stress-tests.md`.

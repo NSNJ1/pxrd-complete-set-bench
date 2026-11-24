@@ -11,6 +11,10 @@ source score table is unchanged.
 - Separate micro AP, macro AP, fixed all-present@k, legal tie-minimum and
   tie-maximum endpoints.
 - An exact replay check for the rank-reversal result.
+- A 20-query, 20-candidate RealBind stress panel with byte-identical repeated
+  CrystalShift output.
+- A 30-query, 20-family XCA stress panel using 31 official candidate
+  structures, with byte-identical repeated output.
 - Explicit wording that the two external tests share opXRD lineage and are not
   independent underlying source families.
 - A model-agnostic partial-submission scorer with candidate, query and positive
@@ -28,6 +32,13 @@ maximum.
 
 The panel therefore tests interface compatibility and endpoint sensitivity. It
 does not establish a stable community leaderboard.
+
+The two 20-candidate panels sharpen the method-evidence result. CrystalShift
+phase AP is 0.842 on RealBind versus 1.000 for eight-window Pearson. On XCA it
+is 0.300 versus 0.633. The XCA all-present@3 values are 30% and 60%; the paired
+difference has a 95% expert-label cluster-bootstrap interval of -51.9 to -4.0
+percentage points. The external method therefore did not beat the simple
+profile-similarity baseline in either source family.
 
 ## Reproduction
 
@@ -51,3 +62,7 @@ Expected result SHA-256:
 The endpoint audit is a retrospective, exploratory analysis on 25 queries. It is
 not prospective validation and does not support a universal state-of-the-art
 claim.
+
+The stress panels are local adapted executions. RealBind is single phase. XCA is
+an already consumed, textured thin-film cohort whose selected subset contains
+no three-phase query. Neither panel is a fresh holdout or prospective result.

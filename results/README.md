@@ -23,6 +23,10 @@
 - `rank_reversal_audit.json`: 10,000-repeat endpoint rank-reversal and bootstrap
   rank-stability audit for the eight-method panel.
 - `rank_reversal_audit_reproduction.json`: byte-for-byte replay of that audit.
+- `realbind20_crystalshift_20261124.json`: 20-query, 20-candidate CrystalShift
+  boundary stress panel, with query metrics and an exact replay check.
+- `xca20_crystalshift_20261124.json`: 30-query, 20-family CrystalShift
+  multiphase stress panel, with query metrics and an exact replay check.
 
 These files are outputs, not independent validation. Source roles and claim
 boundaries are defined in `docs/benchmark-card.md` and

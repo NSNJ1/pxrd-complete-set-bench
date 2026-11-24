@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.6.1 - 2026-11-24
+
+- Add a truth-blind partial-submission scorer with explicit coverage semantics.
+- Add a reproducible endpoint rank-reversal and bootstrap rank-stability audit.
+- Add 20-candidate CrystalShift stress panels on RealBind and XCA Ni-Co-Al.
+- Separate label-blind public handoffs from evaluator-side truth in both
+  stress-panel evidence archives.
+- Add exact repeat checks for both stress panels and retain their Julia warning
+  logs in the published evidence.
+
 ## 0.5.0 - 2026-11-23
 
 - Add a reproducible six-method comparison on the controlled AriadneX cohort.

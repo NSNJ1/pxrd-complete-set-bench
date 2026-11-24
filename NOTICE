@@ -34,6 +34,8 @@ remain with the original database records.
 - Paper DOI: https://doi.org/10.1038/s43588-021-00059-2
 - Repository: https://github.com/bnl/pub-Maffettone_2020_08
 - Repository license: BSD-3-Clause
+- The bounded 20-family stress archive redistributes the selected source
+  TFRecord, 31 official CIFs, labels, selected public inputs and frozen results.
 
 ## Ta-Sn-O / CrystalShift data
 
@@ -105,7 +107,9 @@ remain with the original database records.
 - Mini-data license: CC BY 4.0
 - Code license: MIT
 - The bounded boundary package redistributes the mini query/candidate arrays
-  and official expected values with attribution.
+  and official expected values with attribution. The 20-candidate stress
+  archive additionally redistributes 20 selected measured profiles and their
+  paired candidate structures.
 
 ## Crystallography Open Database
 

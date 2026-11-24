@@ -1,0 +1,11 @@
+{
+  "status": "xca20_exact_reproduction",
+  "prediction_equal": true,
+  "sets_equal": true,
+  "evaluation_equal": true,
+  "query_metrics_equal": true,
+  "prediction_sha256": "e44f3d44b22d2ba47ba515f15ac2dbdb9efb1de2c782ddf89d125b0883aa841d",
+  "sets_sha256": "05ea2d28d60b12f679c5fb725ec316a73c888cb7e6371cbbcf969f4dfde38a76",
+  "evaluation_sha256": "39575355eb4a331cd23af642f4c2b73d79b586dbdbd16a98f48bd1b67fcd2a8b",
+  "query_metrics_sha256": "9dbd9839bb7ba4af7df2665b85ae170c1b4f8b25f1fbb4ee70685f7325fa9fef"
+}

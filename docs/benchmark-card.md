@@ -42,6 +42,13 @@ run under one candidate contract. It does not replace the seven-source
 benchmark, and its source-specific scores are not pooled with other sources.
 See `docs/external-method-validation.md` for execution and adaptation details.
 
+Two additional stress panels use 20 candidate families. RealBind supplies 20
+measured single-phase boundary queries. XCA Ni-Co-Al supplies 30 measured
+single- or two-phase queries and 20 phase families represented by 31 official
+structures. Both use locally adapted CrystalShift and are retrospective. They
+test whether a more complex external implementation is automatically stronger
+in the 20-candidate regime. See `docs/external-stress-tests.md`.
+
 ## External-source tests
 
 Two fixed external-source cohorts are kept outside the seven-source core:
@@ -80,6 +87,10 @@ The final result uses 10,000 resamples and seed `20261118`.
 
 The controlled method panel uses query-level resampling, 10,000 repeats and
 seed `20261123`.
+
+The RealBind 20-candidate panel resamples whole queries, 10,000 repeats and
+seed `20261124`. The XCA 20-family panel resamples expert phase-region labels,
+10,000 repeats and seed `20261124`.
 
 The panel also has an endpoint rank-reversal audit. Reversals are reported
 without selecting a preferred tie order: lower and upper legal bounds are

@@ -1,7 +1,7 @@
 {
   "version": "0.6.1",
   "date": "2026-11-24",
-  "file_count": 113,
+  "file_count": 124,
   "entries": [
     {
       "path": ".gitattributes",
@@ -20,8 +20,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "size": 1019,
-      "sha256": "b24c5ab233d06648126a28b80f67f62941c6ae44511fbdc318ad5d5b768d93fd"
+      "size": 1500,
+      "sha256": "81a3184294d82aaadd5d8bdc255aca2c2d4d5aa8f06048b5c3a0614cdf1e76f0"
     },
     {
       "path": "CITATION.cff",
@@ -45,13 +45,13 @@
     },
     {
       "path": "NOTICE",
-      "size": 3844,
-      "sha256": "2df93643e95dfba0a68ba12a56ada940595486321742b1821c3e2189dcb2c3f2"
+      "size": 4130,
+      "sha256": "723851a716bb3aeee0b2793aaa0427343c11de61bf41d520369235c7a66a0ca9"
     },
     {
       "path": "README.md",
-      "size": 8648,
-      "sha256": "c6a8fbb3d819ad98983aad9048c0c09757494c2d4893dbaafed416e2462d6b8b"
+      "size": 9106,
+      "sha256": "5fd69c29caaea71a7e95ff9bb8894061fa28da24803e66984408d534f717a9dc"
     },
     {
       "path": "SECURITY.md",
@@ -60,8 +60,8 @@
     },
     {
       "path": "data/README.md",
-      "size": 689,
-      "sha256": "cd8959e4601288d5f845a03b3cc3113a3226f9a115f1c73f41f985d7214c9e1c"
+      "size": 855,
+      "sha256": "5d179a48846d648386d4312d95682292707dd447b8f74c7eb5a1b4a843140e45"
     },
     {
       "path": "data/ariadnex_external_method_predictions.csv",
@@ -84,6 +84,11 @@
       "sha256": "29b6a9dcaf5d123fa44eaa865cdd4ae5fabb97959e9fa7ab68f8f475e6432e5c"
     },
     {
+      "path": "data/external_stress_registry.json",
+      "size": 3054,
+      "sha256": "6d86ebcfa4ba06727389db40884c9b436ee13ac8027b340cc77d80874e344a01"
+    },
+    {
       "path": "data/query_phase_scores.csv",
       "size": 6033494,
       "sha256": "70a7e11872f50a9cddbe83ca84614462edebf99a1089a8b512a525a049ba2c2b"
@@ -95,8 +100,8 @@
     },
     {
       "path": "docs/benchmark-card.md",
-      "size": 3625,
-      "sha256": "640a13079e76df707295a0a7d7a036ab8ce4cd889b43a7380b6080c4f78618e5"
+      "size": 4268,
+      "sha256": "f568947d5f57d4dd809bd6651256aa52a4708f56a76b85717fc9a868f010b234"
     },
     {
       "path": "docs/data-sources.md",
@@ -110,13 +115,18 @@
     },
     {
       "path": "docs/external-method-validation.md",
-      "size": 8288,
-      "sha256": "6f0713da2b501c932ef25f735d6c362be71da80ab206c5a1d39ae775a6e26d82"
+      "size": 9249,
+      "sha256": "b4f3e0536a562b9733638f74e2bea1d6df990fbbf9f1a0602de502a00cfdc688"
     },
     {
       "path": "docs/external-source-validation.md",
       "size": 4516,
       "sha256": "3c84923bcad6abb0dc988faadd4673a7e492fc4aae198d2f33230ea8d1967c71"
+    },
+    {
+      "path": "docs/external-stress-tests.md",
+      "size": 3687,
+      "sha256": "0b0966118dd39c2eea11a8f743674e3cf1ceae9439e117d47512a538fc680b2b"
     },
     {
       "path": "docs/metrics.md",
@@ -145,13 +155,13 @@
     },
     {
       "path": "docs/release-notes-v0.6.1.md",
-      "size": 1915,
-      "sha256": "0fa0d8ab5b8d7698110f6652ce0e99ace43644be4f4aeb89e8109f5adbcad7eb"
+      "size": 2815,
+      "sha256": "eb742ebcc8f90d7d850d31ca8418c282dc246a9d27d68bd9612505e6b6cc5d19"
     },
     {
       "path": "docs/reproduction.md",
-      "size": 3125,
-      "sha256": "de34b0548ac6d27955f2562c0eb5bf1dd08c21f4f2d35ce1d4f62aedfd8cc438"
+      "size": 3989,
+      "sha256": "53a9fe43449e748a02f8d0c7c45487cb12faa6a8bd31864e3f0abcca6e994602"
     },
     {
       "path": "docs/statistical-audit.md",
@@ -180,8 +190,18 @@
     },
     {
       "path": "evidence/external-methods/README.md",
-      "size": 1766,
-      "sha256": "50d90e12af679bc41351341833fc550731b6f2fa13637e033143c5239f7d51e2"
+      "size": 2551,
+      "sha256": "6d13c515696e9950b84696d7bc966753734dd90fc0d4360b5d576f7c68f14106"
+    },
+    {
+      "path": "evidence/external-methods/REALBIND20_CRYSTALSHIFT_V2_20261124_PUBLIC.zip",
+      "size": 1222456,
+      "sha256": "57ab6ced83edf6c34854aa30c1f269d7a501f635b608c9dd65865dfc7e3ab10e"
+    },
+    {
+      "path": "evidence/external-methods/XCA20_CRYSTALSHIFT_V1_20261124_PUBLIC.zip",
+      "size": 5762744,
+      "sha256": "d2e072926509ba7c9e3cfc200ce9faa154cbfe2d3a1ac5fa91104803b90b9919"
     },
     {
       "path": "evidence/external-methods/XDECOMPOSER_LOCAL_RUN_20261123_PUBLIC_SANITIZED.zip",
@@ -290,8 +310,8 @@
     },
     {
       "path": "results/README.md",
-      "size": 1602,
-      "sha256": "83864268c3378dca19048ada7172fa8bea473f7efa49543b552514afa666938f"
+      "size": 1896,
+      "sha256": "af243bd22a6f53138c624cc684cc9752de7fa517f2ec90dd94aab3a4cb68815b"
     },
     {
       "path": "results/ariadnex_external_diagnostics.json",
@@ -374,6 +394,21 @@
       "sha256": "6c94c76f009435ed0c991909b5774300a6a82a37d6578bcce9a0d3d57e437595"
     },
     {
+      "path": "results/realbind20_crystalshift_20261124.json",
+      "size": 5410,
+      "sha256": "a730d6e22ea6e232df06a48ff92698bf9b197b89e61f33c59b63ce69999c9b0c"
+    },
+    {
+      "path": "results/realbind20_query_metrics_20261124.csv",
+      "size": 1974,
+      "sha256": "4ad60057366500b8b5e80992bea0628425bb0948009cc25591960641d233655e"
+    },
+    {
+      "path": "results/realbind20_reproduction_20261124.json",
+      "size": 518,
+      "sha256": "f522dd479aaef9a055687bd7219b852c4610e0d87afee212e227c2e43b69619a"
+    },
+    {
       "path": "results/realbind_mini_external_20261123.json",
       "size": 4175,
       "sha256": "60efe10c96f080952cd767bf45eaaa19e4aed7ddc1a9162e19389809852489a1"
@@ -397,6 +432,21 @@
       "path": "results/source_overlap_audit.json",
       "size": 9555,
       "sha256": "c75361582ed5f28609313a59d9c4c708eb69fe9da2be65583d72a8322e26395e"
+    },
+    {
+      "path": "results/xca20_crystalshift_20261124.json",
+      "size": 10928,
+      "sha256": "39575355eb4a331cd23af642f4c2b73d79b586dbdbd16a98f48bd1b67fcd2a8b"
+    },
+    {
+      "path": "results/xca20_query_metrics_20261124.csv",
+      "size": 9965,
+      "sha256": "9dbd9839bb7ba4af7df2665b85ae170c1b4f8b25f1fbb4ee70685f7325fa9fef"
+    },
+    {
+      "path": "results/xca20_reproduction_20261124.json",
+      "size": 513,
+      "sha256": "26fc4812a2d5429b4ebf7aa85ab261b6f9aa88cd0374a5b5b4320c47d80b23cc"
     },
     {
       "path": "scripts/audit_null_and_power.py",
@@ -542,6 +592,11 @@
       "path": "tests/test_external_sources.py",
       "size": 3550,
       "sha256": "512ab4a2ac96a0bd7287c610ecba7d52784c0cb7553dc610904087792a47d461"
+    },
+    {
+      "path": "tests/test_external_stress.py",
+      "size": 4212,
+      "sha256": "91b5eee263af2b4f364a64c5a2ac205c5a89e4e78e7f411c08a65b4480ac4e14"
     },
     {
       "path": "tests/test_phase_labels.py",

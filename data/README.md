@@ -16,3 +16,7 @@ Aggregate results for the two additional controls are under
 `external_source_registry.json` records the two source-locked external tests,
 their data and protocol hashes, evidence archives and exact reproduction
 statuses.
+
+`external_stress_registry.json` records the CrystalShift 20-candidate stress
+panels on RealBind and XCA, including public evidence archives and exact replay
+hashes.

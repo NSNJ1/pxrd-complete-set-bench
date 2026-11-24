@@ -1,0 +1,58 @@
+{
+  "status": "external_stress_tests_20261124",
+  "claim_boundary": "Both panels are retrospective local adapted CrystalShift runs. They test whether the 20-candidate diagnostic survives two source families; they are not prospective validation or a universal method ranking.",
+  "method": {
+    "id": "crystalshift",
+    "repository": "https://github.com/MingChiangChang/CrystalShift.jl",
+    "commit": "c4884ca1dbbd78135cd50f5e17141cdc0b6f43c8",
+    "license": "MIT",
+    "execution": "local adapted execution"
+  },
+  "panels": {
+    "realbind20_single_phase": {
+      "source": "RealBind mini 1.1.3, underlying opXRD measurements",
+      "doi": "10.5281/zenodo.23140154",
+      "license": "CC BY 4.0 for mini data; MIT for RealBind code",
+      "source_file_sha256": "00bd4742f0af524f9f88bcd98c16dfc59d4b77470597c296c34af4f6ad3d9678",
+      "queries": 20,
+      "candidate_families": 20,
+      "candidate_structures": 20,
+      "query_phase_cardinality": {
+        "1": 20
+      },
+      "result_file": "results/realbind20_crystalshift_20261124.json",
+      "result_sha256": "a730d6e22ea6e232df06a48ff92698bf9b197b89e61f33c59b63ce69999c9b0c",
+      "query_metrics_file": "results/realbind20_query_metrics_20261124.csv",
+      "query_metrics_sha256": "4ad60057366500b8b5e80992bea0628425bb0948009cc25591960641d233655e",
+      "reproduction_file": "results/realbind20_reproduction_20261124.json",
+      "reproduction_sha256": "f522dd479aaef9a055687bd7219b852c4610e0d87afee212e227c2e43b69619a",
+      "evidence_archive": "evidence/external-methods/REALBIND20_CRYSTALSHIFT_V2_20261124_PUBLIC.zip",
+      "evidence_sha256": "57ab6ced83edf6c34854aa30c1f269d7a501f635b608c9dd65865dfc7e3ab10e",
+      "reproduction": "realbind20_exact_reproduction"
+    },
+    "xca20_multiphase": {
+      "source": "XCA Ni-Co-Al measured thin-film cohort",
+      "doi": "10.1038/s43588-021-00059-2",
+      "repository": "https://github.com/bnl/pub-Maffettone_2020_08",
+      "repository_commit": "a7024480137b39bf396ccda2474bdf4304b21f4a",
+      "license": "BSD-3-Clause",
+      "source_file_sha256": "c7470a6a5c4febb5a77558fad011ae88da39d7ddf09ebd35ba88869662a17203",
+      "queries": 30,
+      "candidate_families": 20,
+      "candidate_structures": 31,
+      "query_phase_cardinality": {
+        "1": 18,
+        "2": 12
+      },
+      "result_file": "results/xca20_crystalshift_20261124.json",
+      "result_sha256": "39575355eb4a331cd23af642f4c2b73d79b586dbdbd16a98f48bd1b67fcd2a8b",
+      "query_metrics_file": "results/xca20_query_metrics_20261124.csv",
+      "query_metrics_sha256": "9dbd9839bb7ba4af7df2665b85ae170c1b4f8b25f1fbb4ee70685f7325fa9fef",
+      "reproduction_file": "results/xca20_reproduction_20261124.json",
+      "reproduction_sha256": "26fc4812a2d5429b4ebf7aa85ab261b6f9aa88cd0374a5b5b4320c47d80b23cc",
+      "evidence_archive": "evidence/external-methods/XCA20_CRYSTALSHIFT_V1_20261124_PUBLIC.zip",
+      "evidence_sha256": "d2e072926509ba7c9e3cfc200ce9faa154cbfe2d3a1ac5fa91104803b90b9919",
+      "reproduction": "xca20_exact_reproduction"
+    }
+  }
+}

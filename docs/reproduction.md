@@ -134,3 +134,37 @@ The opXRD source archive is identified by MD5
 `e8e9800a8ecd2b7f01a764fdf77d5c53`. The RealBind mini source file is identified
 by SHA-256
 `00bd4742f0af524f9f88bcd98c16dfc59d4b77470597c296c34af4f6ad3d9678`.
+
+## CrystalShift 20-candidate stress panels
+
+The archives under `evidence/external-methods/` contain the label-blind public
+inputs, evaluator-side labels, scripts, source files, method outputs and repeat
+runs for both stress panels.
+
+Expected replay files:
+
+```text
+REALBIND20_CRYSTALSHIFT_V2_20261124_PUBLIC/REPRODUCTION_CHECK.json
+XCA20_CRYSTALSHIFT_V1_20261124_PUBLIC/REPRODUCTION_CHECK.json
+```
+
+Expected statuses:
+
+```text
+realbind20_exact_reproduction
+xca20_exact_reproduction
+```
+
+Expected result hashes:
+
+```text
+RealBind20 evaluation:
+a730d6e22ea6e232df06a48ff92698bf9b197b89e61f33c59b63ce69999c9b0c
+
+XCA20 evaluation:
+39575355eb4a331cd23af642f4c2b73d79b586dbdbd16a98f48bd1b67fcd2a8b
+```
+
+The archives include the Julia startup warning in their stderr logs. The
+warning did not prevent any query from completing, and both processes exited
+with code zero.

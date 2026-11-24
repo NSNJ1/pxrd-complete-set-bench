@@ -30,6 +30,9 @@ screening and within-shortlist ranking separately.
   and paired cluster-bootstrap intervals.
 - An endpoint-sensitivity audit showing whether the same methods change rank
   under AP, all-present@k and legal tie bounds.
+- Two 20-candidate external-method stress panels: a measured single-phase
+  RealBind boundary panel and a measured multiphase XCA panel with 20 phase
+  families.
 - A partial-submission scorer that counts missing outputs as failures and
   reports candidate, query and positive coverage.
 - Frozen 10,000-resample results and a one-command reproduction check.
@@ -175,6 +178,8 @@ No cohort is described as prospective.
 Independent execution and adaptation details for the controlled method panel
 are in
 [docs/external-method-validation.md](docs/external-method-validation.md).
+The 20-candidate stress evidence is summarized in
+[docs/external-stress-tests.md](docs/external-stress-tests.md).
 
 ## Repository layout
 
@@ -217,6 +222,9 @@ clusters, labels, and bootstrap settings. See
 - The eight-method comparison is retrospective and covers one 25-query measured
   source. It is not prospective validation and is smaller than the largest
   nearby benchmark.
+- The two 20-candidate stress panels are local adapted executions, not
+  independent runs. The XCA panel is an already consumed thin-film cohort and
+  contains no three-phase query.
 - Published learned methods were not all executable under this exact contract.
   No unexecuted method is assigned a numeric result.
 

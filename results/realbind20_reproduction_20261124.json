@@ -1,0 +1,11 @@
+{
+  "status": "realbind20_exact_reproduction",
+  "prediction_equal": true,
+  "sets_equal": true,
+  "evaluation_equal": true,
+  "query_metrics_equal": true,
+  "prediction_sha256": "58b832b19da0a90c404cb2396ff1ee1dc9f1d5d8832e00f6faef8644e1ff6910",
+  "sets_sha256": "7a3c99448ce7656c855749efdfc685982eb78857bb31c3276a931689d6a8e635",
+  "evaluation_sha256": "a730d6e22ea6e232df06a48ff92698bf9b197b89e61f33c59b63ce69999c9b0c",
+  "query_metrics_sha256": "4ad60057366500b8b5e80992bea0628425bb0948009cc25591960641d233655e"
+}

@@ -44,6 +44,29 @@ remain in the project's internal evidence store.
 - Prediction rows: 100
 - Candidate references: 4 x 3500-point profiles
 
+## CrystalShift 20-candidate stress panels
+
+- File: `REALBIND20_CRYSTALSHIFT_V2_20261124_PUBLIC.zip`
+- SHA-256:
+  `57ab6ced83edf6c34854aa30c1f269d7a501f635b608c9dd65865dfc7e3ab10e`
+- Source role: RealBind mini, measured single-phase boundary panel
+- Queries: 20
+- Candidate structures: 20
+- Prediction rows: 400
+- Execution: local adapted CrystalShift
+
+- File: `XCA20_CRYSTALSHIFT_V1_20261124_PUBLIC.zip`
+- SHA-256:
+  `d2e072926509ba7c9e3cfc200ce9faa154cbfe2d3a1ac5fa91104803b90b9919`
+- Source role: XCA Ni-Co-Al measured thin-film panel
+- Queries: 30
+- Candidate families: 20 across 31 structures
+- Prediction rows: 930
+- Execution: local adapted CrystalShift
+
+Both archives separate the label-blind `public/` handoff from evaluator-side
+labels. See `docs/external-stress-tests.md`.
+
 The archives record execution evidence. They are not additional benchmark
 splits and do not contain the project-side hidden evaluation output.
 

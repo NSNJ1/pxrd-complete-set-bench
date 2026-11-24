@@ -1,0 +1,252 @@
+{
+  "status": "realbind20_evaluated",
+  "claim_boundary": "External retrospective single-phase boundary panel. The CrystalShift run is a local adapted execution, not an independent execution and not multiphase validation.",
+  "contract": {
+    "queries": 20,
+    "candidates": 20,
+    "bootstrap_repeats": 10000,
+    "seed": 20261124,
+    "tie_rule": "conservative"
+  },
+  "inputs": {
+    "source_npz_sha256": "00bd4742f0af524f9f88bcd98c16dfc59d4b77470597c296c34af4f6ad3d9678",
+    "selection_sha256": "c98b6c5d52eb1bf2acab702991168f6b8d6eb500265d03e857329ff1841377f1",
+    "predictions_sha256": "58b832b19da0a90c404cb2396ff1ee1dc9f1d5d8832e00f6faef8644e1ff6910",
+    "protocol_sha256": "593e32a87fbc0a79e21cf0aeaacf803ab8af50a7164f87a4f877c6bf6ccd69ba"
+  },
+  "methods": {
+    "deterministic_random": {
+      "recall_at_1": 0.05,
+      "recall_at_3": 0.1,
+      "recall_at_5": 0.25,
+      "recall_at_10": 0.35,
+      "mrr": 0.1555496075561865,
+      "phase_ap_macro": 0.1555496075561865,
+      "bootstrap_ci95": {
+        "recall_at_1": [
+          0.0,
+          0.15
+        ],
+        "recall_at_3": [
+          0.0,
+          0.25
+        ],
+        "recall_at_5": [
+          0.1,
+          0.45
+        ],
+        "mrr": [
+          0.08704898728829649,
+          0.260853857765042
+        ],
+        "phase_ap_macro": [
+          0.08704898728829649,
+          0.260853857765042
+        ]
+      }
+    },
+    "global_sqrt_pearson": {
+      "recall_at_1": 0.85,
+      "recall_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr": 0.9083333333333332,
+      "phase_ap_macro": 0.9083333333333332,
+      "bootstrap_ci95": {
+        "recall_at_1": [
+          0.7,
+          1.0
+        ],
+        "recall_at_3": [
+          1.0,
+          1.0
+        ],
+        "recall_at_5": [
+          1.0,
+          1.0
+        ],
+        "mrr": [
+          0.8,
+          1.0
+        ],
+        "phase_ap_macro": [
+          0.8,
+          1.0
+        ]
+      }
+    },
+    "window_sqrt_pearson": {
+      "recall_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr": 1.0,
+      "phase_ap_macro": 1.0,
+      "bootstrap_ci95": {
+        "recall_at_1": [
+          1.0,
+          1.0
+        ],
+        "recall_at_3": [
+          1.0,
+          1.0
+        ],
+        "recall_at_5": [
+          1.0,
+          1.0
+        ],
+        "mrr": [
+          1.0,
+          1.0
+        ],
+        "phase_ap_macro": [
+          1.0,
+          1.0
+        ]
+      }
+    },
+    "crystalshift_adapted_20": {
+      "recall_at_1": 0.75,
+      "recall_at_3": 0.9,
+      "recall_at_5": 1.0,
+      "recall_at_10": 1.0,
+      "mrr": 0.8416666666666666,
+      "phase_ap_macro": 0.8416666666666666,
+      "bootstrap_ci95": {
+        "recall_at_1": [
+          0.55,
+          0.9
+        ],
+        "recall_at_3": [
+          0.75,
+          1.0
+        ],
+        "recall_at_5": [
+          1.0,
+          1.0
+        ],
+        "mrr": [
+          0.7125,
+          0.95
+        ],
+        "phase_ap_macro": [
+          0.7125,
+          0.95
+        ]
+      }
+    }
+  },
+  "paired_deltas": {
+    "crystalshift_adapted_20_minus_global_sqrt_pearson": {
+      "recall_at_1": {
+        "estimate": -0.09999999999999998,
+        "ci95": [
+          -0.35,
+          0.15000000000000002
+        ]
+      },
+      "recall_at_3": {
+        "estimate": -0.09999999999999998,
+        "ci95": [
+          -0.25,
+          0.0
+        ]
+      },
+      "recall_at_5": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "mrr": {
+        "estimate": -0.06666666666666665,
+        "ci95": [
+          -0.22083333333333333,
+          0.09583333333333344
+        ]
+      },
+      "phase_ap_macro": {
+        "estimate": -0.06666666666666665,
+        "ci95": [
+          -0.22083333333333333,
+          0.09583333333333344
+        ]
+      }
+    },
+    "crystalshift_adapted_20_minus_window_sqrt_pearson": {
+      "recall_at_1": {
+        "estimate": -0.25,
+        "ci95": [
+          -0.44999999999999996,
+          -0.09999999999999998
+        ]
+      },
+      "recall_at_3": {
+        "estimate": -0.09999999999999998,
+        "ci95": [
+          -0.25,
+          0.0
+        ]
+      },
+      "recall_at_5": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "mrr": {
+        "estimate": -0.15833333333333344,
+        "ci95": [
+          -0.2875,
+          -0.050000000000000044
+        ]
+      },
+      "phase_ap_macro": {
+        "estimate": -0.15833333333333344,
+        "ci95": [
+          -0.2875,
+          -0.050000000000000044
+        ]
+      }
+    },
+    "window_sqrt_pearson_minus_global_sqrt_pearson": {
+      "recall_at_1": {
+        "estimate": 0.15000000000000002,
+        "ci95": [
+          0.0,
+          0.30000000000000004
+        ]
+      },
+      "recall_at_3": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "recall_at_5": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "mrr": {
+        "estimate": 0.09166666666666679,
+        "ci95": [
+          0.0,
+          0.19999999999999996
+        ]
+      },
+      "phase_ap_macro": {
+        "estimate": 0.09166666666666679,
+        "ci95": [
+          0.0,
+          0.19999999999999996
+        ]
+      }
+    }
+  }
+}
