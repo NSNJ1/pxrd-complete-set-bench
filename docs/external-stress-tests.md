@@ -68,6 +68,22 @@ The evidence does not establish:
 - three-phase performance in the selected XCA subset;
 - a stable community leaderboard.
 
+## Fresh-release replay
+
+A later replay uses DeltaXRDbench dataset v1.1.0, a new external release to this
+project. It selects 30 RRUFF-Cu and 30 opXRD-Cu mixtures under a frozen hash
+rule. Every query has a 20-structure candidate library; the panels include
+two- and three-phase queries. The official data archive is verified by SHA-256,
+but raw spectra and CIFs are not redistributed.
+
+CrystalShift phase AP is 8.9 points below eight-window Pearson on RRUFF and 9.0
+points below it on opXRD. The all-present@3 effect is -23.3 points on RRUFF and
++3.3 points on opXRD. The source interaction is -26.7 points with a 95%
+interval of -46.7 to -6.7. Thus the phase-AP disadvantage is portable across
+these two lineages, but the complete-set conclusion is not.
+
+See `docs/external-fresh-release-replay.md`.
+
 ## Reproduction
 
 The evidence archives contain label-blind public inputs, evaluator-side truth,

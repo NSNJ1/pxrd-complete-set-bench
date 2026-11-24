@@ -64,8 +64,21 @@ remain in the project's internal evidence store.
 - Prediction rows: 930
 - Execution: local adapted CrystalShift
 
-Both archives separate the label-blind `public/` handoff from evaluator-side
-labels. See `docs/external-stress-tests.md`.
+## DeltaXRDbench fresh-release replay
+
+- File: `DELTAXRD20_FRESH_RELEASE_REPLAY_V1_20261124.zip`
+- SHA-256:
+  `66d31fcc2552cc5aa0a8a5ac513839d963ab2f4adf8124e695efbdd95f027257`
+- Release: DeltaXRDbench dataset v1.1.0
+- Queries: 30 RRUFF + 30 opXRD
+- Candidate structures per query: 20
+- Prediction rows: 600 + 600
+- Raw spectra and CIFs: not redistributed
+
+The two stress archives separate the label-blind `public/` handoff from
+evaluator-side labels. The fresh-release archive omits raw upstream data and
+provides the regeneration metadata instead. See
+`docs/external-stress-tests.md` and `docs/external-fresh-release-replay.md`.
 
 The archives record execution evidence. They are not additional benchmark
 splits and do not contain the project-side hidden evaluation output.

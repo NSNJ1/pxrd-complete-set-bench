@@ -100,6 +100,18 @@ remain with the original database records.
 - The bounded EMPA evidence package redistributes 200 selected measured
   spectra with derived labels, masks and hashes.
 
+## DeltaXRDbench v1.1.0
+
+- Release: https://github.com/DeltaGanjiang/deltaxrdbench/releases/tag/v1.1.0
+- Publication: https://doi.org/10.48550/arXiv.2610.07862
+- Combined dataset archive SHA-256:
+  `815cf737fe9166ec4e83e0aec91b01854ab4fc6cfeac481e83110bdf7de390b`
+- The upstream release retains RRUFF and opXRD provider terms and requires a
+  project licence before public redistribution of its code or artifacts.
+- This project redistributes only protocols, selected identifiers, derived
+  scores and aggregate results. Raw spectra, source CIFs and the upstream ZIP
+  are not included.
+
 ## RealBind
 
 - Deposit DOI: https://doi.org/10.5281/zenodo.23140154

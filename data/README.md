@@ -20,3 +20,6 @@ statuses.
 `external_stress_registry.json` records the CrystalShift 20-candidate stress
 panels on RealBind and XCA, including public evidence archives and exact replay
 hashes.
+
+`external_fresh_release_registry.json` records the DeltaXRDbench v1.1.0
+fresh-release replay, its source hash, two panels and cross-source interaction.

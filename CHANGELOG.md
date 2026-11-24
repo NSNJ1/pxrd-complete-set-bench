@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.6.2 - 2026-11-24
+
+- Add a verified fresh-release replay on DeltaXRDbench dataset v1.1.0.
+- Benchmark an adapted external method on 30 RRUFF and 30 opXRD mixtures with
+  20 candidate structures per query and 2-3 reference phases.
+- Report a significant RRUFF/opXRD interaction for all-present@3 while the
+  phase-AP disadvantage remains consistent.
+- Redistribute derived metadata and results only; raw spectra and source CIFs
+  remain with their original providers.
+
 ## 0.6.1 - 2026-11-24
 
 - Add a truth-blind partial-submission scorer with explicit coverage semantics.

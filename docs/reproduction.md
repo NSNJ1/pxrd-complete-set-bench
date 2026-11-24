@@ -168,3 +168,34 @@ XCA20 evaluation:
 The archives include the Julia startup warning in their stderr logs. The
 warning did not prevent any query from completing, and both processes exited
 with code zero.
+
+## DeltaXRDbench fresh-release replay
+
+Download `datasets.zip` from DeltaXRDbench release `v1.1.0`, verify:
+
+```text
+815cf737fe9166ec4e83e0aec91b01854ab4fc6cfeac481e83110bdf7de390b
+```
+
+The evidence archive contains:
+
+- frozen panel metadata and evaluator-side targets;
+- preparation, CrystalShift and evaluation scripts;
+- source and package manifests;
+- two formal CrystalShift runs per source;
+- method scores, query metrics and combined source-interaction results.
+
+Expected repeat status:
+
+```text
+deltaxrd20_exact_reproduction
+```
+
+Expected combined result SHA-256:
+
+```text
+0f88e5a0c45b2d2f46e0f2309c18f938760c3e03a83415324beaa0a0f81e97e2
+```
+
+The archive deliberately omits raw RRUFF/opXRD spectra and source CIFs because
+the upstream release requires the original providers' terms to be retained.

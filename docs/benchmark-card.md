@@ -49,6 +49,13 @@ structures. Both use locally adapted CrystalShift and are retrospective. They
 test whether a more complex external implementation is automatically stronger
 in the 20-candidate regime. See `docs/external-stress-tests.md`.
 
+A fresh-release replay then uses DeltaXRDbench v1.1.0: 30 RRUFF-Cu and 30
+opXRD-Cu mixtures, each with 20 candidates and 2-3 reference phases. The
+phase-AP disadvantage of the adapted external method is consistent, while the
+all-present@3 effect changes significantly by source lineage. This panel is
+also retrospective and its mixtures are constructed from measured single-phase
+profiles.
+
 ## External-source tests
 
 Two fixed external-source cohorts are kept outside the seven-source core:

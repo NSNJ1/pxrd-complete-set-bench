@@ -33,6 +33,8 @@ screening and within-shortlist ranking separately.
 - Two 20-candidate external-method stress panels: a measured single-phase
   RealBind boundary panel and a measured multiphase XCA panel with 20 phase
   families.
+- A fresh-release replay on DeltaXRDbench v1.1.0: 30 RRUFF and 30 opXRD
+  mixtures, 20 candidates per query, including three-phase cases.
 - A partial-submission scorer that counts missing outputs as failures and
   reports candidate, query and positive coverage.
 - Frozen 10,000-resample results and a one-command reproduction check.
@@ -180,6 +182,8 @@ are in
 [docs/external-method-validation.md](docs/external-method-validation.md).
 The 20-candidate stress evidence is summarized in
 [docs/external-stress-tests.md](docs/external-stress-tests.md).
+The new-release replay is in
+[docs/external-fresh-release-replay.md](docs/external-fresh-release-replay.md).
 
 ## Repository layout
 

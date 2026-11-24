@@ -27,6 +27,8 @@
   boundary stress panel, with query metrics and an exact replay check.
 - `xca20_crystalshift_20261124.json`: 30-query, 20-family CrystalShift
   multiphase stress panel, with query metrics and an exact replay check.
+- `deltaxrd20_combined_20261124.json`: 60-query, 20-candidate replay on
+  DeltaXRDbench v1.1.0, including the RRUFF/opXRD source interaction.
 
 These files are outputs, not independent validation. Source roles and claim
 boundaries are defined in `docs/benchmark-card.md` and
