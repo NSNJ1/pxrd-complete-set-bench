@@ -1,0 +1,28 @@
+{
+  "status": "precursor_genome_prior_project_overlap_audited",
+  "date": "2026-11-27",
+  "prior_project": {
+    "repository": "https://github.com/NSNJ1/pxrd-complete-set-bench",
+    "input_file": "data/query_phase_scores.csv",
+    "input_sha256": "70a7e11872f50a9cddbe83ca84614462edebf99a1089a8b512a525a049ba2c2b",
+    "source_id": "precursor_genome",
+    "query_count": 416,
+    "sorted_query_ids_sha256": "5d384db0353ebd1138e01064f39e9552d2f70299e145a6ad23f32bcc790fb25c",
+    "query_ids_file": "PRIOR_PROJECT_QUERY_IDS.txt",
+    "query_ids_file_sha256": "5d384db0353ebd1138e01064f39e9552d2f70299e145a6ad23f32bcc790fb25c"
+  },
+  "open_library_panel": {
+    "dataset": "dataset_v7",
+    "query_file": "dataset_v7/public/queries.csv",
+    "query_manifest_sha256": "8b737c97c8cc6978bac2b3e5ebcdf03e8fd3da4087344b80f5b72d1d91bf72ce",
+    "query_count": 102,
+    "sorted_query_ids_sha256": "875820d2f54c18f02081706d85f5b3329d4c56ecd9ae8e4d3d2821ff0ce4f4c4"
+  },
+  "overlap": {
+    "exact_query_id_overlap": 77,
+    "new_query_ids": 25,
+    "overlap_ids_sha256": "02206d64aca1b645c32b512919f4b9c81454744d8eb9f23a27c5cfc66259d5ac",
+    "new_only_ids_sha256": "1ab9c68cecb3c590385263b7a76318bbdb1ce3fe534b7d36d253c758a5bef918"
+  },
+  "claim_boundary": "Precursor Genome was already consumed by the project's closed-library benchmark. The current 102-reaction panel is a new open-library intervention, not a fresh external holdout."
+}

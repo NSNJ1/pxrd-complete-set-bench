@@ -26,6 +26,7 @@ complete CIF collections are not included.
 | Source | Identifier | Queries | Role | Reference-data licence |
 | --- | --- | ---: | --- | --- |
 | NASA MSL CheMin | [PDS release 42](https://pds-geosciences.wustl.edu/missions/msl/chemin.htm) | 44 | Cross-instrument Co K-alpha complete-family test | COD references: CC0 1.0 |
+| Precursor Genome open panel | [10.5281/zenodo.21285546](https://doi.org/10.5281/zenodo.21285546) | 102 | Full-versus-reduced-library evidence audit | Source-fitted profiles: CC BY 4.0 |
 
 CheMin is a retrospective external benchmark. The public blind package contains
 measured spectra, opaque candidate IDs and numeric COD-derived profiles. The
@@ -43,5 +44,8 @@ baselines do not exceed the leave-group-out frequency prior on whole-set AP.
 - Ta-Sn-O is nearly saturated and has little discriminative power.
 - CheMin candidate structures partially overlap other benchmark lineages.
   Source/query transfer and unseen-structure generalization are separate claims.
+- The Precursor Genome open panel overlaps the earlier closed-library cohort in
+  77/102 query IDs. Only 25 query IDs are new; the panel is a new intervention
+  on a consumed source.
 
 Source metadata are machine-readable in `data/source_registry.json`.

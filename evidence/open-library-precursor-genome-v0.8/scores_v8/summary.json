@@ -1,0 +1,1045 @@
+{
+  "status": "precursor_genome_two_endpoint_summary_complete",
+  "source": "precursor_genome",
+  "queries": 102,
+  "clusters": 102,
+  "cases": 418,
+  "methods": {
+    "profile_baseline": {
+      "status": "precursor_genome_two_endpoint_method_scored",
+      "method": "profile_baseline",
+      "inputs": {
+        "candidate_predictions.csv": {
+          "path": "profile_baseline_run_v8/candidate_predictions.csv",
+          "sha256": "a11aef0bb56877139f4c1d133b088069018af73c3a93603b58ab75419cd162fe"
+        },
+        "case_scores.csv": {
+          "path": "profile_baseline_run_v8/case_scores.csv",
+          "sha256": "2bdedc325ad638a02bfaccb23d578ecd107f807aba2257b6f244809fbb06846f"
+        },
+        "fixed_output_candidate_predictions.csv": {
+          "path": "profile_baseline_run_v8/fixed_output_candidate_predictions.csv",
+          "sha256": "a11aef0bb56877139f4c1d133b088069018af73c3a93603b58ab75419cd162fe"
+        },
+        "fixed_output_case_scores.csv": {
+          "path": "profile_baseline_run_v8/fixed_output_case_scores.csv",
+          "sha256": "6094600d391bd0265b952d7e4ceff583a44cf40e379f8e3dfe30e0bf5c8cf2f1"
+        }
+      },
+      "ranking_endpoint": {
+        "omission_cases": 316,
+        "all_candidate_order_changed": 0,
+        "all_candidate_order_change_rate": 0.0,
+        "true_omission_cases": 214,
+        "true_omission_order_changed": 0,
+        "true_subset_order_changed": 0,
+        "true_subset_order_eligible_cases": 30,
+        "true_subset_order_change_rate": 0.0,
+        "all_omission_true_subset_order_changed": 0,
+        "all_omission_true_subset_order_eligible_cases": 132,
+        "true_pair_reversal_cases": 0,
+        "by_condition": {
+          "omit_present": {
+            "cases": 214,
+            "candidate_order_changed": 0,
+            "true_subset_order_eligible_cases": 30,
+            "true_subset_order_changed": 0
+          },
+          "omit_absent": {
+            "cases": 102,
+            "candidate_order_changed": 0,
+            "true_subset_order_eligible_cases": 102,
+            "true_subset_order_changed": 0
+          }
+        },
+        "median_spearman": 1.0,
+        "minimum_spearman": 0.9999999999999999,
+        "max_abs_score_difference": 0.0
+      },
+      "retrieval_context": {
+        "actual": {
+          "label": "actual",
+          "candidate_level_auroc": 0.928906310557321,
+          "candidate_level_average_precision": 0.7013961774581794,
+          "by_condition": {
+            "closed": {
+              "retrieval_eligible_cases": 102,
+              "mean_recall_at_1": 0.47875816993464054,
+              "mean_recall_at_2": 0.6928104575163397,
+              "mean_recall_at_3": 0.7549019607843137,
+              "mean_recall_at_5": 0.8594771241830066,
+              "mean_recall_at_10": 0.9820261437908497,
+              "mean_recall_at_20": 1.0,
+              "all_present_at_1": 0.0,
+              "all_present_at_2": 0.39215686274509803,
+              "all_present_at_3": 0.5098039215686274,
+              "all_present_at_5": 0.7058823529411765,
+              "all_present_at_10": 0.9509803921568627,
+              "all_present_at_20": 1.0
+            },
+            "omit_absent": {
+              "retrieval_eligible_cases": 102,
+              "mean_recall_at_1": 0.47875816993464054,
+              "mean_recall_at_2": 0.6977124183006534,
+              "mean_recall_at_3": 0.7598039215686274,
+              "mean_recall_at_5": 0.8725490196078431,
+              "mean_recall_at_10": 0.9820261437908497,
+              "mean_recall_at_20": 1.0,
+              "all_present_at_1": 0.0,
+              "all_present_at_2": 0.4019607843137255,
+              "all_present_at_3": 0.5196078431372549,
+              "all_present_at_5": 0.7254901960784313,
+              "all_present_at_10": 0.9509803921568627,
+              "all_present_at_20": 1.0
+            },
+            "omit_present": {
+              "retrieval_eligible_cases": 214,
+              "mean_recall_at_1": 0.6682242990654206,
+              "mean_recall_at_2": 0.7406542056074766,
+              "mean_recall_at_3": 0.8084112149532711,
+              "mean_recall_at_5": 0.9018691588785047,
+              "mean_recall_at_10": 0.9813084112149533,
+              "mean_recall_at_20": 1.0,
+              "all_present_at_1": 0.6121495327102804,
+              "all_present_at_2": 0.6915887850467289,
+              "all_present_at_3": 0.7570093457943925,
+              "all_present_at_5": 0.8504672897196262,
+              "all_present_at_10": 0.9672897196261683,
+              "all_present_at_20": 1.0
+            }
+          }
+        },
+        "fixed_full_output": {
+          "label": "fixed_full_output",
+          "candidate_level_auroc": 0.928906310557321,
+          "candidate_level_average_precision": 0.7013961774581794,
+          "by_condition": {
+            "closed": {
+              "retrieval_eligible_cases": 102,
+              "mean_recall_at_1": 0.47875816993464054,
+              "mean_recall_at_2": 0.6928104575163397,
+              "mean_recall_at_3": 0.7549019607843137,
+              "mean_recall_at_5": 0.8594771241830066,
+              "mean_recall_at_10": 0.9820261437908497,
+              "mean_recall_at_20": 1.0,
+              "all_present_at_1": 0.0,
+              "all_present_at_2": 0.39215686274509803,
+              "all_present_at_3": 0.5098039215686274,
+              "all_present_at_5": 0.7058823529411765,
+              "all_present_at_10": 0.9509803921568627,
+              "all_present_at_20": 1.0
+            },
+            "omit_absent": {
+              "retrieval_eligible_cases": 102,
+              "mean_recall_at_1": 0.47875816993464054,
+              "mean_recall_at_2": 0.6977124183006534,
+              "mean_recall_at_3": 0.7598039215686274,
+              "mean_recall_at_5": 0.8725490196078431,
+              "mean_recall_at_10": 0.9820261437908497,
+              "mean_recall_at_20": 1.0,
+              "all_present_at_1": 0.0,
+              "all_present_at_2": 0.4019607843137255,
+              "all_present_at_3": 0.5196078431372549,
+              "all_present_at_5": 0.7254901960784313,
+              "all_present_at_10": 0.9509803921568627,
+              "all_present_at_20": 1.0
+            },
+            "omit_present": {
+              "retrieval_eligible_cases": 214,
+              "mean_recall_at_1": 0.6682242990654206,
+              "mean_recall_at_2": 0.7406542056074766,
+              "mean_recall_at_3": 0.8084112149532711,
+              "mean_recall_at_5": 0.9018691588785047,
+              "mean_recall_at_10": 0.9813084112149533,
+              "mean_recall_at_20": 1.0,
+              "all_present_at_1": 0.6121495327102804,
+              "all_present_at_2": 0.6915887850467289,
+              "all_present_at_3": 0.7570093457943925,
+              "all_present_at_5": 0.8504672897196262,
+              "all_present_at_10": 0.9672897196261683,
+              "all_present_at_20": 1.0
+            }
+          }
+        }
+      },
+      "unknown_endpoint": {
+        "actual": {
+          "all": {
+            "cases": 418,
+            "positives": 214,
+            "negatives": 204,
+            "auroc": 0.7082417078981125,
+            "average_precision": 0.7428874051334553,
+            "far_05": {
+              "negative_false_alarm_rate": 0.058823529411764705,
+              "unknown_detection_rate": 0.308411214953271,
+              "silent_completion_rate": 0.691588785046729
+            },
+            "far_10": {
+              "negative_false_alarm_rate": 0.058823529411764705,
+              "unknown_detection_rate": 0.308411214953271,
+              "silent_completion_rate": 0.691588785046729
+            }
+          },
+          "far05": {
+            "negative_false_alarm_rate": 0.058823529411764705,
+            "unknown_detection_rate": 0.308411214953271,
+            "silent_completion_rate": 0.691588785046729
+          },
+          "far10": {
+            "negative_false_alarm_rate": 0.10784313725490197,
+            "unknown_detection_rate": 0.4485981308411215,
+            "silent_completion_rate": 0.5514018691588785
+          },
+          "against_closed": {
+            "cases": 316,
+            "positives": 214,
+            "negatives": 102,
+            "auroc": 0.7082417078981125,
+            "average_precision": 0.8446033155426553,
+            "far_05": {
+              "negative_false_alarm_rate": 0.058823529411764705,
+              "unknown_detection_rate": 0.308411214953271,
+              "silent_completion_rate": 0.691588785046729
+            },
+            "far_10": {
+              "negative_false_alarm_rate": 0.058823529411764705,
+              "unknown_detection_rate": 0.308411214953271,
+              "silent_completion_rate": 0.691588785046729
+            }
+          },
+          "against_absent_omission": {
+            "cases": 316,
+            "positives": 214,
+            "negatives": 102,
+            "auroc": 0.7082417078981125,
+            "average_precision": 0.8446033155426553,
+            "far_05": {
+              "negative_false_alarm_rate": 0.058823529411764705,
+              "unknown_detection_rate": 0.308411214953271,
+              "silent_completion_rate": 0.691588785046729
+            },
+            "far_10": {
+              "negative_false_alarm_rate": 0.058823529411764705,
+              "unknown_detection_rate": 0.308411214953271,
+              "silent_completion_rate": 0.691588785046729
+            }
+          }
+        },
+        "fixed_full_residual": {
+          "all": {
+            "cases": 418,
+            "positives": 214,
+            "negatives": 204,
+            "auroc": 0.5071009712296134,
+            "average_precision": 0.5145022688224064,
+            "far_05": {
+              "negative_false_alarm_rate": 0.058823529411764705,
+              "unknown_detection_rate": 0.056074766355140186,
+              "silent_completion_rate": 0.9439252336448598
+            },
+            "far_10": {
+              "negative_false_alarm_rate": 0.058823529411764705,
+              "unknown_detection_rate": 0.056074766355140186,
+              "silent_completion_rate": 0.9439252336448598
+            }
+          },
+          "far05": {
+            "negative_false_alarm_rate": 0.058823529411764705,
+            "unknown_detection_rate": 0.056074766355140186,
+            "silent_completion_rate": 0.9439252336448598
+          },
+          "far10": {
+            "negative_false_alarm_rate": 0.10784313725490197,
+            "unknown_detection_rate": 0.10747663551401869,
+            "silent_completion_rate": 0.8925233644859814
+          }
+        },
+        "unavailable_omitted_percentile": {
+          "all": {
+            "cases": 418,
+            "positives": 214,
+            "negatives": 204,
+            "auroc": 0.9670606560381161,
+            "average_precision": 0.9628509860799166,
+            "far_05": {
+              "negative_false_alarm_rate": 0.049019607843137254,
+              "unknown_detection_rate": 0.8130841121495327,
+              "silent_completion_rate": 0.1869158878504673
+            },
+            "far_10": {
+              "negative_false_alarm_rate": 0.049019607843137254,
+              "unknown_detection_rate": 0.8130841121495327,
+              "silent_completion_rate": 0.1869158878504673
+            }
+          },
+          "far05": {
+            "negative_false_alarm_rate": 0.049019607843137254,
+            "unknown_detection_rate": 0.8130841121495327,
+            "silent_completion_rate": 0.1869158878504673
+          },
+          "far10": {
+            "negative_false_alarm_rate": 0.0784313725490196,
+            "unknown_detection_rate": 0.8457943925233645,
+            "silent_completion_rate": 0.15420560747663548
+          }
+        }
+      },
+      "cluster_bootstrap": {
+        "repeats_requested": 10000,
+        "seed": 20261126,
+        "clusters": 102,
+        "intervals": {
+          "actual_auroc": {
+            "median": 0.7088508293871884,
+            "ci95": [
+              0.6899271271008404,
+              0.7248949039446011
+            ],
+            "finite_replicates": 10000
+          },
+          "fixed_auroc": {
+            "median": 0.5068536673928831,
+            "ci95": [
+              0.501131221719457,
+              0.5136766723539374
+            ],
+            "finite_replicates": 10000
+          },
+          "percentile_auroc": {
+            "median": 0.9673468007944812,
+            "ci95": [
+              0.9541249309845704,
+              0.9786614883754716
+            ],
+            "finite_replicates": 10000
+          },
+          "actual_minus_fixed": {
+            "median": 0.2018031033321827,
+            "ci95": [
+              0.1848471118601091,
+              0.2166621364185485
+            ],
+            "finite_replicates": 10000
+          },
+          "actual_minus_percentile": {
+            "median": -0.2584205872028948,
+            "ci95": [
+              -0.2808156126300285,
+              -0.23736517199411708
+            ],
+            "finite_replicates": 10000
+          },
+          "all_candidate_order_change_rate": {
+            "median": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "finite_replicates": 10000
+          },
+          "true_subset_order_change_rate": {
+            "median": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "finite_replicates": 10000
+          }
+        }
+      },
+      "claim_boundary": "The source was already used in the project's closed-library benchmark. This panel is a new open-library intervention, not a fresh external source: 77/102 query IDs overlap the earlier cohort and 25 are new. Reference reactions are disjoint from query reactions; one active scan represents each physical reaction."
+    },
+    "crystalshift": {
+      "status": "precursor_genome_two_endpoint_method_scored",
+      "method": "crystalshift",
+      "inputs": {
+        "candidate_predictions.csv": {
+          "path": "crystalshift_run_v8/candidate_predictions.csv",
+          "sha256": "5cd2ca610fb20b0c4659f8182e64f562d54b6f3476ce3dfee1d5b0474d0c10b4"
+        },
+        "case_scores.csv": {
+          "path": "crystalshift_run_v8/case_scores.csv",
+          "sha256": "2208d1fece754b3c79442118733763388e84e3de2d4875cce487880ba5b207fd"
+        },
+        "fixed_output_candidate_predictions.csv": {
+          "path": "crystalshift_run_v8/fixed_output_candidate_predictions.csv",
+          "sha256": "24a529606cb9720a11e299e56b95fbd17b377dbcc726213a882f5cb446dcbc7b"
+        },
+        "fixed_output_case_scores.csv": {
+          "path": "crystalshift_run_v8/fixed_output_case_scores.csv",
+          "sha256": "7c85589ac5326c302cfc7784a4eb8e9d9d22fd5b1d6b65c39ab6835196aa7eca"
+        }
+      },
+      "ranking_endpoint": {
+        "omission_cases": 316,
+        "all_candidate_order_changed": 194,
+        "all_candidate_order_change_rate": 0.6139240506329114,
+        "true_omission_cases": 214,
+        "true_omission_order_changed": 174,
+        "true_subset_order_changed": 4,
+        "true_subset_order_eligible_cases": 30,
+        "true_subset_order_change_rate": 0.13333333333333333,
+        "all_omission_true_subset_order_changed": 4,
+        "all_omission_true_subset_order_eligible_cases": 132,
+        "true_pair_reversal_cases": 4,
+        "by_condition": {
+          "omit_present": {
+            "cases": 214,
+            "candidate_order_changed": 174,
+            "true_subset_order_eligible_cases": 30,
+            "true_subset_order_changed": 4
+          },
+          "omit_absent": {
+            "cases": 102,
+            "candidate_order_changed": 20,
+            "true_subset_order_eligible_cases": 102,
+            "true_subset_order_changed": 0
+          }
+        },
+        "median_spearman": 0.9087719298245613,
+        "minimum_spearman": -0.5631578947368421,
+        "max_abs_score_difference": 1.0
+      },
+      "retrieval_context": {
+        "actual": {
+          "label": "actual",
+          "candidate_level_auroc": 0.8867647735640648,
+          "candidate_level_average_precision": 0.7199897742726654,
+          "by_condition": {
+            "closed": {
+              "retrieval_eligible_cases": 102,
+              "mean_recall_at_1": 0.46895424836601307,
+              "mean_recall_at_2": 0.75,
+              "mean_recall_at_3": 0.8071895424836603,
+              "mean_recall_at_5": 0.8333333333333334,
+              "mean_recall_at_10": 0.90359477124183,
+              "mean_recall_at_20": 1.0,
+              "all_present_at_1": 0.0,
+              "all_present_at_2": 0.49019607843137253,
+              "all_present_at_3": 0.5882352941176471,
+              "all_present_at_5": 0.6372549019607843,
+              "all_present_at_10": 0.7941176470588235,
+              "all_present_at_20": 1.0
+            },
+            "omit_absent": {
+              "retrieval_eligible_cases": 102,
+              "mean_recall_at_1": 0.46895424836601307,
+              "mean_recall_at_2": 0.75,
+              "mean_recall_at_3": 0.8022875816993466,
+              "mean_recall_at_5": 0.8382352941176471,
+              "mean_recall_at_10": 0.8937908496732025,
+              "mean_recall_at_20": 1.0,
+              "all_present_at_1": 0.0,
+              "all_present_at_2": 0.49019607843137253,
+              "all_present_at_3": 0.5784313725490197,
+              "all_present_at_5": 0.6470588235294118,
+              "all_present_at_10": 0.7745098039215687,
+              "all_present_at_20": 1.0
+            },
+            "omit_present": {
+              "retrieval_eligible_cases": 214,
+              "mean_recall_at_1": 0.5841121495327103,
+              "mean_recall_at_2": 0.705607476635514,
+              "mean_recall_at_3": 0.7686915887850467,
+              "mean_recall_at_5": 0.8317757009345794,
+              "mean_recall_at_10": 0.9369158878504673,
+              "mean_recall_at_20": 1.0,
+              "all_present_at_1": 0.5420560747663551,
+              "all_present_at_2": 0.6682242990654206,
+              "all_present_at_3": 0.7336448598130841,
+              "all_present_at_5": 0.8084112149532711,
+              "all_present_at_10": 0.9252336448598131,
+              "all_present_at_20": 1.0
+            }
+          }
+        },
+        "fixed_full_output": {
+          "label": "fixed_full_output",
+          "candidate_level_auroc": 0.9016167593597395,
+          "candidate_level_average_precision": 0.777142986507338,
+          "by_condition": {
+            "closed": {
+              "retrieval_eligible_cases": 102,
+              "mean_recall_at_1": 0.46895424836601307,
+              "mean_recall_at_2": 0.75,
+              "mean_recall_at_3": 0.8071895424836603,
+              "mean_recall_at_5": 0.8333333333333334,
+              "mean_recall_at_10": 0.90359477124183,
+              "mean_recall_at_20": 1.0,
+              "all_present_at_1": 0.0,
+              "all_present_at_2": 0.49019607843137253,
+              "all_present_at_3": 0.5882352941176471,
+              "all_present_at_5": 0.6372549019607843,
+              "all_present_at_10": 0.7941176470588235,
+              "all_present_at_20": 1.0
+            },
+            "omit_absent": {
+              "retrieval_eligible_cases": 102,
+              "mean_recall_at_1": 0.46895424836601307,
+              "mean_recall_at_2": 0.75,
+              "mean_recall_at_3": 0.812091503267974,
+              "mean_recall_at_5": 0.8431372549019608,
+              "mean_recall_at_10": 0.90359477124183,
+              "mean_recall_at_20": 1.0,
+              "all_present_at_1": 0.0,
+              "all_present_at_2": 0.49019607843137253,
+              "all_present_at_3": 0.5980392156862745,
+              "all_present_at_5": 0.6568627450980392,
+              "all_present_at_10": 0.7941176470588235,
+              "all_present_at_20": 1.0
+            },
+            "omit_present": {
+              "retrieval_eligible_cases": 214,
+              "mean_recall_at_1": 0.7149532710280374,
+              "mean_recall_at_2": 0.7920560747663551,
+              "mean_recall_at_3": 0.8037383177570093,
+              "mean_recall_at_5": 0.8551401869158879,
+              "mean_recall_at_10": 0.9065420560747663,
+              "mean_recall_at_20": 1.0,
+              "all_present_at_1": 0.6495327102803738,
+              "all_present_at_2": 0.7429906542056075,
+              "all_present_at_3": 0.7570093457943925,
+              "all_present_at_5": 0.8271028037383178,
+              "all_present_at_10": 0.8925233644859814,
+              "all_present_at_20": 1.0
+            }
+          }
+        }
+      },
+      "unknown_endpoint": {
+        "actual": {
+          "all": {
+            "cases": 418,
+            "positives": 214,
+            "negatives": 204,
+            "auroc": 0.8043567894447499,
+            "average_precision": 0.8404909565335634,
+            "far_05": {
+              "negative_false_alarm_rate": 0.058823529411764705,
+              "unknown_detection_rate": 0.5280373831775701,
+              "silent_completion_rate": 0.4719626168224299
+            },
+            "far_10": {
+              "negative_false_alarm_rate": 0.058823529411764705,
+              "unknown_detection_rate": 0.5280373831775701,
+              "silent_completion_rate": 0.4719626168224299
+            }
+          },
+          "far05": {
+            "negative_false_alarm_rate": 0.058823529411764705,
+            "unknown_detection_rate": 0.5280373831775701,
+            "silent_completion_rate": 0.4719626168224299
+          },
+          "far10": {
+            "negative_false_alarm_rate": 0.10784313725490197,
+            "unknown_detection_rate": 0.5794392523364486,
+            "silent_completion_rate": 0.42056074766355145
+          },
+          "against_closed": {
+            "cases": 316,
+            "positives": 214,
+            "negatives": 102,
+            "auroc": 0.8049752611324905,
+            "average_precision": 0.9061113264339787,
+            "far_05": {
+              "negative_false_alarm_rate": 0.058823529411764705,
+              "unknown_detection_rate": 0.5280373831775701,
+              "silent_completion_rate": 0.4719626168224299
+            },
+            "far_10": {
+              "negative_false_alarm_rate": 0.058823529411764705,
+              "unknown_detection_rate": 0.5280373831775701,
+              "silent_completion_rate": 0.4719626168224299
+            }
+          },
+          "against_absent_omission": {
+            "cases": 316,
+            "positives": 214,
+            "negatives": 102,
+            "auroc": 0.8037383177570094,
+            "average_precision": 0.90470677968673,
+            "far_05": {
+              "negative_false_alarm_rate": 0.058823529411764705,
+              "unknown_detection_rate": 0.5280373831775701,
+              "silent_completion_rate": 0.4719626168224299
+            },
+            "far_10": {
+              "negative_false_alarm_rate": 0.058823529411764705,
+              "unknown_detection_rate": 0.5280373831775701,
+              "silent_completion_rate": 0.4719626168224299
+            }
+          }
+        },
+        "fixed_full_residual": {
+          "all": {
+            "cases": 418,
+            "positives": 214,
+            "negatives": 204,
+            "auroc": 0.5024280740333517,
+            "average_precision": 0.5109942231170223,
+            "far_05": {
+              "negative_false_alarm_rate": 0.058823529411764705,
+              "unknown_detection_rate": 0.056074766355140186,
+              "silent_completion_rate": 0.9439252336448598
+            },
+            "far_10": {
+              "negative_false_alarm_rate": 0.058823529411764705,
+              "unknown_detection_rate": 0.056074766355140186,
+              "silent_completion_rate": 0.9439252336448598
+            }
+          },
+          "far05": {
+            "negative_false_alarm_rate": 0.058823529411764705,
+            "unknown_detection_rate": 0.056074766355140186,
+            "silent_completion_rate": 0.9439252336448598
+          },
+          "far10": {
+            "negative_false_alarm_rate": 0.10784313725490197,
+            "unknown_detection_rate": 0.102803738317757,
+            "silent_completion_rate": 0.897196261682243
+          }
+        },
+        "unavailable_omitted_percentile": {
+          "all": {
+            "cases": 418,
+            "positives": 214,
+            "negatives": 204,
+            "auroc": 0.9435701850833791,
+            "average_precision": 0.9534207789351237,
+            "far_05": {
+              "negative_false_alarm_rate": 0.0392156862745098,
+              "unknown_detection_rate": 0.8037383177570093,
+              "silent_completion_rate": 0.19626168224299068
+            },
+            "far_10": {
+              "negative_false_alarm_rate": 0.0392156862745098,
+              "unknown_detection_rate": 0.8037383177570093,
+              "silent_completion_rate": 0.19626168224299068
+            }
+          },
+          "far05": {
+            "negative_false_alarm_rate": 0.0392156862745098,
+            "unknown_detection_rate": 0.8037383177570093,
+            "silent_completion_rate": 0.19626168224299068
+          },
+          "far10": {
+            "negative_false_alarm_rate": 0.10294117647058823,
+            "unknown_detection_rate": 0.8364485981308412,
+            "silent_completion_rate": 0.16355140186915884
+          }
+        }
+      },
+      "cluster_bootstrap": {
+        "repeats_requested": 10000,
+        "seed": 20261126,
+        "clusters": 102,
+        "intervals": {
+          "actual_auroc": {
+            "median": 0.8048269940256743,
+            "ci95": [
+              0.7747265985613077,
+              0.8352552816901408
+            ],
+            "finite_replicates": 10000
+          },
+          "fixed_auroc": {
+            "median": 0.5022660007399187,
+            "ci95": [
+              0.49706755304861666,
+              0.5082432582464492
+            ],
+            "finite_replicates": 10000
+          },
+          "percentile_auroc": {
+            "median": 0.9441108068189592,
+            "ci95": [
+              0.924561663865124,
+              0.9612196371892082
+            ],
+            "finite_replicates": 10000
+          },
+          "actual_minus_fixed": {
+            "median": 0.30235366820650583,
+            "ci95": [
+              0.27366537395006924,
+              0.3317995778562402
+            ],
+            "finite_replicates": 10000
+          },
+          "actual_minus_percentile": {
+            "median": -0.1388869889040888,
+            "ci95": [
+              -0.16931764791752535,
+              -0.1082396252339797
+            ],
+            "finite_replicates": 10000
+          },
+          "all_candidate_order_change_rate": {
+            "median": 0.6134185303514377,
+            "ci95": [
+              0.5754716981132075,
+              0.6518987341772152
+            ],
+            "finite_replicates": 10000
+          },
+          "true_subset_order_change_rate": {
+            "median": 0.13333333333333333,
+            "ci95": [
+              0.03333333333333333,
+              0.24242424242424243
+            ],
+            "finite_replicates": 10000
+          }
+        }
+      },
+      "claim_boundary": "The source was already used in the project's closed-library benchmark. This panel is a new open-library intervention, not a fresh external source: 77/102 query IDs overlap the earlier cohort and 25 are new. Reference reactions are disjoint from query reactions; one active scan represents each physical reaction."
+    },
+    "xdecomposer": {
+      "status": "precursor_genome_two_endpoint_method_scored",
+      "method": "xdecomposer",
+      "inputs": {
+        "candidate_predictions.csv": {
+          "path": "xdecomposer_run_v8/candidate_predictions.csv",
+          "sha256": "97c2cd66717025283b43f13eb47be45b550918e749844d8da5378635353fd2a8"
+        },
+        "case_scores.csv": {
+          "path": "xdecomposer_run_v8/case_scores.csv",
+          "sha256": "f801f7e4824a8c7c169711ac92869791c740c513f55121da0237b3f039006d07"
+        },
+        "fixed_output_candidate_predictions.csv": {
+          "path": "xdecomposer_run_v8/fixed_output_candidate_predictions.csv",
+          "sha256": "97c2cd66717025283b43f13eb47be45b550918e749844d8da5378635353fd2a8"
+        },
+        "fixed_output_case_scores.csv": {
+          "path": "xdecomposer_run_v8/fixed_output_case_scores.csv",
+          "sha256": "91995532c4ec7a91244f86a66751107932fddd18e311f2aa53ddb758aa7ef242"
+        }
+      },
+      "ranking_endpoint": {
+        "omission_cases": 316,
+        "all_candidate_order_changed": 0,
+        "all_candidate_order_change_rate": 0.0,
+        "true_omission_cases": 214,
+        "true_omission_order_changed": 0,
+        "true_subset_order_changed": 0,
+        "true_subset_order_eligible_cases": 30,
+        "true_subset_order_change_rate": 0.0,
+        "all_omission_true_subset_order_changed": 0,
+        "all_omission_true_subset_order_eligible_cases": 132,
+        "true_pair_reversal_cases": 0,
+        "by_condition": {
+          "omit_present": {
+            "cases": 214,
+            "candidate_order_changed": 0,
+            "true_subset_order_eligible_cases": 30,
+            "true_subset_order_changed": 0
+          },
+          "omit_absent": {
+            "cases": 102,
+            "candidate_order_changed": 0,
+            "true_subset_order_eligible_cases": 102,
+            "true_subset_order_changed": 0
+          }
+        },
+        "median_spearman": 1.0,
+        "minimum_spearman": 0.9999999999999999,
+        "max_abs_score_difference": 0.0
+      },
+      "retrieval_context": {
+        "actual": {
+          "label": "actual",
+          "candidate_level_auroc": 0.9474439158463167,
+          "candidate_level_average_precision": 0.8237755329396812,
+          "by_condition": {
+            "closed": {
+              "retrieval_eligible_cases": 102,
+              "mean_recall_at_1": 0.47385620915032683,
+              "mean_recall_at_2": 0.772875816993464,
+              "mean_recall_at_3": 0.8643790849673203,
+              "mean_recall_at_5": 0.9411764705882353,
+              "mean_recall_at_10": 0.9754901960784313,
+              "mean_recall_at_20": 1.0,
+              "all_present_at_1": 0.0,
+              "all_present_at_2": 0.5392156862745098,
+              "all_present_at_3": 0.7156862745098039,
+              "all_present_at_5": 0.8529411764705882,
+              "all_present_at_10": 0.9411764705882353,
+              "all_present_at_20": 1.0
+            },
+            "omit_absent": {
+              "retrieval_eligible_cases": 102,
+              "mean_recall_at_1": 0.47385620915032683,
+              "mean_recall_at_2": 0.7777777777777777,
+              "mean_recall_at_3": 0.869281045751634,
+              "mean_recall_at_5": 0.9411764705882353,
+              "mean_recall_at_10": 0.9836601307189542,
+              "mean_recall_at_20": 1.0,
+              "all_present_at_1": 0.0,
+              "all_present_at_2": 0.5490196078431373,
+              "all_present_at_3": 0.7254901960784313,
+              "all_present_at_5": 0.8529411764705882,
+              "all_present_at_10": 0.9607843137254902,
+              "all_present_at_20": 1.0
+            },
+            "omit_present": {
+              "retrieval_eligible_cases": 214,
+              "mean_recall_at_1": 0.7453271028037384,
+              "mean_recall_at_2": 0.852803738317757,
+              "mean_recall_at_3": 0.8878504672897196,
+              "mean_recall_at_5": 0.9299065420560748,
+              "mean_recall_at_10": 0.985981308411215,
+              "mean_recall_at_20": 1.0,
+              "all_present_at_1": 0.677570093457944,
+              "all_present_at_2": 0.8037383177570093,
+              "all_present_at_3": 0.8457943925233645,
+              "all_present_at_5": 0.8878504672897196,
+              "all_present_at_10": 0.9813084112149533,
+              "all_present_at_20": 1.0
+            }
+          }
+        },
+        "fixed_full_output": {
+          "label": "fixed_full_output",
+          "candidate_level_auroc": 0.9474439158463167,
+          "candidate_level_average_precision": 0.8237755329396812,
+          "by_condition": {
+            "closed": {
+              "retrieval_eligible_cases": 102,
+              "mean_recall_at_1": 0.47385620915032683,
+              "mean_recall_at_2": 0.772875816993464,
+              "mean_recall_at_3": 0.8643790849673203,
+              "mean_recall_at_5": 0.9411764705882353,
+              "mean_recall_at_10": 0.9754901960784313,
+              "mean_recall_at_20": 1.0,
+              "all_present_at_1": 0.0,
+              "all_present_at_2": 0.5392156862745098,
+              "all_present_at_3": 0.7156862745098039,
+              "all_present_at_5": 0.8529411764705882,
+              "all_present_at_10": 0.9411764705882353,
+              "all_present_at_20": 1.0
+            },
+            "omit_absent": {
+              "retrieval_eligible_cases": 102,
+              "mean_recall_at_1": 0.47385620915032683,
+              "mean_recall_at_2": 0.7777777777777777,
+              "mean_recall_at_3": 0.869281045751634,
+              "mean_recall_at_5": 0.9411764705882353,
+              "mean_recall_at_10": 0.9836601307189542,
+              "mean_recall_at_20": 1.0,
+              "all_present_at_1": 0.0,
+              "all_present_at_2": 0.5490196078431373,
+              "all_present_at_3": 0.7254901960784313,
+              "all_present_at_5": 0.8529411764705882,
+              "all_present_at_10": 0.9607843137254902,
+              "all_present_at_20": 1.0
+            },
+            "omit_present": {
+              "retrieval_eligible_cases": 214,
+              "mean_recall_at_1": 0.7453271028037384,
+              "mean_recall_at_2": 0.852803738317757,
+              "mean_recall_at_3": 0.8878504672897196,
+              "mean_recall_at_5": 0.9299065420560748,
+              "mean_recall_at_10": 0.985981308411215,
+              "mean_recall_at_20": 1.0,
+              "all_present_at_1": 0.677570093457944,
+              "all_present_at_2": 0.8037383177570093,
+              "all_present_at_3": 0.8457943925233645,
+              "all_present_at_5": 0.8878504672897196,
+              "all_present_at_10": 0.9813084112149533,
+              "all_present_at_20": 1.0
+            }
+          }
+        }
+      },
+      "unknown_endpoint": {
+        "actual": {
+          "all": {
+            "cases": 418,
+            "positives": 214,
+            "negatives": 204,
+            "auroc": 0.5632673630199744,
+            "average_precision": 0.5424661081538925,
+            "far_05": {
+              "negative_false_alarm_rate": 0.05392156862745098,
+              "unknown_detection_rate": 0.0514018691588785,
+              "silent_completion_rate": 0.9485981308411215
+            },
+            "far_10": {
+              "negative_false_alarm_rate": 0.05392156862745098,
+              "unknown_detection_rate": 0.0514018691588785,
+              "silent_completion_rate": 0.9485981308411215
+            }
+          },
+          "far05": {
+            "negative_false_alarm_rate": 0.05392156862745098,
+            "unknown_detection_rate": 0.0514018691588785,
+            "silent_completion_rate": 0.9485981308411215
+          },
+          "far10": {
+            "negative_false_alarm_rate": 0.10294117647058823,
+            "unknown_detection_rate": 0.102803738317757,
+            "silent_completion_rate": 0.897196261682243
+          },
+          "against_closed": {
+            "cases": 316,
+            "positives": 214,
+            "negatives": 102,
+            "auroc": 0.5688565145684442,
+            "average_precision": 0.7119077083803032,
+            "far_05": {
+              "negative_false_alarm_rate": 0.0392156862745098,
+              "unknown_detection_rate": 0.0514018691588785,
+              "silent_completion_rate": 0.9485981308411215
+            },
+            "far_10": {
+              "negative_false_alarm_rate": 0.0392156862745098,
+              "unknown_detection_rate": 0.0514018691588785,
+              "silent_completion_rate": 0.9485981308411215
+            }
+          },
+          "against_absent_omission": {
+            "cases": 316,
+            "positives": 214,
+            "negatives": 102,
+            "auroc": 0.5576782114715045,
+            "average_precision": 0.6952271320919321,
+            "far_05": {
+              "negative_false_alarm_rate": 0.06862745098039216,
+              "unknown_detection_rate": 0.0514018691588785,
+              "silent_completion_rate": 0.9485981308411215
+            },
+            "far_10": {
+              "negative_false_alarm_rate": 0.06862745098039216,
+              "unknown_detection_rate": 0.0514018691588785,
+              "silent_completion_rate": 0.9485981308411215
+            }
+          }
+        },
+        "fixed_full_residual": {
+          "all": {
+            "cases": 418,
+            "positives": 214,
+            "negatives": 204,
+            "auroc": 0.5061389041597947,
+            "average_precision": 0.5143463996156348,
+            "far_05": {
+              "negative_false_alarm_rate": 0.058823529411764705,
+              "unknown_detection_rate": 0.056074766355140186,
+              "silent_completion_rate": 0.9439252336448598
+            },
+            "far_10": {
+              "negative_false_alarm_rate": 0.058823529411764705,
+              "unknown_detection_rate": 0.056074766355140186,
+              "silent_completion_rate": 0.9439252336448598
+            }
+          },
+          "far05": {
+            "negative_false_alarm_rate": 0.058823529411764705,
+            "unknown_detection_rate": 0.056074766355140186,
+            "silent_completion_rate": 0.9439252336448598
+          },
+          "far10": {
+            "negative_false_alarm_rate": 0.10784313725490197,
+            "unknown_detection_rate": 0.10747663551401869,
+            "silent_completion_rate": 0.8925233644859814
+          }
+        },
+        "unavailable_omitted_percentile": {
+          "all": {
+            "cases": 418,
+            "positives": 214,
+            "negatives": 204,
+            "auroc": 0.9728445116364303,
+            "average_precision": 0.9720551840821332,
+            "far_05": {
+              "negative_false_alarm_rate": 0.03431372549019608,
+              "unknown_detection_rate": 0.8551401869158879,
+              "silent_completion_rate": 0.1448598130841121
+            },
+            "far_10": {
+              "negative_false_alarm_rate": 0.03431372549019608,
+              "unknown_detection_rate": 0.8551401869158879,
+              "silent_completion_rate": 0.1448598130841121
+            }
+          },
+          "far05": {
+            "negative_false_alarm_rate": 0.03431372549019608,
+            "unknown_detection_rate": 0.8551401869158879,
+            "silent_completion_rate": 0.1448598130841121
+          },
+          "far10": {
+            "negative_false_alarm_rate": 0.09313725490196079,
+            "unknown_detection_rate": 0.9299065420560748,
+            "silent_completion_rate": 0.07009345794392519
+          }
+        }
+      },
+      "cluster_bootstrap": {
+        "repeats_requested": 10000,
+        "seed": 20261126,
+        "clusters": 102,
+        "intervals": {
+          "actual_auroc": {
+            "median": 0.5634634156692979,
+            "ci95": [
+              0.5367527966952974,
+              0.5914499043913309
+            ],
+            "finite_replicates": 10000
+          },
+          "fixed_auroc": {
+            "median": 0.5059098405717427,
+            "ci95": [
+              0.5000933706816061,
+              0.5129438872323122
+            ],
+            "finite_replicates": 10000
+          },
+          "percentile_auroc": {
+            "median": 0.973179606770938,
+            "ci95": [
+              0.9608418200312219,
+              0.9834709541888883
+            ],
+            "finite_replicates": 10000
+          },
+          "actual_minus_fixed": {
+            "median": 0.05728225562525485,
+            "ci95": [
+              0.03289336455480782,
+              0.0838731236633287
+            ],
+            "finite_replicates": 10000
+          },
+          "actual_minus_percentile": {
+            "median": -0.40940471365117975,
+            "ci95": [
+              -0.43739597325660995,
+              -0.3805347612297277
+            ],
+            "finite_replicates": 10000
+          },
+          "all_candidate_order_change_rate": {
+            "median": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "finite_replicates": 10000
+          },
+          "true_subset_order_change_rate": {
+            "median": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "finite_replicates": 10000
+          }
+        }
+      },
+      "claim_boundary": "The source was already used in the project's closed-library benchmark. This panel is a new open-library intervention, not a fresh external source: 77/102 query IDs overlap the earlier cohort and 25 are new. Reference reactions are disjoint from query reactions; one active scan represents each physical reaction."
+    }
+  },
+  "cross_method_conclusion": "No source-wide AUROC is pooled. Candidate-independent methods provide ranking controls, while library-dependent methods test whether the deployed residual changes."
+}

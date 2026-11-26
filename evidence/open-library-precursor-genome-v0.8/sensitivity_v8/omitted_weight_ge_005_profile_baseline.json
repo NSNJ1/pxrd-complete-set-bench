@@ -1,0 +1,345 @@
+{
+  "status": "precursor_genome_two_endpoint_method_scored",
+  "method": "profile_baseline_omitted_weight_ge_005",
+  "inputs": {
+    "candidate_predictions.csv": {
+      "path": "profile_baseline_run_v8/candidate_predictions.csv",
+      "sha256": "a11aef0bb56877139f4c1d133b088069018af73c3a93603b58ab75419cd162fe"
+    },
+    "case_scores.csv": {
+      "path": "profile_baseline_run_v8/case_scores.csv",
+      "sha256": "2bdedc325ad638a02bfaccb23d578ecd107f807aba2257b6f244809fbb06846f"
+    },
+    "fixed_output_candidate_predictions.csv": {
+      "path": "profile_baseline_run_v8/fixed_output_candidate_predictions.csv",
+      "sha256": "a11aef0bb56877139f4c1d133b088069018af73c3a93603b58ab75419cd162fe"
+    },
+    "fixed_output_case_scores.csv": {
+      "path": "profile_baseline_run_v8/fixed_output_case_scores.csv",
+      "sha256": "6094600d391bd0265b952d7e4ceff583a44cf40e379f8e3dfe30e0bf5c8cf2f1"
+    }
+  },
+  "ranking_endpoint": {
+    "omission_cases": 308,
+    "all_candidate_order_changed": 0,
+    "all_candidate_order_change_rate": 0.0,
+    "true_omission_cases": 206,
+    "true_omission_order_changed": 0,
+    "true_subset_order_changed": 0,
+    "true_subset_order_eligible_cases": 26,
+    "true_subset_order_change_rate": 0.0,
+    "all_omission_true_subset_order_changed": 0,
+    "all_omission_true_subset_order_eligible_cases": 128,
+    "true_pair_reversal_cases": 0,
+    "by_condition": {
+      "omit_present": {
+        "cases": 206,
+        "candidate_order_changed": 0,
+        "true_subset_order_eligible_cases": 26,
+        "true_subset_order_changed": 0
+      },
+      "omit_absent": {
+        "cases": 102,
+        "candidate_order_changed": 0,
+        "true_subset_order_eligible_cases": 102,
+        "true_subset_order_changed": 0
+      }
+    },
+    "median_spearman": 1.0,
+    "minimum_spearman": 0.9999999999999999,
+    "max_abs_score_difference": 0.0
+  },
+  "retrieval_context": {
+    "actual": {
+      "label": "actual",
+      "candidate_level_auroc": 0.929042638777152,
+      "candidate_level_average_precision": 0.6994864010320476,
+      "by_condition": {
+        "closed": {
+          "retrieval_eligible_cases": 102,
+          "mean_recall_at_1": 0.47875816993464054,
+          "mean_recall_at_2": 0.6928104575163397,
+          "mean_recall_at_3": 0.7549019607843137,
+          "mean_recall_at_5": 0.8594771241830066,
+          "mean_recall_at_10": 0.9820261437908497,
+          "mean_recall_at_20": 1.0,
+          "all_present_at_1": 0.0,
+          "all_present_at_2": 0.39215686274509803,
+          "all_present_at_3": 0.5098039215686274,
+          "all_present_at_5": 0.7058823529411765,
+          "all_present_at_10": 0.9509803921568627,
+          "all_present_at_20": 1.0
+        },
+        "omit_absent": {
+          "retrieval_eligible_cases": 102,
+          "mean_recall_at_1": 0.47875816993464054,
+          "mean_recall_at_2": 0.6977124183006534,
+          "mean_recall_at_3": 0.7598039215686274,
+          "mean_recall_at_5": 0.8725490196078431,
+          "mean_recall_at_10": 0.9820261437908497,
+          "mean_recall_at_20": 1.0,
+          "all_present_at_1": 0.0,
+          "all_present_at_2": 0.4019607843137255,
+          "all_present_at_3": 0.5196078431372549,
+          "all_present_at_5": 0.7254901960784313,
+          "all_present_at_10": 0.9509803921568627,
+          "all_present_at_20": 1.0
+        },
+        "omit_present": {
+          "retrieval_eligible_cases": 206,
+          "mean_recall_at_1": 0.6650485436893204,
+          "mean_recall_at_2": 0.7402912621359223,
+          "mean_recall_at_3": 0.808252427184466,
+          "mean_recall_at_5": 0.9053398058252428,
+          "mean_recall_at_10": 0.9805825242718447,
+          "mean_recall_at_20": 1.0,
+          "all_present_at_1": 0.616504854368932,
+          "all_present_at_2": 0.6990291262135923,
+          "all_present_at_3": 0.7621359223300971,
+          "all_present_at_5": 0.8592233009708737,
+          "all_present_at_10": 0.9660194174757282,
+          "all_present_at_20": 1.0
+        }
+      }
+    },
+    "fixed_full_output": {
+      "label": "fixed_full_output",
+      "candidate_level_auroc": 0.929042638777152,
+      "candidate_level_average_precision": 0.6994864010320476,
+      "by_condition": {
+        "closed": {
+          "retrieval_eligible_cases": 102,
+          "mean_recall_at_1": 0.47875816993464054,
+          "mean_recall_at_2": 0.6928104575163397,
+          "mean_recall_at_3": 0.7549019607843137,
+          "mean_recall_at_5": 0.8594771241830066,
+          "mean_recall_at_10": 0.9820261437908497,
+          "mean_recall_at_20": 1.0,
+          "all_present_at_1": 0.0,
+          "all_present_at_2": 0.39215686274509803,
+          "all_present_at_3": 0.5098039215686274,
+          "all_present_at_5": 0.7058823529411765,
+          "all_present_at_10": 0.9509803921568627,
+          "all_present_at_20": 1.0
+        },
+        "omit_absent": {
+          "retrieval_eligible_cases": 102,
+          "mean_recall_at_1": 0.47875816993464054,
+          "mean_recall_at_2": 0.6977124183006534,
+          "mean_recall_at_3": 0.7598039215686274,
+          "mean_recall_at_5": 0.8725490196078431,
+          "mean_recall_at_10": 0.9820261437908497,
+          "mean_recall_at_20": 1.0,
+          "all_present_at_1": 0.0,
+          "all_present_at_2": 0.4019607843137255,
+          "all_present_at_3": 0.5196078431372549,
+          "all_present_at_5": 0.7254901960784313,
+          "all_present_at_10": 0.9509803921568627,
+          "all_present_at_20": 1.0
+        },
+        "omit_present": {
+          "retrieval_eligible_cases": 206,
+          "mean_recall_at_1": 0.6650485436893204,
+          "mean_recall_at_2": 0.7402912621359223,
+          "mean_recall_at_3": 0.808252427184466,
+          "mean_recall_at_5": 0.9053398058252428,
+          "mean_recall_at_10": 0.9805825242718447,
+          "mean_recall_at_20": 1.0,
+          "all_present_at_1": 0.616504854368932,
+          "all_present_at_2": 0.6990291262135923,
+          "all_present_at_3": 0.7621359223300971,
+          "all_present_at_5": 0.8592233009708737,
+          "all_present_at_10": 0.9660194174757282,
+          "all_present_at_20": 1.0
+        }
+      }
+    }
+  },
+  "unknown_endpoint": {
+    "actual": {
+      "all": {
+        "cases": 410,
+        "positives": 206,
+        "negatives": 204,
+        "auroc": 0.7234199505044736,
+        "average_precision": 0.7480168756077206,
+        "far_05": {
+          "negative_false_alarm_rate": 0.058823529411764705,
+          "unknown_detection_rate": 0.32038834951456313,
+          "silent_completion_rate": 0.6796116504854368
+        },
+        "far_10": {
+          "negative_false_alarm_rate": 0.058823529411764705,
+          "unknown_detection_rate": 0.32038834951456313,
+          "silent_completion_rate": 0.6796116504854368
+        }
+      },
+      "far05": {
+        "negative_false_alarm_rate": 0.058823529411764705,
+        "unknown_detection_rate": 0.32038834951456313,
+        "silent_completion_rate": 0.6796116504854368
+      },
+      "far10": {
+        "negative_false_alarm_rate": 0.10784313725490197,
+        "unknown_detection_rate": 0.46601941747572817,
+        "silent_completion_rate": 0.5339805825242718
+      },
+      "against_closed": {
+        "cases": 308,
+        "positives": 206,
+        "negatives": 102,
+        "auroc": 0.7234199505044736,
+        "average_precision": 0.8479229953900592,
+        "far_05": {
+          "negative_false_alarm_rate": 0.058823529411764705,
+          "unknown_detection_rate": 0.32038834951456313,
+          "silent_completion_rate": 0.6796116504854368
+        },
+        "far_10": {
+          "negative_false_alarm_rate": 0.058823529411764705,
+          "unknown_detection_rate": 0.32038834951456313,
+          "silent_completion_rate": 0.6796116504854368
+        }
+      },
+      "against_absent_omission": {
+        "cases": 308,
+        "positives": 206,
+        "negatives": 102,
+        "auroc": 0.7234199505044736,
+        "average_precision": 0.8479229953900592,
+        "far_05": {
+          "negative_false_alarm_rate": 0.058823529411764705,
+          "unknown_detection_rate": 0.32038834951456313,
+          "silent_completion_rate": 0.6796116504854368
+        },
+        "far_10": {
+          "negative_false_alarm_rate": 0.058823529411764705,
+          "unknown_detection_rate": 0.32038834951456313,
+          "silent_completion_rate": 0.6796116504854368
+        }
+      }
+    },
+    "fixed_full_residual": {
+      "all": {
+        "cases": 410,
+        "positives": 206,
+        "negatives": 204,
+        "auroc": 0.5144679230915667,
+        "average_precision": 0.5106253493271181,
+        "far_05": {
+          "negative_false_alarm_rate": 0.058823529411764705,
+          "unknown_detection_rate": 0.05825242718446602,
+          "silent_completion_rate": 0.941747572815534
+        },
+        "far_10": {
+          "negative_false_alarm_rate": 0.058823529411764705,
+          "unknown_detection_rate": 0.05825242718446602,
+          "silent_completion_rate": 0.941747572815534
+        }
+      },
+      "far05": {
+        "negative_false_alarm_rate": 0.058823529411764705,
+        "unknown_detection_rate": 0.05825242718446602,
+        "silent_completion_rate": 0.941747572815534
+      },
+      "far10": {
+        "negative_false_alarm_rate": 0.10784313725490197,
+        "unknown_detection_rate": 0.11165048543689321,
+        "silent_completion_rate": 0.8883495145631068
+      }
+    },
+    "unavailable_omitted_percentile": {
+      "all": {
+        "cases": 410,
+        "positives": 206,
+        "negatives": 204,
+        "auroc": 0.9730392156862745,
+        "average_precision": 0.9672962104580831,
+        "far_05": {
+          "negative_false_alarm_rate": 0.049019607843137254,
+          "unknown_detection_rate": 0.8398058252427184,
+          "silent_completion_rate": 0.1601941747572816
+        },
+        "far_10": {
+          "negative_false_alarm_rate": 0.049019607843137254,
+          "unknown_detection_rate": 0.8398058252427184,
+          "silent_completion_rate": 0.1601941747572816
+        }
+      },
+      "far05": {
+        "negative_false_alarm_rate": 0.049019607843137254,
+        "unknown_detection_rate": 0.8398058252427184,
+        "silent_completion_rate": 0.1601941747572816
+      },
+      "far10": {
+        "negative_false_alarm_rate": 0.0784313725490196,
+        "unknown_detection_rate": 0.8737864077669902,
+        "silent_completion_rate": 0.12621359223300976
+      }
+    }
+  },
+  "cluster_bootstrap": {
+    "repeats_requested": 10000,
+    "seed": 20261126,
+    "clusters": 102,
+    "intervals": {
+      "actual_auroc": {
+        "median": 0.7237386500493916,
+        "ci95": [
+          0.7014935249462103,
+          0.7457081893488223
+        ],
+        "finite_replicates": 10000
+      },
+      "fixed_auroc": {
+        "median": 0.5141361595996214,
+        "ci95": [
+          0.5061452340822665,
+          0.5238172703621018
+        ],
+        "finite_replicates": 10000
+      },
+      "percentile_auroc": {
+        "median": 0.9732528617187695,
+        "ci95": [
+          0.9614152418393099,
+          0.9831644609942778
+        ],
+        "finite_replicates": 10000
+      },
+      "actual_minus_fixed": {
+        "median": 0.20960595776772234,
+        "ci95": [
+          0.1905949442408769,
+          0.22681372549019607
+        ],
+        "finite_replicates": 10000
+      },
+      "actual_minus_percentile": {
+        "median": -0.24933803096835555,
+        "ci95": [
+          -0.27394084292484777,
+          -0.2250301702235772
+        ],
+        "finite_replicates": 10000
+      },
+      "all_candidate_order_change_rate": {
+        "median": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "finite_replicates": 10000
+      },
+      "true_subset_order_change_rate": {
+        "median": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "finite_replicates": 10000
+      }
+    }
+  },
+  "claim_boundary": "precursor_genome measured source with frozen cases and true full/reduced-library execution."
+}

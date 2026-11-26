@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this panel, cite the software release and the associated manuscript when available."
+title: "PXRD-CompleteSetBench: Precursor Genome open-library panel"
+type: software
+authors:
+  - family-names: "Fang"
+    given-names: "Tianxiang"
+    alias: "NSNJ1"
+    website: "https://github.com/NSNJ1"
+version: "0.8.0"
+date-released: "2026-11-27"
+repository-code: "https://github.com/NSNJ1/pxrd-complete-set-bench"
+url: "https://github.com/NSNJ1/pxrd-complete-set-bench"
+license: "MIT"
+keywords:
+  - powder X-ray diffraction
+  - phase identification
+  - open-set benchmark
+  - candidate-library dependence
+  - deployment evidence
+  - reproducibility
+abstract: >-
+  A 102-reaction measured PXRD panel for testing whether complete-library
+  candidate ranking and unknown-phase evidence remain valid after a true phase
+  family is removed from the deployed candidate library.

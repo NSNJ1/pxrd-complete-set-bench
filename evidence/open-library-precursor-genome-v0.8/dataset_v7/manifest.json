@@ -1,0 +1,32 @@
+{
+  "status": "precursor_genome_benchmark_prepared",
+  "source": {
+    "record": "21285546",
+    "doi": "10.5281/zenodo.21285546",
+    "license": "CC BY 4.0",
+    "ledger_sha256": "f8b8aabb5b8718ad912075b9aa10373a5e81659b496348f14c926e432eb42dac",
+    "raw_scans_archive_member_size": 23008523,
+    "raw_scans_archive_member_md5": "e22405e733fc79ff4b14b679f87a33d5",
+    "refinement_pkl_archive_member_size": 291408941,
+    "refinement_pkl_archive_member_md5": "49447823b4e017524fd963ec3734af74"
+  },
+  "queries": 102,
+  "clusters": 102,
+  "candidate_families": 20,
+  "truth_rows": 2040,
+  "phase_count_distribution": {
+    "2": 92,
+    "3": 10
+  },
+  "quality_distribution": {
+    "1": 80,
+    "2": 22
+  },
+  "candidate_manifest_sha256": "11a5a81ebbe09a3ebde6c503d75fc7a8d8d8b8bfd5ff24a9d83080702796860c",
+  "candidate_sticks_sha256": "4adeff623960d730aa4fd74450fa8b7f7e9c767c92c2ea06e8be4485712a8a27",
+  "query_manifest_sha256": "8b737c97c8cc6978bac2b3e5ebcdf03e8fd3da4087344b80f5b72d1d91bf72ce",
+  "query_metadata_sha256": "108e7fde102a3a3229e0780d65939022b7c9a9b41769cae35a7b7f0164916a23",
+  "truth_sha256": "e49c70e46fb8b6d048889ede38b90ca4c5f0772bc869266c44c5d4553fb7d353",
+  "claim_boundary": "Previously used by this project in the closed-library benchmark. New for the open-library intervention only; 77 of 102 selected query IDs overlap the earlier cohort and 25 are new. Candidate reference reactions are excluded from the query set; one active scan represents each physical reaction.",
+  "selection_manifest_sha256": "2beb32e2bf36df12574f29fe0694953d1a61eafc0abf7ecbd2f33c4750f4c829"
+}

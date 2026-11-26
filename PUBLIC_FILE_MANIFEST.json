@@ -1,7 +1,7 @@
 {
-  "version": "0.7.0",
-  "date": "2026-11-24",
-  "file_count": 143,
+  "version": "0.8.0",
+  "date": "2026-11-27",
+  "file_count": 496,
   "entries": [
     {
       "path": ".gitattributes",
@@ -20,13 +20,13 @@
     },
     {
       "path": "CHANGELOG.md",
-      "size": 2519,
-      "sha256": "347116468e35ac067aa9fcf850a69b9cf81831484d977925da727a12610abdcd"
+      "size": 3238,
+      "sha256": "a5e6bc390b276a46dda1ad55c41310823d05554ecbfc3511fd66c4d99a82478b"
     },
     {
       "path": "CITATION.cff",
-      "size": 952,
-      "sha256": "32481fc4c48aa421c7e34604e871e405648e3907d375991af2444a7e3f197dfb"
+      "size": 930,
+      "sha256": "bce8b3d4ead1c0a0c3aca76ed9c8936703f0fcadcac66d5a3b089df6b0b6e029"
     },
     {
       "path": "CONTRIBUTING.md",
@@ -41,7 +41,7 @@
     {
       "path": "LICENSE-DATA",
       "size": 700,
-      "sha256": "62e4b6250f3277bbd3d5398301fb3d36ba53f02c6a501b5179921b3c6c0a87e6"
+      "sha256": "6ebd216d1ccb461b75972b5e9722ae01fd8658bfbe3ddcd70098caaeffd2d52a"
     },
     {
       "path": "NOTICE",
@@ -50,8 +50,8 @@
     },
     {
       "path": "README.md",
-      "size": 10126,
-      "sha256": "e2dbade0364f4a7c32769f5b96fa664c7b704ba0a6594f61b5c7ab6903c48a9a"
+      "size": 10780,
+      "sha256": "1a7a6eb95488d1a6196efbaa0026cb9d331c9d2be26c6de8a62dc29e1d12c527"
     },
     {
       "path": "SECURITY.md",
@@ -85,8 +85,8 @@
     },
     {
       "path": "data/external_source_registry.json",
-      "size": 4239,
-      "sha256": "5c05fda54cecc7fe0c8c34d4111801fe670813434babd5b6cba5887482ac5f26"
+      "size": 5386,
+      "sha256": "79a861a063bc84903397a89db10124ca51f01968660ee81042b95e02eb7231c9"
     },
     {
       "path": "data/external_stress_registry.json",
@@ -115,8 +115,8 @@
     },
     {
       "path": "docs/data-sources.md",
-      "size": 2953,
-      "sha256": "df81f19683962d36807abdeac2ea8c5f7654a958be4dbaed1e72ce08a4912a35"
+      "size": 3324,
+      "sha256": "5e381cf7709e9b281f3f87b4ec026d7547a71de08c678da8256a34bf234d6d3e"
     },
     {
       "path": "docs/design-basis.md",
@@ -154,6 +154,11 @@
       "sha256": "a6992bd7d00eb1c00444461edef7aed0d4fdaf01353f163034fb98a5790c9e0a"
     },
     {
+      "path": "docs/open-library-precursor-genome-v0.8.md",
+      "size": 3441,
+      "sha256": "e77f700bc1cabc4d34511b84728221e2b8cefe107b6243e317c6dee32591b25b"
+    },
+    {
       "path": "docs/release-and-submission.md",
       "size": 1608,
       "sha256": "199c5f249ba2f6c0fa341aa77c5bb7cc23e7e16aa57e81616f84a2e29250fffb"
@@ -182,6 +187,11 @@
       "path": "docs/release-notes-v0.7.0.md",
       "size": 1436,
       "sha256": "f34e6797320d2ebee5427fa63ed2f44d8626398c73b77c6da0a8a6820184cdd6"
+    },
+    {
+      "path": "docs/release-notes-v0.8.0.md",
+      "size": 1739,
+      "sha256": "f5829e4394bd59ca9cf4ea33c6dd2a2e8d47840a6415118d179212b0f4023cf7"
     },
     {
       "path": "docs/reproduction.md",
@@ -279,6 +289,1756 @@
       "sha256": "42f42442e01533234b3eaf34d6f6b80e9411f0219995526853d4b98c9bf6df2c"
     },
     {
+      "path": "evidence/open-library-precursor-genome-v0.8/ACTIVE_PROGRESS_20261127.md",
+      "size": 3667,
+      "sha256": "8ef1460045d79f4324aee86a99d447bc399e27713ebd7d85e69c05263f562b03"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/CITATION.cff",
+      "size": 901,
+      "sha256": "cb4b3b0b29476a367c70fcfd01fc47cab8e8d9752ddd4747917d5a564ccc41d6"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/EXPECTED_OUTPUT_HASHES.json",
+      "size": 8239,
+      "sha256": "c1d7ec166add37530f1aa2be2fc3b0c7ff755c9c4368011a7bc3ea642c8fe4a2"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/INDEPENDENT_EXECUTION_PROMPT_20261127.md",
+      "size": 5249,
+      "sha256": "2f2375e95cd5106874ba80b76cd2d1f32cfa43dbaa4797b0b54d784912847415"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/LICENSE",
+      "size": 1071,
+      "sha256": "6ac52599151f01c4c893c0570c9f4b81923ef32df6bb4830bad7629215deb002"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/LICENSE-DATA",
+      "size": 700,
+      "sha256": "6ebd216d1ccb461b75972b5e9722ae01fd8658bfbe3ddcd70098caaeffd2d52a"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/NOTICE.md",
+      "size": 1367,
+      "sha256": "9153ce86fb2d48a8dc8a0a24a85e80ece9c8a72f9cc5a3174322791bd993440c"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/PRECURSOR_GENOME_RESULTS_20261127_zh.md",
+      "size": 8664,
+      "sha256": "83883b8997a4d7967905baab60d5186d80bf1dbc455b1e3b269bb91d4fba8a92"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/PREREGISTRATION_ADMISSION.md",
+      "size": 4735,
+      "sha256": "53cb15fb92998f3067ed54f43b91ea65b9036ccd440b730ebaad966a468d22f9"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/PRIOR_PROJECT_OVERLAP_20261127.json",
+      "size": 1429,
+      "sha256": "4641a8a2a123757284fed0224376a19c09fa8b15f1ffbade21fabe0743e726b6"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/PRIOR_PROJECT_QUERY_IDS.txt",
+      "size": 3328,
+      "sha256": "5d384db0353ebd1138e01064f39e9552d2f70299e145a6ad23f32bcc790fb25c"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/README.md",
+      "size": 5418,
+      "sha256": "9b7c5c07a1407432f8e9cd1f3ce479d84027eaace0205b4fae3abd7da7bd3774"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/RELEASE_AUDIT_20261127.json",
+      "size": 1634770,
+      "sha256": "bbae068e9f54c33a783b20fd77097a90e17a61f0cce6ad96b9fbab90519e4215"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/RELEASE_FILE_MANIFEST.json",
+      "size": 81704,
+      "sha256": "31c522b0a939c907b3acb5893110e7e57b58224f592524c85a846234bc89c9a5"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/SENSITIVITY_FREEZE_20261127.md",
+      "size": 2180,
+      "sha256": "7f0de2d38edfafeee54841e313ea94ee8766f757994be0fc9329b40a222422e9"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/SOURCE_INDEPENDENCE_CORRECTION_20261127_zh.md",
+      "size": 2026,
+      "sha256": "18acb972679a4012a44727668cf8bba08599114499296fbd208d8a74c6edacf9"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/analyze_precursor_genome.py",
+      "size": 6274,
+      "sha256": "422ffc28c8e5dd81cbd8019e7cdc6fa5d46b0a8dcfaa4d9e7ebba24b91da0923"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/audit_precursor_genome_release.py",
+      "size": 21234,
+      "sha256": "05b71a0d7df0dc04b58671d95f4fee3f4487ecc2d6c3100b97862188fda6d371"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/cases_v8/candidate_provenance.csv",
+      "size": 6613,
+      "sha256": "3778c5ef7705257a9da348878db6c9db9ea7007316de2c9321564b2d0c0ef0f1"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/cases_v8/candidate_structures.csv",
+      "size": 2811,
+      "sha256": "ba75d7ba91de0bf95e167b8bb578550a3915d250d600648acfa36abc132f9a01"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/cases_v8/case_phase_truth.csv",
+      "size": 642735,
+      "sha256": "68b8b067151a3c2a5c604d5ff334b34f1eda4c92d1db5885d6e0ee02bee81a57"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/cases_v8/cases.csv",
+      "size": 53754,
+      "sha256": "9209bf15d9018aca9c9cd3f9f9eb6f2b579042dca048d856476ba5216b53ce94"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/cases_v8/manifest.json",
+      "size": 17007,
+      "sha256": "0cc0c3195cbacde81c7f8054ee94ce5d2a39970a39d624ba4ddfe4cb54601e52"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v2/candidate_predictions.csv",
+      "size": 800616,
+      "sha256": "5cd2ca610fb20b0c4659f8182e64f562d54b6f3476ce3dfee1d5b0474d0c10b4"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v2/case_scores.csv",
+      "size": 31856,
+      "sha256": "2208d1fece754b3c79442118733763388e84e3de2d4875cce487880ba5b207fd"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v2/execution_status.json",
+      "size": 8519,
+      "sha256": "18ddbbe4e5c45f526c392326d82707ffc80950409ea2649d2f97b0551022f5e7"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v2/fixed_output_candidate_predictions.csv",
+      "size": 801296,
+      "sha256": "24a529606cb9720a11e299e56b95fbd17b377dbcc726213a882f5cb446dcbc7b"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v2/fixed_output_case_scores.csv",
+      "size": 31945,
+      "sha256": "7c85589ac5326c302cfc7784a4eb8e9d9d22fd5b1d6b65c39ab6835196aa7eca"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v2/full/predictions.csv",
+      "size": 109010,
+      "sha256": "f33c0befac82ca35ceb174127522af117a3c580805a7f710041961ba59579d99"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v2/full/query_unknown.csv",
+      "size": 4619,
+      "sha256": "012fba69adaa0bf4a7df5dae906b16c0e6e151989a326797629ea4f56a945bf4"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v2/full/sets.csv",
+      "size": 85489,
+      "sha256": "e08c2ae45e0de052aa04f9a405250ff0fb215a9eaf47b342eb962f506f72ea8c"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v2/minus_ag_sg225_icsd604631/predictions.csv",
+      "size": 103460,
+      "sha256": "b8cb9fae427184e43d8224d706dcf2a70d2b49f46542414e217d78070a2ebdcc"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v2/minus_ag_sg225_icsd604631/query_unknown.csv",
+      "size": 4605,
+      "sha256": "3680f39c7a0005128b0616277db7076c305881d8791c6ae07fa79d5589335393"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v2/minus_ag_sg225_icsd604631/sets.csv",
+      "size": 85251,
+      "sha256": "2e6ebf688e07285ff8b3f3b05a3218ca1a8173a79069afe6a7db60e774b66af2"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v2/minus_alho3_sg14_icsd184003/predictions.csv",
+      "size": 103430,
+      "sha256": "41a104ace283c1843f8b289394d72ce0cbc8aa2d30b5489c63b38de00d8848c3"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v2/minus_alho3_sg14_icsd184003/query_unknown.csv",
+      "size": 4654,
+      "sha256": "d92f4231365512528ffd01b39d7f9f059c9e7e3a4f868f30086e58ddd2cfa605"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v2/minus_alho3_sg14_icsd184003/sets.csv",
+      "size": 83826,
+      "sha256": "e1d5970cb893c14f4059b6ba418346ddc1b47a05a1f9a171de3a16ab5f26cd6c"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v2/minus_baco3_sg62_icsd166091/predictions.csv",
+      "size": 103334,
+      "sha256": "208933e2c013f08f746dc858611bbf70730b3d6c19853718da9c9a8e4fada39a"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v2/minus_baco3_sg62_icsd166091/query_unknown.csv",
+      "size": 4615,
+      "sha256": "53978e6ee7635cbe467c1b01e7442ba37dcc198d8ffd80beb18adc658cf9b3e2"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v2/minus_baco3_sg62_icsd166091/sets.csv",
+      "size": 83865,
+      "sha256": "fa83c81187dac951ab8824254686a4824ccb9d3446f3c2669b3dca191d25a445"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v2/minus_bao2_sg139_icsd80750/predictions.csv",
+      "size": 103439,
+      "sha256": "07335c6dfe22ce41f62f13b993469eb2af8fc8187cb3950271f14933b40088f5"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v2/minus_bao2_sg139_icsd80750/query_unknown.csv",
+      "size": 4601,
+      "sha256": "12d37934fec09ba3dad5e5529359954339575f669abc11e9ea6caf85f4482123"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v2/minus_bao2_sg139_icsd80750/sets.csv",
+      "size": 85143,
+      "sha256": "b7150df6ce3ed7e05c2ca66bd423f6f252bcfd89e9165b9df80006437a17291f"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v2/minus_bho3_sg2_icsd61354/predictions.csv",
+      "size": 103754,
+      "sha256": "364fe555c97b15c138a15d698d014836df751c99a4dca55133dc16e7406bb70a"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v2/minus_bho3_sg2_icsd61354/query_unknown.csv",
+      "size": 4586,
+      "sha256": "67398b1a00ae5d1c024aa1fc11a84b45e9ac60f6457fbffc01ab75fc341bebb6"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v2/minus_bho3_sg2_icsd61354/sets.csv",
+      "size": 85752,
+      "sha256": "b6c5267932e89de35024167771894800fb5fd1d93e057184461e9802798d9252"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v2/minus_caco3_sg167_icsd166364/predictions.csv",
+      "size": 103233,
+      "sha256": "dcf0509c8dae94088ceed6b0a4b2f8eb0e6b70639d36adc7da036a7e674cf338"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v2/minus_caco3_sg167_icsd166364/query_unknown.csv",
+      "size": 4645,
+      "sha256": "5ca7a7ec093c61a4a2236b713e13b8c0b7a1024dc002c001f0524c5de5363bc3"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v2/minus_caco3_sg167_icsd166364/sets.csv",
+      "size": 83528,
+      "sha256": "d188fa5b7e916553cead8d2e49693a22476c396eced7b94fbf0e678f080546f3"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v2/minus_cuo_sg9_icsd69758/predictions.csv",
+      "size": 103708,
+      "sha256": "e67cd1e2e571a11e5458c57fdf7b31e6089c5e69941d438f813027505b82589f"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v2/minus_cuo_sg9_icsd69758/query_unknown.csv",
+      "size": 4596,
+      "sha256": "b75719fb393b711d12d67238667d97b01929fa6d6f29f7f5cb0e992e85e32b80"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v2/minus_cuo_sg9_icsd69758/sets.csv",
+      "size": 85308,
+      "sha256": "94f92f6dbc0911089801452161e02870cd7ffcad0add94fef93757ee18064297"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v2/minus_ga792o12_sg12_icsd63907/predictions.csv",
+      "size": 103156,
+      "sha256": "7304fc134d8b987c89f6bc5b92a730939a2210f039afc091bf7eb9589d3a9b04"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v2/minus_ga792o12_sg12_icsd63907/query_unknown.csv",
+      "size": 4631,
+      "sha256": "c5a5f1955ce95fe7446eff0867647bdcc6428f7afafbaa03ce19e421048fd767"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v2/minus_ga792o12_sg12_icsd63907/sets.csv",
+      "size": 85387,
+      "sha256": "f13323c00ebc27fbdf80a7e9b89f041dc42db0b8a80a88d81b96a394248c9844"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v2/minus_in2o3_sg206_icsd190344/predictions.csv",
+      "size": 103181,
+      "sha256": "02a450dd01f772d6aa8d38c032029e23cf52991eae017c13d23335afa822dec5"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v2/minus_in2o3_sg206_icsd190344/query_unknown.csv",
+      "size": 4628,
+      "sha256": "6e663624cf044848814b6279485678fb3c819b45a12d5149fe31eecee01d9b8a"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v2/minus_in2o3_sg206_icsd190344/sets.csv",
+      "size": 84112,
+      "sha256": "0d265e6e26abf7039a4e8d145d26b3fe1d9e629ed1ba6111a8052ae6c1f6d7ec"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v2/minus_laho3_sg176_icsd167480/predictions.csv",
+      "size": 103201,
+      "sha256": "e84c484949b97a6f4e5c12733a232c00fe78793b7590406e705b21a879a030c1"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v2/minus_laho3_sg176_icsd167480/query_unknown.csv",
+      "size": 4617,
+      "sha256": "26d6ca9ee2913a02ad67db40ddf31fcf5950103be8d7339799ad1b5d82ad5728"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v2/minus_laho3_sg176_icsd167480/sets.csv",
+      "size": 84677,
+      "sha256": "61f1ae48ae04dd9b5fa6ef21b006c0f2747b8efc094c7b62977730d9a8924df3"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v2/minus_li2co3_sg15_icsd16713/predictions.csv",
+      "size": 103449,
+      "sha256": "7a089578bb080ce9d03f0cf4576b0e909831ae881b5fa42a3177844525105b94"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v2/minus_li2co3_sg15_icsd16713/query_unknown.csv",
+      "size": 4631,
+      "sha256": "6b163c2bd832d79c7f15159e6962906ea936c55ed5d78fc2941bc829530143c0"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v2/minus_li2co3_sg15_icsd16713/sets.csv",
+      "size": 84998,
+      "sha256": "6f29ba81d2e7b0e8e8a30eb1c640b460431121339733b7571a64d80c33d8c44b"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v2/minus_mgo_sg225_icsd104844/predictions.csv",
+      "size": 103445,
+      "sha256": "b0943b28c884d9d63358956952a8bdd8c57f279ee01fe0e895dbecd979077fcc"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v2/minus_mgo_sg225_icsd104844/query_unknown.csv",
+      "size": 4621,
+      "sha256": "35e851c9f2b3a3d9d83c112bad9ad898ff2068683e37f72ca73afc7c5be7ed92"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v2/minus_mgo_sg225_icsd104844/sets.csv",
+      "size": 84685,
+      "sha256": "752547c0bf21af031b3f38e04ece54eaecf265c472103ca75a71507f8339e3a0"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v2/minus_mn2o3_sg206_icsd9091/predictions.csv",
+      "size": 103433,
+      "sha256": "c9ad566be55248e07a417dfd4f2a8ed49b7ea7220de767278e52dc6481be019f"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v2/minus_mn2o3_sg206_icsd9091/query_unknown.csv",
+      "size": 4600,
+      "sha256": "16d164f9a36b8528d16f5772c89a26cc4a220887a3889c476494a81778d13101"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v2/minus_mn2o3_sg206_icsd9091/sets.csv",
+      "size": 85154,
+      "sha256": "7ccd617ce113d080cc08ac3281c3ed125175267f88a703f94a3160adc7af52e7"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v2/minus_mno2_sg136_icsd643186/predictions.csv",
+      "size": 103392,
+      "sha256": "b49b5267336b4904961272e81ae034301e49b304cc9fa021de3d7b44155aaade"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v2/minus_mno2_sg136_icsd643186/query_unknown.csv",
+      "size": 4635,
+      "sha256": "e77cbefcad7dbd19546a27ffe5a6a228930d3899f892265ceb360e9085d6aaf7"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v2/minus_mno2_sg136_icsd643186/sets.csv",
+      "size": 84982,
+      "sha256": "2fe0fcfeeea7b7d2ce81e792f8c6ad3c6a0a5330572a5024b13743882439dc76"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v2/minus_moo3_sg62_icsd166362/predictions.csv",
+      "size": 103741,
+      "sha256": "dfea44acc4686a1b1365c9a5f624ed30e5cf9ca2c4dcafbb0b86ea2970ac7447"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v2/minus_moo3_sg62_icsd166362/query_unknown.csv",
+      "size": 4598,
+      "sha256": "2db7896d17f654ffbe3de236c9da1021af159eee54b77f27d15f96e6e6db6480"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v2/minus_moo3_sg62_icsd166362/sets.csv",
+      "size": 85059,
+      "sha256": "9262ce3afd96dc868c246246572f5490f13de54692955f2706e65077297e123c"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v2/minus_sb2o3_sg227_icsd1944/predictions.csv",
+      "size": 103581,
+      "sha256": "40877e37e639c1c97888cfa1faf76091386269371097ca8b927f7c2b61b08d57"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v2/minus_sb2o3_sg227_icsd1944/query_unknown.csv",
+      "size": 4617,
+      "sha256": "41637e9837338e83236edeb15690f09184d106af472555a5472c42248d4cb83b"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v2/minus_sb2o3_sg227_icsd1944/sets.csv",
+      "size": 85345,
+      "sha256": "bb3077a86b00fd3769362d75ee3a89cd32d0e43d97381e6679e03da502ce2cc4"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v2/minus_srco3_sg62_icsd56099/predictions.csv",
+      "size": 103442,
+      "sha256": "8904f3a6efb6b541ac7fc8c40003f73a32d0887812d4a4fe1ef23d7204deecff"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v2/minus_srco3_sg62_icsd56099/query_unknown.csv",
+      "size": 4633,
+      "sha256": "d0b2cc5c3820a3bf315162c86e7b8dd978c6afc888ef2743a273023a0e8c78b3"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v2/minus_srco3_sg62_icsd56099/sets.csv",
+      "size": 85420,
+      "sha256": "e28a8bf58a45b3b6e0179e2f78bf2ae051c571c85ff6d3c36204c38559b640d7"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v2/minus_v2o5_sg59_icsd40488/predictions.csv",
+      "size": 103666,
+      "sha256": "5e1531a02af461d8968053087a8464e663290a31fa28d4f117e1458b9e28deb4"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v2/minus_v2o5_sg59_icsd40488/query_unknown.csv",
+      "size": 4639,
+      "sha256": "2b92bf89a0014bc6b7556a29318097d65d48e9d1feb5c417845046531d3eefa0"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v2/minus_v2o5_sg59_icsd40488/sets.csv",
+      "size": 85254,
+      "sha256": "be29bd8b9a2c598f678645f220f97679aa756717686916d075444a6858417c4c"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v2/minus_y2o3_sg206_icsd192862/predictions.csv",
+      "size": 103374,
+      "sha256": "61a79d9ab6a98978c363a870a8b89630927cfe96d120340ba35dda33c5ff6b2a"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v2/minus_y2o3_sg206_icsd192862/query_unknown.csv",
+      "size": 4621,
+      "sha256": "4af1f60721e8c9f24155b2dd032e8a06067749329fb0fe6789819e2698fbcfee"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v2/minus_y2o3_sg206_icsd192862/sets.csv",
+      "size": 85006,
+      "sha256": "f2ab03c3c52924211990fb9e8be58b353ee61d0aeb2aff95715fc5398e7e0457"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v2/minus_zro2_sg14_icsd157403/predictions.csv",
+      "size": 103465,
+      "sha256": "2b1ce26abec5a7dca6c4403f9f8441f710bcf71ae33fa5efb656ec332f605e1b"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v2/minus_zro2_sg14_icsd157403/query_unknown.csv",
+      "size": 4599,
+      "sha256": "ff5f2f2f0ab532a2d06f914cd6321d73e54426b62c43a83db14fac5b325f3c29"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v2/minus_zro2_sg14_icsd157403/sets.csv",
+      "size": 85303,
+      "sha256": "06f471243d9324f6124dd0822f3be664b90cee28d85867c087977a1b41c41ced"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v8/candidate_predictions.csv",
+      "size": 800616,
+      "sha256": "5cd2ca610fb20b0c4659f8182e64f562d54b6f3476ce3dfee1d5b0474d0c10b4"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v8/case_scores.csv",
+      "size": 31856,
+      "sha256": "2208d1fece754b3c79442118733763388e84e3de2d4875cce487880ba5b207fd"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v8/execution_status.json",
+      "size": 8463,
+      "sha256": "51aae19473c2ee20d5c793ebca5105ecf3574ac9a5e31ad72394a209ec53b130"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v8/fixed_output_candidate_predictions.csv",
+      "size": 801296,
+      "sha256": "24a529606cb9720a11e299e56b95fbd17b377dbcc726213a882f5cb446dcbc7b"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v8/fixed_output_case_scores.csv",
+      "size": 31945,
+      "sha256": "7c85589ac5326c302cfc7784a4eb8e9d9d22fd5b1d6b65c39ab6835196aa7eca"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v8/full/predictions.csv",
+      "size": 109010,
+      "sha256": "f33c0befac82ca35ceb174127522af117a3c580805a7f710041961ba59579d99"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v8/full/query_unknown.csv",
+      "size": 4619,
+      "sha256": "012fba69adaa0bf4a7df5dae906b16c0e6e151989a326797629ea4f56a945bf4"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v8/full/sets.csv",
+      "size": 85489,
+      "sha256": "e08c2ae45e0de052aa04f9a405250ff0fb215a9eaf47b342eb962f506f72ea8c"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v8/minus_ag_sg225_icsd604631/predictions.csv",
+      "size": 103460,
+      "sha256": "b8cb9fae427184e43d8224d706dcf2a70d2b49f46542414e217d78070a2ebdcc"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v8/minus_ag_sg225_icsd604631/query_unknown.csv",
+      "size": 4605,
+      "sha256": "3680f39c7a0005128b0616277db7076c305881d8791c6ae07fa79d5589335393"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v8/minus_ag_sg225_icsd604631/sets.csv",
+      "size": 85251,
+      "sha256": "2e6ebf688e07285ff8b3f3b05a3218ca1a8173a79069afe6a7db60e774b66af2"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v8/minus_alho3_sg14_icsd184003/predictions.csv",
+      "size": 103430,
+      "sha256": "41a104ace283c1843f8b289394d72ce0cbc8aa2d30b5489c63b38de00d8848c3"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v8/minus_alho3_sg14_icsd184003/query_unknown.csv",
+      "size": 4654,
+      "sha256": "d92f4231365512528ffd01b39d7f9f059c9e7e3a4f868f30086e58ddd2cfa605"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v8/minus_alho3_sg14_icsd184003/sets.csv",
+      "size": 83826,
+      "sha256": "e1d5970cb893c14f4059b6ba418346ddc1b47a05a1f9a171de3a16ab5f26cd6c"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v8/minus_baco3_sg62_icsd166091/predictions.csv",
+      "size": 103334,
+      "sha256": "208933e2c013f08f746dc858611bbf70730b3d6c19853718da9c9a8e4fada39a"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v8/minus_baco3_sg62_icsd166091/query_unknown.csv",
+      "size": 4615,
+      "sha256": "53978e6ee7635cbe467c1b01e7442ba37dcc198d8ffd80beb18adc658cf9b3e2"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v8/minus_baco3_sg62_icsd166091/sets.csv",
+      "size": 83865,
+      "sha256": "fa83c81187dac951ab8824254686a4824ccb9d3446f3c2669b3dca191d25a445"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v8/minus_bao2_sg139_icsd80750/predictions.csv",
+      "size": 103439,
+      "sha256": "07335c6dfe22ce41f62f13b993469eb2af8fc8187cb3950271f14933b40088f5"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v8/minus_bao2_sg139_icsd80750/query_unknown.csv",
+      "size": 4601,
+      "sha256": "12d37934fec09ba3dad5e5529359954339575f669abc11e9ea6caf85f4482123"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v8/minus_bao2_sg139_icsd80750/sets.csv",
+      "size": 85143,
+      "sha256": "b7150df6ce3ed7e05c2ca66bd423f6f252bcfd89e9165b9df80006437a17291f"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v8/minus_bho3_sg2_icsd61354/predictions.csv",
+      "size": 103754,
+      "sha256": "364fe555c97b15c138a15d698d014836df751c99a4dca55133dc16e7406bb70a"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v8/minus_bho3_sg2_icsd61354/query_unknown.csv",
+      "size": 4586,
+      "sha256": "67398b1a00ae5d1c024aa1fc11a84b45e9ac60f6457fbffc01ab75fc341bebb6"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v8/minus_bho3_sg2_icsd61354/sets.csv",
+      "size": 85752,
+      "sha256": "b6c5267932e89de35024167771894800fb5fd1d93e057184461e9802798d9252"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v8/minus_caco3_sg167_icsd166364/predictions.csv",
+      "size": 103233,
+      "sha256": "dcf0509c8dae94088ceed6b0a4b2f8eb0e6b70639d36adc7da036a7e674cf338"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v8/minus_caco3_sg167_icsd166364/query_unknown.csv",
+      "size": 4645,
+      "sha256": "5ca7a7ec093c61a4a2236b713e13b8c0b7a1024dc002c001f0524c5de5363bc3"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v8/minus_caco3_sg167_icsd166364/sets.csv",
+      "size": 83528,
+      "sha256": "d188fa5b7e916553cead8d2e49693a22476c396eced7b94fbf0e678f080546f3"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v8/minus_cuo_sg9_icsd69758/predictions.csv",
+      "size": 103708,
+      "sha256": "e67cd1e2e571a11e5458c57fdf7b31e6089c5e69941d438f813027505b82589f"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v8/minus_cuo_sg9_icsd69758/query_unknown.csv",
+      "size": 4596,
+      "sha256": "b75719fb393b711d12d67238667d97b01929fa6d6f29f7f5cb0e992e85e32b80"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v8/minus_cuo_sg9_icsd69758/sets.csv",
+      "size": 85308,
+      "sha256": "94f92f6dbc0911089801452161e02870cd7ffcad0add94fef93757ee18064297"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v8/minus_ga792o12_sg12_icsd63907/predictions.csv",
+      "size": 103156,
+      "sha256": "7304fc134d8b987c89f6bc5b92a730939a2210f039afc091bf7eb9589d3a9b04"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v8/minus_ga792o12_sg12_icsd63907/query_unknown.csv",
+      "size": 4631,
+      "sha256": "c5a5f1955ce95fe7446eff0867647bdcc6428f7afafbaa03ce19e421048fd767"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v8/minus_ga792o12_sg12_icsd63907/sets.csv",
+      "size": 85387,
+      "sha256": "f13323c00ebc27fbdf80a7e9b89f041dc42db0b8a80a88d81b96a394248c9844"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v8/minus_in2o3_sg206_icsd190344/predictions.csv",
+      "size": 103181,
+      "sha256": "02a450dd01f772d6aa8d38c032029e23cf52991eae017c13d23335afa822dec5"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v8/minus_in2o3_sg206_icsd190344/query_unknown.csv",
+      "size": 4628,
+      "sha256": "6e663624cf044848814b6279485678fb3c819b45a12d5149fe31eecee01d9b8a"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v8/minus_in2o3_sg206_icsd190344/sets.csv",
+      "size": 84112,
+      "sha256": "0d265e6e26abf7039a4e8d145d26b3fe1d9e629ed1ba6111a8052ae6c1f6d7ec"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v8/minus_laho3_sg176_icsd167480/predictions.csv",
+      "size": 103201,
+      "sha256": "e84c484949b97a6f4e5c12733a232c00fe78793b7590406e705b21a879a030c1"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v8/minus_laho3_sg176_icsd167480/query_unknown.csv",
+      "size": 4617,
+      "sha256": "26d6ca9ee2913a02ad67db40ddf31fcf5950103be8d7339799ad1b5d82ad5728"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v8/minus_laho3_sg176_icsd167480/sets.csv",
+      "size": 84677,
+      "sha256": "61f1ae48ae04dd9b5fa6ef21b006c0f2747b8efc094c7b62977730d9a8924df3"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v8/minus_li2co3_sg15_icsd16713/predictions.csv",
+      "size": 103449,
+      "sha256": "7a089578bb080ce9d03f0cf4576b0e909831ae881b5fa42a3177844525105b94"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v8/minus_li2co3_sg15_icsd16713/query_unknown.csv",
+      "size": 4631,
+      "sha256": "6b163c2bd832d79c7f15159e6962906ea936c55ed5d78fc2941bc829530143c0"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v8/minus_li2co3_sg15_icsd16713/sets.csv",
+      "size": 84998,
+      "sha256": "6f29ba81d2e7b0e8e8a30eb1c640b460431121339733b7571a64d80c33d8c44b"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v8/minus_mgo_sg225_icsd104844/predictions.csv",
+      "size": 103445,
+      "sha256": "b0943b28c884d9d63358956952a8bdd8c57f279ee01fe0e895dbecd979077fcc"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v8/minus_mgo_sg225_icsd104844/query_unknown.csv",
+      "size": 4621,
+      "sha256": "35e851c9f2b3a3d9d83c112bad9ad898ff2068683e37f72ca73afc7c5be7ed92"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v8/minus_mgo_sg225_icsd104844/sets.csv",
+      "size": 84685,
+      "sha256": "752547c0bf21af031b3f38e04ece54eaecf265c472103ca75a71507f8339e3a0"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v8/minus_mn2o3_sg206_icsd9091/predictions.csv",
+      "size": 103433,
+      "sha256": "c9ad566be55248e07a417dfd4f2a8ed49b7ea7220de767278e52dc6481be019f"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v8/minus_mn2o3_sg206_icsd9091/query_unknown.csv",
+      "size": 4600,
+      "sha256": "16d164f9a36b8528d16f5772c89a26cc4a220887a3889c476494a81778d13101"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v8/minus_mn2o3_sg206_icsd9091/sets.csv",
+      "size": 85154,
+      "sha256": "7ccd617ce113d080cc08ac3281c3ed125175267f88a703f94a3160adc7af52e7"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v8/minus_mno2_sg136_icsd643186/predictions.csv",
+      "size": 103392,
+      "sha256": "b49b5267336b4904961272e81ae034301e49b304cc9fa021de3d7b44155aaade"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v8/minus_mno2_sg136_icsd643186/query_unknown.csv",
+      "size": 4635,
+      "sha256": "e77cbefcad7dbd19546a27ffe5a6a228930d3899f892265ceb360e9085d6aaf7"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v8/minus_mno2_sg136_icsd643186/sets.csv",
+      "size": 84982,
+      "sha256": "2fe0fcfeeea7b7d2ce81e792f8c6ad3c6a0a5330572a5024b13743882439dc76"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v8/minus_moo3_sg62_icsd166362/predictions.csv",
+      "size": 103741,
+      "sha256": "dfea44acc4686a1b1365c9a5f624ed30e5cf9ca2c4dcafbb0b86ea2970ac7447"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v8/minus_moo3_sg62_icsd166362/query_unknown.csv",
+      "size": 4598,
+      "sha256": "2db7896d17f654ffbe3de236c9da1021af159eee54b77f27d15f96e6e6db6480"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v8/minus_moo3_sg62_icsd166362/sets.csv",
+      "size": 85059,
+      "sha256": "9262ce3afd96dc868c246246572f5490f13de54692955f2706e65077297e123c"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v8/minus_sb2o3_sg227_icsd1944/predictions.csv",
+      "size": 103581,
+      "sha256": "40877e37e639c1c97888cfa1faf76091386269371097ca8b927f7c2b61b08d57"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v8/minus_sb2o3_sg227_icsd1944/query_unknown.csv",
+      "size": 4617,
+      "sha256": "41637e9837338e83236edeb15690f09184d106af472555a5472c42248d4cb83b"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v8/minus_sb2o3_sg227_icsd1944/sets.csv",
+      "size": 85345,
+      "sha256": "bb3077a86b00fd3769362d75ee3a89cd32d0e43d97381e6679e03da502ce2cc4"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v8/minus_srco3_sg62_icsd56099/predictions.csv",
+      "size": 103442,
+      "sha256": "8904f3a6efb6b541ac7fc8c40003f73a32d0887812d4a4fe1ef23d7204deecff"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v8/minus_srco3_sg62_icsd56099/query_unknown.csv",
+      "size": 4633,
+      "sha256": "d0b2cc5c3820a3bf315162c86e7b8dd978c6afc888ef2743a273023a0e8c78b3"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v8/minus_srco3_sg62_icsd56099/sets.csv",
+      "size": 85420,
+      "sha256": "e28a8bf58a45b3b6e0179e2f78bf2ae051c571c85ff6d3c36204c38559b640d7"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v8/minus_v2o5_sg59_icsd40488/predictions.csv",
+      "size": 103666,
+      "sha256": "5e1531a02af461d8968053087a8464e663290a31fa28d4f117e1458b9e28deb4"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v8/minus_v2o5_sg59_icsd40488/query_unknown.csv",
+      "size": 4639,
+      "sha256": "2b92bf89a0014bc6b7556a29318097d65d48e9d1feb5c417845046531d3eefa0"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v8/minus_v2o5_sg59_icsd40488/sets.csv",
+      "size": 85254,
+      "sha256": "be29bd8b9a2c598f678645f220f97679aa756717686916d075444a6858417c4c"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v8/minus_y2o3_sg206_icsd192862/predictions.csv",
+      "size": 103374,
+      "sha256": "61a79d9ab6a98978c363a870a8b89630927cfe96d120340ba35dda33c5ff6b2a"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v8/minus_y2o3_sg206_icsd192862/query_unknown.csv",
+      "size": 4621,
+      "sha256": "4af1f60721e8c9f24155b2dd032e8a06067749329fb0fe6789819e2698fbcfee"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v8/minus_y2o3_sg206_icsd192862/sets.csv",
+      "size": 85006,
+      "sha256": "f2ab03c3c52924211990fb9e8be58b353ee61d0aeb2aff95715fc5398e7e0457"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v8/minus_zro2_sg14_icsd157403/predictions.csv",
+      "size": 103465,
+      "sha256": "2b1ce26abec5a7dca6c4403f9f8441f710bcf71ae33fa5efb656ec332f605e1b"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v8/minus_zro2_sg14_icsd157403/query_unknown.csv",
+      "size": 4599,
+      "sha256": "ff5f2f2f0ab532a2d06f914cd6321d73e54426b62c43a83db14fac5b325f3c29"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/crystalshift_run_v8/minus_zro2_sg14_icsd157403/sets.csv",
+      "size": 85303,
+      "sha256": "06f471243d9324f6124dd0822f3be664b90cee28d85867c087977a1b41c41ced"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/evaluator/candidate_source_provenance.csv",
+      "size": 6610,
+      "sha256": "02fd66fd7016b82534e40f0200f8d28298d379567ea78ecb51cafe1f26991471"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/evaluator/query_metadata.csv",
+      "size": 17432,
+      "sha256": "108e7fde102a3a3229e0780d65939022b7c9a9b41769cae35a7b7f0164916a23"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/evaluator/truth.csv",
+      "size": 63980,
+      "sha256": "e49c70e46fb8b6d048889ede38b90ca4c5f0772bc869266c44c5d4553fb7d353"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/manifest.json",
+      "size": 1598,
+      "sha256": "6983ea3e4a40ddadeb746717e939e1e4c16f695bce871c5467e02a6ecd2d23d5"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/candidate_sticks.csv",
+      "size": 88631,
+      "sha256": "4adeff623960d730aa4fd74450fa8b7f7e9c767c92c2ea06e8be4485712a8a27"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/candidates.csv",
+      "size": 2815,
+      "sha256": "11a5a81ebbe09a3ebde6c503d75fc7a8d8d8b8bfd5ff24a9d83080702796860c"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/queries.csv",
+      "size": 5460,
+      "sha256": "8b737c97c8cc6978bac2b3e5ebcdf03e8fd3da4087344b80f5b72d1d91bf72ce"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/reference_profiles/ag_sg225_icsd604631.csv",
+      "size": 121548,
+      "sha256": "d8d2ea513bc89b325dbd481e485a69f19e5db1562660a55cf0ed6e47a51b93cc"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/reference_profiles/alho3_sg14_icsd184003.csv",
+      "size": 121548,
+      "sha256": "c0fe8aed7256d0c42e127371a0eb1a2c61788f1d0237dab77e05b8ff55c377a6"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/reference_profiles/baco3_sg62_icsd166091.csv",
+      "size": 121548,
+      "sha256": "e20d74f3388b374b25fa1184f8b2377e7e2ee169255acc9758bdf78a71d31823"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/reference_profiles/bao2_sg139_icsd80750.csv",
+      "size": 121548,
+      "sha256": "55f4671ce1d11581901ac3ed7ce466dee41cdcd9cd2181ef23ad36a5df9940ee"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/reference_profiles/bho3_sg2_icsd61354.csv",
+      "size": 121548,
+      "sha256": "bd9b411f55792c61142655f7e84bf9f04971afed2cec33201214143b6748379c"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/reference_profiles/caco3_sg167_icsd166364.csv",
+      "size": 121548,
+      "sha256": "ff1d0f06b3dc3d8a93a2727647b9e71bee45031603f4481f68d4766f17fe9679"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/reference_profiles/cuo_sg9_icsd69758.csv",
+      "size": 121548,
+      "sha256": "449fd46681b157b2fbf150c87d70015ee144c2ac0e44c01fa1165f5f114c743a"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/reference_profiles/ga792o12_sg12_icsd63907.csv",
+      "size": 121548,
+      "sha256": "8bad8bbac1be99f2a8e76a5ad0db372786c46d214077b067e3a708438996858b"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/reference_profiles/in2o3_sg206_icsd190344.csv",
+      "size": 121548,
+      "sha256": "d355f22c527f7430e121b56d2ad935740bfba807c5ffd2d5d9df0b2166545f5f"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/reference_profiles/laho3_sg176_icsd167480.csv",
+      "size": 121548,
+      "sha256": "c92a492a01f09818728e8c8b497719a06156bfec6de0a3d9e1552d2157ad3fe4"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/reference_profiles/li2co3_sg15_icsd16713.csv",
+      "size": 121548,
+      "sha256": "95389613f71564380b4163e33a19cc6ef42be00315e7134371398af64be17b13"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/reference_profiles/mgo_sg225_icsd104844.csv",
+      "size": 121548,
+      "sha256": "ded7e377952c8a4cd20338d5e6607f6ed6d81dcea9f1fda75f9fc8ec3fbd6b4c"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/reference_profiles/mn2o3_sg206_icsd9091.csv",
+      "size": 121548,
+      "sha256": "c4c35c9bdec886b3e9f20fd251064ae75a75250128717429f3055eba98a5c9c8"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/reference_profiles/mno2_sg136_icsd643186.csv",
+      "size": 121548,
+      "sha256": "6130f9feb4c7e3bcc7da591c694e61e8fb42b617cfaafd8d49f7dc786898cb16"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/reference_profiles/moo3_sg62_icsd166362.csv",
+      "size": 121548,
+      "sha256": "ad14b5d8a44ac6c844317695952e75222b01bd6ebcaa79992bb6e67e8b96ad69"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/reference_profiles/sb2o3_sg227_icsd1944.csv",
+      "size": 121548,
+      "sha256": "b620be79de63708ff55695acc531895c097217a1aebc25521304f58691f347b6"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/reference_profiles/srco3_sg62_icsd56099.csv",
+      "size": 121548,
+      "sha256": "cad9822b3edb9054c6b4ad5bdf218ef3fb1fa8e93b4460d57b9fc3d9083393f6"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/reference_profiles/v2o5_sg59_icsd40488.csv",
+      "size": 121548,
+      "sha256": "3746f9a78660ab55480d8e79ed359f4d4bb4e98161f8520fc204c789d64df96e"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/reference_profiles/y2o3_sg206_icsd192862.csv",
+      "size": 121548,
+      "sha256": "0bc2ee4c783c536bd7fa7d06a5ad7bbf5eaa6eea368549e913a11c1eb62a2831"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/reference_profiles/zro2_sg14_icsd157403.csv",
+      "size": 121548,
+      "sha256": "9bbb103191ccf9ee24f06ef48be19ec66424a66435286266832964e4a0fa9f96"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_0145.csv",
+      "size": 249052,
+      "sha256": "cc3eca52fa7d3a215f9d974cef5513678abf9c22465b0386ae14a17abb36fe12"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_0204.csv",
+      "size": 242877,
+      "sha256": "25f56d4f6492635d23e9edd133be2e1f2835ac1a7ae10e32489e462292713c92"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_0207.csv",
+      "size": 243058,
+      "sha256": "2f295e60afcb337b76ae255cddc4b46d0d2c6c0ea1a359cbfe10f618d05b490e"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_0215.csv",
+      "size": 246002,
+      "sha256": "7357b94580341669840221215b00cab830642aaf1dfad0a47761a54d63655208"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_0218.csv",
+      "size": 243420,
+      "sha256": "d2287cc6a03389624e08a04826c328ad1fb7620c93ae71f69cc4c599260a7854"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_0221.csv",
+      "size": 242927,
+      "sha256": "61184e10158c6707c261269cdd94634cb5729dd31596fa9e421f96bbea03f765"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_0225.csv",
+      "size": 243721,
+      "sha256": "bb45ba24e2c30299f8cc3d1abcf54f5abf511c2d0865d58ab0c0ed021ba38d30"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_0228.csv",
+      "size": 249069,
+      "sha256": "33cbbbe92e93ecc6fc9c09af88eefd9999f33f488647043951f9cfcfc05b69fb"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_0229.csv",
+      "size": 249072,
+      "sha256": "331add638bcf46808386f4484fe9722fc65e52f85a9847802db26974a5fc4cb8"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_0230.csv",
+      "size": 249142,
+      "sha256": "6b17133fa7e99eff21bcb84dd2bd9d6639ea8fbe221a5fbe53676e09445c23d3"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_0241.csv",
+      "size": 243183,
+      "sha256": "022a55a598862e57448bf662b6deaace8b3e61de9b9083de488d595114e0a751"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_0248.csv",
+      "size": 243333,
+      "sha256": "1628c8dcb29756b2f1e1f5add59e3ef195dab4e0c08f5dcbd1b7975a352f0b78"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_0250.csv",
+      "size": 249140,
+      "sha256": "b5afb513d3bf7cb7cd073d8641c2f96360c36a81db53301491a1c86e98e25171"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_0252.csv",
+      "size": 249094,
+      "sha256": "5b5704d2a4131d0e66d81812b2677b72ff14411d4f2a1af806cc09cb8ce637aa"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_0305.csv",
+      "size": 242837,
+      "sha256": "52e4e96928e00ea5a893f706b4dee27d506eb46fadff258ee5c45c6a2af4cb79"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_0307.csv",
+      "size": 242548,
+      "sha256": "d1dd189e24669b1c6e1e0768bc595d3aeeaebd4b992f4a22cef8c45b32fcf891"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_0315.csv",
+      "size": 245692,
+      "sha256": "ee9be46de862eab49a5a4001862fa99a8ed870e08ef79f45c8f1a8ffd2b08aa1"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_0321.csv",
+      "size": 241955,
+      "sha256": "b021c8f239e3ef33655ad01dd2e7a5b2aafc04961cd10c631e33bd2321cc0fba"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_0325.csv",
+      "size": 243966,
+      "sha256": "e1cd31d118160ffa7f9c9a31391258a7c48904188fa70578bd31038dc9c8f032"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_0328.csv",
+      "size": 249050,
+      "sha256": "3f00d42f9a832a1303c860ffb04b7ca7f290dc38557d9619749dd9781f6f1ee1"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_0330.csv",
+      "size": 249123,
+      "sha256": "0138c779d9674c21c0b601ffcb70c7c868b6725a7538899146374b9e9a4c31ca"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_0345.csv",
+      "size": 248486,
+      "sha256": "ff70c634ecc01e6e87591c17e014c24342d55ddb79853298f2e2f055a79bb9b6"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_0350.csv",
+      "size": 249123,
+      "sha256": "fa6d1cd6a189bb6201ef2a810de7434221dbe573bb9584e9ee14ab6fba9b35b8"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_0352.csv",
+      "size": 248932,
+      "sha256": "03102b08fe23546a514c6cccd1f8df3411563250c51848814ae75795d1fd24e9"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_0405.csv",
+      "size": 243032,
+      "sha256": "16512dff49b01e13d451eb05de98b52f1d30dbe6b8a4d31a3e5df1f145cde89c"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_0407.csv",
+      "size": 241172,
+      "sha256": "c24ae78f54283648e2d6a9d4b1477081fac9605fd6dc8443e077a58da9caa67d"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_0411.csv",
+      "size": 244285,
+      "sha256": "c4d7b7b2b721a2689c85d98df198935641a542bfd7c8d08e2995e8ca7d41327a"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_0418.csv",
+      "size": 241658,
+      "sha256": "9a26b91a51fd794e77d6b8163d63c2aea357d9ab665b21edbcc3bc147e337b4e"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_0421.csv",
+      "size": 241987,
+      "sha256": "090ad64c54cf794894f598dfb241a071eb1126bad2e2ff976eb941225b406e63"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_0425.csv",
+      "size": 241697,
+      "sha256": "c35a88638312e0eda0cc3f3ba859d43b2d1d8bc7ef76bdeb0e51601e0db67448"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_0428.csv",
+      "size": 242464,
+      "sha256": "5a5e464b3fa5b4f6b7e93859b5e9880d1d44aae6f363ab91087715d8f8c456c8"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_0441.csv",
+      "size": 243157,
+      "sha256": "33f4b4f774d1af08ff878906ae8e8e8eb0a0ff091d41f4632cf6b647d3bbebe6"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_0450.csv",
+      "size": 244032,
+      "sha256": "7cbb0187a040532689d68153f841115bcf75757dfc506172f9b627120b9156c2"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_0452.csv",
+      "size": 241863,
+      "sha256": "112e5b5cbf32649e7498765697a13ef5ee7192323ddbaeea32ef82be63f0b860"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_0507.csv",
+      "size": 242953,
+      "sha256": "f3167e709f4424ba73ef633bcc59bf7c5e5cf8c6d5ec4459b98a4f4eec736714"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_0511.csv",
+      "size": 244028,
+      "sha256": "1a6afd9aa072dbe32403265ab2dce8a45fcf925b694e4496bd0e074b7f46ba73"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_0515.csv",
+      "size": 242504,
+      "sha256": "55145d3540af17294afc77f82d2b6487ea9633ada3b6815e2cfc7533cf0d18a7"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_0518.csv",
+      "size": 243333,
+      "sha256": "281f8729e0857a0808c21928b318c669e768ab57217f09c43b994e375f9d2b5b"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_0521.csv",
+      "size": 243007,
+      "sha256": "c9a9b82235f55dc5bf5a736975c918e9be035860667199c6c8432af76e362180"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_0529.csv",
+      "size": 242927,
+      "sha256": "9ced56c35bbd2f7b0f3d2f3481b88793d632ad27721c78c5650c63a287b68f70"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_0530.csv",
+      "size": 244780,
+      "sha256": "58936ed8d5d0dc718b1c8642c7eb1bf1d41f2629b70c42083815d26944e8d3c6"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_0548.csv",
+      "size": 242945,
+      "sha256": "0b342236aeebbfe0a352caad2cf9b3b7ac4899016ba2b0081d900c10bc0e496a"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_0550.csv",
+      "size": 245452,
+      "sha256": "1fd3e31c63088b83e1437f6b642ee76f974f682143221eac64d5e0394f04a27b"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_0552.csv",
+      "size": 244079,
+      "sha256": "967b292f78a2b38922b078381948351acad72345e32fd144e0b4b8efcb64491b"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_0715.csv",
+      "size": 243505,
+      "sha256": "544fdcc9263edc4c9c7813185bd2f11587b90865ea4d278b2cc6e506d72d4230"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_0718.csv",
+      "size": 243164,
+      "sha256": "a559b0cbab0fab726966af339ebd43e5bc9836722d95bd2cedbe5e43deac9bea"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_0721.csv",
+      "size": 242042,
+      "sha256": "98580e9e66c0dee5b5992d70657f5da6d98fd7fd769760e9dcab1378dcafa88d"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_0722.csv",
+      "size": 242911,
+      "sha256": "8ee2a50ce87d31a42a9721aa73d7a9fa5de305a4c8dfc26fbecc4297b76372ee"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_0724.csv",
+      "size": 242805,
+      "sha256": "71da6d92ded22691cd6ef7bac960b21b30dc8d0c1501ace6fd2b22006ff1c111"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_0725.csv",
+      "size": 242464,
+      "sha256": "4774c2896e865d1b0b5a5442fd5dc4b2312dc8c41128377e72b4831a10e252cb"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_0728.csv",
+      "size": 249052,
+      "sha256": "b2006bbae763bf57c4948a8b0bce4d42e8febfb0a3ce1873a907f60c55d85191"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_0729.csv",
+      "size": 248400,
+      "sha256": "357c1e607f83f53479b3a08e6155361c4b0a024c7a5e1dfdbb65fde5afd0b0e9"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_0730.csv",
+      "size": 241740,
+      "sha256": "3ca9e995164fe77879ab295fbca6fef8e8ec8046ebea453ca08c57dbe2ea77de"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_0741.csv",
+      "size": 243224,
+      "sha256": "737fad24e6cdfaa436bcf70da4f96f32f4eaeeec1c82675857f414651c1dc6ef"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_0750.csv",
+      "size": 249105,
+      "sha256": "f550fa380148f33d3e3a64cf4bc37b68f7585f6482cbc5d3606480ed4d268107"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_1118.csv",
+      "size": 244243,
+      "sha256": "d7e2610401a206be25ebb1efda3801fca7928d7f1f0fed0c3e24af3036f96342"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_1121.csv",
+      "size": 243379,
+      "sha256": "5fdbc02ac0c18931b5d7aeed3b90e05492325d80d9f01caebafae5cdd137eff1"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_1124.csv",
+      "size": 245493,
+      "sha256": "1f9e6a3cecdebd5591e50d3af1ef5fbe475f52c85ded3283cfc8d1a8aeb53f39"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_1128.csv",
+      "size": 249068,
+      "sha256": "6baaedf0d38c69eb524480c9b0cfce6a1ad1906b42d64d8add35d91d79cffe97"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_1129.csv",
+      "size": 249096,
+      "sha256": "e1223146c677a319b4cda5a9a3b3ee99482f5f1cd86beee60c7ab719a16b90be"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_1130.csv",
+      "size": 249120,
+      "sha256": "1bba2ef01ee385f065cd6cb9251c06e116dc717d3f4683595208fdd89e2ff570"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_1148.csv",
+      "size": 249053,
+      "sha256": "820ec1a9fb188b25043a545bb830967480d6e01aad4da3d77340bbeaad5fef4d"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_1152.csv",
+      "size": 249046,
+      "sha256": "22364cf5721f01bd99b4868d215a4eadc62ca2bd5c6ef284c9b9749e753c906d"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_1518.csv",
+      "size": 242240,
+      "sha256": "86d3d874ae1a1092a1606a2a363f022a87ece24b07c51cc7560eaa6edd79435b"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_1521.csv",
+      "size": 242191,
+      "sha256": "21b590c400989d8b22c46d5e4f17bfc3e3dbf3a21e218f47ae34a821c57e23cf"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_1522.csv",
+      "size": 244740,
+      "sha256": "576d26881714830a2cce3b2953b76a65db56cb325335472f91d76d4e939a92c7"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_1528.csv",
+      "size": 249046,
+      "sha256": "8aacead38fe02d437a644f31d353100377d17fe6c3d306f34be6e1f0526cff13"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_1529.csv",
+      "size": 249045,
+      "sha256": "cf49fbcd00d5bcab17037eaa77109e5144a01c9d5b52496d478572f99d2d7598"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_1530.csv",
+      "size": 248529,
+      "sha256": "5c7cb4df934b283724554665a2911167d3a61b8b0610df8eb256b9c96d977211"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_1541.csv",
+      "size": 243344,
+      "sha256": "30f7b1a9aee93574320336819f4ddf06d3a8dba2d24017fbde1fb4cdd978da5e"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_1548.csv",
+      "size": 243741,
+      "sha256": "17975e430d108de24341c18762d782666e1c922e6c1d3c8c617343a8cde04c7e"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_1825.csv",
+      "size": 243046,
+      "sha256": "7335c8740e3cf49dd855497c9b5f65370b51b68d539ff772d3be580404d6e946"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_1830.csv",
+      "size": 248216,
+      "sha256": "4f3dfcd2c951a9896fd86674a258413822fd6ed1d72b08c679b62e8e70d3555b"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_1841.csv",
+      "size": 243020,
+      "sha256": "a91e6ae12a56999060e1834795f440d7409289e66519f49d3b5d3429826d5c01"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_1850.csv",
+      "size": 245416,
+      "sha256": "564301c0141eff3daba9e7fb02b3c0c8269c357bc126c276a8c0e60b64e0dac2"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_1852.csv",
+      "size": 244145,
+      "sha256": "25324c51cd207d7f06edb5023663ec70bf431a16ab252910452050d73a00a263"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_2124.csv",
+      "size": 242070,
+      "sha256": "7c1c87b35653a880e60a909100d5ead082fd2c0aad18d2b3c7b8083316baa78d"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_2128.csv",
+      "size": 244232,
+      "sha256": "4232f38b666fa1c96c7c4cc8d4fcfb93b36485bc49fe22bd8e4d71f96c61faa5"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_2130.csv",
+      "size": 244523,
+      "sha256": "0ddf0f94bda5436818129e231c669e10e2ce0d86feed8d61d755d2d40c1fa9cd"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_2141.csv",
+      "size": 243099,
+      "sha256": "463b5d2a718f0dd6c52245ac60fa37c6aec6855d39c7b2d5a45f742772ede580"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_2145.csv",
+      "size": 244826,
+      "sha256": "115e30d3c7a4e0926085a0b771a3f51ada2ea87625d66709cea440180d250a16"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_2148.csv",
+      "size": 243064,
+      "sha256": "3941a36b3f5b41cb8ca89a3c12370883c7f872c55340b4ce7b5266d403db4007"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_2152.csv",
+      "size": 245383,
+      "sha256": "7194cbe8b4cb4db669a5c1fdc45a4745afb84a2b901b09c7124d4416c6691f64"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_2225.csv",
+      "size": 243431,
+      "sha256": "db666998d6e7938b206cf4d2f80aaa37c97757028ab026a4619e6e61bf4f63d4"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_2245.csv",
+      "size": 249126,
+      "sha256": "9c431ea1978aec3ab3f412d07556c8365733fcb0147b64d539451c05c4d6934d"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_2250.csv",
+      "size": 242000,
+      "sha256": "18d9872ef8ce65239b4535502598e95bf4ce9dd82b807fa4a986bb3c6320789f"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_2252.csv",
+      "size": 249077,
+      "sha256": "a325008ecf723367270f8f90813f4cf51448ea903c627d63efe0b38ea496005b"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_2425.csv",
+      "size": 247289,
+      "sha256": "de02d38cf95e3b4a8e2961138ce5be44d79d6bf2c5d67bb3b160ec7882508668"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_2529.csv",
+      "size": 249074,
+      "sha256": "7a382394405012a2fa189656e16a3009829fb84b24d53f81a2f64501227b5fa9"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_2530.csv",
+      "size": 243972,
+      "sha256": "449570a6494f07ff050d4dc4d684a715c89f951d709145d9cbd1f6461d85c660"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_2550.csv",
+      "size": 249117,
+      "sha256": "19842318dd1f528a7ffd9c3160e8b23a777d0b6a6a516a8396eef131e6caa6e8"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_2848.csv",
+      "size": 249030,
+      "sha256": "82a3f8524c780e1bdb45324e36f45ffec0c6999f836950b4c901937dccd6837f"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_2850.csv",
+      "size": 249063,
+      "sha256": "85292ca2bcd79914b7f5db75971fd2b74be8658218e761e0c4c427ee35e39c44"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_2852.csv",
+      "size": 243341,
+      "sha256": "c5d7719436bcc0889b196d125100ebca6e4a69c1c26b061aa86a64f3574f51a2"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_2948.csv",
+      "size": 248460,
+      "sha256": "91581ae606126f2dc12d7c37dfc0a4b3f0357734d4a0e070285b35710722c24b"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_3041.csv",
+      "size": 242377,
+      "sha256": "7184462835d3894eb312adcc25959a768bc2f3a6b9c1477c01750b4bc04c4e42"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_3045.csv",
+      "size": 246669,
+      "sha256": "aa20db98a38a174cb618b27bd32d0d604c17e60ce7560ee19099d7de69e10daf"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_3052.csv",
+      "size": 249070,
+      "sha256": "1c50d22e9c25b82634166f0f4ecb3a24633d881c85bdcabb62dfb9dfb18c2f1a"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_4145.csv",
+      "size": 245879,
+      "sha256": "e30e0f749bc8565fb0821c53ba1c65e456fe56c057a614841a042de8cb382a1e"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_4150.csv",
+      "size": 248899,
+      "sha256": "5d4d5ca1b1c29cb179741545d4584da36663b2105d080454d94a4720406e58a0"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_4152.csv",
+      "size": 243248,
+      "sha256": "da3950998ade0258ec97fe373ad9e9e21687a3a29103ebbbd2b851598278a159"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/dataset_v7/public/spectra/PG_4850.csv",
+      "size": 248866,
+      "sha256": "6f422532054fe8a3046720c3d4c8fc54270e11555c9340efeb22c55410479f3e"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/download_raw_scans_ranges.ps1",
+      "size": 3828,
+      "sha256": "a8d8a55aad239837853e1db9383991157156cc0b19afc40f60116ecfe4b220c2"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/download_refinement_pkls_ranges.ps1",
+      "size": 3728,
+      "sha256": "de1347e1346f935f05999ad7b826166f97826f6a4ee453f8f974325f612a1739"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/external_runners/run_crystalshift_open.jl",
+      "size": 7936,
+      "sha256": "a533b0af4a087e8618eb5f95457e7d9f706e8d38051425d2ec56fd84129832c1"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/external_runners/run_crystalshift_panel.py",
+      "size": 11150,
+      "sha256": "eb39ded8845a4217fe8dc23bb66f0a915e762e26146853751ab17fa3816c7531"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/make_cases_precursor_genome.py",
+      "size": 7261,
+      "sha256": "26ea09c1d8e631e18927c111a1cb2292495c88b195faf1a43dec252befb794b9"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/prepare_precursor_genome_benchmark.py",
+      "size": 18424,
+      "sha256": "9b5958a2726c9a24b5c225c1202ea64070048790baf49a1ba70a0b7646cf8ff5"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/profile_baseline_repeat_v2/candidate_predictions.csv",
+      "size": 751014,
+      "sha256": "a11aef0bb56877139f4c1d133b088069018af73c3a93603b58ab75419cd162fe"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/profile_baseline_repeat_v2/case_scores.csv",
+      "size": 31925,
+      "sha256": "2bdedc325ad638a02bfaccb23d578ecd107f807aba2257b6f244809fbb06846f"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/profile_baseline_repeat_v2/execution_status.json",
+      "size": 609,
+      "sha256": "ce7bcc09d7ed77f5c4b90a17e6a407a98e9d42d38e4a4c91aae9ca232e87fceb"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/profile_baseline_repeat_v2/fixed_output_candidate_predictions.csv",
+      "size": 751014,
+      "sha256": "a11aef0bb56877139f4c1d133b088069018af73c3a93603b58ab75419cd162fe"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/profile_baseline_repeat_v2/fixed_output_case_scores.csv",
+      "size": 31983,
+      "sha256": "6094600d391bd0265b952d7e4ceff583a44cf40e379f8e3dfe30e0bf5c8cf2f1"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/profile_baseline_run_v8/candidate_predictions.csv",
+      "size": 751014,
+      "sha256": "a11aef0bb56877139f4c1d133b088069018af73c3a93603b58ab75419cd162fe"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/profile_baseline_run_v8/case_scores.csv",
+      "size": 31925,
+      "sha256": "2bdedc325ad638a02bfaccb23d578ecd107f807aba2257b6f244809fbb06846f"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/profile_baseline_run_v8/execution_status.json",
+      "size": 609,
+      "sha256": "ce7bcc09d7ed77f5c4b90a17e6a407a98e9d42d38e4a4c91aae9ca232e87fceb"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/profile_baseline_run_v8/fixed_output_candidate_predictions.csv",
+      "size": 751014,
+      "sha256": "a11aef0bb56877139f4c1d133b088069018af73c3a93603b58ab75419cd162fe"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/profile_baseline_run_v8/fixed_output_case_scores.csv",
+      "size": 31983,
+      "sha256": "6094600d391bd0265b952d7e4ceff583a44cf40e379f8e3dfe30e0bf5c8cf2f1"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/requirements-handoff.txt",
+      "size": 75,
+      "sha256": "1388cd1dca77b35484ea6c16a12cb40eab373d49b7ec5cda81cc1d7106871dc2"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/run_profile_baseline_panel.py",
+      "size": 6622,
+      "sha256": "9d450bba00d8148f62081e2bed8009a139133925035d061d7598e3bf28640568"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/run_xdecomposer_profile_panel.py",
+      "size": 9246,
+      "sha256": "7b4ca19358885404fa928acb628814478d0ce3fd0bf471d8f00fee9dc607d62b"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/sanitize_score_json_paths.py",
+      "size": 1297,
+      "sha256": "04eb10d27b6e3016d69172d21796200b7dc781327d145f8222b4db9d10fbda88"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/score_precursor_genome.py",
+      "size": 3727,
+      "sha256": "755ea6061949c9b20f70236bc65a7fc3c743a5311b68c7f8f722dc602b3c9c1a"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/score_precursor_genome_sensitivity.py",
+      "size": 5406,
+      "sha256": "e1e125af948a086f437153249954165190a3f8e0008292ce50ff89e4b55d6b0a"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/score_two_endpoints.py",
+      "size": 24562,
+      "sha256": "bc14146365c44dab6a4242104f2e830bd2dc167214059e283fcdd1bae97e165f"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/scores_v8/crystalshift_ranking_cases.csv",
+      "size": 62597,
+      "sha256": "c0e3ba20bdbbf9b81b9a35c13a5c353d97967069590df396b313d1b8336b2be7"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/scores_v8/crystalshift_scorecard.json",
+      "size": 12263,
+      "sha256": "1040df6801725270af3f37d4a323fd3bc5a7ca9ab4a7e114086a870af9dd3201"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/scores_v8/crystalshift_unknown_cases.csv",
+      "size": 88989,
+      "sha256": "d189bb51f8862ad4a2cd44a3c8fdb2211dc3d10a08fb350cbfaf45e028740210"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/scores_v8/profile_baseline_ranking_cases.csv",
+      "size": 52774,
+      "sha256": "4d01c7703e1c5ec5c5a16a783ce1f958fa229fc5e250aa8955813f2d3e879ace"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/scores_v8/profile_baseline_scorecard.json",
+      "size": 12186,
+      "sha256": "aff304d932110da66692bf72b5411a577217798a0195eb84e6bb2ee30e1b0253"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/scores_v8/profile_baseline_unknown_cases.csv",
+      "size": 89659,
+      "sha256": "5bdc0c0d518f7ed98fee822cffa6f1c4849e047235a3560a719537adf9176072"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/scores_v8/summary.json",
+      "size": 41163,
+      "sha256": "9cdcbdf0a8bad19ac6414e164fab3f1784b82bc4f7cc5125ba471385ad7f65a9"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/scores_v8/xdecomposer_ranking_cases.csv",
+      "size": 51979,
+      "sha256": "45048017f9b46da5102513d8f64f9414a3fd5d8cbeba86efb8cd49774f034edd"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/scores_v8/xdecomposer_scorecard.json",
+      "size": 12155,
+      "sha256": "265ccc207dece3d53a2bbae2f48c9006cc6947f95e32881e95874398d8194d5d"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/scores_v8/xdecomposer_unknown_cases.csv",
+      "size": 89194,
+      "sha256": "602e1e5331db51e874b540e2695b3283a741a680e8ceab8d9a70101743bc7508"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/select_precursor_genome.py",
+      "size": 10882,
+      "sha256": "fb16ee7c3a9e56985bb031bb3f9e0ddb473139c215001f4c6c9485d4f59f5b08"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/selection_v3/SELECTION_MANIFEST.json",
+      "size": 2657,
+      "sha256": "f890cf31d347cb7c71fad5010fbb046e13ecbd4d6ab2017aff559f87cd6dc408"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/selection_v3/eligible_samples.csv",
+      "size": 526271,
+      "sha256": "148e289493b94fca2d1564d11b6262db8d5ef5672a00c4179baf47181d0e396b"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/selection_v3/phase_frequency.csv",
+      "size": 19064,
+      "sha256": "0cbe24fbc2d945bc1a172a4caefa30a6d260c6b8420aba7dec5332c18fe78368"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/selection_v3/query_manifest.csv",
+      "size": 58194,
+      "sha256": "dc4979f45a72a23d736de023df4246438edde434f765407b7c90005002ae36a4"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/selection_v3/reference_manifest.csv",
+      "size": 4933,
+      "sha256": "83040d25f5c7bacda9116c616e43055ad2be0f8b568b78b38192eafb75c0a658"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/sensitivity_v8/omitted_weight_ge_005_crystalshift.json",
+      "size": 12051,
+      "sha256": "aa224c62ec6aaebec759230661b29c808c7b1ffb3f1decf7451b68b899df9737"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/sensitivity_v8/omitted_weight_ge_005_profile_baseline.json",
+      "size": 12003,
+      "sha256": "161a5c44fdfde5af764d5ddd42bd29ed79689bd38f80db2d307d9b9aa05aacf3"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/sensitivity_v8/omitted_weight_ge_005_xdecomposer.json",
+      "size": 11969,
+      "sha256": "f323230e65407eb0e3101a4c96bcd00c881777f374d89091db972e494066d7ac"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/sensitivity_v8/quality_1_crystalshift.json",
+      "size": 11295,
+      "sha256": "3a308c0e0fe8e0d737a41e3e5133c084a5c324808e4502e915743786622f561e"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/sensitivity_v8/quality_1_profile_baseline.json",
+      "size": 11305,
+      "sha256": "71705b4dfd4a3cd7d0821de13478d0dea7ec23af3bc62448ae509ef570c59ea5"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/sensitivity_v8/quality_1_xdecomposer.json",
+      "size": 11512,
+      "sha256": "bff437a7e57edd30890f7e2a6569d7de85f51ec7eaa436484a45d81e830bc1c0"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/sensitivity_v8/summary.json",
+      "size": 73364,
+      "sha256": "791a3bbf445a62a8523654cd0266c8951e36ea7017a74b8802d8dbc4d8a3faba"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/sensitivity_v8/unreacted_only_crystalshift.json",
+      "size": 11830,
+      "sha256": "476d877d6181e829bc35b0d387203f9f77a24fb5643b4bd83ec1a2459233fb6a"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/sensitivity_v8/unreacted_only_profile_baseline.json",
+      "size": 11992,
+      "sha256": "fe1aeebf70bc1ccbea7f89df2b8b0025f960a1d899d2f2547ae2e91689a6bfcc"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/sensitivity_v8/unreacted_only_xdecomposer.json",
+      "size": 11971,
+      "sha256": "584da05994dff583cc753fcd642a615a57f0b769f2b76a1b50fd246a760f874d"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/verify_outputs.py",
+      "size": 4869,
+      "sha256": "9057568019c90b1bf2037b00e8f41afb20ca1041e46544270555b8dc446eb5e0"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/xdecomposer_repeat_v2/candidate_predictions.csv",
+      "size": 741087,
+      "sha256": "97c2cd66717025283b43f13eb47be45b550918e749844d8da5378635353fd2a8"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/xdecomposer_repeat_v2/case_scores.csv",
+      "size": 31663,
+      "sha256": "f801f7e4824a8c7c169711ac92869791c740c513f55121da0237b3f039006d07"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/xdecomposer_repeat_v2/execution_status.json",
+      "size": 565,
+      "sha256": "2d21c5318350a91b36b3a62555ee2d26ead2e174159443cce336b9a55f5b0d45"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/xdecomposer_repeat_v2/fixed_output_candidate_predictions.csv",
+      "size": 741087,
+      "sha256": "97c2cd66717025283b43f13eb47be45b550918e749844d8da5378635353fd2a8"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/xdecomposer_repeat_v2/fixed_output_case_scores.csv",
+      "size": 31663,
+      "sha256": "91995532c4ec7a91244f86a66751107932fddd18e311f2aa53ddb758aa7ef242"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/xdecomposer_run_v8/candidate_predictions.csv",
+      "size": 741087,
+      "sha256": "97c2cd66717025283b43f13eb47be45b550918e749844d8da5378635353fd2a8"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/xdecomposer_run_v8/case_scores.csv",
+      "size": 31663,
+      "sha256": "f801f7e4824a8c7c169711ac92869791c740c513f55121da0237b3f039006d07"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/xdecomposer_run_v8/execution_status.json",
+      "size": 565,
+      "sha256": "2d21c5318350a91b36b3a62555ee2d26ead2e174159443cce336b9a55f5b0d45"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/xdecomposer_run_v8/fixed_output_candidate_predictions.csv",
+      "size": 741087,
+      "sha256": "97c2cd66717025283b43f13eb47be45b550918e749844d8da5378635353fd2a8"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/xdecomposer_run_v8/fixed_output_case_scores.csv",
+      "size": 31663,
+      "sha256": "91995532c4ec7a91244f86a66751107932fddd18e311f2aa53ddb758aa7ef242"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/zenodo_record_21285546.json",
+      "size": 6541,
+      "sha256": "ee52b8d5caf2412973f475e31a29ad285c4c7280a307adc8a902c4d01272e110"
+    },
+    {
+      "path": "evidence/open-library-precursor-genome-v0.8/zip_range_reader.py",
+      "size": 3436,
+      "sha256": "63af315ca12983cec9d2315cd41dab5f64c10ca10ce20cc4d00f9eb0d6508659"
+    },
+    {
       "path": "evidence/structure-audit/README.md",
       "size": 1030,
       "sha256": "c79d98ca7f591a161ec6e16593a9175a41b6d718a17ff69365e0ffe6b47c0c94"
@@ -356,7 +2116,7 @@
     {
       "path": "pyproject.toml",
       "size": 1194,
-      "sha256": "54b6ce552cc26edda161fbb60e459e1f8e7199a4ed95f8dedd5c91aef4a11c5a"
+      "sha256": "02f550fa5f278aa43aa5aad64b57b94c11a1c854613cfe80a71e5726d9738069"
     },
     {
       "path": "requirements.txt",
@@ -692,6 +2452,11 @@
       "path": "tests/test_external_stress.py",
       "size": 4212,
       "sha256": "91b5eee263af2b4f364a64c5a2ac205c5a89e4e78e7f411c08a65b4480ac4e14"
+    },
+    {
+      "path": "tests/test_open_library_panel.py",
+      "size": 2643,
+      "sha256": "865c59bc8b64c13d071c7db3704c617f4f314f536f2de2becd8a73535d18fed3"
     },
     {
       "path": "tests/test_phase_labels.py",

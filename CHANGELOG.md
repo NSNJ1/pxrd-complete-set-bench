@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.8.0 - 2026-11-27
+
+- Add a 102-reaction Precursor Genome open-library intervention with 20
+  candidate families and 418 closed, true-omission and absent-omission cases.
+- Compare actual reduced-library evidence with complete-residual reuse and an
+  unavailable omitted-candidate shortcut for a profile control, CrystalShift
+  and XDecomposer.
+- Repeat all 21 CrystalShift library runs byte-for-byte and audit 9,855 release
+  conditions.
+- Prespecify quality-1, unreacted-reaction and 5%-phase-weight sensitivities.
+- Record that 77 of 102 Precursor Genome query IDs were already used by the
+  project's closed-library benchmark and only 25 are new; this panel is a new
+  intervention, not a fresh external source.
+
 ## 0.7.0 - 2026-11-24
 
 - Add a license-safe NASA CheMin v0.2 external benchmark with 44 measured

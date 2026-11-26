@@ -1,0 +1,12 @@
+{
+  "status": "precursor_genome_xdecomposer_profile_panel_complete",
+  "method": "XDecomposer official V_0.0.1",
+  "source": "precursor_genome",
+  "queries": 102,
+  "cases": 418,
+  "candidate_rows": 8044,
+  "device": "cuda",
+  "candidate_predictions_sha256": "97c2cd66717025283b43f13eb47be45b550918e749844d8da5378635353fd2a8",
+  "case_scores_sha256": "f801f7e4824a8c7c169711ac92869791c740c513f55121da0237b3f039006d07",
+  "claim_boundary": "Official model components correlate against source-derived reference profiles from reactions excluded from the query set."
+}

@@ -7,8 +7,8 @@ authors:
     given-names: "Tianxiang"
     alias: "NSNJ1"
     website: "https://github.com/NSNJ1"
-version: "0.7.0"
-date-released: "2026-11-24"
+version: "0.8.0"
+date-released: "2026-11-27"
 repository-code: "https://github.com/NSNJ1/pxrd-complete-set-bench"
 url: "https://github.com/NSNJ1/pxrd-complete-set-bench"
 doi: "10.5281/zenodo.24374677"
@@ -21,7 +21,7 @@ keywords:
   - benchmark
   - reproducibility
 abstract: >-
-  A source-stratified benchmark for complete reference-set review from measured
-  multiphase powder X-ray diffraction patterns under a fixed candidate library
-  and review budget. It reports candidate-scale, source, tie and endpoint
+  A source-stratified benchmark for complete phase-set review and
+  deployment-available evidence in measured multiphase powder X-ray
+  diffraction. It reports candidate-scale, source, tie, library and endpoint
   sensitivity alongside retrieval performance.

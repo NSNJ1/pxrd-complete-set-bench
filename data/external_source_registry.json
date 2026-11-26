@@ -1,6 +1,6 @@
 {
   "status": "external_source_validation_v1",
-  "claim_boundary": "All three entries are retrospective external tests, not prospective validation. opXRD-EMPA and RealBind share an underlying opXRD lineage; CheMin has independent measured queries but partially overlapping candidate structures. Scores are not pooled.",
+  "claim_boundary": "All entries are retrospective tests, not prospective validation. opXRD-EMPA and RealBind share an underlying opXRD lineage; CheMin has independent measured queries but partially overlapping candidate structures; the Precursor Genome open panel overlaps the earlier closed-library cohort in 77/102 query IDs. Scores are not pooled.",
   "sources": {
     "opxrd_empa_multiphase": {
       "role": "external retrospective measured two-phase cohort",
@@ -66,6 +66,25 @@
       "evaluation_archive_sha256": "c566d4132a3964107310d11a17aa7eaf4acc611123aeb4ad453b422107d27203",
       "evidence_gate": "failed_against_leave_group_out_frequency_prior",
       "reproduction": "chemin_evaluation_and_public_handoff_repeat_exact_match"
+    },
+    "precursor_genome_open_library": {
+      "role": "previously consumed source; new open-library intervention",
+      "doi": "10.5281/zenodo.21285546",
+      "license": "CC BY 4.0",
+      "dataset_manifest_sha256": "6983ea3e4a40ddadeb746717e939e1e4c16f695bce871c5467e02a6ecd2d23d5",
+      "cases_manifest_sha256": "0cc0c3195cbacde81c7f8054ee94ce5d2a39970a39d624ba4ddfe4cb54601e52",
+      "queries": 102,
+      "candidate_families": 20,
+      "cases": 418,
+      "case_phase_truth_rows": 8044,
+      "prior_project_query_overlap": 77,
+      "new_query_ids": 25,
+      "score_summary_sha256": "9cdcbdf0a8bad19ac6414e164fab3f1784b82bc4f7cc5125ba471385ad7f65a9",
+      "sensitivity_summary_sha256": "791a3bbf445a62a8523654cd0266c8951e36ea7017a74b8802d8dbc4d8a3faba",
+      "release_audit_sha256": "bbae068e9f54c33a783b20fd77097a90e17a61f0cce6ad96b9fbab90519e4215",
+      "release_checks_passed": 9855,
+      "evidence_directory": "evidence/open-library-precursor-genome-v0.8",
+      "independence_gate": "not_a_fresh_source; 77/102 queries previously consumed"
     }
   }
 }

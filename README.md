@@ -41,6 +41,10 @@ screening and within-shortlist ranking separately.
   mixtures, 20 candidates per query, including three-phase cases.
 - A partial-submission scorer that counts missing outputs as failures and
   reports candidate, query and positive coverage.
+- A 102-reaction Precursor Genome open-library intervention with 20 candidates,
+  418 cases, three method profiles and repeat-identical 21-library execution.
+  This source was previously used by the project: 77/102 query IDs overlap the
+  old closed-library cohort and 25 are new.
 - Frozen 10,000-resample results and a one-command reproduction check.
 
 The core score table does not redistribute raw spectra or complete CIF
@@ -189,6 +193,8 @@ The new-release replay is in
 [docs/external-fresh-release-replay.md](docs/external-fresh-release-replay.md).
 The CheMin benchmark is in
 [docs/chemin-cod-external-v0.2.md](docs/chemin-cod-external-v0.2.md).
+The open-library third measured panel and its reuse audit are in
+[docs/open-library-precursor-genome-v0.8.md](docs/open-library-precursor-genome-v0.8.md).
 Candidate structure reuse is documented in
 [docs/structure-overlap-audit.md](docs/structure-overlap-audit.md).
 
@@ -236,6 +242,9 @@ clusters, labels, and bootstrap settings. See
 - The two 20-candidate stress panels are local adapted executions, not
   independent runs. The XCA panel is an already consumed thin-film cohort and
   contains no three-phase query.
+- The Precursor Genome open-library source was already consumed by the
+  closed-library benchmark. Its 102-query panel adds 25 new query IDs and 77
+  reused query IDs; it is not a fresh external or prospective cohort.
 - Published learned methods were not all executable under this exact contract.
   No unexecuted method is assigned a numeric result.
 - Candidate libraries are not structure-disjoint across every source. Results

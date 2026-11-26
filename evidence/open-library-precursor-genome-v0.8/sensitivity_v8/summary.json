@@ -1,0 +1,1953 @@
+{
+  "status": "precursor_genome_sensitivity_complete",
+  "freeze": "SENSITIVITY_FREEZE_20261127.md",
+  "scenarios": {
+    "quality_1": {
+      "queries": 80,
+      "clusters": 80,
+      "cases": 328,
+      "true_omission_cases": 168,
+      "absent_omission_cases": 80,
+      "methods": {
+        "profile_baseline": {
+          "ranking": {
+            "omission_cases": 248,
+            "all_candidate_order_changed": 0,
+            "all_candidate_order_change_rate": 0.0,
+            "true_omission_cases": 168,
+            "true_omission_order_changed": 0,
+            "true_subset_order_changed": 0,
+            "true_subset_order_eligible_cases": 24,
+            "true_subset_order_change_rate": 0.0,
+            "all_omission_true_subset_order_changed": 0,
+            "all_omission_true_subset_order_eligible_cases": 104,
+            "true_pair_reversal_cases": 0,
+            "by_condition": {
+              "omit_present": {
+                "cases": 168,
+                "candidate_order_changed": 0,
+                "true_subset_order_eligible_cases": 24,
+                "true_subset_order_changed": 0
+              },
+              "omit_absent": {
+                "cases": 80,
+                "candidate_order_changed": 0,
+                "true_subset_order_eligible_cases": 80,
+                "true_subset_order_changed": 0
+              }
+            },
+            "median_spearman": 1.0,
+            "minimum_spearman": 0.9999999999999999,
+            "max_abs_score_difference": 0.0
+          },
+          "unknown": {
+            "actual": {
+              "all": {
+                "cases": 328,
+                "positives": 168,
+                "negatives": 160,
+                "auroc": 0.7076264880952381,
+                "average_precision": 0.741296903675686,
+                "far_05": {
+                  "negative_false_alarm_rate": 0.05,
+                  "unknown_detection_rate": 0.22023809523809523,
+                  "silent_completion_rate": 0.7797619047619048
+                },
+                "far_10": {
+                  "negative_false_alarm_rate": 0.05,
+                  "unknown_detection_rate": 0.22023809523809523,
+                  "silent_completion_rate": 0.7797619047619048
+                }
+              },
+              "far05": {
+                "negative_false_alarm_rate": 0.05,
+                "unknown_detection_rate": 0.22023809523809523,
+                "silent_completion_rate": 0.7797619047619048
+              },
+              "far10": {
+                "negative_false_alarm_rate": 0.1,
+                "unknown_detection_rate": 0.42857142857142855,
+                "silent_completion_rate": 0.5714285714285714
+              },
+              "against_closed": {
+                "cases": 248,
+                "positives": 168,
+                "negatives": 80,
+                "auroc": 0.7076264880952381,
+                "average_precision": 0.843630603417102,
+                "far_05": {
+                  "negative_false_alarm_rate": 0.05,
+                  "unknown_detection_rate": 0.22023809523809523,
+                  "silent_completion_rate": 0.7797619047619048
+                },
+                "far_10": {
+                  "negative_false_alarm_rate": 0.05,
+                  "unknown_detection_rate": 0.22023809523809523,
+                  "silent_completion_rate": 0.7797619047619048
+                }
+              },
+              "against_absent_omission": {
+                "cases": 248,
+                "positives": 168,
+                "negatives": 80,
+                "auroc": 0.7076264880952381,
+                "average_precision": 0.843630603417102,
+                "far_05": {
+                  "negative_false_alarm_rate": 0.05,
+                  "unknown_detection_rate": 0.22023809523809523,
+                  "silent_completion_rate": 0.7797619047619048
+                },
+                "far_10": {
+                  "negative_false_alarm_rate": 0.05,
+                  "unknown_detection_rate": 0.22023809523809523,
+                  "silent_completion_rate": 0.7797619047619048
+                }
+              }
+            },
+            "fixed_full_residual": {
+              "all": {
+                "cases": 328,
+                "positives": 168,
+                "negatives": 160,
+                "auroc": 0.5092261904761904,
+                "average_precision": 0.5161754826822414,
+                "far_05": {
+                  "negative_false_alarm_rate": 0.05,
+                  "unknown_detection_rate": 0.047619047619047616,
+                  "silent_completion_rate": 0.9523809523809523
+                },
+                "far_10": {
+                  "negative_false_alarm_rate": 0.05,
+                  "unknown_detection_rate": 0.047619047619047616,
+                  "silent_completion_rate": 0.9523809523809523
+                }
+              },
+              "far05": {
+                "negative_false_alarm_rate": 0.05,
+                "unknown_detection_rate": 0.047619047619047616,
+                "silent_completion_rate": 0.9523809523809523
+              },
+              "far10": {
+                "negative_false_alarm_rate": 0.1,
+                "unknown_detection_rate": 0.09523809523809523,
+                "silent_completion_rate": 0.9047619047619048
+              }
+            },
+            "unavailable_omitted_percentile": {
+              "all": {
+                "cases": 328,
+                "positives": 168,
+                "negatives": 160,
+                "auroc": 0.9656622023809524,
+                "average_precision": 0.9605797421351301,
+                "far_05": {
+                  "negative_false_alarm_rate": 0.04375,
+                  "unknown_detection_rate": 0.75,
+                  "silent_completion_rate": 0.25
+                },
+                "far_10": {
+                  "negative_false_alarm_rate": 0.04375,
+                  "unknown_detection_rate": 0.75,
+                  "silent_completion_rate": 0.25
+                }
+              },
+              "far05": {
+                "negative_false_alarm_rate": 0.04375,
+                "unknown_detection_rate": 0.75,
+                "silent_completion_rate": 0.25
+              },
+              "far10": {
+                "negative_false_alarm_rate": 0.0875,
+                "unknown_detection_rate": 0.8571428571428571,
+                "silent_completion_rate": 0.1428571428571429
+              }
+            }
+          },
+          "bootstrap": {
+            "actual_auroc": {
+              "median": 0.7082100591715976,
+              "ci95": [
+                0.6872844201082597,
+                0.7268296585733178
+              ],
+              "finite_replicates": 10000
+            },
+            "fixed_auroc": {
+              "median": 0.5088815789473684,
+              "ci95": [
+                0.502391975308642,
+                0.5169439011527474
+              ],
+              "finite_replicates": 10000
+            },
+            "percentile_auroc": {
+              "median": 0.9660191476985787,
+              "ci95": [
+                0.9510229017145135,
+                0.9786934795182363
+              ],
+              "finite_replicates": 10000
+            },
+            "actual_minus_fixed": {
+              "median": 0.19906994047619042,
+              "ci95": [
+                0.17977941176470602,
+                0.21656832968678036
+              ],
+              "finite_replicates": 10000
+            },
+            "actual_minus_percentile": {
+              "median": -0.25778443113772465,
+              "ci95": [
+                -0.283328499251497,
+                -0.23236949060693626
+              ],
+              "finite_replicates": 10000
+            },
+            "all_candidate_order_change_rate": {
+              "median": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "finite_replicates": 10000
+            },
+            "true_subset_order_change_rate": {
+              "median": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "finite_replicates": 9999
+            }
+          }
+        },
+        "crystalshift": {
+          "ranking": {
+            "omission_cases": 248,
+            "all_candidate_order_changed": 155,
+            "all_candidate_order_change_rate": 0.625,
+            "true_omission_cases": 168,
+            "true_omission_order_changed": 138,
+            "true_subset_order_changed": 3,
+            "true_subset_order_eligible_cases": 24,
+            "true_subset_order_change_rate": 0.125,
+            "all_omission_true_subset_order_changed": 3,
+            "all_omission_true_subset_order_eligible_cases": 104,
+            "true_pair_reversal_cases": 3,
+            "by_condition": {
+              "omit_present": {
+                "cases": 168,
+                "candidate_order_changed": 138,
+                "true_subset_order_eligible_cases": 24,
+                "true_subset_order_changed": 3
+              },
+              "omit_absent": {
+                "cases": 80,
+                "candidate_order_changed": 17,
+                "true_subset_order_eligible_cases": 80,
+                "true_subset_order_changed": 0
+              }
+            },
+            "median_spearman": 0.9035087719298245,
+            "minimum_spearman": -0.5631578947368421,
+            "max_abs_score_difference": 1.0
+          },
+          "unknown": {
+            "actual": {
+              "all": {
+                "cases": 328,
+                "positives": 168,
+                "negatives": 160,
+                "auroc": 0.7997395833333333,
+                "average_precision": 0.8373787405211632,
+                "far_05": {
+                  "negative_false_alarm_rate": 0.05,
+                  "unknown_detection_rate": 0.5,
+                  "silent_completion_rate": 0.5
+                },
+                "far_10": {
+                  "negative_false_alarm_rate": 0.05,
+                  "unknown_detection_rate": 0.5,
+                  "silent_completion_rate": 0.5
+                }
+              },
+              "far05": {
+                "negative_false_alarm_rate": 0.05,
+                "unknown_detection_rate": 0.5,
+                "silent_completion_rate": 0.5
+              },
+              "far10": {
+                "negative_false_alarm_rate": 0.1,
+                "unknown_detection_rate": 0.5654761904761905,
+                "silent_completion_rate": 0.43452380952380953
+              },
+              "against_closed": {
+                "cases": 248,
+                "positives": 168,
+                "negatives": 80,
+                "auroc": 0.8005208333333335,
+                "average_precision": 0.9042841033943745,
+                "far_05": {
+                  "negative_false_alarm_rate": 0.05,
+                  "unknown_detection_rate": 0.5,
+                  "silent_completion_rate": 0.5
+                },
+                "far_10": {
+                  "negative_false_alarm_rate": 0.05,
+                  "unknown_detection_rate": 0.5,
+                  "silent_completion_rate": 0.5
+                }
+              },
+              "against_absent_omission": {
+                "cases": 248,
+                "positives": 168,
+                "negatives": 80,
+                "auroc": 0.7989583333333333,
+                "average_precision": 0.9025268998221279,
+                "far_05": {
+                  "negative_false_alarm_rate": 0.05,
+                  "unknown_detection_rate": 0.5,
+                  "silent_completion_rate": 0.5
+                },
+                "far_10": {
+                  "negative_false_alarm_rate": 0.05,
+                  "unknown_detection_rate": 0.5,
+                  "silent_completion_rate": 0.5
+                }
+              }
+            },
+            "fixed_full_residual": {
+              "all": {
+                "cases": 328,
+                "positives": 168,
+                "negatives": 160,
+                "auroc": 0.5038690476190475,
+                "average_precision": 0.5123797189548008,
+                "far_05": {
+                  "negative_false_alarm_rate": 0.05,
+                  "unknown_detection_rate": 0.047619047619047616,
+                  "silent_completion_rate": 0.9523809523809523
+                },
+                "far_10": {
+                  "negative_false_alarm_rate": 0.05,
+                  "unknown_detection_rate": 0.047619047619047616,
+                  "silent_completion_rate": 0.9523809523809523
+                }
+              },
+              "far05": {
+                "negative_false_alarm_rate": 0.05,
+                "unknown_detection_rate": 0.047619047619047616,
+                "silent_completion_rate": 0.9523809523809523
+              },
+              "far10": {
+                "negative_false_alarm_rate": 0.1,
+                "unknown_detection_rate": 0.09523809523809523,
+                "silent_completion_rate": 0.9047619047619048
+              }
+            },
+            "unavailable_omitted_percentile": {
+              "all": {
+                "cases": 328,
+                "positives": 168,
+                "negatives": 160,
+                "auroc": 0.939248511904762,
+                "average_precision": 0.9500939380239892,
+                "far_05": {
+                  "negative_false_alarm_rate": 0.04375,
+                  "unknown_detection_rate": 0.8035714285714286,
+                  "silent_completion_rate": 0.1964285714285714
+                },
+                "far_10": {
+                  "negative_false_alarm_rate": 0.04375,
+                  "unknown_detection_rate": 0.8035714285714286,
+                  "silent_completion_rate": 0.1964285714285714
+                }
+              },
+              "far05": {
+                "negative_false_alarm_rate": 0.04375,
+                "unknown_detection_rate": 0.8035714285714286,
+                "silent_completion_rate": 0.1964285714285714
+              },
+              "far10": {
+                "negative_false_alarm_rate": 0.1,
+                "unknown_detection_rate": 0.8333333333333334,
+                "silent_completion_rate": 0.16666666666666663
+              }
+            }
+          },
+          "bootstrap": {
+            "actual_auroc": {
+              "median": 0.8009374675504483,
+              "ci95": [
+                0.7695674067519018,
+                0.8309888915351117
+              ],
+              "finite_replicates": 10000
+            },
+            "fixed_auroc": {
+              "median": 0.5036442356850717,
+              "ci95": [
+                0.49754464285714284,
+                0.5110748551065163
+              ],
+              "finite_replicates": 10000
+            },
+            "percentile_auroc": {
+              "median": 0.9398507677158336,
+              "ci95": [
+                0.9162942752887082,
+                0.960193574903764
+              ],
+              "finite_replicates": 10000
+            },
+            "actual_minus_fixed": {
+              "median": 0.29693147590361446,
+              "ci95": [
+                0.26636791640647967,
+                0.32716446893063583
+              ],
+              "finite_replicates": 10000
+            },
+            "actual_minus_percentile": {
+              "median": -0.1386503705384149,
+              "ci95": [
+                -0.1715301647403594,
+                -0.10564014182273526
+              ],
+              "finite_replicates": 10000
+            },
+            "all_candidate_order_change_rate": {
+              "median": 0.625,
+              "ci95": [
+                0.5816733067729084,
+                0.6680327868852459
+              ],
+              "finite_replicates": 10000
+            },
+            "true_subset_order_change_rate": {
+              "median": 0.125,
+              "ci95": [
+                0.0,
+                0.25
+              ],
+              "finite_replicates": 9999
+            }
+          }
+        },
+        "xdecomposer": {
+          "ranking": {
+            "omission_cases": 248,
+            "all_candidate_order_changed": 0,
+            "all_candidate_order_change_rate": 0.0,
+            "true_omission_cases": 168,
+            "true_omission_order_changed": 0,
+            "true_subset_order_changed": 0,
+            "true_subset_order_eligible_cases": 24,
+            "true_subset_order_change_rate": 0.0,
+            "all_omission_true_subset_order_changed": 0,
+            "all_omission_true_subset_order_eligible_cases": 104,
+            "true_pair_reversal_cases": 0,
+            "by_condition": {
+              "omit_present": {
+                "cases": 168,
+                "candidate_order_changed": 0,
+                "true_subset_order_eligible_cases": 24,
+                "true_subset_order_changed": 0
+              },
+              "omit_absent": {
+                "cases": 80,
+                "candidate_order_changed": 0,
+                "true_subset_order_eligible_cases": 80,
+                "true_subset_order_changed": 0
+              }
+            },
+            "median_spearman": 1.0,
+            "minimum_spearman": 0.9999999999999999,
+            "max_abs_score_difference": 0.0
+          },
+          "unknown": {
+            "actual": {
+              "all": {
+                "cases": 328,
+                "positives": 168,
+                "negatives": 160,
+                "auroc": 0.5533482142857143,
+                "average_precision": 0.5338662154262674,
+                "far_05": {
+                  "negative_false_alarm_rate": 0.05,
+                  "unknown_detection_rate": 0.041666666666666664,
+                  "silent_completion_rate": 0.9583333333333334
+                },
+                "far_10": {
+                  "negative_false_alarm_rate": 0.05,
+                  "unknown_detection_rate": 0.041666666666666664,
+                  "silent_completion_rate": 0.9583333333333334
+                }
+              },
+              "far05": {
+                "negative_false_alarm_rate": 0.05,
+                "unknown_detection_rate": 0.041666666666666664,
+                "silent_completion_rate": 0.9583333333333334
+              },
+              "far10": {
+                "negative_false_alarm_rate": 0.10625,
+                "unknown_detection_rate": 0.09523809523809523,
+                "silent_completion_rate": 0.9047619047619048
+              },
+              "against_closed": {
+                "cases": 248,
+                "positives": 168,
+                "negatives": 80,
+                "auroc": 0.5609375,
+                "average_precision": 0.7060660888035617,
+                "far_05": {
+                  "negative_false_alarm_rate": 0.0375,
+                  "unknown_detection_rate": 0.041666666666666664,
+                  "silent_completion_rate": 0.9583333333333334
+                },
+                "far_10": {
+                  "negative_false_alarm_rate": 0.0375,
+                  "unknown_detection_rate": 0.041666666666666664,
+                  "silent_completion_rate": 0.9583333333333334
+                }
+              },
+              "against_absent_omission": {
+                "cases": 248,
+                "positives": 168,
+                "negatives": 80,
+                "auroc": 0.5457589285714286,
+                "average_precision": 0.6866405010874658,
+                "far_05": {
+                  "negative_false_alarm_rate": 0.0625,
+                  "unknown_detection_rate": 0.041666666666666664,
+                  "silent_completion_rate": 0.9583333333333334
+                },
+                "far_10": {
+                  "negative_false_alarm_rate": 0.0625,
+                  "unknown_detection_rate": 0.041666666666666664,
+                  "silent_completion_rate": 0.9583333333333334
+                }
+              }
+            },
+            "fixed_full_residual": {
+              "all": {
+                "cases": 328,
+                "positives": 168,
+                "negatives": 160,
+                "auroc": 0.5047619047619049,
+                "average_precision": 0.5136348203415526,
+                "far_05": {
+                  "negative_false_alarm_rate": 0.05,
+                  "unknown_detection_rate": 0.047619047619047616,
+                  "silent_completion_rate": 0.9523809523809523
+                },
+                "far_10": {
+                  "negative_false_alarm_rate": 0.05,
+                  "unknown_detection_rate": 0.047619047619047616,
+                  "silent_completion_rate": 0.9523809523809523
+                }
+              },
+              "far05": {
+                "negative_false_alarm_rate": 0.05,
+                "unknown_detection_rate": 0.047619047619047616,
+                "silent_completion_rate": 0.9523809523809523
+              },
+              "far10": {
+                "negative_false_alarm_rate": 0.1,
+                "unknown_detection_rate": 0.09523809523809523,
+                "silent_completion_rate": 0.9047619047619048
+              }
+            },
+            "unavailable_omitted_percentile": {
+              "all": {
+                "cases": 328,
+                "positives": 168,
+                "negatives": 160,
+                "auroc": 0.9746837797619048,
+                "average_precision": 0.972355032341896,
+                "far_05": {
+                  "negative_false_alarm_rate": 0.0375,
+                  "unknown_detection_rate": 0.8571428571428571,
+                  "silent_completion_rate": 0.1428571428571429
+                },
+                "far_10": {
+                  "negative_false_alarm_rate": 0.0375,
+                  "unknown_detection_rate": 0.8571428571428571,
+                  "silent_completion_rate": 0.1428571428571429
+                }
+              },
+              "far05": {
+                "negative_false_alarm_rate": 0.0375,
+                "unknown_detection_rate": 0.8571428571428571,
+                "silent_completion_rate": 0.1428571428571429
+              },
+              "far10": {
+                "negative_false_alarm_rate": 0.09375,
+                "unknown_detection_rate": 0.9345238095238095,
+                "silent_completion_rate": 0.06547619047619047
+              }
+            }
+          },
+          "bootstrap": {
+            "actual_auroc": {
+              "median": 0.5535133136094674,
+              "ci95": [
+                0.523735119047619,
+                0.5859013778037704
+              ],
+              "finite_replicates": 10000
+            },
+            "fixed_auroc": {
+              "median": 0.5045284431137724,
+              "ci95": [
+                0.49766566265060247,
+                0.5127625289194339
+              ],
+              "finite_replicates": 10000
+            },
+            "percentile_auroc": {
+              "median": 0.9751755458017943,
+              "ci95": [
+                0.9621377089460162,
+                0.9856444128787878
+              ],
+              "finite_replicates": 10000
+            },
+            "actual_minus_fixed": {
+              "median": 0.04876103250210151,
+              "ci95": [
+                0.021462437847519295,
+                0.07884636976047898
+              ],
+              "finite_replicates": 10000
+            },
+            "actual_minus_percentile": {
+              "median": -0.42149735304855784,
+              "ci95": [
+                -0.4513424548796792,
+                -0.38909923735119045
+              ],
+              "finite_replicates": 10000
+            },
+            "all_candidate_order_change_rate": {
+              "median": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "finite_replicates": 10000
+            },
+            "true_subset_order_change_rate": {
+              "median": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "finite_replicates": 9999
+            }
+          }
+        }
+      }
+    },
+    "unreacted_only": {
+      "queries": 87,
+      "clusters": 87,
+      "cases": 348,
+      "true_omission_cases": 174,
+      "absent_omission_cases": 87,
+      "methods": {
+        "profile_baseline": {
+          "ranking": {
+            "omission_cases": 261,
+            "all_candidate_order_changed": 0,
+            "all_candidate_order_change_rate": 0.0,
+            "true_omission_cases": 174,
+            "true_omission_order_changed": 0,
+            "true_subset_order_changed": 0,
+            "true_subset_order_eligible_cases": 0,
+            "true_subset_order_change_rate": null,
+            "all_omission_true_subset_order_changed": 0,
+            "all_omission_true_subset_order_eligible_cases": 87,
+            "true_pair_reversal_cases": 0,
+            "by_condition": {
+              "omit_present": {
+                "cases": 174,
+                "candidate_order_changed": 0,
+                "true_subset_order_eligible_cases": 0,
+                "true_subset_order_changed": 0
+              },
+              "omit_absent": {
+                "cases": 87,
+                "candidate_order_changed": 0,
+                "true_subset_order_eligible_cases": 87,
+                "true_subset_order_changed": 0
+              }
+            },
+            "median_spearman": 1.0,
+            "minimum_spearman": 0.9999999999999999,
+            "max_abs_score_difference": 0.0
+          },
+          "unknown": {
+            "actual": {
+              "all": {
+                "cases": 348,
+                "positives": 174,
+                "negatives": 174,
+                "auroc": 0.7061038446294094,
+                "average_precision": 0.7292726998116652,
+                "far_05": {
+                  "negative_false_alarm_rate": 0.05747126436781609,
+                  "unknown_detection_rate": 0.20689655172413793,
+                  "silent_completion_rate": 0.7931034482758621
+                },
+                "far_10": {
+                  "negative_false_alarm_rate": 0.05747126436781609,
+                  "unknown_detection_rate": 0.20689655172413793,
+                  "silent_completion_rate": 0.7931034482758621
+                }
+              },
+              "far05": {
+                "negative_false_alarm_rate": 0.05747126436781609,
+                "unknown_detection_rate": 0.20689655172413793,
+                "silent_completion_rate": 0.7931034482758621
+              },
+              "far10": {
+                "negative_false_alarm_rate": 0.10344827586206896,
+                "unknown_detection_rate": 0.4367816091954023,
+                "silent_completion_rate": 0.5632183908045977
+              },
+              "against_closed": {
+                "cases": 261,
+                "positives": 174,
+                "negatives": 87,
+                "auroc": 0.7061038446294094,
+                "average_precision": 0.8354826110634688,
+                "far_05": {
+                  "negative_false_alarm_rate": 0.05747126436781609,
+                  "unknown_detection_rate": 0.20689655172413793,
+                  "silent_completion_rate": 0.7931034482758621
+                },
+                "far_10": {
+                  "negative_false_alarm_rate": 0.05747126436781609,
+                  "unknown_detection_rate": 0.20689655172413793,
+                  "silent_completion_rate": 0.7931034482758621
+                }
+              },
+              "against_absent_omission": {
+                "cases": 261,
+                "positives": 174,
+                "negatives": 87,
+                "auroc": 0.7061038446294094,
+                "average_precision": 0.8354826110634688,
+                "far_05": {
+                  "negative_false_alarm_rate": 0.05747126436781609,
+                  "unknown_detection_rate": 0.20689655172413793,
+                  "silent_completion_rate": 0.7931034482758621
+                },
+                "far_10": {
+                  "negative_false_alarm_rate": 0.05747126436781609,
+                  "unknown_detection_rate": 0.20689655172413793,
+                  "silent_completion_rate": 0.7931034482758621
+                }
+              }
+            },
+            "fixed_full_residual": {
+              "all": {
+                "cases": 348,
+                "positives": 174,
+                "negatives": 174,
+                "auroc": 0.5000000000000001,
+                "average_precision": 0.49999999999999994,
+                "far_05": {
+                  "negative_false_alarm_rate": 0.05747126436781609,
+                  "unknown_detection_rate": 0.05747126436781609,
+                  "silent_completion_rate": 0.9425287356321839
+                },
+                "far_10": {
+                  "negative_false_alarm_rate": 0.05747126436781609,
+                  "unknown_detection_rate": 0.05747126436781609,
+                  "silent_completion_rate": 0.9425287356321839
+                }
+              },
+              "far05": {
+                "negative_false_alarm_rate": 0.05747126436781609,
+                "unknown_detection_rate": 0.05747126436781609,
+                "silent_completion_rate": 0.9425287356321839
+              },
+              "far10": {
+                "negative_false_alarm_rate": 0.10344827586206896,
+                "unknown_detection_rate": 0.10344827586206896,
+                "silent_completion_rate": 0.896551724137931
+              }
+            },
+            "unavailable_omitted_percentile": {
+              "all": {
+                "cases": 348,
+                "positives": 174,
+                "negatives": 174,
+                "auroc": 0.9781675254326859,
+                "average_precision": 0.9724752224609439,
+                "far_05": {
+                  "negative_false_alarm_rate": 0.040229885057471264,
+                  "unknown_detection_rate": 0.8563218390804598,
+                  "silent_completion_rate": 0.14367816091954022
+                },
+                "far_10": {
+                  "negative_false_alarm_rate": 0.040229885057471264,
+                  "unknown_detection_rate": 0.8563218390804598,
+                  "silent_completion_rate": 0.14367816091954022
+                }
+              },
+              "far05": {
+                "negative_false_alarm_rate": 0.040229885057471264,
+                "unknown_detection_rate": 0.8563218390804598,
+                "silent_completion_rate": 0.14367816091954022
+              },
+              "far10": {
+                "negative_false_alarm_rate": 0.07471264367816093,
+                "unknown_detection_rate": 0.896551724137931,
+                "silent_completion_rate": 0.10344827586206895
+              }
+            }
+          },
+          "bootstrap": {
+            "actual_auroc": {
+              "median": 0.7067974633372968,
+              "ci95": [
+                0.6863852556480381,
+                0.7244690513938434
+              ],
+              "finite_replicates": 10000
+            },
+            "fixed_auroc": {
+              "median": 0.5,
+              "ci95": [
+                0.4999999999999999,
+                0.5000000000000001
+              ],
+              "finite_replicates": 10000
+            },
+            "percentile_auroc": {
+              "median": 0.97854736424891,
+              "ci95": [
+                0.9666893744219844,
+                0.9876639087065662
+              ],
+              "finite_replicates": 10000
+            },
+            "actual_minus_fixed": {
+              "median": 0.20679746333729676,
+              "ci95": [
+                0.1863852556480382,
+                0.2244690513938434
+              ],
+              "finite_replicates": 10000
+            },
+            "actual_minus_percentile": {
+              "median": -0.2717168714493327,
+              "ci95": [
+                -0.294408937772493,
+                -0.24950455806579463
+              ],
+              "finite_replicates": 10000
+            },
+            "all_candidate_order_change_rate": {
+              "median": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "finite_replicates": 10000
+            },
+            "true_subset_order_change_rate": {
+              "median": null,
+              "ci95": [
+                null,
+                null
+              ],
+              "finite_replicates": 0,
+              "status": "not_estimable"
+            }
+          }
+        },
+        "crystalshift": {
+          "ranking": {
+            "omission_cases": 261,
+            "all_candidate_order_changed": 165,
+            "all_candidate_order_change_rate": 0.632183908045977,
+            "true_omission_cases": 174,
+            "true_omission_order_changed": 146,
+            "true_subset_order_changed": 0,
+            "true_subset_order_eligible_cases": 0,
+            "true_subset_order_change_rate": null,
+            "all_omission_true_subset_order_changed": 0,
+            "all_omission_true_subset_order_eligible_cases": 87,
+            "true_pair_reversal_cases": 0,
+            "by_condition": {
+              "omit_present": {
+                "cases": 174,
+                "candidate_order_changed": 146,
+                "true_subset_order_eligible_cases": 0,
+                "true_subset_order_changed": 0
+              },
+              "omit_absent": {
+                "cases": 87,
+                "candidate_order_changed": 19,
+                "true_subset_order_eligible_cases": 87,
+                "true_subset_order_changed": 0
+              }
+            },
+            "median_spearman": 0.8719298245614034,
+            "minimum_spearman": -0.5631578947368421,
+            "max_abs_score_difference": 1.0
+          },
+          "unknown": {
+            "actual": {
+              "all": {
+                "cases": 348,
+                "positives": 174,
+                "negatives": 174,
+                "auroc": 0.8091227374818337,
+                "average_precision": 0.8385582318863791,
+                "far_05": {
+                  "negative_false_alarm_rate": 0.05747126436781609,
+                  "unknown_detection_rate": 0.5,
+                  "silent_completion_rate": 0.5
+                },
+                "far_10": {
+                  "negative_false_alarm_rate": 0.05747126436781609,
+                  "unknown_detection_rate": 0.5,
+                  "silent_completion_rate": 0.5
+                }
+              },
+              "far05": {
+                "negative_false_alarm_rate": 0.05747126436781609,
+                "unknown_detection_rate": 0.5,
+                "silent_completion_rate": 0.5
+              },
+              "far10": {
+                "negative_false_alarm_rate": 0.10344827586206896,
+                "unknown_detection_rate": 0.5862068965517241,
+                "silent_completion_rate": 0.4137931034482759
+              },
+              "against_closed": {
+                "cases": 261,
+                "positives": 174,
+                "negatives": 87,
+                "auroc": 0.8099484740388426,
+                "average_precision": 0.904924408610432,
+                "far_05": {
+                  "negative_false_alarm_rate": 0.05747126436781609,
+                  "unknown_detection_rate": 0.5,
+                  "silent_completion_rate": 0.5
+                },
+                "far_10": {
+                  "negative_false_alarm_rate": 0.05747126436781609,
+                  "unknown_detection_rate": 0.5,
+                  "silent_completion_rate": 0.5
+                }
+              },
+              "against_absent_omission": {
+                "cases": 261,
+                "positives": 174,
+                "negatives": 87,
+                "auroc": 0.8082970009248248,
+                "average_precision": 0.9030801564215808,
+                "far_05": {
+                  "negative_false_alarm_rate": 0.05747126436781609,
+                  "unknown_detection_rate": 0.5,
+                  "silent_completion_rate": 0.5
+                },
+                "far_10": {
+                  "negative_false_alarm_rate": 0.05747126436781609,
+                  "unknown_detection_rate": 0.5,
+                  "silent_completion_rate": 0.5
+                }
+              }
+            },
+            "fixed_full_residual": {
+              "all": {
+                "cases": 348,
+                "positives": 174,
+                "negatives": 174,
+                "auroc": 0.5000000000000001,
+                "average_precision": 0.49999999999999994,
+                "far_05": {
+                  "negative_false_alarm_rate": 0.05747126436781609,
+                  "unknown_detection_rate": 0.05747126436781609,
+                  "silent_completion_rate": 0.9425287356321839
+                },
+                "far_10": {
+                  "negative_false_alarm_rate": 0.05747126436781609,
+                  "unknown_detection_rate": 0.05747126436781609,
+                  "silent_completion_rate": 0.9425287356321839
+                }
+              },
+              "far05": {
+                "negative_false_alarm_rate": 0.05747126436781609,
+                "unknown_detection_rate": 0.05747126436781609,
+                "silent_completion_rate": 0.9425287356321839
+              },
+              "far10": {
+                "negative_false_alarm_rate": 0.10344827586206896,
+                "unknown_detection_rate": 0.10344827586206896,
+                "silent_completion_rate": 0.896551724137931
+              }
+            },
+            "unavailable_omitted_percentile": {
+              "all": {
+                "cases": 348,
+                "positives": 174,
+                "negatives": 174,
+                "auroc": 0.9460133439027614,
+                "average_precision": 0.954661474318526,
+                "far_05": {
+                  "negative_false_alarm_rate": 0.04597701149425287,
+                  "unknown_detection_rate": 0.8333333333333334,
+                  "silent_completion_rate": 0.16666666666666663
+                },
+                "far_10": {
+                  "negative_false_alarm_rate": 0.04597701149425287,
+                  "unknown_detection_rate": 0.8333333333333334,
+                  "silent_completion_rate": 0.16666666666666663
+                }
+              },
+              "far05": {
+                "negative_false_alarm_rate": 0.04597701149425287,
+                "unknown_detection_rate": 0.8333333333333334,
+                "silent_completion_rate": 0.16666666666666663
+              },
+              "far10": {
+                "negative_false_alarm_rate": 0.06896551724137931,
+                "unknown_detection_rate": 0.8505747126436781,
+                "silent_completion_rate": 0.14942528735632188
+              }
+            }
+          },
+          "bootstrap": {
+            "actual_auroc": {
+              "median": 0.8098659003831418,
+              "ci95": [
+                0.7757625677103978,
+                0.8443329700092482
+              ],
+              "finite_replicates": 10000
+            },
+            "fixed_auroc": {
+              "median": 0.5,
+              "ci95": [
+                0.4999999999999999,
+                0.5000000000000001
+              ],
+              "finite_replicates": 10000
+            },
+            "percentile_auroc": {
+              "median": 0.9462775796010041,
+              "ci95": [
+                0.9246593836702339,
+                0.9655337561104506
+              ],
+              "finite_replicates": 10000
+            },
+            "actual_minus_fixed": {
+              "median": 0.30986590038314177,
+              "ci95": [
+                0.2757625677103977,
+                0.34433297000924823
+              ],
+              "finite_replicates": 10000
+            },
+            "actual_minus_percentile": {
+              "median": -0.1359657814770776,
+              "ci95": [
+                -0.17076231998943048,
+                -0.1015816983749503
+              ],
+              "finite_replicates": 10000
+            },
+            "all_candidate_order_change_rate": {
+              "median": 0.632183908045977,
+              "ci95": [
+                0.5900383141762452,
+                0.6743295019157088
+              ],
+              "finite_replicates": 10000
+            },
+            "true_subset_order_change_rate": {
+              "median": null,
+              "ci95": [
+                null,
+                null
+              ],
+              "finite_replicates": 0,
+              "status": "not_estimable"
+            }
+          }
+        },
+        "xdecomposer": {
+          "ranking": {
+            "omission_cases": 261,
+            "all_candidate_order_changed": 0,
+            "all_candidate_order_change_rate": 0.0,
+            "true_omission_cases": 174,
+            "true_omission_order_changed": 0,
+            "true_subset_order_changed": 0,
+            "true_subset_order_eligible_cases": 0,
+            "true_subset_order_change_rate": null,
+            "all_omission_true_subset_order_changed": 0,
+            "all_omission_true_subset_order_eligible_cases": 87,
+            "true_pair_reversal_cases": 0,
+            "by_condition": {
+              "omit_present": {
+                "cases": 174,
+                "candidate_order_changed": 0,
+                "true_subset_order_eligible_cases": 0,
+                "true_subset_order_changed": 0
+              },
+              "omit_absent": {
+                "cases": 87,
+                "candidate_order_changed": 0,
+                "true_subset_order_eligible_cases": 87,
+                "true_subset_order_changed": 0
+              }
+            },
+            "median_spearman": 1.0,
+            "minimum_spearman": 0.9999999999999999,
+            "max_abs_score_difference": 0.0
+          },
+          "unknown": {
+            "actual": {
+              "all": {
+                "cases": 348,
+                "positives": 174,
+                "negatives": 174,
+                "auroc": 0.5635156559651209,
+                "average_precision": 0.5301051940393484,
+                "far_05": {
+                  "negative_false_alarm_rate": 0.05747126436781609,
+                  "unknown_detection_rate": 0.05172413793103448,
+                  "silent_completion_rate": 0.9482758620689655
+                },
+                "far_10": {
+                  "negative_false_alarm_rate": 0.05747126436781609,
+                  "unknown_detection_rate": 0.05172413793103448,
+                  "silent_completion_rate": 0.9482758620689655
+                }
+              },
+              "far05": {
+                "negative_false_alarm_rate": 0.05747126436781609,
+                "unknown_detection_rate": 0.05172413793103448,
+                "silent_completion_rate": 0.9482758620689655
+              },
+              "far10": {
+                "negative_false_alarm_rate": 0.10919540229885058,
+                "unknown_detection_rate": 0.11494252873563218,
+                "silent_completion_rate": 0.8850574712643678
+              },
+              "against_closed": {
+                "cases": 261,
+                "positives": 174,
+                "negatives": 87,
+                "auroc": 0.5698242832606686,
+                "average_precision": 0.7023843530889267,
+                "far_05": {
+                  "negative_false_alarm_rate": 0.04597701149425287,
+                  "unknown_detection_rate": 0.05172413793103448,
+                  "silent_completion_rate": 0.9482758620689655
+                },
+                "far_10": {
+                  "negative_false_alarm_rate": 0.04597701149425287,
+                  "unknown_detection_rate": 0.05172413793103448,
+                  "silent_completion_rate": 0.9482758620689655
+                }
+              },
+              "against_absent_omission": {
+                "cases": 261,
+                "positives": 174,
+                "negatives": 87,
+                "auroc": 0.5572070286695733,
+                "average_precision": 0.6840579634441295,
+                "far_05": {
+                  "negative_false_alarm_rate": 0.06896551724137931,
+                  "unknown_detection_rate": 0.05172413793103448,
+                  "silent_completion_rate": 0.9482758620689655
+                },
+                "far_10": {
+                  "negative_false_alarm_rate": 0.06896551724137931,
+                  "unknown_detection_rate": 0.05172413793103448,
+                  "silent_completion_rate": 0.9482758620689655
+                }
+              }
+            },
+            "fixed_full_residual": {
+              "all": {
+                "cases": 348,
+                "positives": 174,
+                "negatives": 174,
+                "auroc": 0.5000000000000001,
+                "average_precision": 0.49999999999999994,
+                "far_05": {
+                  "negative_false_alarm_rate": 0.05747126436781609,
+                  "unknown_detection_rate": 0.05747126436781609,
+                  "silent_completion_rate": 0.9425287356321839
+                },
+                "far_10": {
+                  "negative_false_alarm_rate": 0.05747126436781609,
+                  "unknown_detection_rate": 0.05747126436781609,
+                  "silent_completion_rate": 0.9425287356321839
+                }
+              },
+              "far05": {
+                "negative_false_alarm_rate": 0.05747126436781609,
+                "unknown_detection_rate": 0.05747126436781609,
+                "silent_completion_rate": 0.9425287356321839
+              },
+              "far10": {
+                "negative_false_alarm_rate": 0.10344827586206896,
+                "unknown_detection_rate": 0.10344827586206896,
+                "silent_completion_rate": 0.896551724137931
+              }
+            },
+            "unavailable_omitted_percentile": {
+              "all": {
+                "cases": 348,
+                "positives": 174,
+                "negatives": 174,
+                "auroc": 0.9844926674593737,
+                "average_precision": 0.9823282387447608,
+                "far_05": {
+                  "negative_false_alarm_rate": 0.028735632183908046,
+                  "unknown_detection_rate": 0.8908045977011494,
+                  "silent_completion_rate": 0.10919540229885061
+                },
+                "far_10": {
+                  "negative_false_alarm_rate": 0.028735632183908046,
+                  "unknown_detection_rate": 0.8908045977011494,
+                  "silent_completion_rate": 0.10919540229885061
+                }
+              },
+              "far05": {
+                "negative_false_alarm_rate": 0.028735632183908046,
+                "unknown_detection_rate": 0.8908045977011494,
+                "silent_completion_rate": 0.10919540229885061
+              },
+              "far10": {
+                "negative_false_alarm_rate": 0.09770114942528736,
+                "unknown_detection_rate": 0.9770114942528736,
+                "silent_completion_rate": 0.02298850574712641
+              }
+            }
+          },
+          "bootstrap": {
+            "actual_auroc": {
+              "median": 0.5634495970405602,
+              "ci95": [
+                0.535539701413661,
+                0.5943651737349716
+              ],
+              "finite_replicates": 10000
+            },
+            "fixed_auroc": {
+              "median": 0.5,
+              "ci95": [
+                0.4999999999999999,
+                0.5000000000000001
+              ],
+              "finite_replicates": 10000
+            },
+            "percentile_auroc": {
+              "median": 0.9848725062755979,
+              "ci95": [
+                0.9743691372704453,
+                0.9926348427797596
+              ],
+              "finite_replicates": 10000
+            },
+            "actual_minus_fixed": {
+              "median": 0.06344959704056019,
+              "ci95": [
+                0.035539701413661084,
+                0.09436517373497155
+              ],
+              "finite_replicates": 10000
+            },
+            "actual_minus_percentile": {
+              "median": -0.42089443783855207,
+              "ci95": [
+                -0.44896989364513146,
+                -0.3897802715021799
+              ],
+              "finite_replicates": 10000
+            },
+            "all_candidate_order_change_rate": {
+              "median": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "finite_replicates": 10000
+            },
+            "true_subset_order_change_rate": {
+              "median": null,
+              "ci95": [
+                null,
+                null
+              ],
+              "finite_replicates": 0,
+              "status": "not_estimable"
+            }
+          }
+        }
+      }
+    },
+    "omitted_weight_ge_005": {
+      "queries": 102,
+      "clusters": 102,
+      "cases": 410,
+      "true_omission_cases": 206,
+      "absent_omission_cases": 102,
+      "methods": {
+        "profile_baseline": {
+          "ranking": {
+            "omission_cases": 308,
+            "all_candidate_order_changed": 0,
+            "all_candidate_order_change_rate": 0.0,
+            "true_omission_cases": 206,
+            "true_omission_order_changed": 0,
+            "true_subset_order_changed": 0,
+            "true_subset_order_eligible_cases": 26,
+            "true_subset_order_change_rate": 0.0,
+            "all_omission_true_subset_order_changed": 0,
+            "all_omission_true_subset_order_eligible_cases": 128,
+            "true_pair_reversal_cases": 0,
+            "by_condition": {
+              "omit_present": {
+                "cases": 206,
+                "candidate_order_changed": 0,
+                "true_subset_order_eligible_cases": 26,
+                "true_subset_order_changed": 0
+              },
+              "omit_absent": {
+                "cases": 102,
+                "candidate_order_changed": 0,
+                "true_subset_order_eligible_cases": 102,
+                "true_subset_order_changed": 0
+              }
+            },
+            "median_spearman": 1.0,
+            "minimum_spearman": 0.9999999999999999,
+            "max_abs_score_difference": 0.0
+          },
+          "unknown": {
+            "actual": {
+              "all": {
+                "cases": 410,
+                "positives": 206,
+                "negatives": 204,
+                "auroc": 0.7234199505044736,
+                "average_precision": 0.7480168756077206,
+                "far_05": {
+                  "negative_false_alarm_rate": 0.058823529411764705,
+                  "unknown_detection_rate": 0.32038834951456313,
+                  "silent_completion_rate": 0.6796116504854368
+                },
+                "far_10": {
+                  "negative_false_alarm_rate": 0.058823529411764705,
+                  "unknown_detection_rate": 0.32038834951456313,
+                  "silent_completion_rate": 0.6796116504854368
+                }
+              },
+              "far05": {
+                "negative_false_alarm_rate": 0.058823529411764705,
+                "unknown_detection_rate": 0.32038834951456313,
+                "silent_completion_rate": 0.6796116504854368
+              },
+              "far10": {
+                "negative_false_alarm_rate": 0.10784313725490197,
+                "unknown_detection_rate": 0.46601941747572817,
+                "silent_completion_rate": 0.5339805825242718
+              },
+              "against_closed": {
+                "cases": 308,
+                "positives": 206,
+                "negatives": 102,
+                "auroc": 0.7234199505044736,
+                "average_precision": 0.8479229953900592,
+                "far_05": {
+                  "negative_false_alarm_rate": 0.058823529411764705,
+                  "unknown_detection_rate": 0.32038834951456313,
+                  "silent_completion_rate": 0.6796116504854368
+                },
+                "far_10": {
+                  "negative_false_alarm_rate": 0.058823529411764705,
+                  "unknown_detection_rate": 0.32038834951456313,
+                  "silent_completion_rate": 0.6796116504854368
+                }
+              },
+              "against_absent_omission": {
+                "cases": 308,
+                "positives": 206,
+                "negatives": 102,
+                "auroc": 0.7234199505044736,
+                "average_precision": 0.8479229953900592,
+                "far_05": {
+                  "negative_false_alarm_rate": 0.058823529411764705,
+                  "unknown_detection_rate": 0.32038834951456313,
+                  "silent_completion_rate": 0.6796116504854368
+                },
+                "far_10": {
+                  "negative_false_alarm_rate": 0.058823529411764705,
+                  "unknown_detection_rate": 0.32038834951456313,
+                  "silent_completion_rate": 0.6796116504854368
+                }
+              }
+            },
+            "fixed_full_residual": {
+              "all": {
+                "cases": 410,
+                "positives": 206,
+                "negatives": 204,
+                "auroc": 0.5144679230915667,
+                "average_precision": 0.5106253493271181,
+                "far_05": {
+                  "negative_false_alarm_rate": 0.058823529411764705,
+                  "unknown_detection_rate": 0.05825242718446602,
+                  "silent_completion_rate": 0.941747572815534
+                },
+                "far_10": {
+                  "negative_false_alarm_rate": 0.058823529411764705,
+                  "unknown_detection_rate": 0.05825242718446602,
+                  "silent_completion_rate": 0.941747572815534
+                }
+              },
+              "far05": {
+                "negative_false_alarm_rate": 0.058823529411764705,
+                "unknown_detection_rate": 0.05825242718446602,
+                "silent_completion_rate": 0.941747572815534
+              },
+              "far10": {
+                "negative_false_alarm_rate": 0.10784313725490197,
+                "unknown_detection_rate": 0.11165048543689321,
+                "silent_completion_rate": 0.8883495145631068
+              }
+            },
+            "unavailable_omitted_percentile": {
+              "all": {
+                "cases": 410,
+                "positives": 206,
+                "negatives": 204,
+                "auroc": 0.9730392156862745,
+                "average_precision": 0.9672962104580831,
+                "far_05": {
+                  "negative_false_alarm_rate": 0.049019607843137254,
+                  "unknown_detection_rate": 0.8398058252427184,
+                  "silent_completion_rate": 0.1601941747572816
+                },
+                "far_10": {
+                  "negative_false_alarm_rate": 0.049019607843137254,
+                  "unknown_detection_rate": 0.8398058252427184,
+                  "silent_completion_rate": 0.1601941747572816
+                }
+              },
+              "far05": {
+                "negative_false_alarm_rate": 0.049019607843137254,
+                "unknown_detection_rate": 0.8398058252427184,
+                "silent_completion_rate": 0.1601941747572816
+              },
+              "far10": {
+                "negative_false_alarm_rate": 0.0784313725490196,
+                "unknown_detection_rate": 0.8737864077669902,
+                "silent_completion_rate": 0.12621359223300976
+              }
+            }
+          },
+          "bootstrap": {
+            "actual_auroc": {
+              "median": 0.7237386500493916,
+              "ci95": [
+                0.7014935249462103,
+                0.7457081893488223
+              ],
+              "finite_replicates": 10000
+            },
+            "fixed_auroc": {
+              "median": 0.5141361595996214,
+              "ci95": [
+                0.5061452340822665,
+                0.5238172703621018
+              ],
+              "finite_replicates": 10000
+            },
+            "percentile_auroc": {
+              "median": 0.9732528617187695,
+              "ci95": [
+                0.9614152418393099,
+                0.9831644609942778
+              ],
+              "finite_replicates": 10000
+            },
+            "actual_minus_fixed": {
+              "median": 0.20960595776772234,
+              "ci95": [
+                0.1905949442408769,
+                0.22681372549019607
+              ],
+              "finite_replicates": 10000
+            },
+            "actual_minus_percentile": {
+              "median": -0.24933803096835555,
+              "ci95": [
+                -0.27394084292484777,
+                -0.2250301702235772
+              ],
+              "finite_replicates": 10000
+            },
+            "all_candidate_order_change_rate": {
+              "median": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "finite_replicates": 10000
+            },
+            "true_subset_order_change_rate": {
+              "median": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "finite_replicates": 10000
+            }
+          }
+        },
+        "crystalshift": {
+          "ranking": {
+            "omission_cases": 308,
+            "all_candidate_order_changed": 193,
+            "all_candidate_order_change_rate": 0.6266233766233766,
+            "true_omission_cases": 206,
+            "true_omission_order_changed": 173,
+            "true_subset_order_changed": 4,
+            "true_subset_order_eligible_cases": 26,
+            "true_subset_order_change_rate": 0.15384615384615385,
+            "all_omission_true_subset_order_changed": 4,
+            "all_omission_true_subset_order_eligible_cases": 128,
+            "true_pair_reversal_cases": 4,
+            "by_condition": {
+              "omit_present": {
+                "cases": 206,
+                "candidate_order_changed": 173,
+                "true_subset_order_eligible_cases": 26,
+                "true_subset_order_changed": 4
+              },
+              "omit_absent": {
+                "cases": 102,
+                "candidate_order_changed": 20,
+                "true_subset_order_eligible_cases": 102,
+                "true_subset_order_changed": 0
+              }
+            },
+            "median_spearman": 0.8684210526315789,
+            "minimum_spearman": -0.5631578947368421,
+            "max_abs_score_difference": 1.0
+          },
+          "unknown": {
+            "actual": {
+              "all": {
+                "cases": 410,
+                "positives": 206,
+                "negatives": 204,
+                "auroc": 0.8227203502760327,
+                "average_precision": 0.8485389514527186,
+                "far_05": {
+                  "negative_false_alarm_rate": 0.058823529411764705,
+                  "unknown_detection_rate": 0.5485436893203883,
+                  "silent_completion_rate": 0.45145631067961167
+                },
+                "far_10": {
+                  "negative_false_alarm_rate": 0.058823529411764705,
+                  "unknown_detection_rate": 0.5485436893203883,
+                  "silent_completion_rate": 0.45145631067961167
+                }
+              },
+              "far05": {
+                "negative_false_alarm_rate": 0.058823529411764705,
+                "unknown_detection_rate": 0.5485436893203883,
+                "silent_completion_rate": 0.45145631067961167
+              },
+              "far10": {
+                "negative_false_alarm_rate": 0.10784313725490197,
+                "unknown_detection_rate": 0.5970873786407767,
+                "silent_completion_rate": 0.40291262135922334
+              },
+              "against_closed": {
+                "cases": 308,
+                "positives": 206,
+                "negatives": 102,
+                "auroc": 0.8233866362078812,
+                "average_precision": 0.9113917965230549,
+                "far_05": {
+                  "negative_false_alarm_rate": 0.058823529411764705,
+                  "unknown_detection_rate": 0.5485436893203883,
+                  "silent_completion_rate": 0.45145631067961167
+                },
+                "far_10": {
+                  "negative_false_alarm_rate": 0.058823529411764705,
+                  "unknown_detection_rate": 0.5485436893203883,
+                  "silent_completion_rate": 0.45145631067961167
+                }
+              },
+              "against_absent_omission": {
+                "cases": 308,
+                "positives": 206,
+                "negatives": 102,
+                "auroc": 0.8220540643441843,
+                "average_precision": 0.9099198589732183,
+                "far_05": {
+                  "negative_false_alarm_rate": 0.058823529411764705,
+                  "unknown_detection_rate": 0.5485436893203883,
+                  "silent_completion_rate": 0.45145631067961167
+                },
+                "far_10": {
+                  "negative_false_alarm_rate": 0.058823529411764705,
+                  "unknown_detection_rate": 0.5485436893203883,
+                  "silent_completion_rate": 0.45145631067961167
+                }
+              }
+            },
+            "fixed_full_residual": {
+              "all": {
+                "cases": 410,
+                "positives": 206,
+                "negatives": 204,
+                "auroc": 0.5090900437845042,
+                "average_precision": 0.5055164205967522,
+                "far_05": {
+                  "negative_false_alarm_rate": 0.058823529411764705,
+                  "unknown_detection_rate": 0.05825242718446602,
+                  "silent_completion_rate": 0.941747572815534
+                },
+                "far_10": {
+                  "negative_false_alarm_rate": 0.058823529411764705,
+                  "unknown_detection_rate": 0.05825242718446602,
+                  "silent_completion_rate": 0.941747572815534
+                }
+              },
+              "far05": {
+                "negative_false_alarm_rate": 0.058823529411764705,
+                "unknown_detection_rate": 0.05825242718446602,
+                "silent_completion_rate": 0.941747572815534
+              },
+              "far10": {
+                "negative_false_alarm_rate": 0.10784313725490197,
+                "unknown_detection_rate": 0.10194174757281553,
+                "silent_completion_rate": 0.8980582524271845
+              }
+            },
+            "unavailable_omitted_percentile": {
+              "all": {
+                "cases": 410,
+                "positives": 206,
+                "negatives": 204,
+                "auroc": 0.9466376356367789,
+                "average_precision": 0.9553343914975151,
+                "far_05": {
+                  "negative_false_alarm_rate": 0.0392156862745098,
+                  "unknown_detection_rate": 0.8252427184466019,
+                  "silent_completion_rate": 0.1747572815533981
+                },
+                "far_10": {
+                  "negative_false_alarm_rate": 0.0392156862745098,
+                  "unknown_detection_rate": 0.8252427184466019,
+                  "silent_completion_rate": 0.1747572815533981
+                }
+              },
+              "far05": {
+                "negative_false_alarm_rate": 0.0392156862745098,
+                "unknown_detection_rate": 0.8252427184466019,
+                "silent_completion_rate": 0.1747572815533981
+              },
+              "far10": {
+                "negative_false_alarm_rate": 0.10294117647058823,
+                "unknown_detection_rate": 0.8543689320388349,
+                "silent_completion_rate": 0.1456310679611651
+              }
+            }
+          },
+          "bootstrap": {
+            "actual_auroc": {
+              "median": 0.8232895909559996,
+              "ci95": [
+                0.7919904950526814,
+                0.8535909103380159
+              ],
+              "finite_replicates": 10000
+            },
+            "fixed_auroc": {
+              "median": 0.5088713534194166,
+              "ci95": [
+                0.49968914395026304,
+                0.5194624120430911
+              ],
+              "finite_replicates": 10000
+            },
+            "percentile_auroc": {
+              "median": 0.9470541207326348,
+              "ci95": [
+                0.9274457423864643,
+                0.9646042677540559
+              ],
+              "finite_replicates": 10000
+            },
+            "actual_minus_fixed": {
+              "median": 0.3141839495965849,
+              "ci95": [
+                0.284754946701917,
+                0.34351566969321284
+              ],
+              "finite_replicates": 10000
+            },
+            "actual_minus_percentile": {
+              "median": -0.1236310343669163,
+              "ci95": [
+                -0.15451016392219127,
+                -0.09287321229304712
+              ],
+              "finite_replicates": 10000
+            },
+            "all_candidate_order_change_rate": {
+              "median": 0.6266233766233766,
+              "ci95": [
+                0.5901639344262295,
+                0.662379421221865
+              ],
+              "finite_replicates": 10000
+            },
+            "true_subset_order_change_rate": {
+              "median": 0.15384615384615385,
+              "ci95": [
+                0.038461538461538464,
+                0.3
+              ],
+              "finite_replicates": 10000
+            }
+          }
+        },
+        "xdecomposer": {
+          "ranking": {
+            "omission_cases": 308,
+            "all_candidate_order_changed": 0,
+            "all_candidate_order_change_rate": 0.0,
+            "true_omission_cases": 206,
+            "true_omission_order_changed": 0,
+            "true_subset_order_changed": 0,
+            "true_subset_order_eligible_cases": 26,
+            "true_subset_order_change_rate": 0.0,
+            "all_omission_true_subset_order_changed": 0,
+            "all_omission_true_subset_order_eligible_cases": 128,
+            "true_pair_reversal_cases": 0,
+            "by_condition": {
+              "omit_present": {
+                "cases": 206,
+                "candidate_order_changed": 0,
+                "true_subset_order_eligible_cases": 26,
+                "true_subset_order_changed": 0
+              },
+              "omit_absent": {
+                "cases": 102,
+                "candidate_order_changed": 0,
+                "true_subset_order_eligible_cases": 102,
+                "true_subset_order_changed": 0
+              }
+            },
+            "median_spearman": 1.0,
+            "minimum_spearman": 0.9999999999999999,
+            "max_abs_score_difference": 0.0
+          },
+          "unknown": {
+            "actual": {
+              "all": {
+                "cases": 410,
+                "positives": 206,
+                "negatives": 204,
+                "auroc": 0.5610603464686846,
+                "average_precision": 0.5328012533834106,
+                "far_05": {
+                  "negative_false_alarm_rate": 0.05392156862745098,
+                  "unknown_detection_rate": 0.05339805825242718,
+                  "silent_completion_rate": 0.9466019417475728
+                },
+                "far_10": {
+                  "negative_false_alarm_rate": 0.05392156862745098,
+                  "unknown_detection_rate": 0.05339805825242718,
+                  "silent_completion_rate": 0.9466019417475728
+                }
+              },
+              "far05": {
+                "negative_false_alarm_rate": 0.05392156862745098,
+                "unknown_detection_rate": 0.05339805825242718,
+                "silent_completion_rate": 0.9466019417475728
+              },
+              "far10": {
+                "negative_false_alarm_rate": 0.10294117647058823,
+                "unknown_detection_rate": 0.10679611650485436,
+                "silent_completion_rate": 0.8932038834951457
+              },
+              "against_closed": {
+                "cases": 308,
+                "positives": 206,
+                "negatives": 102,
+                "auroc": 0.5665810013325719,
+                "average_precision": 0.7038604401127495,
+                "far_05": {
+                  "negative_false_alarm_rate": 0.0392156862745098,
+                  "unknown_detection_rate": 0.05339805825242718,
+                  "silent_completion_rate": 0.9466019417475728
+                },
+                "far_10": {
+                  "negative_false_alarm_rate": 0.0392156862745098,
+                  "unknown_detection_rate": 0.05339805825242718,
+                  "silent_completion_rate": 0.9466019417475728
+                }
+              },
+              "against_absent_omission": {
+                "cases": 308,
+                "positives": 206,
+                "negatives": 102,
+                "auroc": 0.5555396916047972,
+                "average_precision": 0.6870511329079713,
+                "far_05": {
+                  "negative_false_alarm_rate": 0.06862745098039216,
+                  "unknown_detection_rate": 0.05339805825242718,
+                  "silent_completion_rate": 0.9466019417475728
+                },
+                "far_10": {
+                  "negative_false_alarm_rate": 0.06862745098039216,
+                  "unknown_detection_rate": 0.05339805825242718,
+                  "silent_completion_rate": 0.9466019417475728
+                }
+              }
+            },
+            "fixed_full_residual": {
+              "all": {
+                "cases": 410,
+                "positives": 206,
+                "negatives": 204,
+                "auroc": 0.5086617171140301,
+                "average_precision": 0.5084900141694494,
+                "far_05": {
+                  "negative_false_alarm_rate": 0.058823529411764705,
+                  "unknown_detection_rate": 0.05825242718446602,
+                  "silent_completion_rate": 0.941747572815534
+                },
+                "far_10": {
+                  "negative_false_alarm_rate": 0.058823529411764705,
+                  "unknown_detection_rate": 0.05825242718446602,
+                  "silent_completion_rate": 0.941747572815534
+                }
+              },
+              "far05": {
+                "negative_false_alarm_rate": 0.058823529411764705,
+                "unknown_detection_rate": 0.05825242718446602,
+                "silent_completion_rate": 0.941747572815534
+              },
+              "far10": {
+                "negative_false_alarm_rate": 0.10784313725490197,
+                "unknown_detection_rate": 0.11165048543689321,
+                "silent_completion_rate": 0.8883495145631068
+              }
+            },
+            "unavailable_omitted_percentile": {
+              "all": {
+                "cases": 410,
+                "positives": 206,
+                "negatives": 204,
+                "auroc": 0.9775485436893203,
+                "average_precision": 0.9754547094472448,
+                "far_05": {
+                  "negative_false_alarm_rate": 0.03431372549019608,
+                  "unknown_detection_rate": 0.8689320388349514,
+                  "silent_completion_rate": 0.1310679611650486
+                },
+                "far_10": {
+                  "negative_false_alarm_rate": 0.03431372549019608,
+                  "unknown_detection_rate": 0.8689320388349514,
+                  "silent_completion_rate": 0.1310679611650486
+                }
+              },
+              "far05": {
+                "negative_false_alarm_rate": 0.03431372549019608,
+                "unknown_detection_rate": 0.8689320388349514,
+                "silent_completion_rate": 0.1310679611650486
+              },
+              "far10": {
+                "negative_false_alarm_rate": 0.09313725490196079,
+                "unknown_detection_rate": 0.9466019417475728,
+                "silent_completion_rate": 0.05339805825242716
+              }
+            }
+          },
+          "bootstrap": {
+            "actual_auroc": {
+              "median": 0.5612382849026032,
+              "ci95": [
+                0.5352001633986928,
+                0.5885229125291832
+              ],
+              "finite_replicates": 10000
+            },
+            "fixed_auroc": {
+              "median": 0.5083427601809956,
+              "ci95": [
+                0.5015542802486849,
+                0.5167333961023434
+              ],
+              "finite_replicates": 10000
+            },
+            "percentile_auroc": {
+              "median": 0.9778134002416132,
+              "ci95": [
+                0.966741508575176,
+                0.9869922880842834
+              ],
+              "finite_replicates": 10000
+            },
+            "actual_minus_fixed": {
+              "median": 0.05240775378577417,
+              "ci95": [
+                0.027600386314779048,
+                0.07956861905181872
+              ],
+              "finite_replicates": 10000
+            },
+            "actual_minus_percentile": {
+              "median": -0.41627998749409023,
+              "ci95": [
+                -0.44282221356284446,
+                -0.38819341520411915
+              ],
+              "finite_replicates": 10000
+            },
+            "all_candidate_order_change_rate": {
+              "median": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "finite_replicates": 10000
+            },
+            "true_subset_order_change_rate": {
+              "median": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "finite_replicates": 10000
+            }
+          }
+        }
+      }
+    }
+  }
+}

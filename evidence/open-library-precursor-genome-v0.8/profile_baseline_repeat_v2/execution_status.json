@@ -1,0 +1,16 @@
+{
+  "status": "precursor_genome_profile_baseline_complete",
+  "method": "shifted Pearson profile correlation",
+  "queries": 102,
+  "cases": 418,
+  "candidate_rows": 8044,
+  "libraries": 21,
+  "shift_range_deg": [
+    -0.3,
+    0.3
+  ],
+  "shift_step_deg": 0.02,
+  "candidate_predictions_sha256": "a11aef0bb56877139f4c1d133b088069018af73c3a93603b58ab75419cd162fe",
+  "case_scores_sha256": "2bdedc325ad638a02bfaccb23d578ecd107f807aba2257b6f244809fbb06846f",
+  "claim_boundary": "Candidate scores are reference-only, so ranking is a positive control. Unknown evidence is recomputed from the deployed library."
+}

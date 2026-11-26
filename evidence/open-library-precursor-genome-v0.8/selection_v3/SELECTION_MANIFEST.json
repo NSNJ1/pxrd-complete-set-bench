@@ -1,0 +1,62 @@
+{
+  "status": "precursor_genome_selection_frozen",
+  "source": {
+    "title": "Precursor Genome",
+    "record": "21285546",
+    "doi": "10.5281/zenodo.21285546",
+    "license": "CC BY 4.0",
+    "ledger_sha256": "f8b8aabb5b8718ad912075b9aa10373a5e81659b496348f14c926e432eb42dac"
+  },
+  "admission": {
+    "ledger_samples": 1035,
+    "eligible_2_to_4_phase_q1_q2_samples": 883,
+    "top_phase_count": 20,
+    "samples_fully_covered_by_top_library": 114,
+    "reference_samples": 20,
+    "independent_query_clusters": 102,
+    "phase_count_distribution": {
+      "2": 92,
+      "3": 10
+    },
+    "quality_distribution": {
+      "1.0": 80,
+      "2.0": 22
+    },
+    "minimum_query_phase_weight": 0.008978373343209542
+  },
+  "candidate_library": [
+    "BaCO3_62_(icsd_166091)-0",
+    "Li2CO3_15_(icsd_16713)-0",
+    "Al(HO)3_14_(icsd_184003)-17",
+    "La(HO)3_176_(icsd_167480)-0",
+    "Mn2O3_206_(icsd_9091)-0",
+    "MnO2_136_(icsd_643186)-6",
+    "Sb2O3_227_(icsd_1944)-5",
+    "BaO2_139_(icsd_80750)-0",
+    "CaCO3_167_(icsd_166364)-0",
+    "CuO_9_(icsd_69758)-None",
+    "Ga7.92O12_12_(icsd_63907)-None",
+    "In2O3_206_(icsd_190344)-0",
+    "MoO3_62_(icsd_166362)-28",
+    "Y2O3_206_(icsd_192862)-0",
+    "ZrO2_14_(icsd_157403)-0",
+    "Ag_225_(icsd_604631)-2",
+    "V2O5_59_(icsd_40488)-0",
+    "MgO_225_(icsd_104844)-0",
+    "SrCO3_62_(icsd_56099)-0",
+    "B(HO)3_2_(icsd_61354)-0"
+  ],
+  "reference_selection_rule": "Select a unique source sample per candidate phase, preferring an unseen non-manual reference pickle, quality 1, fewer phases, higher fitted phase weight, then sample ID.",
+  "query_selection_rule": "Use every eligible active-scan reaction whose complete truth lies inside the top-20 library, except samples used to construct candidate reference profiles.",
+  "claim_correction": {
+    "date": "2026-11-27",
+    "reason": "The source was already used in the project's closed-library benchmark.",
+    "prior_project_query_count": 416,
+    "prior_project_input_sha256": "70a7e11872f50a9cddbe83ca84614462edebf99a1089a8b512a525a049ba2c2b",
+    "selected_query_count": 102,
+    "query_id_overlap": 77,
+    "new_query_count": 25,
+    "original_claim_boundary": "Previously unused external measured retrospective holdout. One scan per physical reaction; repeated scans are not treated as independent samples."
+  },
+  "claim_boundary": "Previously used by this project in the closed-library benchmark. New for the open-library intervention, but not a fresh external source: 77 of 102 selected queries overlap the earlier 416-query cohort and 25 are new. One scan per physical reaction; repeated scans are not treated as independent samples."
+}
