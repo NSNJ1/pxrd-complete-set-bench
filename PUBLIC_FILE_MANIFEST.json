@@ -1,7 +1,7 @@
 {
   "version": "0.8.0",
   "date": "2026-11-27",
-  "file_count": 496,
+  "file_count": 497,
   "entries": [
     {
       "path": ".gitattributes",
@@ -155,8 +155,8 @@
     },
     {
       "path": "docs/open-library-precursor-genome-v0.8.md",
-      "size": 3441,
-      "sha256": "e77f700bc1cabc4d34511b84728221e2b8cefe107b6243e317c6dee32591b25b"
+      "size": 3561,
+      "sha256": "100564f59bed6688cd520049c2447fe0b434f3f14cc0dbdcc4982f445655c3d2"
     },
     {
       "path": "docs/release-and-submission.md",
@@ -305,8 +305,8 @@
     },
     {
       "path": "evidence/open-library-precursor-genome-v0.8/INDEPENDENT_EXECUTION_PROMPT_20261127.md",
-      "size": 5249,
-      "sha256": "2f2375e95cd5106874ba80b76cd2d1f32cfa43dbaa4797b0b54d784912847415"
+      "size": 5448,
+      "sha256": "272b2b84823b3bd1a712dcd5e08254400c6a4bf975333727e9745077ab644843"
     },
     {
       "path": "evidence/open-library-precursor-genome-v0.8/LICENSE",
@@ -345,8 +345,8 @@
     },
     {
       "path": "evidence/open-library-precursor-genome-v0.8/README.md",
-      "size": 5418,
-      "sha256": "9b7c5c07a1407432f8e9cd1f3ce479d84027eaace0205b4fae3abd7da7bd3774"
+      "size": 5146,
+      "sha256": "74cd5925085539b48bdfda86da4ba0e3b82536d4337f30b9c1841b5f9b85592b"
     },
     {
       "path": "evidence/open-library-precursor-genome-v0.8/RELEASE_AUDIT_20261127.json",
@@ -355,8 +355,8 @@
     },
     {
       "path": "evidence/open-library-precursor-genome-v0.8/RELEASE_FILE_MANIFEST.json",
-      "size": 81704,
-      "sha256": "31c522b0a939c907b3acb5893110e7e57b58224f592524c85a846234bc89c9a5"
+      "size": 81856,
+      "sha256": "df3102fcdec135750f03fe99b0a2f161d7d929961fe00767e374c8a608cdb77d"
     },
     {
       "path": "evidence/open-library-precursor-genome-v0.8/SENSITIVITY_FREEZE_20261127.md",
@@ -375,8 +375,8 @@
     },
     {
       "path": "evidence/open-library-precursor-genome-v0.8/audit_precursor_genome_release.py",
-      "size": 21234,
-      "sha256": "05b71a0d7df0dc04b58671d95f4fee3f4487ecc2d6c3100b97862188fda6d371"
+      "size": 21411,
+      "sha256": "12815157abfd9a1f042496ce0aa731f2e2c904a863455817a5b5f4a512bb4399"
     },
     {
       "path": "evidence/open-library-precursor-genome-v0.8/cases_v8/candidate_provenance.csv",
@@ -1974,6 +1974,11 @@
       "sha256": "584da05994dff583cc753fcd642a615a57f0b769f2b76a1b50fd246a760f874d"
     },
     {
+      "path": "evidence/open-library-precursor-genome-v0.8/verify_manifest.py",
+      "size": 1997,
+      "sha256": "b74080195d74673dff3ebbcfa66b81ea759a0edffc96cb6d9bafa6ae9aff0b25"
+    },
+    {
       "path": "evidence/open-library-precursor-genome-v0.8/verify_outputs.py",
       "size": 4869,
       "sha256": "9057568019c90b1bf2037b00e8f41afb20ca1041e46544270555b8dc446eb5e0"
@@ -2455,8 +2460,8 @@
     },
     {
       "path": "tests/test_open_library_panel.py",
-      "size": 2643,
-      "sha256": "865c59bc8b64c13d071c7db3704c617f4f314f536f2de2becd8a73535d18fed3"
+      "size": 3259,
+      "sha256": "c0a9815d2e4d289618fd8d704be7cf790fd83f280dbad55d83cd7c4fa602387c"
     },
     {
       "path": "tests/test_phase_labels.py",

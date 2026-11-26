@@ -2,7 +2,7 @@
   "release": "PXRD-CompleteSetBench Precursor Genome open-library panel",
   "version": "0.8.0",
   "date": "2026-11-27",
-  "file_count": 444,
+  "file_count": 445,
   "entries": [
     {
       "path": "__pycache__/analyze_precursor_genome.cpython-312.pyc",
@@ -66,8 +66,8 @@
     },
     {
       "path": "audit_precursor_genome_release.py",
-      "size": 21234,
-      "sha256": "05b71a0d7df0dc04b58671d95f4fee3f4487ecc2d6c3100b97862188fda6d371"
+      "size": 21411,
+      "sha256": "12815157abfd9a1f042496ce0aa731f2e2c904a863455817a5b5f4a512bb4399"
     },
     {
       "path": "cases_v8/candidate_provenance.csv",
@@ -1876,8 +1876,8 @@
     },
     {
       "path": "INDEPENDENT_EXECUTION_PROMPT_20261127.md",
-      "size": 5249,
-      "sha256": "2f2375e95cd5106874ba80b76cd2d1f32cfa43dbaa4797b0b54d784912847415"
+      "size": 5448,
+      "sha256": "272b2b84823b3bd1a712dcd5e08254400c6a4bf975333727e9745077ab644843"
     },
     {
       "path": "LICENSE",
@@ -1976,8 +1976,8 @@
     },
     {
       "path": "README.md",
-      "size": 5418,
-      "sha256": "9b7c5c07a1407432f8e9cd1f3ce479d84027eaace0205b4fae3abd7da7bd3774"
+      "size": 5146,
+      "sha256": "74cd5925085539b48bdfda86da4ba0e3b82536d4337f30b9c1841b5f9b85592b"
     },
     {
       "path": "RELEASE_AUDIT_20261127.json",
@@ -2158,6 +2158,11 @@
       "path": "SOURCE_INDEPENDENCE_CORRECTION_20261127_zh.md",
       "size": 2026,
       "sha256": "18acb972679a4012a44727668cf8bba08599114499296fbd208d8a74c6edacf9"
+    },
+    {
+      "path": "verify_manifest.py",
+      "size": 1997,
+      "sha256": "b74080195d74673dff3ebbcfa66b81ea759a0edffc96cb6d9bafa6ae9aff0b25"
     },
     {
       "path": "verify_outputs.py",

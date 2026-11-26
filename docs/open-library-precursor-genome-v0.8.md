@@ -95,6 +95,8 @@ The complete package is in
 - an independent Windows execution prompt and hash verifier.
 
 The package-level release audit passes 9,855 checks.
+`verify_manifest.py` checks every path, byte size and SHA-256 recorded in the
+release manifest before method execution.
 
 ## Claim boundary
 

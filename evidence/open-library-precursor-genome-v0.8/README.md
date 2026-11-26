@@ -86,14 +86,13 @@ the retained-true-order endpoint:
 
 ## Reproduction
 
-Run from `post_abundance_shift_20261125/` after installing the declared
-environment:
+Run from this directory after installing the declared environment:
 
 ```powershell
-python precursor_genome_source_20261127/run_profile_baseline_panel.py `
-  --dataset precursor_genome_source_20261127/dataset_v7 `
-  --cases precursor_genome_source_20261127/cases_v8 `
-  --outdir precursor_genome_source_20261127/profile_baseline_repeat`
+python run_profile_baseline_panel.py `
+  --dataset dataset_v7 `
+  --cases cases_v8 `
+  --outdir profile_baseline_repeat`
 ```
 
 XDecomposer requires the official V_0.0.1 checkpoint and source paths defined in
@@ -120,15 +119,19 @@ The exact command used for the recorded release is also documented in
 Score and audit:
 
 ```powershell
-python precursor_genome_source_20261127/score_precursor_genome.py `
-  --cases precursor_genome_source_20261127/cases_v8 `
-  --profile-run precursor_genome_source_20261127/profile_baseline_run_v8 `
-  --crystalshift-run precursor_genome_source_20261127/crystalshift_run_v8 `
-  --xdecomposer-run precursor_genome_source_20261127/xdecomposer_run_v8 `
-  --outdir precursor_genome_source_20261127/scores_v8 `
+python verify_manifest.py `
+  --root . `
+  --manifest RELEASE_FILE_MANIFEST.json
+
+python score_precursor_genome.py `
+  --cases cases_v8 `
+  --profile-run profile_baseline_run_v8 `
+  --crystalshift-run crystalshift_run_v8 `
+  --xdecomposer-run xdecomposer_run_v8 `
+  --outdir scores_repeat `
   --bootstrap-repeats 10000
 
-python precursor_genome_source_20261127/audit_precursor_genome_release.py
+python audit_precursor_genome_release.py --scores scores_repeat
 ```
 
 The release audit covers source hashes, public/evaluator separation, candidate

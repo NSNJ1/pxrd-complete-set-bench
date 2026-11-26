@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import argparse
 import csv
 import hashlib
 import json
@@ -14,7 +15,6 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 DATASET = ROOT / "dataset_v7"
 CASES = ROOT / "cases_v8"
-SCORES = ROOT / "scores_v8"
 
 
 def sha256(path: Path) -> str:
@@ -47,6 +47,11 @@ def require(condition: bool, message: str) -> None:
 
 
 def main() -> int:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--scores", type=Path, default=ROOT / "scores_v8")
+    args = parser.parse_args()
+    scores_dir = args.scores.resolve()
+
     checks: list[dict[str, object]] = []
 
     def record(name: str, condition: bool, detail: str) -> None:
@@ -513,7 +518,7 @@ def main() -> int:
                 primary_hash,
             )
 
-    score_summary = load_json(SCORES / "summary.json")
+    score_summary = load_json(scores_dir / "summary.json")
     record(
         "score_status",
         score_summary["status"]

@@ -69,6 +69,16 @@ Get-FileHash <file> -Algorithm SHA256
 核对 `PRIOR_PROJECT_QUERY_IDS.txt` 与 `dataset_v7/public/queries.csv`：
 应为 416 个旧 ID、102 个新面板 ID、77 个交集和 25 个新 ID。
 
+在开始方法执行前，再运行：
+
+```powershell
+python verify_manifest.py `
+  --root . `
+  --manifest HANDOFF_FILE_MANIFEST.json
+```
+
+只有返回 `manifest_verification_passed` 才继续。
+
 ## 步骤 3：profile 正对照
 
 ```powershell

@@ -1,6 +1,8 @@
 from __future__ import annotations
 
 import json
+import subprocess
+import sys
 import unittest
 from pathlib import Path
 
@@ -45,7 +47,7 @@ class OpenLibraryPanelTests(unittest.TestCase):
         self.assertEqual(case_manifest["queries"], 102)
         self.assertEqual(case_manifest["cases"], 418)
         self.assertEqual(case_manifest["case_phase_truth_rows"], 8044)
-        self.assertEqual(release_manifest["file_count"], 444)
+        self.assertEqual(release_manifest["file_count"], 445)
 
     def test_primary_endpoint_values(self) -> None:
         summary = json.loads(
@@ -68,6 +70,23 @@ class OpenLibraryPanelTests(unittest.TestCase):
                 card["unknown_endpoint"]["fixed_full_residual"]["all"]["auroc"],
                 fixed,
             )
+
+    def test_release_manifest(self) -> None:
+        completed = subprocess.run(
+            [
+                sys.executable,
+                str(PANEL / "verify_manifest.py"),
+                "--root",
+                str(PANEL),
+                "--manifest",
+                str(PANEL / "RELEASE_FILE_MANIFEST.json"),
+            ],
+            capture_output=True,
+            text=True,
+            check=False,
+        )
+        self.assertEqual(completed.returncode, 0, completed.stdout + completed.stderr)
+        self.assertIn("manifest_verification_passed", completed.stdout)
 
 
 if __name__ == "__main__":
