@@ -35,3 +35,10 @@ release reports this gap explicitly and does not impute structures.
 The project continues to support source-stratified query transfer and
 endpoint-dependent method ranking. It does not claim unseen-structure
 generalization or fully structure-independent external sources.
+
+## Erratum
+
+The DeltaXRDbench v1.1.0 archive checksum inherited from v0.6.2 contained 63
+characters rather than the required 64. The immutable v0.7.0 tag retains that
+printing error. See [`ERRATA.md`](ERRATA.md) for the original and corrected
+values. No data or result was changed.

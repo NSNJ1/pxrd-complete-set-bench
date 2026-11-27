@@ -1,7 +1,7 @@
 {
   "version": "0.8.0",
   "date": "2026-11-27",
-  "file_count": 497,
+  "file_count": 499,
   "entries": [
     {
       "path": ".gitattributes",
@@ -20,8 +20,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "size": 3238,
-      "sha256": "a5e6bc390b276a46dda1ad55c41310823d05554ecbfc3511fd66c4d99a82478b"
+      "size": 3569,
+      "sha256": "bb0c706e8cbd5f644c7ffe2e96bd8bd7f8c302ea44295f0a687caf51f9d704f6"
     },
     {
       "path": "CITATION.cff",
@@ -50,8 +50,8 @@
     },
     {
       "path": "README.md",
-      "size": 10780,
-      "sha256": "1a7a6eb95488d1a6196efbaa0026cb9d331c9d2be26c6de8a62dc29e1d12c527"
+      "size": 10914,
+      "sha256": "f53a1df89b5f2e838aa6d7633c67dcbca62c5e31c5c5906d0e6af9d5dc703495"
     },
     {
       "path": "SECURITY.md",
@@ -75,8 +75,8 @@
     },
     {
       "path": "data/external_fresh_release_registry.json",
-      "size": 2564,
-      "sha256": "3c05803c11addadd66e256d18d2b316d52c0c3dcd95e9d02e8d00beb47d08db3"
+      "size": 2565,
+      "sha256": "aa706f32d825ab58a87e246a0e71aa914fad88b9e646c21d6c84071e3a2e2ea9"
     },
     {
       "path": "data/external_method_registry.json",
@@ -104,6 +104,11 @@
       "sha256": "deaa52a1cd005893ffc09c51ed409c27ef53137ad20349d270c1e8ef8c759601"
     },
     {
+      "path": "docs/ERRATA.md",
+      "size": 946,
+      "sha256": "d24b9d23baf0a6b118edc8ddfdfb0461b5a2edd3be812666059a8f2383aae071"
+    },
+    {
       "path": "docs/benchmark-card.md",
       "size": 5811,
       "sha256": "4f6879a330ff04c6b6e779d1e05d048da64e5f592a30793ced5293551c291ff7"
@@ -125,8 +130,8 @@
     },
     {
       "path": "docs/external-fresh-release-replay.md",
-      "size": 3215,
-      "sha256": "570cd6ebb93b44b16dfc73b5856852c6e149db53848d3da284f6735a28dc254a"
+      "size": 3216,
+      "sha256": "76dfe695b2ebadfe13b7fbbd9ba4fc9ae56a310468d3b2fde7aee3b25c4e45ef"
     },
     {
       "path": "docs/external-method-validation.md",
@@ -180,23 +185,23 @@
     },
     {
       "path": "docs/release-notes-v0.6.2.md",
-      "size": 1791,
-      "sha256": "1244a622a9b725555bc3bc78d603c0ce1836cd98ae97b1cfe1e7e174231f8bbc"
+      "size": 1792,
+      "sha256": "d36004f0551f84ebbb79ccb81ff060eef033cf10646ceb44816788e670fc6b90"
     },
     {
       "path": "docs/release-notes-v0.7.0.md",
-      "size": 1436,
-      "sha256": "f34e6797320d2ebee5427fa63ed2f44d8626398c73b77c6da0a8a6820184cdd6"
+      "size": 1719,
+      "sha256": "b9aa92ac85aa4d10dd5eeb4763aef6db204bdb08ec6919faa3ae21138f3986d1"
     },
     {
       "path": "docs/release-notes-v0.8.0.md",
-      "size": 1739,
-      "sha256": "f5829e4394bd59ca9cf4ea33c6dd2a2e8d47840a6415118d179212b0f4023cf7"
+      "size": 2217,
+      "sha256": "34d0ce4aa7d6bae6c9947cc4ad0206bd1f39d103ff4bbe5cc0a5fb01ec701213"
     },
     {
       "path": "docs/reproduction.md",
-      "size": 6290,
-      "sha256": "56c6fa9643f9257170a8f8cf9d030edfcc6e45f9f8bae243f748d4acb42d47bc"
+      "size": 6291,
+      "sha256": "fac66d0a40d927158014b661e5bc28a64d7be9b11fe41f937c3a2975ffb8b279"
     },
     {
       "path": "docs/statistical-audit.md",
@@ -355,8 +360,8 @@
     },
     {
       "path": "evidence/open-library-precursor-genome-v0.8/RELEASE_FILE_MANIFEST.json",
-      "size": 81856,
-      "sha256": "df3102fcdec135750f03fe99b0a2f161d7d929961fe00767e374c8a608cdb77d"
+      "size": 63780,
+      "sha256": "da345a10e50d017dd3f38945ec02617d28dad9af8b73aca9e874712856938dfa"
     },
     {
       "path": "evidence/open-library-precursor-genome-v0.8/SENSITIVITY_FREEZE_20261127.md",
@@ -1840,8 +1845,8 @@
     },
     {
       "path": "evidence/open-library-precursor-genome-v0.8/score_two_endpoints.py",
-      "size": 24562,
-      "sha256": "bc14146365c44dab6a4242104f2e830bd2dc167214059e283fcdd1bae97e165f"
+      "size": 24574,
+      "sha256": "abaa5842c1757f3ca9737843b0f372e8033eb49d45b9fcfeff6055387a90d8b3"
     },
     {
       "path": "evidence/open-library-precursor-genome-v0.8/scores_v8/crystalshift_ranking_cases.csv",
@@ -1975,8 +1980,8 @@
     },
     {
       "path": "evidence/open-library-precursor-genome-v0.8/verify_manifest.py",
-      "size": 1997,
-      "sha256": "b74080195d74673dff3ebbcfa66b81ea759a0edffc96cb6d9bafa6ae9aff0b25"
+      "size": 2337,
+      "sha256": "d2370135fb8bfed328913d2cd37396c463cedabdd22f261fded9b7c8ee885155"
     },
     {
       "path": "evidence/open-library-precursor-genome-v0.8/verify_outputs.py",
@@ -2344,6 +2349,11 @@
       "sha256": "12b0741205c078066c7ae7892ee982f11c43c2a90216c6ad508df33e9ba6b16e"
     },
     {
+      "path": "scripts/build_open_library_release_manifest.py",
+      "size": 1704,
+      "sha256": "fa6c14a0fdaa5fab0300b6bf01966a5147ff37942625cac5689e6512119b1a3b"
+    },
+    {
       "path": "scripts/prepare_xmatcher_database.py",
       "size": 6083,
       "sha256": "322ad3b5831645de400d3e6aa00fc723b91e919bc084f19c43479276be74115b"
@@ -2376,7 +2386,7 @@
     {
       "path": "src/pxrd_complete_set_bench/__init__.py",
       "size": 301,
-      "sha256": "1ac15060f53602489cced2a1ee65975ab54c5787a66076bb2868784d36779bc5"
+      "sha256": "eefa09b0fe9442dce16c3fbb598a145b56f956ddd02508a28976e7fc790b2bc4"
     },
     {
       "path": "src/pxrd_complete_set_bench/__main__.py",
@@ -2395,8 +2405,8 @@
     },
     {
       "path": "src/pxrd_complete_set_bench/evaluate.py",
-      "size": 21959,
-      "sha256": "1e2236998182b59bf983e3475cd518481b6dac7c3914e2227b687dd6ea2136b1"
+      "size": 22103,
+      "sha256": "5a6b6100da0f8f83f7bb768f5d05a661a87f6cd8e7d31318c66b4af8f47f58e8"
     },
     {
       "path": "src/pxrd_complete_set_bench/external_panel.py",
@@ -2435,13 +2445,13 @@
     },
     {
       "path": "tests/test_evaluate.py",
-      "size": 4310,
-      "sha256": "693211755ca16ef7c012734284abcc8996e3b3c4565ac32f743f06001a98cf8e"
+      "size": 5863,
+      "sha256": "96d66bdbcc6d5d29c97b911fc031eb96484c581c7fb9a9df1df1a8a9e64df1b9"
     },
     {
       "path": "tests/test_external_fresh_release.py",
-      "size": 2696,
-      "sha256": "53c7451e2f0d60af46b10cb245ca40d2e5d981a3b90ec6dc3bca91296a0f1174"
+      "size": 2841,
+      "sha256": "dbaba10cc9e464782ce045e4983c3cb8469ae6243d939b4528b20de7acbcb733"
     },
     {
       "path": "tests/test_external_panel.py",
@@ -2460,8 +2470,8 @@
     },
     {
       "path": "tests/test_open_library_panel.py",
-      "size": 3259,
-      "sha256": "c0a9815d2e4d289618fd8d704be7cf790fd83f280dbad55d83cd7c4fa602387c"
+      "size": 3525,
+      "sha256": "659228c0b201da0b221a4beda31cc1932f1c921724947890ee813a2352842bd2"
     },
     {
       "path": "tests/test_phase_labels.py",
@@ -2470,8 +2480,8 @@
     },
     {
       "path": "tests/test_public_surface.py",
-      "size": 4996,
-      "sha256": "3829d071306e4975ae4dff432172a0c1d705d1f3f63296d12da631961f73249c"
+      "size": 4922,
+      "sha256": "105ea160c39ccb61b450f810ecbe9f2a1f7dc0e72f0e41176876fbe9405c4a19"
     },
     {
       "path": "tests/test_rank_reversal.py",

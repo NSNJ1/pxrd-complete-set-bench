@@ -144,14 +144,15 @@ def rank_queries(
     score_column: str,
     budgets: tuple[int, ...],
 ) -> pd.DataFrame:
+    """Rank each query by score with an input-order-independent tie break."""
     rows = []
     for (source, query_id), group in frame.groupby(
         ["source", "query_id"],
         sort=False,
     ):
         ordered = group.sort_values(
-            score_column,
-            ascending=False,
+            [score_column, "phase_id"],
+            ascending=[False, True],
             kind="stable",
         )
         present = ordered["present"].to_numpy(dtype=np.int64)
@@ -204,13 +205,13 @@ def screen_diagnostics(
             if positive_count < 1:
                 continue
             baseline_order = group.sort_values(
-                baseline,
-                ascending=False,
+                [baseline, "phase_id"],
+                ascending=[False, True],
                 kind="stable",
             )
             method_order = group.sort_values(
-                method,
-                ascending=False,
+                [method, "phase_id"],
+                ascending=[False, True],
                 kind="stable",
             )
             baseline_screen = baseline_order.head(budget)

@@ -227,6 +227,8 @@ The canonical result payload must have SHA-256:
 The comparison excludes only the input file path and retains all metrics,
 clusters, labels, and bootstrap settings. See
 [docs/reproduction.md](docs/reproduction.md).
+Corrections to previously released documentation are recorded in
+[docs/ERRATA.md](docs/ERRATA.md); historical tags are not rewritten.
 
 ## Scope and limitations
 

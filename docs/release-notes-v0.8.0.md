@@ -48,5 +48,15 @@ ordering is reported separately.
 - the independent execution prompt and expected-output hash verifier are
   included.
 
+## Evaluator and documentation corrections
+
+- Equal candidate scores are now ordered deterministically by ascending
+  `phase_id` in both rank and screening diagnostics, so row order cannot change
+  a frozen metric;
+- the public documentation now reports the correct 64-character
+  DeltaXRDbench v1.1.0 archive checksum;
+- the checksum error in the immutable v0.6.2 and v0.7.0 tags is disclosed in
+  [`ERRATA.md`](ERRATA.md), with no claim that the published tags were changed.
+
 See
 [`docs/open-library-precursor-genome-v0.8.md`](open-library-precursor-genome-v0.8.md).

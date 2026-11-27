@@ -13,9 +13,7 @@ PANEL = REPO / "evidence" / "open-library-precursor-genome-v0.8"
 class OpenLibraryPanelTests(unittest.TestCase):
     def test_source_overlap_is_explicit(self) -> None:
         overlap = json.loads(
-            (PANEL / "PRIOR_PROJECT_OVERLAP_20261127.json").read_text(
-                encoding="utf-8"
-            )
+            (PANEL / "PRIOR_PROJECT_OVERLAP_20261127.json").read_text(encoding="utf-8")
         )
         prior_ids = {
             line.strip()
@@ -25,8 +23,10 @@ class OpenLibraryPanelTests(unittest.TestCase):
             if line.strip()
         }
         query_rows = (
-            PANEL / "dataset_v7" / "public" / "queries.csv"
-        ).read_text(encoding="utf-8").splitlines()[1:]
+            (PANEL / "dataset_v7" / "public" / "queries.csv")
+            .read_text(encoding="utf-8")
+            .splitlines()[1:]
+        )
         current_ids = {row.split(",", 1)[0] for row in query_rows}
 
         self.assertEqual(len(prior_ids), 416)
@@ -40,20 +40,22 @@ class OpenLibraryPanelTests(unittest.TestCase):
             (PANEL / "cases_v8" / "manifest.json").read_text(encoding="utf-8")
         )
         release_manifest = json.loads(
-            (PANEL / "RELEASE_FILE_MANIFEST.json").read_text(
-                encoding="utf-8"
-            )
+            (PANEL / "RELEASE_FILE_MANIFEST.json").read_text(encoding="utf-8")
         )
         self.assertEqual(case_manifest["queries"], 102)
         self.assertEqual(case_manifest["cases"], 418)
         self.assertEqual(case_manifest["case_phase_truth_rows"], 8044)
-        self.assertEqual(release_manifest["file_count"], 445)
+        self.assertEqual(release_manifest["file_count"], 350)
+        self.assertEqual(
+            release_manifest["file_count"], len(release_manifest["entries"])
+        )
+        paths = [entry["path"] for entry in release_manifest["entries"]]
+        self.assertFalse(any("__pycache__" in path for path in paths))
+        self.assertFalse(any(path.endswith(".log") for path in paths))
 
     def test_primary_endpoint_values(self) -> None:
         summary = json.loads(
-            (PANEL / "scores_v8" / "summary.json").read_text(
-                encoding="utf-8"
-            )
+            (PANEL / "scores_v8" / "summary.json").read_text(encoding="utf-8")
         )
         expected = {
             "profile_baseline": (0.7082417078981125, 0.5071009712296134),

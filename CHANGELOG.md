@@ -13,6 +13,11 @@
 - Record that 77 of 102 Precursor Genome query IDs were already used by the
   project's closed-library benchmark and only 25 are new; this panel is a new
   intervention, not a fresh external source.
+- Make equal-score evaluator ordering deterministic across input row order by
+  using ascending `phase_id` as the tie-break in ranking and screening.
+- Correct the malformed 63-character DeltaXRDbench SHA-256 text in released
+  v0.6.2 and v0.7.0 documentation and publish a central erratum without
+  rewriting the historical tags.
 
 ## 0.7.0 - 2026-11-24
 

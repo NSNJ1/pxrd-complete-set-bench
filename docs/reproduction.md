@@ -174,7 +174,7 @@ with code zero.
 Download `datasets.zip` from DeltaXRDbench release `v1.1.0`, verify:
 
 ```text
-815cf737fe9166ec4e83e0aec91b01854ab4fc6cfeac481e83110bdf7de390b
+815cf737fe9166ec4e83ae0aec91b01854ab4fc6cfeac481e83110bdf7de390b
 ```
 
 The evidence archive contains:

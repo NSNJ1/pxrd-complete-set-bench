@@ -3,6 +3,7 @@ from __future__ import annotations
 import hashlib
 import io
 import json
+import re
 import unittest
 import zipfile
 from pathlib import Path
@@ -21,6 +22,10 @@ class ExternalFreshReleaseTest(unittest.TestCase):
         cls.registry = json.loads(REGISTRY.read_text(encoding="utf-8"))
 
     def test_registered_hashes(self) -> None:
+        self.assertRegex(
+            self.registry["release"]["archive_sha256"],
+            re.compile(r"^[0-9a-f]{64}$"),
+        )
         for panel in self.registry["panels"].values():
             for path_key, hash_key in (
                 ("result_file", "result_sha256"),

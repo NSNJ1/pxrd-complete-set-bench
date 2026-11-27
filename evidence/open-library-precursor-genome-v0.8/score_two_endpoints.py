@@ -86,6 +86,12 @@ def binary_metrics(
     flag_column: str,
     negative_condition: str | None = None,
 ) -> dict:
+    """Score unknown-phase evidence for an explicitly selected negative set.
+
+    With ``negative_condition=None``, negatives include every case in which no
+    true phase was omitted (closed and absent-omission cases). Passing
+    ``"omit_absent"`` selects the stricter specificity control.
+    """
     if negative_condition is None:
         selected = frame.copy()
     else:
@@ -133,8 +139,7 @@ def ranking_metrics(
         )
     )
     truth_by_case = {
-        case_id: frame
-        for case_id, frame in truth.groupby("case_id", sort=False)
+        case_id: frame for case_id, frame in truth.groupby("case_id", sort=False)
     }
     records = []
     for case in cases.itertuples(index=False):
@@ -143,12 +148,10 @@ def ranking_metrics(
         case_truth = truth_by_case[case.case_id]
         available = case_truth["phase_id"].tolist()
         actual_scores = {
-            phase_id: actual_lookup[(case.case_id, phase_id)]
-            for phase_id in available
+            phase_id: actual_lookup[(case.case_id, phase_id)] for phase_id in available
         }
         fixed_scores = {
-            phase_id: fixed_lookup[(case.case_id, phase_id)]
-            for phase_id in available
+            phase_id: fixed_lookup[(case.case_id, phase_id)] for phase_id in available
         }
         actual_order = ranked_ids(available, actual_scores)
         fixed_order = ranked_ids(available, fixed_scores)
@@ -158,9 +161,7 @@ def ranking_metrics(
         fixed_rank = {
             phase_id: rank for rank, phase_id in enumerate(fixed_order, start=1)
         }
-        retained_true = (
-            case_truth.loc[case_truth["present"].eq(1), "phase_id"].tolist()
-        )
+        retained_true = case_truth.loc[case_truth["present"].eq(1), "phase_id"].tolist()
         true_actual_order = [
             phase_id for phase_id in actual_order if phase_id in set(retained_true)
         ]
@@ -171,9 +172,7 @@ def ranking_metrics(
         if len(retained_true) >= 2:
             for left_index, left in enumerate(retained_true):
                 for right in retained_true[left_index + 1 :]:
-                    pair_reversal |= (
-                        fixed_rank[left] < fixed_rank[right]
-                    ) != (
+                    pair_reversal |= (fixed_rank[left] < fixed_rank[right]) != (
                         actual_rank[left] < actual_rank[right]
                     )
         actual_vector = np.array(
@@ -263,9 +262,7 @@ def ranking_metrics(
         "by_condition": by_condition,
         "median_spearman": float(frame["spearman"].median()),
         "minimum_spearman": float(frame["spearman"].min()),
-        "max_abs_score_difference": float(
-            frame["max_abs_score_difference"].max()
-        ),
+        "max_abs_score_difference": float(frame["max_abs_score_difference"].max()),
     }
     return frame, summary
 
@@ -288,8 +285,7 @@ def retrieval_metrics(
         )
     )
     truth_by_case = {
-        case_id: frame
-        for case_id, frame in truth.groupby("case_id", sort=False)
+        case_id: frame for case_id, frame in truth.groupby("case_id", sort=False)
     }
     budgets = (1, 2, 3, 5, 10, 20)
     rows = []
@@ -297,13 +293,10 @@ def retrieval_metrics(
         case_truth = truth_by_case[case.case_id]
         available = case_truth["phase_id"].tolist()
         scores = {
-            phase_id: score_lookup[(case.case_id, phase_id)]
-            for phase_id in available
+            phase_id: score_lookup[(case.case_id, phase_id)] for phase_id in available
         }
         order = ranked_ids(available, scores)
-        present = set(
-            case_truth.loc[case_truth["present"].eq(1), "phase_id"].tolist()
-        )
+        present = set(case_truth.loc[case_truth["present"].eq(1), "phase_id"].tolist())
         row = {
             "case_id": case.case_id,
             "condition": case.condition,
@@ -313,12 +306,8 @@ def retrieval_metrics(
         for budget in budgets:
             selected = set(order[:budget])
             if present:
-                row[f"recall_at_{budget}"] = (
-                    len(selected & present) / len(present)
-                )
-                row[f"all_present_at_{budget}"] = int(
-                    present.issubset(selected)
-                )
+                row[f"recall_at_{budget}"] = len(selected & present) / len(present)
+                row[f"all_present_at_{budget}"] = int(present.issubset(selected))
             else:
                 row[f"recall_at_{budget}"] = np.nan
                 row[f"all_present_at_{budget}"] = np.nan
@@ -340,21 +329,21 @@ def retrieval_metrics(
         "by_condition": {},
     }
     for condition, group in frame.groupby("condition"):
-        summary["by_condition"][condition] = {
-            "retrieval_eligible_cases": int(
-                group["true_count"].gt(0).sum()
-            ),
-        } | {
-            f"mean_recall_at_{budget}": float(
-                group[f"recall_at_{budget}"].mean()
-            )
-            for budget in budgets
-        } | {
-            f"all_present_at_{budget}": float(
-                group[f"all_present_at_{budget}"].mean()
-            )
-            for budget in budgets
-        }
+        summary["by_condition"][condition] = (
+            {
+                "retrieval_eligible_cases": int(group["true_count"].gt(0).sum()),
+            }
+            | {
+                f"mean_recall_at_{budget}": float(group[f"recall_at_{budget}"].mean())
+                for budget in budgets
+            }
+            | {
+                f"all_present_at_{budget}": float(
+                    group[f"all_present_at_{budget}"].mean()
+                )
+                for budget in budgets
+            }
+        )
     return summary
 
 
@@ -371,9 +360,7 @@ def bootstrap(
         for cluster_id in clusters
     }
     rank_index_by_cluster = {
-        cluster_id: rank_frame.index[
-            rank_frame["cluster_id"].eq(cluster_id)
-        ].to_numpy()
+        cluster_id: rank_frame.index[rank_frame["cluster_id"].eq(cluster_id)].to_numpy()
         for cluster_id in clusters
     }
     values = {
@@ -388,9 +375,7 @@ def bootstrap(
     for _ in range(repeats):
         sampled = rng.choice(clusters, size=len(clusters), replace=True)
         indices = np.concatenate([index_by_cluster[item] for item in sampled])
-        rank_indices = np.concatenate(
-            [rank_index_by_cluster[item] for item in sampled]
-        )
+        rank_indices = np.concatenate([rank_index_by_cluster[item] for item in sampled])
         sample = frame.loc[indices]
         labels = pd.to_numeric(sample["unknown_present"]).astype(int).to_numpy()
         if len(np.unique(labels)) < 2:
@@ -457,9 +442,7 @@ def score_method(
     source_id = source_ids[0]
     actual_candidates = pd.read_csv(run_dir / "candidate_predictions.csv")
     actual_cases = pd.read_csv(run_dir / "case_scores.csv")
-    fixed_candidates = pd.read_csv(
-        run_dir / "fixed_output_candidate_predictions.csv"
-    )
+    fixed_candidates = pd.read_csv(run_dir / "fixed_output_candidate_predictions.csv")
     fixed_cases = pd.read_csv(run_dir / "fixed_output_case_scores.csv")
 
     full_lookup, full_by_query = full_score_lookup(fixed_candidates, cases)
@@ -473,9 +456,7 @@ def score_method(
         on="case_id",
         validate="one_to_one",
     )
-    case_frame = case_frame.rename(
-        columns={"unknown_score": "actual_unknown_score"}
-    )
+    case_frame = case_frame.rename(columns={"unknown_score": "actual_unknown_score"})
     percentile_scores = []
     for row in case_frame.itertuples(index=False):
         if row.condition == "closed":

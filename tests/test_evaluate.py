@@ -7,7 +7,12 @@ from pathlib import Path
 
 import pandas as pd
 
-from pxrd_complete_set_bench.evaluate import evaluate, validate
+from pxrd_complete_set_bench.evaluate import (
+    evaluate,
+    rank_queries,
+    screen_diagnostics,
+    validate,
+)
 
 ROOT = Path(__file__).resolve().parent
 
@@ -123,6 +128,50 @@ class CompleteSetEvaluatorTest(unittest.TestCase):
                 0,
                 20261118,
             )
+
+    def test_tied_scores_use_phase_id_regardless_of_input_order(self) -> None:
+        rows = [
+            {
+                "source": "s",
+                "query_id": "q",
+                "cluster_id": "c",
+                "phase_id": phase_id,
+                "present": int(phase_id in {"A", "D"}),
+                "baseline_score": 1.0,
+                "method_score": 1.0,
+            }
+            for phase_id in "ABCD"
+        ]
+        expected = rank_queries(pd.DataFrame(rows), "method_score", (1, 2))
+        shuffled = rank_queries(
+            pd.DataFrame([rows[3], rows[1], rows[2], rows[0]]),
+            "method_score",
+            (1, 2),
+        )
+        columns = ["top1_present", "all_present_at_1", "all_present_at_2"]
+        self.assertEqual(
+            expected[columns].to_dict("records"), shuffled[columns].to_dict("records")
+        )
+        self.assertEqual(expected.loc[0, "all_present_at_1"], 0.0)
+        self.assertEqual(expected.loc[0, "all_present_at_2"], 0.0)
+
+        expected_screen = screen_diagnostics(
+            pd.DataFrame(rows),
+            "baseline_score",
+            "method_score",
+            (2,),
+            20,
+            20261118,
+        )
+        shuffled_screen = screen_diagnostics(
+            pd.DataFrame([rows[3], rows[1], rows[2], rows[0]]),
+            "baseline_score",
+            "method_score",
+            (2,),
+            20,
+            20261118,
+        )
+        self.assertEqual(expected_screen, shuffled_screen)
 
 
 if __name__ == "__main__":

@@ -6,7 +6,7 @@
     "release_url": "https://github.com/DeltaGanjiang/deltaxrdbench/releases/tag/v1.1.0",
     "publication": "10.48550/arxiv.2610.07862",
     "published_at": "2026-11-17",
-    "archive_sha256": "815cf737fe9166ec4e83e0aec91b01854ab4fc6cfeac481e83110bdf7de390b",
+    "archive_sha256": "815cf737fe9166ec4e83ae0aec91b01854ab4fc6cfeac481e83110bdf7de390b",
     "raw_data_redistributed": false
   },
   "claim_boundary": "New external benchmark release replay on mixtures constructed from measured single-phase RRUFF and opXRD profiles. It is not an independent physical multiphase collection and not prospective validation.",

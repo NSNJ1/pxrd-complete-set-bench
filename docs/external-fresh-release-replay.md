@@ -13,7 +13,7 @@ constructed from measured single-phase profiles; they are not physically mixed
 specimens.
 
 The official release archive was checked against SHA-256
-`815cf737fe9166ec4e83e0aec91b01854ab4fc6cfeac481e83110bdf7de390b`.
+`815cf737fe9166ec4e83ae0aec91b01854ab4fc6cfeac481e83110bdf7de390b`.
 Raw spectra and CIFs are not redistributed in this repository.
 
 ## Frozen panels

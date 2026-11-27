@@ -7,7 +7,7 @@ benchmark claim from method complexity to evaluation non-portability.
 
 - DeltaXRDbench dataset v1.1.0 was downloaded from its official GitHub release
   and verified against SHA-256
-  `815cf737fe9166ec4e83e0aec91b01854ab4fc6cfeac481e83110bdf7de390b`.
+  `815cf737fe9166ec4e83ae0aec91b01854ab4fc6cfeac481e83110bdf7de390b`.
 - Two frozen 30-query panels were constructed: RRUFF-Cu and opXRD-Cu.
 - Every query has exactly 20 structurally parseable candidates with at most 100
   atoms.

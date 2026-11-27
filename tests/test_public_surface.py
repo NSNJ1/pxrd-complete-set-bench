@@ -97,9 +97,7 @@ class PublicSurfaceTest(unittest.TestCase):
         with zipfile.ZipFile(evaluator) as archive:
             names = archive.namelist()
         self.assertIn("dataset/evaluator/truth.csv", names)
-        self.assertFalse(
-            any(name.lower().endswith(".cif") for name in names)
-        )
+        self.assertFalse(any(name.lower().endswith(".cif") for name in names))
 
     def test_structure_audit_evidence(self) -> None:
         archive_path = (
@@ -116,19 +114,15 @@ class PublicSurfaceTest(unittest.TestCase):
         with zipfile.ZipFile(archive_path) as archive:
             names = archive.namelist()
         self.assertIn("results/structure_overlap_audit.json", names)
-        self.assertFalse(
-            any(name.lower().endswith(".cif") for name in names)
-        )
+        self.assertFalse(any(name.lower().endswith(".cif") for name in names))
 
         summary = json.loads(
-            (
-                ROOT / "results" / "structure_overlap_audit_summary.json"
-            ).read_text(encoding="utf-8")
+            (ROOT / "results" / "structure_overlap_audit_summary.json").read_text(
+                encoding="utf-8"
+            )
         )
         self.assertEqual(summary["coverage"]["unique_cif_sha256"], 1599)
         self.assertEqual(
-            summary["same_composition_structure_matches"][
-                "cross_lineage_pairs"
-            ],
+            summary["same_composition_structure_matches"]["cross_lineage_pairs"],
             644,
         )

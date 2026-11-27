@@ -8,6 +8,10 @@ import hashlib
 import json
 from pathlib import Path
 
+TRANSIENT_PARTS = {"__pycache__", ".pytest_cache"}
+TRANSIENT_SUFFIXES = {".log", ".pyc", ".pyo"}
+TRANSIENT_NAMES = {".DS_Store", "Thumbs.db"}
+
 
 def sha256(path: Path) -> str:
     digest = hashlib.sha256()
@@ -45,7 +49,11 @@ def main() -> int:
     actual_paths = {
         path.relative_to(root).as_posix()
         for path in root.rglob("*")
-        if path.is_file() and path.resolve() != manifest_path
+        if path.is_file()
+        and path.resolve() != manifest_path
+        and not any(part in TRANSIENT_PARTS for part in path.relative_to(root).parts)
+        and path.suffix.lower() not in TRANSIENT_SUFFIXES
+        and path.name not in TRANSIENT_NAMES
     }
     for relative in sorted(actual_paths - listed_paths):
         problems.append(f"unlisted: {relative}")
